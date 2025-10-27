@@ -1,0 +1,19 @@
+{
+  "kind" : "ffs_bluegas_right",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/ffs_bluegas.animation",
+    "initialVelocity" : [2, 4],
+    "finalVelocity" : [0, 8],
+    "approach" : [5, 4],
+    "timeToLive" : 1.4,
+    "size" : 1.0,
+    "layer" : "middle",
+    "variance" : {
+      "initialVelocity" : [5, 2],
+      "approach" : [5, 4],
+      "rotation" : 180,
+      "angularVelocity" : 45
+    }
+  }
+}

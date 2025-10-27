@@ -1,0 +1,13 @@
+{
+  "projectileName" : "ffs_break_explosion",
+  "image" : "ffs_break_explosion.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "fullbright" : true
+}

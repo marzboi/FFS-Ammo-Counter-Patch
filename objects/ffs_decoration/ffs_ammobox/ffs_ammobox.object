@@ -1,0 +1,41 @@
+{
+  "objectName" : "ffs_ammobox",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "decorative",
+
+  "description" : "Dead body.",
+  "shortdescription" : "Dead body",
+  "race" : "generic",
+
+  "apexDescription" : "R.I.P.",
+  "avianDescription" : "R.I.P.",
+  "floranDescription" : "R.I.P.",
+  "glitchDescription" : "R.I.P.",
+  "humanDescription" : "R.I.P.",
+  "hylotlDescription" : "R.I.P.",
+  "novakidDescription" : "R.I.P.",
+
+  "inventoryIcon" : "ffs_ammobox.png",
+  "orientations" : [
+    {
+      "image" : "ffs_ammobox.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1
+    },
+    {
+      "image" : "ffs_ammobox.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1
+    }
+  ],
+  "turnInQuests" : [
+    "ffs_episode_0_6_sub_1"
+  ]
+}

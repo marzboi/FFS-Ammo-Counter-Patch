@@ -1,0 +1,19 @@
+{
+  "projectileName" : "ffs_lootbox_weapon_large_open",
+  "image" : "ffs_lootbox_weapon_large_open.png",
+  "animationLoops" : false,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 600,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Object+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

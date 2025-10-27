@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_inquisitorback", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 150
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

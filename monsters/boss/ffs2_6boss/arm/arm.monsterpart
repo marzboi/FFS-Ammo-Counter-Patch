@@ -1,0 +1,9 @@
+{
+  "name" : "arm",
+  "category" : "ffs2_6boss",
+  "type" : "arm",
+
+  "frames" : {
+    "arm" : "arm.png"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "itemName" : "ffs_ammunition_4",
+  "rarity" : "rare",
+  "inventoryIcon" : "ffs_ammunition_4.png",
+  "description" : "A trizium ammunition.",
+  "shortdescription" : "^#00c3ff;Trizium Ammo"
+}

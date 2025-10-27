@@ -1,0 +1,176 @@
+{
+  "type" : "ffs1_0boss",
+  "shortdescription" : "Chief Pirate",
+
+  "categories" : [ "ffs1_0boss" ],
+  "parts" : [ "body", "arm", "sword" ],
+
+  "animation" : "ffs0_3boss.animation",
+  "reversed" : true,
+  "dropPools" : [
+    {
+      "default" : "ffs_pirates"
+    }
+  ],
+
+  "baseParameters" : {
+    "monsterClass" : "boss",
+	
+    "scripts" : [
+      "/monsters/boss/bossMonster.lua",
+      "/scripts/stateMachine.lua",
+      "/scripts/util.lua",
+      "/scripts/vec2.lua",
+
+      "/monsters/boss/ffs0_3boss/dieState2.lua",
+      "/monsters/boss/ffs0_3boss/idleState.lua"
+    ],
+
+    "renderLayer" : "Projectile-10",
+
+    "skillCount" : 3,
+    "skills" : [ "ffs0_3boss_fireattack", "ffs0_3boss_specialattack",  "ffs0_3boss_punchattack"],
+
+    "phases" : [
+      {
+        "skills" : [ "ffs0_3boss_punchattack" ]
+      },
+      {
+        "trigger" : "healthPercentage",
+        "healthPercentage" : 0.8,
+        "enterPhase" : "ffs0_3boss_fireattack",
+        "skills" : [ "ffs0_3boss_punchattack",  "ffs0_3boss_fireattack"  ]
+      },
+      {
+        "trigger" : "healthPercentage",
+        "healthPercentage" : 0.5,
+        "enterPhase" : "ffs0_3boss_specialattack",
+        "skills" : [ "ffs0_3boss_fireattack", "ffs0_3boss_specialattack", "ffs0_3boss_punchattack"  ]
+      }
+    ],
+
+    "projectileSourcePosition" : [0, 0],
+    "projectileSourceOffset" : [0, 0],
+
+    "queryTargetDistance" : 500.0,
+    "trackTargetDistance" : 500.0,
+    "switchTargetDistance" : 50.0,
+
+    "knockoutTime" : 0.5,
+    "knockoutEffect" : "blink",
+    "deathParticles" : "deathPoof",
+
+    "alwaysAggressive" : true,
+
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 15,
+      "runSpeed" : 15,
+      "physicsEffectCategories" : ["boss"]
+    },
+    "damageParts" : {
+      "sword" : {
+        "damage" : 20,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "slash",
+        "knockback" : 20,
+        "statusEffects" : [ ]
+      }
+    },
+    "jumpTargetDistance" : 4,
+    "jumpTime" : [0.4, 0.7],
+
+    "metaBoundBox" : [-1, -2, 1, 2],
+
+    "blockedSensors" : [ [0.5, -0.5], [0.5, -0.5], [0.5, -0.5], [0.5, -0.5], [0.5, -0.5], [0.5, 0.5] ],
+    "fallSensors" : [ [2, -3.5], [2, -5.5], [2, -6.5], [4, -4.5], [4, -5.5], [4, -6.5] ],
+
+    "damageOnTouch" : false,
+    "touchDamage" : {
+      "poly" : [ [-0.5, -0.5], [-0.5, -0.5], [0.5, -0.5], [0.5, -0.5], [0.5, 0.5], [0.5, 0.5], [-0.5, 0.5], [-0.5, 0.5] ],
+      "damage" : 20,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "broadsword",
+      "statusEffects" : [ ]
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 300
+        },
+        "protection" : {
+          "baseValue" : 50
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "specialStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0,
+          "maxValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, 0]
+  }
+}

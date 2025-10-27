@@ -1,0 +1,37 @@
+{
+  "projectileName" : "ffs_cultist_mortar_dead_start",
+  "image" : "ffs_cultist_mortar_dead_start.png",
+  "animationLoops" : false,
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 0,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Object+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_mortar_dead"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_spawn_tanker",
+	  "angle" : 90,
+	  "offset": [ -1.5, 0 ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_spawn_assaulter",
+	  "angle" : 90,
+	  "offset": [ 1.5, 0 ]
+    }
+  ]
+}

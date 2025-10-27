@@ -1,0 +1,27 @@
+{
+  "projectileName" : "ffs_carrier_damaged_cannon",
+  "image" : "ffs_carrier_damaged_cannon.png",
+  "physics" : "grenade",
+  "animationLoops" : false,
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "renderLayer" : "FrontParticle-1",
+  "piercing" : true,
+  "bounces" : 0,
+  "speed" : -10,
+  "timeToLive" : 0,
+  "damageKindImage" : "icon.png",
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "emitters" : [ "fireflames", "firesparks" ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_carrier_damaged_cannon2",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "directional" : "true"
+    }
+  ]
+}

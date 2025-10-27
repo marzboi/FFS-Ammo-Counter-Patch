@@ -1,0 +1,29 @@
+{
+  "kind" : "ffs_bigfireflames",
+  "definition" : {
+    "duration" : 1,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    },
+    "particles" : [
+      [ "ffs_bigburningdust", "ffs_bigcampfireflames" ]
+    ],
+    "sounds" : [
+      [ ]
+    ],
+    "stop" : {
+      "particles" : [
+        [ "ffs_bigburningdust", "ffs_bigburningdust" ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    }
+  }
+}

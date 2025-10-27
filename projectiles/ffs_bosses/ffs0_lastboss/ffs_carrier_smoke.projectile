@@ -1,0 +1,14 @@
+{
+  "projectileName" : "ffs_carrier_smoke",
+  "image" : "ffs_carrier_smoke.png",
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 20,
+  "bounces" : -1,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "FrontParticle+10",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "emitters" : [ "ffs_bigfireflames", "ffs_bigfiresparks", "ffs_bigsmoke" ]
+}

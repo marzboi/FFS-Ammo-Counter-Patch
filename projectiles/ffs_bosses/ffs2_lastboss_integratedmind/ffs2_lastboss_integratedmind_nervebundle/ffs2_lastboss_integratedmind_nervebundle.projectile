@@ -1,0 +1,19 @@
+{
+  "projectileName" : "ffs2_lastboss_integratedmind_nervebundle",
+  "image" : "ffs2_lastboss_integratedmind_nervebundle.png",
+  "animationCycle" : 3.0,
+  "frameNumber" : 30,
+  "speed" : 0,
+  "power" : 1.0,
+  "damagePoly" : [ [-40, 0], [-40, -40], [0, -40], [40, -40], [40, 0], [40, 40], [0, 40], [-40, 40] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "statusEffects" : [
+    "ffs_nervebundle"
+  ],
+  "damageType" : "ignoresdef",
+  "damageKind" : "default",
+  "renderLayer" : "Player-1",
+  "bounces" : -1
+}

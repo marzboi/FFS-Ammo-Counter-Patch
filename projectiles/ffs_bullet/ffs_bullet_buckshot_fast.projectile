@@ -1,0 +1,20 @@
+{
+  "projectileName" : "ffs_bullet_buckshot_fast",
+  "image" : "ffs_bullet_small.png",
+  "frameNumber" : 100,
+  "timeToLive" : 2.0,
+  "animationCycle" : 2.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head_small.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 100,
+  "physics" : "ffs_bullet_trajectory",
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "damageKind" : "default"
+}

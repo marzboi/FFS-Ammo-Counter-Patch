@@ -1,0 +1,75 @@
+{
+  "projectileName" : "ffs_cultist_truck_dead_start",
+  "image" : "ffs_cultist_truck_dead_start.png",
+  "animationLoops" : false,
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 0,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Object+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_bigexplosionknockback.config"
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/monster/ffs_vehicle_explosion.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_truck_dead"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_truck_dead_part_a3",
+	  "offset": [ -3.5, 0.5 ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_truck_dead_part_a",
+      "speed" : 20,
+	  "angle" : 90,
+      "fuzzAngle" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_truck_dead_part_a",
+	  "angle" : 90,
+      "fuzzAngle" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_truck_dead_part_a",
+	  "angle" : 90,
+      "fuzzAngle" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_truck_dead_part_a",
+	  "angle" : 90,
+      "fuzzAngle" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_truck_dead_part_a",
+	  "angle" : 90,
+      "fuzzAngle" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_truck_dead_part_a",
+	  "angle" : 90,
+      "fuzzAngle" : 45
+    }
+  ]
+}

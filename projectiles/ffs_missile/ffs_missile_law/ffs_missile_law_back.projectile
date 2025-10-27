@@ -1,0 +1,115 @@
+{
+  "projectileName" : "ffs_missile_law_back",
+  "image" : "ffs_invisible.png",
+  "frameNumber" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_spark_40mm",
+      "inheritDamageFactor" : 0,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 10,
+      "offset" : [0, 0],
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 12.5,
+      "offset" : [0, 1],
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 12.5,
+      "offset" : [0, -1],
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 15,
+      "offset" : [1, 0],
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 17.5,
+      "offset" : [-1, 0],
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_aftermath",
+      "inheritDamageFactor" : 0.01,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_aftermath",
+      "inheritDamageFactor" : 0.01,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_aftermath",
+      "inheritDamageFactor" : 0.01,
+	  "fuzzAngle" : 10,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_aftermath",
+      "inheritDamageFactor" : 0.01,
+	  "fuzzAngle" : 10,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_aftermath",
+      "inheritDamageFactor" : 0.01,
+	  "fuzzAngle" : 20,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_aftermath",
+      "inheritDamageFactor" : 0.01,
+	  "fuzzAngle" : 20,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_aftermath",
+      "inheritDamageFactor" : 0.01,
+	  "fuzzAngle" : 30,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_aftermath",
+      "inheritDamageFactor" : 0.01,
+	  "fuzzAngle" : 30,
+      "directional" : "true"
+    }
+  ],
+  "flippable" : true,
+  "renderLayer" : "Player-1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "piercing" : true,
+  "timeToLive" : 0.1,
+  "fullbright" : true,
+  "speed" : -70
+}

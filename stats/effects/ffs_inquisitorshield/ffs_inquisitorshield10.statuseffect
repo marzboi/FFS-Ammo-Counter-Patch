@@ -1,0 +1,13 @@
+{
+  "name" : "ffs_inquisitorshield10",
+  "effectConfig" : {
+  },
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "ffs_inquisitorshield10.lua"
+  ],
+  "scriptDelta" : 1,
+
+  "animationConfig" : "ffs_weaponguard.animation"
+}

@@ -1,0 +1,27 @@
+{
+  "projectileName" : "ffs_medic_syringe",
+  "image" : "ffs_medic_syringe.png",
+  "animationCycle" : 1,
+  "physics" : "ffs_grenade",
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "speed" : 180,
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "timeToLive" : 10,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arrowexplosion/arrowexplosion.config"
+    }
+  ],
+  "statusEffects" : [
+    "ffs_heal_stimpak_1"
+  ],
+  "power" : 0,
+  "renderLayer" : "Player+1",
+  "damageKind" : "default",
+  "damageTeam" : { "type" : "indiscriminate" },
+  "fullbright" : true
+}
+
+

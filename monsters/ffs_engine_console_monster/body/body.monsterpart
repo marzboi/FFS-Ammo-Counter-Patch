@@ -1,0 +1,14 @@
+{
+  "name" : "body",
+  "category" : "ffs_engine_console_monster",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  },
+
+  "parameters" : { 
+    "meleeProjectile" : "meleelash",
+    "projectileSourcePosition" : [1, -1]
+  }
+}

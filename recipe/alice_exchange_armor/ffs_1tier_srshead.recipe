@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_1tier_srshead", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 48
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

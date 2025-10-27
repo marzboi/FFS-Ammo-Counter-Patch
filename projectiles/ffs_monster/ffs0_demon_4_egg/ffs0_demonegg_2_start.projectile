@@ -1,0 +1,69 @@
+{
+  "projectileName" : "ffs0_demonegg_2_start",
+  "physics" : "grenade",
+  "bounces" : 1,
+  "damageKindImage" : "icon.png",
+  "image" : "ffs0_demon_4_egg_start.png",
+  "animationCycle" : 0.4,
+  "piercing" : true,
+  "timeToLive" : 0,
+  "frameNumber" : 4,
+  "renderLayer" : "Player+1",
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/melee/axe_kill_organic1.ogg" ]
+    },
+    {
+      "action" : "spawnmonster",
+      "type" : "ffs0_demon_2",
+	  "level":1,
+	  "offset": [ 0, 0.5 ],
+	  "arguments":{}
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_2_dead_leg",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_2_dead_leg",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_2_dead_leg",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_2_dead_leg",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_2_dead_leg",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    }
+  ],
+  "power" : 20,
+  "speed" : 40,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

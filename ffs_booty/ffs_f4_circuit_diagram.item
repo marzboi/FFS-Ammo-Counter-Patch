@@ -1,0 +1,8 @@
+{
+  "itemName" : "ffs_f4_circuit_diagram",
+  "rarity" : "legendary",
+  "category" : "This will be useful.. Really?",
+  "tooltipKind" : "ffs_base_big",
+  "inventoryIcon" : "ffs_f4_circuit_diagram.png",
+  "shortdescription" : "^#bb00ff;Circuit Diagram..?"
+}

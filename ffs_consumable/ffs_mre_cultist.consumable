@@ -1,0 +1,19 @@
+{
+  "itemName" : "ffs_mre_cultist",
+  "rarity" : "Common",
+  "price" : 4,
+  "category" : "food",
+  "inventoryIcon" : "ffs_mre_cultist.png",
+  "description" : "Cultist's MRE.
+Worst tasty i ever ate. But still, it's filling and will keep for a long time.",
+  "shortdescription" : "Cultist's MRE",
+  "foodValue" : 5,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1000,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 20,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

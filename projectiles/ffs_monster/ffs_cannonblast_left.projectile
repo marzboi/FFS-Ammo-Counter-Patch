@@ -1,0 +1,29 @@
+{
+  "projectileName" : "ffs_cannonblast_left",
+  "image" : "icon.png",
+  "lightColor" : [255, 200, 100],
+  "pointLight" : true,
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0.1,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_cannonblast_explosion",
+      "delaySteps" : 5,
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "delaySteps" : 35,
+      "inheritDamageFactor" : 0
+    }
+  ],
+  "power" : 1,
+  "speed" : 20,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

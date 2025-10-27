@@ -1,0 +1,16 @@
+{
+  "name" : "ffs_airborne_grav",
+  "effectConfig" : {
+    "gravityModifier" : 0.05
+  },
+  "defaultDuration" : 30,
+
+  "scripts" : [
+    "ffs_airborne_grav.lua"
+  ],
+
+  "animationConfig" : "ffs_airborne_grav.animation",
+
+  "label" : "Light",
+  "icon" : "/interface/statuses/lowgrav.png"
+}

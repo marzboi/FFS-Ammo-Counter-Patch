@@ -1,0 +1,24 @@
+{
+  "projectileName" : "ffs2_lastboss_door_bullet",
+  "physics" : "stickybullet",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "pointLight" : true,
+  "lightColor" : [50, 180, 50],
+  "image" : "ffs2_lastboss_door_bullet.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 3,
+  "frameNumber" : 4,
+  "renderLayer" : "Player+1",
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bosses/ffs2_lastboss_door/ffs2_lastboss_door_knockback.config"
+    }
+  ],
+  "power" : 50,
+  "speed" : 30,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

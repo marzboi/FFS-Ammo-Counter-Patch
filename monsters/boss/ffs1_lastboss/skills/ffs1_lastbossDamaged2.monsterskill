@@ -1,0 +1,32 @@
+{
+  "name" : "ffs1_lastbossDamaged2",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/ffs1_lastboss/skills/ffs1_lastbossDamaged2.lua" ],
+
+    "ffs1_lastbossDamaged2" : {
+      "skillTime": 2,
+      "bobTime" : 0,
+      "bobHeight" : 0,
+
+      "projectileOffset" : [0, 0],
+      "fireInterval" : 2,
+      "projectile" : {
+        "type" : "ffs1_lastboss_damaged_2",
+        "config" : {
+          "power" : 0,
+          "periodicActions" : [
+            {
+              "time" : 0,
+              "repeat" : false,
+              "action" : "sound",
+              "options" : [ "/sfx/monster/ffs1_lastboss_scream.ogg" ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "type" : "ffs0_lastboss",
+  "shortdescription" : "Captain Pirate's Carrier",
+
+  "categories" : [ "ffs0_lastboss" ],
+  "parts" : [ "body", "cannon_1", "cannon_2", "cannon_sub_1", "cannon_sub_2", "aagun_1", "aagun_2", "aagun_3", "aagun_4", "fullbright" ],
+
+  "animation" : "ffs0_lastboss.animation",
+  "reversed" : false,
+
+  "dropPools" : [ "ffs0_lastboss" ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/boss/bossMonster.lua",
+      "/monsters/simpleRangedAttack.lua",
+      "/scripts/stateMachine.lua",
+      "/scripts/util.lua",
+      "/scripts/vec2.lua",
+
+      "/monsters/boss/ffs0_lastboss/idleState.lua",
+      "/monsters/boss/ffs0_lastboss/dieState.lua"
+    ],
+
+    "skills" : ["ffs0_lastbossC1Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC1Dead", "ffs0_lastbossC2Dead"],
+    "skillCount" : 10,
+
+    "phases" : [
+      {
+        "skills" : ["ffs0_lastbossC1Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack"]
+      },
+      {
+        "enterPhase" : "ffs0_lastbossC1Dead",
+        "trigger" : "healthPercentage",
+        "healthPercentage" : 0.7,
+        "skills" : ["ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack", "ffs0_lastbossC2Attack", "ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack"]
+      },
+      {
+        "enterPhase" : "ffs0_lastbossC2Dead",
+        "trigger" : "healthPercentage",
+        "healthPercentage" : 0.4,
+        "skills" : ["ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack","ffs0_lastbosssub_1Attack", "ffs0_lastbosssub_2Attack", "ffs0_lastbossAA1Attack", "ffs0_lastbossAA2Attack", "ffs0_lastbossAA3Attack", "ffs0_lastbossAA4Attack"]
+      }
+    ],
+
+    "universeFlagOnDeath" : "",
+
+    "queryTargetDistance" : 50.0,
+    "switchTargetDistance" : 10.0,
+    "keepTargetInSight" : false,
+
+    "cruiseDistance" : 0,
+
+    "metaBoundBox" : [-50.0, -10.0, 50.0, 10.0],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "gravityEnabled" : false,
+      "collisionPoly" : [ [-50.0, -10.0], [50.0, -10.0], [50.0, 10.0], [-50.0, 10.0] ],
+
+      "mass" : 4.0,
+      "flySpeed" : 0.0001,
+      "airForce" : 200.0,
+      "physicsEffectCategories" : ["boss"]
+    },
+
+    "knockoutTime" : 0,
+    "knockoutEffect" : "",
+    "deathParticles" : "",
+
+    "touchDamage" : {
+      "poly" : [ [-500.0, -10.0], [500.0, -10.0], [500.0, 100.0], [-500.0, 100.0] ],
+      "damage" : 1000000,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "hammer",
+      "statusEffects" : [ ]
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 2500
+        },
+        "protection" : {
+          "baseValue" : 99999.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "lavaImmunity" : {
+          "baseValue" : 1.0
+        },
+        "ffs_bleedingImmunity" : {
+          "baseValue" : 1.0
+        },
+        "ffs_thickerflameImmunity" : {
+          "baseValue" : 1.0
+        },
+        "specialStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "ffs_criticalhitImmunity" : {
+          "baseValue" : 1.0
+        },
+        "ffs_headshotImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0,
+          "maxValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+
+    "beamSourceOffset" : [0, -5.5],
+    "targetYOffsetRange" : [18.0, 22.0],
+
+    "attackTime" : 5.0,
+    "fireInterval" : 0.6,
+    "cooldownTime" : 0.25
+  }
+}

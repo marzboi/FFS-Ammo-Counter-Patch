@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_us_dollar", 
+	"count" : 1000
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_beretta92_1",
+	"count" : 1
+	},
+	"groups" : [ "ffs_pst",  "ffs_papachino" ]
+}

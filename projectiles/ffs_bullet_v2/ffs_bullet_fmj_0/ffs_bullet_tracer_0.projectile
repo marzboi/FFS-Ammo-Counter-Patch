@@ -1,0 +1,20 @@
+{
+  "projectileName" : "ffs_bullet_tracer_0",
+  "image" : "ffs_bullet_tracer.png",
+  "frameNumber" : 100,
+  "timeToLive" : 2.0,
+  "animationCycle" : 2.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet_small.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 75,
+  "physics" : "ffs_bullet_trajectory",
+  "knockback" : 10,
+  "damageKind" : "default",
+  "fullbright" : true
+}

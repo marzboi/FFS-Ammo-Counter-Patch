@@ -1,0 +1,34 @@
+{
+  "projectileName" : "ffs_lootbox_prisoner_open_start",
+  "image" : "ffs_lootbox_prisoner_open_start.png",
+  "animationLoops" : false,
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 0,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Object+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/throw/ffs_smoke.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_healingstatusprojectile",
+      "inheritDamageFactor" : 1
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_lootbox_prisoner_open"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "projectileName" : "ffs_bullet_fmj_short_underwater",
+  "image" : "ffs_bullet_small.png",
+  "frameNumber" : 100,
+  "timeToLive" : 2.0,
+  "animationCycle" : 2.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head_small.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 110,
+  "physics" : "ffs_bullet_trajectory_underwater",
+  "damageKind" : "default"
+}

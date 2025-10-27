@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "ffs2_6boss",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name" : "ffs_walk100",
+  "effectConfig" : {},
+  "defaultDuration" : 1.5,
+
+  "scripts" : [
+    "ffs_walk100.lua"
+  ],
+
+  "label" : "^red;Changing Difficulty^white; : You can't run.",
+  "icon" : "/interface/statuses/ffs_hard.png"
+}

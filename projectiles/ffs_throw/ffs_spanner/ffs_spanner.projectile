@@ -1,0 +1,28 @@
+{
+  "projectileName" : "ffs_spanner",
+  "image" : "ffs_spanner.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 4,
+  "pointLight" : false,
+  "speed" : 50,
+  "damagePoly" : [ [-3, 0], [-2, -2], [0, -3], [2, -2], [3, 0], [2, 2], [0, 3], [-2, 2] ],
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/stat/ffs_penetration_3.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_spanner_hit",
+      "inheritDamageFactor" : 0,
+	  "fuzzAngle" : 30,
+      "angle" : 90
+    }
+  ],
+  "power" : 5.0,
+  "damageType" : "ignoresdef",
+  "damageKind" : "default",
+  "fullbright" : true
+}
+
+

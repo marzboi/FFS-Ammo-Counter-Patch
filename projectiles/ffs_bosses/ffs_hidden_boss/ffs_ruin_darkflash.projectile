@@ -1,0 +1,26 @@
+{
+  "projectileName" : "ffs_ruin_darkflash",
+  "image" : "ffs_ruin_darkflash.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "speed" : 0,
+  "power" : 1.0,
+  "timeToLive" : 10,
+  "damagePoly" : [ [-500, 0], [-500, -250], [0, -250], [500, -250], [500, 250], [500, 250], [500, 250], [-500, 250] ],
+  "animationLoops" : true,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "default",
+  "damageType" : "ignoresdef",
+  "fullbright" : true,
+  "renderLayer" : "ForegroundOverlay+100",
+  "bounces" : -1,
+  "actionOnHit" : [
+    {
+      "action" : "sound",
+      "options" : [ 
+	  "/sfx/melee/lash_kill_organic.ogg","/sfx/melee/spear_kill_organic2.ogg","/sfx/melee/fist_kill_organic.ogg"
+	  ]
+    }
+  ]
+}

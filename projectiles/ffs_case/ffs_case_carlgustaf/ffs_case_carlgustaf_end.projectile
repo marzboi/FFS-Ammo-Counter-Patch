@@ -1,0 +1,14 @@
+{
+  "projectileName" : "ffs_case_carlgustaf_end",
+  "image" : "ffs_case_carlgustaf_lie.png",
+  "frameNumber" : 1,
+  "renderLayer" : "Player+1",
+  "physics" : "ffs_grenade",
+  "piercing" : true,
+  "bounces" : -1,
+  "speed" : 0,
+  "timeToLive" : 30,
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

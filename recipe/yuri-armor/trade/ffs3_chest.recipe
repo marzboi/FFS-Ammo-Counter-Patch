@@ -1,0 +1,18 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_us_dollar", 
+	"count" : 3200
+	},
+    { 
+	"item" : "titaniumbar", 
+	"count" : 5
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_3tier_fbichest",
+	"count" : 1
+	},
+	"groups" : [ "ffs_trade",  "ffs_yuri" ]
+}

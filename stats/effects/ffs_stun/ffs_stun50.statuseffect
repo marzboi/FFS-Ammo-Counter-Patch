@@ -1,0 +1,12 @@
+{
+  "name" : "ffs_stun50",
+  "effectConfig" : {},
+  "defaultDuration" : 5.0,
+
+  "scripts" : [
+    "ffs_stun.lua"
+  ],
+
+  "label" : "STUN 5s",
+  "icon" : "/interface/statuses/oldpoison.png"
+}

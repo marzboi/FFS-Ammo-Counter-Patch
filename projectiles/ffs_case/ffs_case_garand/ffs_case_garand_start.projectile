@@ -1,0 +1,21 @@
+{
+  "projectileName" : "ffs_case_garand_start",
+  "image" : "ffs_case_garand.png",
+  "frameNumber" : 1,
+  "renderLayer" : "Player+1",
+  "piercing" : true,
+  "bounces" : 0,
+  "speed" : 0,
+  "timeToLive" : 0,
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_garand",
+      "angle" : 90,
+      "fuzzAngle" : 15
+    }
+  ]
+}

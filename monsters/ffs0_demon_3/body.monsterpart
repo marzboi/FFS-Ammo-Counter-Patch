@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "ffs0_demon_3",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "ffs0_demon_3.png"
+  }
+}

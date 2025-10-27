@@ -1,0 +1,37 @@
+{
+  "objectName" : "ffs_whitecrow_fg",
+  "category" : "crafting",
+  "rarity" : "legendary",
+  "description" : "asdfasdf",
+  "shortdescription" : "ffs_whitecrow_fg",
+  "race" : "generic",
+  "printable" : false,
+  "price" : 0,
+  
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+  "novakidDescription" : "...",
+  
+  "inventoryIcon" : "ffs_whitecrow_fg.png",
+  "orientations" : [
+	{
+      "imageLayers" : [ { "image" : "ffs_whitecrow_fg.png:<color>.<frame>", "fullbright" : true }, { "image" : "ffs_whitecrow_fglit.png:<color>.<frame>" } ],
+	  
+	  "imagePosition" : [0, 0],
+	  "frames" : 1,
+	  "animationCycle" : 1.0,
+	  "renderLayer" : "BackgroundOverlay-1",
+      "metaBoundBox" : [-100, -600, 600, 600],
+
+      "anchors" : [  ]
+	}
+  ],
+    
+
+  "soundEffect" : "/sfx/ffs_dropship_jet.ogg",
+  "soundEffectRangeMultiplier" : 1.0
+}

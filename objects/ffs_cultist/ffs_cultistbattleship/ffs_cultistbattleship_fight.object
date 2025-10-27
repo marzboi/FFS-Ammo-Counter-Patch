@@ -1,0 +1,35 @@
+{
+  "objectName" : "ffs_cultistbattleship_fight",
+  "category" : "crafting",
+  "rarity" : "legendary",
+  "description" : "asdfasdf",
+  "shortdescription" : "ffs_cultistbattleship_fight",
+  "race" : "generic",
+  "printable" : false,
+  "price" : 0,
+  
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+  "novakidDescription" : "...",
+  
+  "inventoryIcon" : "ffs_cultistbattleship_fight.png",
+  "orientations" : [
+	{
+      "imageLayers" : [ { "image" : "ffs_cultistbattleship_fight.png:<color>.<frame>", "fullbright" : true }, { "image" : "ffs_cultistbattleship_fightlit.png:<color>.<frame>" } ],
+	  
+      "metaBoundBox" : [-1600, -800, 1600, 800],
+	  "imagePosition" : [0, 0],
+	  "frames" : 1,
+	  "animationCycle" : 1.0,
+	  "renderLayer" : "BackgroundOverlay-1"
+	}
+  ],
+    
+
+  "soundEffect" : "/sfx/ffs_dropship_jet.ogg",
+  "soundEffectRangeMultiplier" : 1.0
+}

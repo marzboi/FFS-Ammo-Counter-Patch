@@ -1,0 +1,11 @@
+{
+  "name" : "ffs1_0boss_body",
+  "category" : "ffs1_0boss",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "ffs1_0boss_body.png"
+  },
+
+  "parameters" : { }
+}

@@ -1,0 +1,126 @@
+{
+  "projectileName" : "ffs_carrier_damaged",
+  "image" : "icon.png",
+  "animationLoops" : false,
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 0,
+  "timeToLive" : 0,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Object+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_bigexplosionknockback.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_pirates_carrier_reinforcement",
+      "offset" : [60, 3],
+	  "angle" : -90,
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_pirates_carrier_reinforcement",
+      "offset" : [65, 3],
+	  "angle" : -90,
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_carrier_smoke",
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_carrier_smoke",
+      "offset" : [20, -12],
+      "delaySteps" : 10,
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_carrier_smoke",
+      "offset" : [40, -15],
+      "delaySteps" : 10,
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cannonblast_explosion",
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_pirates_aircraft_dead_pilot_start",
+      "delaySteps" : 5,
+      "fuzzAngle" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_pirates_aircraft_dead_pilot_start",
+      "delaySteps" : 10,
+      "fuzzAngle" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_pirates_aircraft_dead_pilot_start",
+      "delaySteps" : 15,
+      "fuzzAngle" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_pirates_aircraft_dead_pilot_start",
+      "delaySteps" : 20,
+      "fuzzAngle" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_carrier_damaged_cannon",
+      "speed" : 20,
+      "delaySteps" : 20,
+      "fuzzAngle" : 30,
+	  "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_carrier_damaged_engine_start",
+      "offset" : [20, -12]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_carrier_damaged_engine_start",
+      "offset" : [40, -15]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_pirates_aircraft_dead_part_c",
+      "speed" : 20,
+      "delaySteps" : 0,
+      "fuzzAngle" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_pirates_aircraft_dead_part_c",
+      "speed" : 20,
+      "delaySteps" : 5,
+      "fuzzAngle" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_pirates_aircraft_dead_part_c",
+      "speed" : 20,
+      "delaySteps" : 10,
+      "fuzzAngle" : 360
+    }
+  ]
+}

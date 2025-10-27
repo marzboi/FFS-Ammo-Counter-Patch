@@ -1,0 +1,7 @@
+{
+  "itemName" : "ffs_ammunition_1",
+  "rarity" : "common",
+  "inventoryIcon" : "ffs_ammunition_1.png",
+  "description" : "A tungsten ammunition.",
+  "shortdescription" : "Tungsten Ammo"
+}

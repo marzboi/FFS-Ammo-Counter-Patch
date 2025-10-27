@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "money", 
+	"count" : 5000000
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_dropship_1",
+	"count" : 1
+	},
+	"groups" : [ "plain",  "all" ]
+}

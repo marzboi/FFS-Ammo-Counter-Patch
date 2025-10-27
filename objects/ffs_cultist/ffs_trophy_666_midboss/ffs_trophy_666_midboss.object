@@ -1,0 +1,60 @@
+{
+  "objectName" : "ffs_trophy_666_midboss",
+  "colonyTags" : ["storage","cooking"],
+  "rarity" : "Legendary",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "Ruin's puppet Trophy",
+  "price" : 2500,
+  "printable" : false,
+  "description" : "A trophy for hunting Ruin's puppet.
+You can use this as refridge or lamp.",
+  "shortdescription" : "^#bb00ff;Ruin's puppet Trophy",
+  "race" : "generic",
+  "health" : 1.5,
+  
+  "lightColor" : [200, 200, 200],
+
+  "apexDescription" : "Hmm. Not bad.",
+  "avianDescription" : "Hmm. Not bad.",
+  "floranDescription" : "You are the best hunter that i've met.",
+  "glitchDescription" : "Hmm. Not bad.",
+  "humanDescription" : "Hmm. Not bad.",
+  "hylotlDescription" : "Hmm. Not bad.",
+  "novakidDescription" : "Hmm. Not bad.",
+
+  "inventoryIcon" : "ffs_trophy_666_midbossicon.png",
+  "orientations" : [
+    {
+      "image" : "ffs_trophy_666_midbossleft.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+
+      "spaceScan" : 0.01,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+	  "fullbright" : true
+    },
+    {
+      "image" : "ffs_trophy_666_midbossright.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.01,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+	  "fullbright" : true
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/fridge_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/fridge_close.ogg" ],
+  "slotCount" : 12,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "itemAgeMultiplier" : 0.0
+}

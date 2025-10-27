@@ -1,0 +1,48 @@
+{
+  "frameGrid" : {
+    "size" : [80, 80],
+    "dimensions" : [40, 6],
+
+    "names" : [
+      [ "phase1.visible.1", "phase1.visible.2", "phase1.visible.3", "phase1.visible.4", "phase1.visible.5", "phase1.visible.6", "phase1.visible.7", "phase1.visible.8", "phase1.visible.9", "phase1.visible.10", "phase1.1Attack.1", "phase1.1Attack.2", "phase1.1Attack.3", "phase1.1Attack.4", "phase1.1Attack.5", "phase1.1Attack.6", "phase1.1Attack.7", "phase1.1Attack.8", "phase1.1Attack.9", "phase1.1Attack.10", "phase1.1Attack.11", "phase1.1Attack.12", "phase1.1Attack.13", "phase1.1Attack.14", "phase1.1Attack.15", "phase1.1Attack.16", "phase1.1Attack.17", "phase1.1Attack.18", "phase1.1Attack.19", "phase1.1Attack.20", "phase1.1Attack.21", "phase1.1Attack.22", "phase1.1Attack.23", "phase1.1Attack.24", "phase1.1Attack.25", "phase1.1Attack.26", "phase1.1Attack.27", "phase1.1Attack.28", "phase1.1Attack.29", "phase1.1Attack.30" ],
+      [ "phase2.visible.1", "phase2.visible.2", "phase2.visible.3", "phase2.visible.4", "phase2.visible.5", "phase2.visible.6", "phase2.visible.7", "phase2.visible.8", "phase2.visible.9", "phase2.visible.10", "phase2.1Attack.1", "phase2.1Attack.2", "phase2.1Attack.3", "phase2.1Attack.4", "phase2.1Attack.5", "phase2.1Attack.6", "phase2.1Attack.7", "phase2.1Attack.8", "phase2.1Attack.9", "phase2.1Attack.10", "phase2.1Attack.11", "phase2.1Attack.12", "phase2.1Attack.13", "phase2.1Attack.14", "phase2.1Attack.15", "phase2.1Attack.16", "phase2.1Attack.17", "phase2.1Attack.18", "phase2.1Attack.19", "phase2.1Attack.20", "phase2.1Attack.21", "phase2.1Attack.22", "phase2.1Attack.23", "phase2.1Attack.24", "phase2.1Attack.25", "phase2.1Attack.26", "phase2.1Attack.27", "phase2.1Attack.28", "phase2.1Attack.29", "phase2.1Attack.30" ],
+      [ "phase3.visible.1", "phase3.visible.2", "phase3.visible.3", "phase3.visible.4", "phase3.visible.5", "phase3.visible.6", "phase3.visible.7", "phase3.visible.8", "phase3.visible.9", "phase3.visible.10", "phase3.1Attack.1", "phase3.1Attack.2", "phase3.1Attack.3", "phase3.1Attack.4", "phase3.1Attack.5", "phase3.1Attack.6", "phase3.1Attack.7", "phase3.1Attack.8", "phase3.1Attack.9", "phase3.1Attack.10", "phase3.1Attack.11", "phase3.1Attack.12", "phase3.1Attack.13", "phase3.1Attack.14", "phase3.1Attack.15", "phase3.1Attack.16", "phase3.1Attack.17", "phase3.1Attack.18", "phase3.1Attack.19", "phase3.1Attack.20", "phase3.1Attack.21", "phase3.1Attack.22", "phase3.1Attack.23", "phase3.1Attack.24", "phase3.1Attack.25", "phase3.1Attack.26", "phase3.1Attack.27", "phase3.1Attack.28", "phase3.1Attack.29", "phase3.1Attack.30" ],
+      [ "phase1.2Attack.1", "phase1.2Attack.2", "phase1.2Attack.3", "phase1.2Attack.4", "phase1.2Attack.5", "phase1.2Attack.6", "phase1.2Attack.7", "phase1.2Attack.8", "phase1.2Attack.9", "phase1.2Attack.10", "phase1.2Attack.11", "phase1.2Attack.12", "phase1.2Attack.13", "phase1.2Attack.14", "phase1.2Attack.15", "phase1.2Attack.16", "phase1.2Attack.17", "phase1.2Attack.18", "phase1.2Attack.19", "phase1.2Attack.20", "phase1.2Attack.21", "phase1.2Attack.22", "phase1.2Attack.23", "phase1.2Attack.24", "phase1.2Attack.25", "phase1.2Attack.26", "phase1.2Attack.27", "phase1.2Attack.28", "phase1.2Attack.29", "phase1.2Attack.30", "phase1.2Attack.31", "phase1.2Attack.32", "phase1.2Attack.33", "phase1.2Attack.34", "phase1.2Attack.35", "phase1.2Attack.36", "phase1.2Attack.37", "phase1.2Attack.38", "phase1.2Attack.39", "phase1.2Attack.40" ],
+      [ "phase2.2Attack.1", "phase2.2Attack.2", "phase2.2Attack.3", "phase2.2Attack.4", "phase2.2Attack.5", "phase2.2Attack.6", "phase2.2Attack.7", "phase2.2Attack.8", "phase2.2Attack.9", "phase2.2Attack.10", "phase2.2Attack.11", "phase2.2Attack.12", "phase2.2Attack.13", "phase2.2Attack.14", "phase2.2Attack.15", "phase2.2Attack.16", "phase2.2Attack.17", "phase2.2Attack.18", "phase2.2Attack.19", "phase2.2Attack.20", "phase2.2Attack.21", "phase2.2Attack.22", "phase2.2Attack.23", "phase2.2Attack.24", "phase2.2Attack.25", "phase2.2Attack.26", "phase2.2Attack.27", "phase2.2Attack.28", "phase2.2Attack.29", "phase2.2Attack.30", "phase2.2Attack.31", "phase2.2Attack.32", "phase2.2Attack.33", "phase2.2Attack.34", "phase2.2Attack.35", "phase2.2Attack.36", "phase2.2Attack.37", "phase2.2Attack.38", "phase2.2Attack.39", "phase2.2Attack.40" ],
+      [ "phase3.2Attack.1", "phase3.2Attack.2", "phase3.2Attack.3", "phase3.2Attack.4", "phase3.2Attack.5", "phase3.2Attack.6", "phase3.2Attack.7", "phase3.2Attack.8", "phase3.2Attack.9", "phase3.2Attack.10", "phase3.2Attack.11", "phase3.2Attack.12", "phase3.2Attack.13", "phase3.2Attack.14", "phase3.2Attack.15", "phase3.2Attack.16", "phase3.2Attack.17", "phase3.2Attack.18", "phase3.2Attack.19", "phase3.2Attack.20", "phase3.2Attack.21", "phase3.2Attack.22", "phase3.2Attack.23", "phase3.2Attack.24", "phase3.2Attack.25", "phase3.2Attack.26", "phase3.2Attack.27", "phase3.2Attack.28", "phase3.2Attack.29", "phase3.2Attack.30", "phase3.2Attack.31", "phase3.2Attack.32", "phase3.2Attack.33", "phase3.2Attack.34", "phase3.2Attack.35", "phase3.2Attack.36", "phase3.2Attack.37", "phase3.2Attack.38", "phase3.2Attack.39", "phase3.2Attack.40" ]
+    ]
+  },
+
+  "aliases" : {
+    "phase1.visible.11" : "phase1.visible.1",
+    "phase1.visible.12" : "phase1.visible.2",
+    "phase1.visible.13" : "phase1.visible.3",
+    "phase1.visible.14" : "phase1.visible.4",
+    "phase1.visible.15" : "phase1.visible.5",
+    "phase1.visible.16" : "phase1.visible.6",
+    "phase1.visible.17" : "phase1.visible.7",
+    "phase1.visible.18" : "phase1.visible.8",
+    "phase1.visible.19" : "phase1.visible.9",
+    "phase1.visible.20" : "phase1.visible.10",
+    "phase2.visible.11" : "phase2.visible.1",
+    "phase2.visible.12" : "phase2.visible.2",
+    "phase2.visible.13" : "phase2.visible.3",
+    "phase2.visible.14" : "phase2.visible.4",
+    "phase2.visible.15" : "phase2.visible.5",
+    "phase2.visible.16" : "phase2.visible.6",
+    "phase2.visible.17" : "phase2.visible.7",
+    "phase2.visible.18" : "phase2.visible.8",
+    "phase2.visible.19" : "phase2.visible.9",
+    "phase2.visible.20" : "phase2.visible.10",
+    "phase3.visible.11" : "phase3.visible.1",
+    "phase3.visible.12" : "phase3.visible.2",
+    "phase3.visible.13" : "phase3.visible.3",
+    "phase3.visible.14" : "phase3.visible.4",
+    "phase3.visible.15" : "phase3.visible.5",
+    "phase3.visible.16" : "phase3.visible.6",
+    "phase3.visible.17" : "phase3.visible.7",
+    "phase3.visible.18" : "phase3.visible.8",
+    "phase3.visible.19" : "phase3.visible.9",
+    "phase3.visible.20" : "phase3.visible.10"
+  }
+}

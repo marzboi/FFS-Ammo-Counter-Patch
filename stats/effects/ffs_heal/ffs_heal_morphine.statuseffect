@@ -1,0 +1,18 @@
+{
+  "name" : "ffs_heal_morphine",
+  "blockingStat" : "healingStatusImmunity",
+  "effectConfig" : {
+    "healAmount" : 6000,
+    "emissionRate" : 5
+  },
+  "defaultDuration" : 600,
+
+  "scripts" : [
+    "ffs_heal_morphine.lua"
+  ],
+
+  "animationConfig" : "ffs_heal.animation",
+
+  "label" : "Morphine : This will reduce the pain.",
+  "icon" : "/interface/statuses/ffs_morphine.png"
+}

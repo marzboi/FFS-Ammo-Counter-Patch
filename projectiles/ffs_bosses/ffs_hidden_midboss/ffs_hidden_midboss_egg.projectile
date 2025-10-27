@@ -1,0 +1,98 @@
+{
+  "projectileName" : "ffs_hidden_midboss_egg",
+  "physics" : "grenade",
+  "bounces" : 1,
+  "damageKindImage" : "icon.png",
+  "image" : "ffs_hidden_midboss_egg.png",
+  "animationCycle" : 0.4,
+  "piercing" : true,
+  "timeToLive" : 5,
+  "frameNumber" : 4,
+  "renderLayer" : "Player+1",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_4_egg_start",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+      "delaySteps" : 40,
+	  "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_4_egg_start",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+      "delaySteps" : 30,
+	  "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_4_egg_start",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+      "delaySteps" : 20,
+	  "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_4_egg_start",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+      "delaySteps" : 10,
+	  "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_4_egg_start",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+      "delaySteps" : 0,
+	  "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_4_egg_start",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+      "delaySteps" : 0,
+	  "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_4_egg_start",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+      "delaySteps" : 10,
+	  "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_4_egg_start",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+      "delaySteps" : 20,
+	  "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_4_egg_start",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+      "delaySteps" : 30,
+	  "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_4_egg_start",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+      "delaySteps" : 40,
+	  "angle" : 90
+    }
+  ],
+  "power" : 20,
+  "speed" : 40,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

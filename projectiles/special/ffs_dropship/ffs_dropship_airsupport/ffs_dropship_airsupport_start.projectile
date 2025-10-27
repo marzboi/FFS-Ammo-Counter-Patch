@@ -1,0 +1,21 @@
+{
+  "projectileName" : "ffs_dropship_airsupport_start",
+  "image" : "ffs_dropship_airsupport_start.png",
+  "animationCycle" : 1.0,
+  "timeToLive" : 1.0,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_dropship_airsupport",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

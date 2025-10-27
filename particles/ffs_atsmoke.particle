@@ -1,0 +1,23 @@
+{
+  "kind" : "ffs_atsmoke",
+  "definition" : {
+    "type" : "animated",
+    "size" : 0.3,
+    "animation" : "/animations/smoke/smoke.animation",
+    "position" : [0, 0],
+    "initialVelocity" : [-20, 0],
+    "finalVelocity" : [-1, 0],
+    "approach" : [5, 5],
+    "destructionAction" : "shrink",
+    "destructionTime" : 15,
+    "fade" : 15,
+    "layer" : "back",
+    "timeToLive" : 10,
+    "variance" : {
+      "position" : [0, 0],
+      "initialVelocity" : [1, 1],
+      "rotation" : 360,
+      "angularVelocity" : 10
+    }
+  }
+}

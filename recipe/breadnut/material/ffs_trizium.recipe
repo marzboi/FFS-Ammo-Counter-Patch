@@ -1,0 +1,22 @@
+{
+	"input" : [
+    { 
+	"item" : "refinedaegisalt", 
+	"count" : 1
+	},
+    { 
+	"item" : "refinedferozium", 
+	"count" : 1
+	},
+    { 
+	"item" : "refinedviolium", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_trizium",
+	"count" : 1
+	},
+	"groups" : [ "ffs_material",  "ffs_breadnut" ]
+}

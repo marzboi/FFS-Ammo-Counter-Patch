@@ -1,0 +1,11 @@
+{
+  "name" : "ffs0_4boss_arm",
+  "category" : "ffs0_4boss",
+  "type" : "arm",
+
+  "frames" : {
+    "arm" : "ffs0_4boss_arm.png"
+  },
+
+  "parameters" : { }
+}

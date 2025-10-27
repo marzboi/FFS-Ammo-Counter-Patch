@@ -1,0 +1,28 @@
+{
+  "projectileName" : "ffs_aftermath",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 0.2,
+  "fuzzAngle" : 360,
+  "speed" : 10,
+  "image" : "ffs_aftermath.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 10,
+  "piercing" : true,
+  "damageKind" : "hidden",
+  "damageType" : "ignoresdef",
+  "damagePoly" : [ [-4, -4], [-4, 4], [4, 4], [4, -4]  ],
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_aftermath_fin",
+      "inheritDamageFactor" : 1,
+	  "angle" : 0
+    }
+  ],
+  "knockback" : 30,
+  "knockbackDirectional" : true,
+  "damageTeam" : { "type" : "indiscriminate" }
+}

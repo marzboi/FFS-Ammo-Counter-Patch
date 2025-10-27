@@ -1,0 +1,64 @@
+{
+  "itemName" : "ffs_6tier_nghead",
+  "price" : 3840,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "category" : "headarmour",
+  "description" : "This is a uniform of the Protectorate Native Guard
+It is the most luxurious item that can be purchased at a resonable price.",
+  "shortdescription" : "^#00c3ff;6Tier-N.G helmet",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "level" : 6,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.1
+    },
+    {
+      "levelFunction" : "standardArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.45
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 4.5
+    }
+  ],
+
+  "itemTags" : [ "ffs" ],
+
+  "colorOptions" : [
+    // OLIVE // Woodland
+    { "ffca8a" : "50654d", "e0975c" : "9c9177", "a85636" : "655949", "6f2919" : "313831" },
+    // BLACK // Black multicam
+    { "ffca8a" : "474840", "e0975c" : "1e1f19", "a85636" : "141414", "6f2919" : "070707" },
+    // GREY // urban
+    { "ffca8a" : "c0c5ce", "e0975c" : "a7adba", "a85636" : "65737e", "6f2919" : "343d46" },
+    // WHITE // Alpine
+    { "ffca8a" : "ebebeb", "e0975c" : "d6d6d6", "a85636" : "babdc2", "6f2919" : "9da0a5" },
+    // RED // urban red
+    { "ffca8a" : "ffffff", "e0975c" : "606060", "a85636" : "df221e", "6f2919" : "212121" },
+    // ORANGE // desert BDU
+    { "ffca8a" : "d2bfae", "e0975c" : "a4a593", "a85636" : "a37d70", "6f2919" : "6b453a" },
+    // YELLOW // desert cam
+    { "ffca8a" : "cccabc", "e0975c" : "c0baa9", "a85636" : "ba9b77", "6f2919" : "a77b4e" },
+    // GREEN // CADPAT
+    { "ffca8a" : "847b5b", "e0975c" : "525d3a", "a85636" : "819359", "6f2919" : "35392c" },
+    // BLUE // deep sea
+    { "ffca8a" : "9cc8e3", "e0975c" : "2263a5", "a85636" : "0e407b", "6f2919" : "143a53" },
+    // PURPLE // Navy
+    { "ffca8a" : "fcfdff", "e0975c" : "3d507a", "a85636" : "1b304f", "6f2919" : "141824" },
+    // PINK //desert pink
+    { "ffca8a" : "e2c5ce", "e0975c" : "e39993", "a85636" : "c06f7a", "6f2919" : "604459" },
+    // BROWN // arid
+    { "ffca8a" : "9fa090", "e0975c" : "7b6243", "a85636" : "8b8974", "6f2919" : "63432a" }
+  ]
+}

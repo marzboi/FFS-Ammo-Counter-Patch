@@ -1,0 +1,95 @@
+{
+  "objectName" : "ffs_boobytrap",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "booby trap",
+  "shortdescription" : "booby trap",
+  "race" : "avian",
+
+  "apexDescription" : "Noooo",
+  "avianDescription" : "Noooo",
+  "floranDescription" : "Noooo",
+  "glitchDescription" : "Noooo",
+  "humanDescription" : "Noooo",
+  "hylotlDescription" : "Noooo",
+  "novakidDescription" : "Noooo",
+
+  "category" : "trap",
+  "price" : 200,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "ffs_boobytrap.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      
+      "direction" : "left",
+      "flipImages" : true,
+      
+      "animationPosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "ffs_boobytrap.png",
+        "fg" : "ffs_boobytrap.png"
+      },
+
+      "projectileDirection" : [0, 1],
+      "projectilePosition" : [0, 0],
+
+      "spaceScan" : 0.1
+    },
+    {
+      "image" : "ffs_boobytrap.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+      
+      "animationPosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "ffs_boobytrap.png",
+        "fg" : "ffs_boobytrap.png"
+      },
+
+      "projectileDirection" : [0, 1],
+      "projectilePosition" : [0, 0],
+
+      "spaceScan" : 0.1
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/projectiletrap/projectiletrap.lua" ],
+  "scriptDelta" : 2,
+
+  "animation" : "/objects/wired/projectiletrap/projectiletrap.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "shoot" : [ ],
+      "on" : [ ],
+      "off" : [ ]
+    }
+  },
+
+  "inputNodes" : [ [0, 0] ],
+
+  "inactiveLightColor" : [0, 0, 0], // light color to emit when the object is 'off'
+  "activeLightColor" : [0, 0, 0], // light color to emit when the object is 'on'
+
+  "fireTime" : 9000.0, // rate of fire
+  "fireTimeVariance" : 0.0, // variation in rate of fire
+  "projectile" : "ffs_mine_small", // name of projectile (required)
+  "projectileConfig" : { // extra configuration overrides for projectile
+    "damageTeam" : { "type" : "indiscriminate" },
+    "power" : 100,
+    "speed" : 0,
+    "knockback" : 40,
+    "knockbackDirectional" : true,
+    "statusEffects" : [
+      "ffs_pinneddown"
+    ]
+  },
+  
+  "health" : 5,
+
+  "smashOnBreak" : true,
+  "smashSounds" : [ "/sfx/objects/rock_break1.ogg", "/sfx/objects/rock_break2.ogg", "/sfx/objects/rock_break3.ogg", "/sfx/objects/rock_break4.ogg", "/sfx/objects/rock_break5.ogg", "/sfx/objects/rock_crumble1.ogg", "/sfx/objects/rock_crumble2.ogg", "/sfx/objects/rock_crumble3.ogg", "/sfx/objects/rock_crumble4.ogg", "/sfx/objects/rock_crumble5.ogg" ],
+  "smashParticles" : [ { "count" : 10, "particle" : "potshard" } ]
+}

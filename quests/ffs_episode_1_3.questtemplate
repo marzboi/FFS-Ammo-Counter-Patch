@@ -1,0 +1,33 @@
+{
+  "id" : "ffs_episode_1_3",
+  "mainQuest" : true,
+  "title" : "^red;FFS ^green;EP.1 - Sub ^White;Breadnut's Atonement - 1",
+  "text" : "He want to make a special medicine against ruin's contamination.
+I have to give him ruin's tissue sample.",
+  "completionText" : "It seems to be more.",
+  "completionCinema" : "/cinematics/ffs_cinema/ffs_srs.cinematic",
+  "moneyRange" : [1, 1],
+  "rewards" : [
+    [ ["ffs_stimpak_1", 20] ]
+  ],
+  "canBeAbandoned" : false,
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "ffs_breadnut_sample1",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+    "followUp" : "ffs_episode_1_4",
+    "requireTurnIn" : true,
+    "turnInEntityUid" : "ffs_episode_1_3"
+  },
+  "prerequisites" : [ "ffs_episode_1_2" ]
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "head",
+  "category" : "ffs_cultist_aircraft",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "head.png"
+  }
+}

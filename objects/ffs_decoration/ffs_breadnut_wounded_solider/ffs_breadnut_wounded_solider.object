@@ -1,0 +1,40 @@
+{
+  "objectName" : "ffs_breadnut_wounded_solider",
+  "category" : "crafting",
+  "rarity" : "rare",
+  "description" : "What a smart chick.",
+  "shortdescription" : "Chiquito",
+  "race" : "generic",
+  
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/objects/ffs_breadnut_wounded_solider/ffs_breadnut_wounded_solider.config",
+    "filter" : [ "ffs_breadnut_wounded_solider" ]
+  },
+  "printable" : false,
+  "price" : 0,
+
+  "apexDescription" : "''(Sob) ..  That bastards shot my brother.''",
+  "avianDescription" : "''(Sob) ..  That bastards shot my brother.''",
+  "floranDescription" : "''(Sob) ..  That bastards shot my brother.''",
+  "glitchDescription" : "''(Sob) ..  That bastards shot my brother.''",
+  "humanDescription" : "''(Sob) ..  That bastards shot my brother.''",
+  "hylotlDescription" : "''(Sob) ..  That bastards shot my brother.''",
+
+  
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+	{
+      "imageLayers" : [ { "image" : "ffs_breadnut_wounded_solider.png:<color>.<frame>", "fullbright" : true }, { "image" : "ffs_breadnut_wounded_soliderlit.png:<color>.<frame>" } ],
+
+	  "imagePosition" : [0, 0],
+	  "frames" : 10,
+	  "animationCycle" : 2.0,
+
+	  "spaceScan" : 0.1
+	}
+  ],
+
+  "soundEffect" : "/sfx/ffs_breadnut_breathe.ogg",
+  "soundEffectRangeMultiplier" : 0.3
+}

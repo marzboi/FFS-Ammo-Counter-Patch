@@ -1,0 +1,22 @@
+{
+	"input" : [
+    { 
+	"item" : "solariumstar", 
+	"count" : 1
+	},
+    { 
+	"item" : "ffs_gunpowder", 
+	"count" : 5
+	},
+    { 
+	"item" : "solidfuel", 
+	"count" : 100
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_solariumpowder",
+	"count" : 1
+	},
+	"groups" : [ "ffs_material",  "ffs_breadnut" ]
+}

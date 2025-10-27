@@ -1,0 +1,32 @@
+[
+	{	"op":"add",
+		"path":"/ffs_permanent_fog",
+		"value": [
+			[1.0, "ffs_fog"]
+		]
+	},
+	{	"op":"add",
+		"path":"/ffs_permanent_drizzle",
+		"value": [
+			[1.0, "ffs_drizzle"]
+		]
+	},
+	{	"op":"add",
+		"path":"/ffs_permanent_rain",
+		"value": [
+			[1.0, "ffs_rain"]
+		]
+	},
+	{	"op":"add",
+		"path":"/ffs_permanent_storm",
+		"value": [
+			[1.0, "ffs_storm"]
+		]
+	},
+	{	"op":"add",
+		"path":"/ffs_permanent_windstorm",
+		"value": [
+			[1.0, "ffs_windstorm"]
+		]
+	}
+]

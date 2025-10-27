@@ -1,0 +1,22 @@
+{
+  "projectileName" : "ffs_molotovflame_mid",
+  "bounces" : -1,
+  "timeToLive" : 12.5,
+  "speed" : 10,
+  "physics" : "grenadenobounce",
+  "image" : "ffs_molotovflame_mid.png",
+  "animationCycle" : 1.0,
+  "lightColor" : [235, 126, 2],
+  "frameNumber" : 10,
+  "renderLayer" : "Player+2",
+  "piercing" : true,
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "damageKind" : "fire",
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "statusEffects" : [
+    "ffs_thickerflame",
+    "ffs_pinneddown"
+  ],
+  "hydrophobic" : true,
+  "damageTeam" : { "type" : "indiscriminate" }
+}

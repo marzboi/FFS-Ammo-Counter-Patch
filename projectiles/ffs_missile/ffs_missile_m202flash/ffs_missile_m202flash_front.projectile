@@ -1,0 +1,248 @@
+{
+  "projectileName" : "ffs_missile_m202flash_front",
+  "image" : "ffs_missile_m202flash.png",
+  "frameNumber" : 4,
+  "animationCycle" : 0.4,
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/throw/ffs_he_explosion.ogg" ]
+    },
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_grenadeexplosionknockback.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 330
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 300
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 240
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 210
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 150
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 120
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 60
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 330
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 300
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 240
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 210
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 150
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 120
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 60
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.01,
+      "fuzzAngle" : 15,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 9,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 3,
+      "angle" : 120
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 5,
+      "angle" : 60
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 7,
+      "angle" : 120
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 9,
+      "angle" : 60
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "tinyrocketsmoke" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 100.0,
+  "renderLayer" : "Player-1",
+  "physics" : "ffs_missiledown2",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "fullbright" : true
+}

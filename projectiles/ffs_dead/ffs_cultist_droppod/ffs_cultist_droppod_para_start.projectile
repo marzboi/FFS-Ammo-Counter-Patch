@@ -1,0 +1,52 @@
+{
+  "projectileName" : "ffs_cultist_droppod_para_start",
+  "image" : "ffs_cultist_droppod_start.png",
+  "physics" : "grenade",
+  "animationLoops" : false,
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 10,
+  "bounces" : 0,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Object+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/throw/ffs_he_explosion.ogg" ]
+    },
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_grenadeexplosionknockback_no_ff.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_droppod_para"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_spawn_para",
+      "delaySteps" : 10,
+	  "offset": [ -3, 3 ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_spawn_templar",
+      "delaySteps" : 10,
+	  "offset": [ 0, 3 ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_spawn_para",
+      "delaySteps" : 10,
+	  "offset": [ 3, 3 ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "fullbright",
+  "category" : "ffs2_lastboss_engine",
+  "type" : "fullbright",
+
+  "frames" : {
+    "fullbright" : "fullbright.png"
+  }
+}

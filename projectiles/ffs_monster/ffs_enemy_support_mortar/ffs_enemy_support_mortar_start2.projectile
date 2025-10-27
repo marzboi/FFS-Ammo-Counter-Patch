@@ -1,0 +1,29 @@
+{
+  "projectileName" : "ffs_enemy_support_mortar_start2",
+  "image" : "icon.png",
+  "piercing" : false,
+  "timeToLive" : 0,
+  "frameNumber" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_enemy_support_mortar_aim_start",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 0,
+      "offset" : [0, 0],
+      "angle" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_monster_mortar_gas",
+      "inheritDamageFactor" : 1,
+      "delaySteps" : 170,
+      "offset" : [0, 0],
+      "angle" : -90
+    }
+  ],
+  "power" : 1,
+  "speed" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

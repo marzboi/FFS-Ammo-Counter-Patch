@@ -1,0 +1,37 @@
+{
+  "projectileName" : "ffs_firstaidzone_1",
+  "physics" : "laser",
+  "timeToLive" : 5.5,
+  "image" : "ffs_firstaidzone.png",
+  "animationCycle" : 5.5,
+  "frameNumber" : 46,
+  "windupFrames" : 3,
+  "winddownFrames" : 3,
+  "periodicActions" : [
+    {
+      "time" : 5.5,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/vehicle_disappear1.ogg" ]
+    }
+  ],
+  "actionOnReap" : [],
+  "speed" : 0,
+  "power" : 0,
+
+  "onlyHitTerrain" : true,
+  "persistentStatusEffects" : ["ffs_heal_medickit_buff"],
+  "statusEffectArea" : [ [-6.0, 0], [-4.0, -4.0], [0, -6.0], [4.0, -4.0], [6.0, 0], [4.0, 4.0], [0, 6.0], [-4.0, 4.0] ],
+
+  "renderLayer" : "Player-1",
+  "orientationLocked" : true,
+  "fullbright" : true,
+  "emitters" : [],
+
+  "piercing" : true,
+  "bounces" : -1,
+
+  "scripts" : ["/projectiles/activeitems/staff/staffprojectile.lua"],
+  
+  "persistentAudio" : "/sfx/projectiles/zone_healing_loop.ogg"
+}

@@ -1,0 +1,24 @@
+{
+  "projectileName" : "ffs_scientist_poison",
+  "physics" : "stickybullet",
+  "bounces" : -1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : true,
+  "lightColor" : [60, 80, 40],
+  "image" : "ffs_scientist_poison.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 5,
+  "frameNumber" : 4,
+  "renderLayer" : "Player+1",
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_monster/ffs_scientist_poison/ffs_scientist_poison_knockback.config"
+    }
+  ],
+  "power" : 50,
+  "speed" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

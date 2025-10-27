@@ -1,0 +1,172 @@
+{
+  "projectileName" : "ffs_honeybee_1",
+  "image" : "ffs_honeybee_1.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "timeToLive" : 1.0,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [255, 225, 158],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/regularexplosion2.config"
+    },
+    {
+      "action" : "sound",
+      "options" : [ 
+	  "/sfx/gun/rocketblast1.ogg","/sfx/gun/rocketblast2.ogg","/sfx/gun/rocketblast3.ogg"
+	  ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 1,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 2,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 3,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 4,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 5,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 6,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 7,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 8,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 9,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 10,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 11,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 12,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 13,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 14,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 15,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 16,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 17,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 18,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 19,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_honeybee_2",
+	  "fuzzAngle" : 360,
+      "delaySteps" : 20,
+      "inheritDamageFactor" : 1.0
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "rockettrail" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 5.0,
+  "damageKind" : "default",
+  "damageType" : "NoDamage",
+  "scripts" : [ "ffs_honeybee_1.lua" ],
+  "controlForce" : 150,
+  "maxSpeed" : 35
+}

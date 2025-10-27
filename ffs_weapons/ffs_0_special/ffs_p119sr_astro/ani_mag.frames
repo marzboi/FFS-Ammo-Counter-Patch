@@ -1,0 +1,27 @@
+{
+  "frameGrid" : {
+    "size" : [20, 20],
+    "dimensions" : [10, 16],
+    "names" : [
+      ["flying_in.1", "flying_in.2", "flying_in.3", "flying_in.4", "flying_in.5", null, null, null, null, null],
+      ["flying_out.1", "flying_out.2", "flying_out.3", "flying_out.4", "flying_out.5", null, null, null, null, null],
+      ["flying.1", "flying.2", "flying.3", "flying.4", "flying.5", null, null, null, null, null],
+      ["default.1", null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null]
+    ]
+  },
+
+  "aliases" : {
+  }
+}

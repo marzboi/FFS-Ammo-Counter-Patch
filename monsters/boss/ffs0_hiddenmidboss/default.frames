@@ -1,0 +1,15 @@
+{
+  "frameGrid" : {
+    "size" : [100, 72],
+    "dimensions" : [10, 6],
+
+    "names" : [
+      [ null, "idle.1", null, null, null, null, null, null, null, null ],
+      [ null, "move.1", "move.2", "move.3", "move.4", "move.5", "move.6", "move.7", "move.8", "move.9" ],
+      [ null, "windup.1", "windup.2", "windup.3", "punch.1", "punch.2", "punch.3", "punch.4", "winddown.1", "winddown.2" ],
+      [ null, null, null, null, null, null, null, null, null, null],
+      [ null, null, null, null, null, null, null, null, null, null],
+      [ null, null, null, null, null, null, null, null, null, null]
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_idcard", 
+	"count" : 10
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_medal_2",
+	"count" : 1
+	},
+	"groups" : [ "ffs_medal",  "ffs_breadnut" ]
+}

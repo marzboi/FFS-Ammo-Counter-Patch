@@ -1,0 +1,18 @@
+{
+  "projectileName" : "ffs_bullet_fmj_0_down",
+  "image" : "ffs_bullet.png",
+  "frameNumber" : 100,
+  "timeToLive" : 1.2,
+  "animationCycle" : 1.2,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet_small.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 85,
+  "physics" : "ffs_bullet_trajectory",
+  "damageKind" : "default"
+}

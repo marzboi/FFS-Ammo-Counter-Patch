@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_6tier_nglegs", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 256
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

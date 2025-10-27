@@ -1,0 +1,24 @@
+{
+  "projectileName" : "ffs_speedloader_start",
+  "image" : "icon.png",
+  "frameNumber" : 1,
+  "renderLayer" : "Player+1",
+  "physics" : "grenade",
+  "piercing" : true,
+  "bounces" : 0,
+  "speed" : 0,
+  "timeToLive" : 0,
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_speedloader",
+      "fuzzAngle" : 15,
+      "speed" : -10,
+      "offset" : [ 0, -0.5 ],
+      "directional" : "true"
+    }
+  ]
+}

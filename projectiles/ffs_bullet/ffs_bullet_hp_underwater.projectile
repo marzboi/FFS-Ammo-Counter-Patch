@@ -1,0 +1,23 @@
+{
+  "projectileName" : "ffs_bullet_hp_underwater",
+  "image" : "ffs_bullet_small.png",
+  "frameNumber" : 10,
+  "timeToLive" : 2.0,
+  "animationCycle" : 2.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head_small.config"
+    }
+  ],
+  "statusEffects" : [
+    "ffs_bleeding"
+  ],
+  "power" : 5.0,
+  "speed" : 140,
+  "knockback" : 15,
+  "knockbackDirectional" : true,
+  "physics" : "ffs_bullet_trajectory_underwater",
+  "damageKind" : "default"
+}

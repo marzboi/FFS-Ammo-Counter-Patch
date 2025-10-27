@@ -1,0 +1,18 @@
+{
+  "name" : "ffs_heal_dressing",
+  "blockingStat" : "healingStatusImmunity",
+  "effectConfig" : {
+    "healAmount" : 60,
+    "emissionRate" : 5
+  },
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "ffs_heal_dressing.lua"
+  ],
+
+  "animationConfig" : "ffs_heal.animation",
+
+  "label" : "Dressing kit : Stop the bleeding.",
+  "icon" : "/interface/statuses/ffs_dressingkit.png"
+}

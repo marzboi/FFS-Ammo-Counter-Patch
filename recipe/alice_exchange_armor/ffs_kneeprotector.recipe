@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_kneeprotector", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 32
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

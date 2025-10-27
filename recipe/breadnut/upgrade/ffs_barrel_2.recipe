@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "titaniumbar", 
+	"count" : 4
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_barrel_2",
+	"count" : 1
+	},
+	"groups" : [ "ffs_upgrade",  "ffs_breadnut" ]
+}

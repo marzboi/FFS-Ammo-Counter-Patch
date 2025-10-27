@@ -1,0 +1,22 @@
+{
+  "projectileName" : "ffs_bullet_plasma_astro",
+  "image" : "ffs_plasma_red_big.png",
+  "physics" : "laser",
+  "animationCycle" : 3.1,
+  "frameNumber" : 100,
+  "timeToLive" : 3.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head_small.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 200,
+  "lightColor" : [70, 0, 0],
+  "emitters" : [ "fireplasma" ],
+  "damageKind" : "plasma",
+  "hydrophobic" : true,
+  "fullbright" : true
+}

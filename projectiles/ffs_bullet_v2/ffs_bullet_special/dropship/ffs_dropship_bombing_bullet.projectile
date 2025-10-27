@@ -1,0 +1,19 @@
+{
+  "projectileName" : "ffs_dropship_bombing_bullet",
+  "image" : "ffs_dropship_bombing_bullet.png",
+  "frameNumber" : 100,
+  "timeToLive" : 2.0,
+  "animationCycle" : 2.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_spark_20mm.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 150,
+  "damageKind" : "default",
+  "damageType" : "ignoresdef",
+  "fullbright" : true
+}

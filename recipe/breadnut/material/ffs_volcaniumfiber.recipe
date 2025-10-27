@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_volcanium", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_volcaniumfiber",
+	"count" : 3
+	},
+	"groups" : [ "ffs_material",  "ffs_breadnut" ]
+}

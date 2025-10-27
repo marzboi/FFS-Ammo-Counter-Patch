@@ -1,0 +1,29 @@
+{
+  "projectileName" : "ffs_breakable_cultist_tent_start",
+  "image" : "icon.png",
+  "animationLoops" : false,
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 0,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Object+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/monster/ffs_vehicle_explosion.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_breakable_cultist_tent"
+    }
+  ]
+}

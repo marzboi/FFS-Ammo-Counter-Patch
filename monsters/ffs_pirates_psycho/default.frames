@@ -1,0 +1,21 @@
+{
+  "frameGrid" : {
+    "size" : [43, 43],
+    "dimensions" : [9, 5],
+
+    "names" : [
+      [ null, "fly.1", "fly.2", "fly.3", "fly.4", "fly.5", "fly.6", "fly.7", "fly.8" ],
+      [ null, "idle.1", null, null, null, null, null, null, null ],
+      [ null, "walk.1", "walk.2", "walk.3", "walk.4", "walk.5", "walk.6", "walk.7", "walk.8" ],
+      [ null, "meleeup.1", "meleeup.2", "meleeup.3", "meleeup.4", "meleedown.1", "meleedown.2", "meleedown.3", "meleedown.4" ],
+      [ null, "jump.1", "jump.2", "jump.3", "jump.4", null, null, null, null ]
+    ]
+  },
+  "aliases" : {
+    "hurt.1" : "jump.2",
+    "fall.4" : "jump.1",
+    "fall.3" : "jump.2",
+    "fall.2" : "jump.3",
+    "fall.1" : "jump.4"
+  }
+}

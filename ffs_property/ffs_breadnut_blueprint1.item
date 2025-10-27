@@ -1,0 +1,7 @@
+{
+  "itemName" : "ffs_breadnut_blueprint1",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "ffs_breadnut_blueprint1.png",
+  "description" : "^red;Mission : Go to the generator room.",
+  "shortdescription" : "^green;Blueprint"
+}

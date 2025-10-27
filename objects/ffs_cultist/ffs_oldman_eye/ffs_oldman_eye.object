@@ -1,0 +1,32 @@
+{
+  "objectName" : "ffs_oldman_eye",
+  "colonyTags" : ["FFS"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 110,
+  "description" : "The old man and the eye.",
+  "shortdescription" : "Old man and eye",
+  "race" : "avian",
+
+  "apexDescription" : "R.I.P old man.",
+  "avianDescription" : "R.I.P old man.",
+  "floranDescription" : "R.I.P old man.",
+  "glitchDescription" : "R.I.P old man.",
+  "humanDescription" : "R.I.P old man.",
+  "hylotlDescription" : "R.I.P old man.",
+  "novakidDescription" : "R.I.P old man.",
+
+  "inventoryIcon" : "ffs_oldman_eye.png",
+  "orientations" : [
+    {
+      "dualImage" : "ffs_oldman_eye.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1
+
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name" : "sword",
+  "category" : "ffs0_hiddenboss",
+  "type" : "sword",
+
+  "frames" : {
+    "sword" : "ffs0_hiddenboss_sword.png"
+  },
+
+  "parameters" : { }
+}

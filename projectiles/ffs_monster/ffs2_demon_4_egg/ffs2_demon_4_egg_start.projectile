@@ -1,0 +1,25 @@
+{
+  "projectileName" : "ffs2_demon_4_egg_start",
+  "physics" : "grenade",
+  "bounces" : 1,
+  "damageKindImage" : "icon.png",
+  "image" : "ffs2_demon_4_egg_start.png",
+  "animationCycle" : 0.4,
+  "piercing" : true,
+  "timeToLive" : 5,
+  "frameNumber" : 4,
+  "renderLayer" : "Player+1",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs2_demon_4_egg",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+	  "angle" : 90
+    }
+  ],
+  "power" : 20,
+  "speed" : 40,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

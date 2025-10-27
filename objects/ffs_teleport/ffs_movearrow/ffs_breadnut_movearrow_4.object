@@ -1,0 +1,48 @@
+{
+  "objectName" : "ffs_breadnut_movearrow_4",
+  "colonyTags" : ["ancient"],
+  "rarity" : "Legendary",
+  "category" : "other",
+  "price" : 0,
+  "printable" : false,
+
+  "description" : "MOVE ARROW",
+  "shortdescription" : "MOVE ARROW",
+  "race" : "ancient",
+
+  "apexDescription" : "Let's go!",
+  "avianDescription" : "Let's go!",
+  "floranDescription" : "Let's go!",
+  "glitchDescription" : "Let's go!",
+  "humanDescription" : "Let's go!",
+  "hylotlDescription" : "Let's go!",
+  "novakidDescription" : "Let's go!",
+
+  "lightColor" : [80, 80, 100],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "ffs_breadnut_movearrow.png:<color>.<frame>", "fullbright" : true }, { "image" : "ffs_breadnut_movearrowlit.png:<color>.<frame>" } ],
+      "imagePosition" : [0, 0],
+      "animationPosition" : [0, 0],
+      "spaceScan" : 0.1,
+
+      "direction" : "right",
+
+      "detectArea" : [ [-5, -5], [5, 5] ]
+    }
+  ],
+
+  "animation" : "ffs_breadnut_movearrow.animation",
+  "animationParts" : {
+    "bg" : "ffs_breadnut_movearrow.png",
+    "fg" : "ffs_breadnut_movearrowlit.png"
+  },
+
+  "scripts" : [ "ffs_breadnut_movearrow_4.lua" ],
+  "scriptDelta" : 20,
+
+  "messagePlayerInterval" : 0.5,
+  "messagePlayerRange" : 30
+}

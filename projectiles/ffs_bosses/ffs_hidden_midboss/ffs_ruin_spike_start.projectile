@@ -1,0 +1,77 @@
+{
+  "projectileName" : "ffs_ruin_spike_start",
+  "image" : "icon.png",
+  "piercing" : false,
+  "timeToLive" : 0,
+  "frameNumber" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_spike_1",
+      "inheritDamageFactor" : 1,
+      "delaySteps" : 30,
+      "offset" : [-20, 0],
+      "angle" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_spike_1",
+      "inheritDamageFactor" : 1,
+      "delaySteps" : 20,
+      "offset" : [-15, 0],
+      "angle" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_spike_1",
+      "inheritDamageFactor" : 1,
+      "delaySteps" : 10,
+      "offset" : [-10, 0],
+      "angle" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_spike_1",
+      "inheritDamageFactor" : 1,
+      "delaySteps" : 0,
+      "offset" : [-5, 0],
+      "angle" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_spike_1",
+      "inheritDamageFactor" : 1,
+      "delaySteps" : 0,
+      "offset" : [5, 0],
+      "angle" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_spike_1",
+      "inheritDamageFactor" : 1,
+      "delaySteps" : 10,
+      "offset" : [10, 0],
+      "angle" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_spike_1",
+      "inheritDamageFactor" : 1,
+      "delaySteps" : 20,
+      "offset" : [15, 0],
+      "angle" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_spike_1",
+      "inheritDamageFactor" : 1,
+      "delaySteps" : 30,
+      "offset" : [20, 0],
+      "angle" : -90
+    }
+  ],
+  "power" : 1,
+  "speed" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

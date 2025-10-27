@@ -1,0 +1,21 @@
+{
+  "projectileName" : "ffs_cultist_dead_templar",
+  "image" : "ffs_cultist_dead_templar.png",
+  "physics" : "ffs_deadbody",
+  "lightColor" : [50, 50, 200],
+  "animationLoops" : false,
+  "animationCycle" : 1.1,
+  "frameNumber" : 11,
+  "power" : 0,
+  "timeToLive" : 1,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Player-1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

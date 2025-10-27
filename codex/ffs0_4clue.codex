@@ -1,0 +1,22 @@
+{
+  "id" : "ffs0_4clue",
+  "title" : "^red;FFS^white; - ^#aa42f5;Chef's diary",
+  "description" : "A note stained with blood",
+  "icon" : "ffs_memo.png",
+  "contentPages" : [
+
+    "^white;02.23 Saturday. 
+Sarah, who was badly bruised, came to me. 
+She said the hostages were assaulted by psychos. 
+I decided to protect her after treatment.",
+
+"02.25 Monday.
+Recently, big eye was reported that there were firefights with ^red;demons^white; from the elevator. 
+Is it related to the psychos that she met?"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Legendary",
+    "price" : 100
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name" : "ffs_penetration",
+  "blockingStat" : "ffs_penetrationImmunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "ffs_penetration.lua"
+  ],
+
+  "animationConfig" : "ffs_penetration.animation",
+
+  "label" : "FFS: Penetrated!!!",
+  "icon" : "/interface/statuses/ffs_penetration.png"
+}

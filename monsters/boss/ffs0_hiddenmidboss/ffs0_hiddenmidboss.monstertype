@@ -1,0 +1,182 @@
+{
+  "type" : "ffs0_hiddenmidboss",
+  "shortdescription" : "Ruin's Puppet",
+
+  "categories" : [ "ffs0_hiddenmidboss" ],
+  "parts" : [ "body", "sword" ],
+
+  "animation" : "ffs0_hiddenmidboss.animation",
+  "reversed" : true,
+  "dropPools" : [
+    {
+      "default" : "ffs0_hiddenmidboss"
+    }
+  ],
+
+  "baseParameters" : {
+    "monsterClass" : "boss",
+	
+    "scripts" : [
+      "/monsters/boss/bossMonster.lua",
+      "/scripts/stateMachine.lua",
+      "/scripts/util.lua",
+      "/scripts/vec2.lua",
+
+      "/monsters/boss/ffs0_hiddenmidboss/dieState.lua",
+      "/monsters/boss/ffs0_hiddenmidboss/idleState.lua"
+    ],
+
+    "renderLayer" : "Projectile-10",
+
+    "skillCount" : 5,
+    "skills" : [ "ffs0_hiddenmidboss_punchattack", "ffs0_hiddenmidboss_fireattack", "ffs0_hiddenmidboss_fireattack2", "ffs0_hiddenmidboss_fireattack3", "ffs0_hiddenmidboss_specialattack"],
+
+    "phases" : [
+      {
+        "skills" : [ "ffs0_hiddenmidboss_punchattack" ]
+      },
+      {
+        "trigger" : "healthPercentage",
+        "healthPercentage" : 0.8,
+        "enterPhase" : "ffs0_hiddenmidboss_punchattack",
+        "skills" : [ "ffs0_hiddenmidboss_punchattack", "ffs0_hiddenmidboss_punchattack", "ffs0_hiddenmidboss_fireattack", "ffs0_hiddenmidboss_specialattack"  ]
+      },
+      {
+        "trigger" : "healthPercentage",
+        "healthPercentage" : 0.6,
+        "enterPhase" : "ffs0_hiddenmidboss_fireattack",
+        "skills" : [ "ffs0_hiddenmidboss_fireattack2", "ffs0_hiddenmidboss_fireattack3", "ffs0_hiddenmidboss_specialattack" ]
+      }
+    ],
+
+    "projectileSourcePosition" : [0, 0],
+    "projectileSourceOffset" : [0, 0],
+
+    "queryTargetDistance" : 500.0,
+    "trackTargetDistance" : 500.0,
+    "switchTargetDistance" : 50.0,
+
+    "knockoutTime" : 0.5,
+    "knockoutEffect" : "blink",
+    "deathParticles" : "deathPoof",
+
+    "alwaysAggressive" : true,
+
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-1.2, -3.0], [-1, -4.0], [1, -4.0], [1.2, -3.0], [1., 2], [1, 2.2], [-1, 2.2], [-1.2, 2] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 15,
+      "runSpeed" : 15,
+      "physicsEffectCategories" : ["boss"]
+    },
+    "damageParts" : {
+      "sword" : {
+        "damage" : 20,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "slash",
+        "knockback" : 20,
+        "statusEffects" : [ ]
+      }
+    },
+    "jumpTargetDistance" : 4,
+    "jumpTime" : [0.4, 0.7],
+
+    "metaBoundBox" : [ -5,  -5,  5,  5],
+
+    "blockedSensors" : [ [0.5, -0.5], [0.5, -0.5], [0.5, -0.5], [0.5, -0.5], [0.5, -0.5], [0.5, 0.5] ],
+    "fallSensors" : [ [2, -3.5], [2, -5.5], [2, -6.5], [4, -4.5], [4, -5.5], [4, -6.5] ],
+
+    "damageOnTouch" : false,
+    "touchDamage" : {
+      "poly" : [ [-0.5, -0.5], [-0.5, -0.5], [0.5, -0.5], [0.5, -0.5], [0.5, 0.5], [0.5, 0.5], [-0.5, 0.5], [-0.5, 0.5] ],
+      "damage" : 20,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "broadsword",
+      "statusEffects" : [ ]
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 5000
+        },
+        "protection" : {
+          "baseValue" : 50
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "specialStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "lavaImmunity" : {
+          "baseValue" : 1.0
+        },
+        "ffs_bleedingImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0,
+          "maxValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, 0]
+  }
+}

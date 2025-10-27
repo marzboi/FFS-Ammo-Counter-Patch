@@ -1,0 +1,23 @@
+{
+  "kind" : "ffs_bigfiresparks",
+  "definition" : {
+    "type" : "ember",
+    "size" : 1.5,
+    "color" : [253, 143, 77, 255],
+    "fade" : 1.5,
+    "initialVelocity" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [30, 30],
+    "light" : [191, 103, 2],
+    "destructionTime" : 0.0,
+    "layer" : "front",
+    "collidesLiquid" : true,
+    "timeToLive" : 1.5,  
+    "variance" : {
+      "position" : [1.0, 1.0],
+      "initialVelocity" : [5, 5],
+      "finalVelocity" : [1.5, 1.5],
+      "size" : 0.5
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "itemName" : "ffs_extract_sample",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "ffs_extract_sample.png",
+  "description" : "Dr.breadnut's ruin's sample extract.",
+  "shortdescription" : "^green;Ruin's Sample Extract"
+}

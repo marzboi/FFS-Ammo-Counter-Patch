@@ -1,0 +1,18 @@
+{
+	"input" : [
+    { 
+	"item" : "durasteelbar", 
+	"count" : 1
+	},
+    { 
+	"item" : "ffs_us_dollar", 
+	"count" : 16000
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_m202flash_1",
+	"count" : 8
+	},
+	"groups" : [ "ffs_at",  "ffs_papachino" ]
+}

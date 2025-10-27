@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_5tier_pmclegs", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 192
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

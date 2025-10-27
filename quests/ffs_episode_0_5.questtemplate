@@ -1,0 +1,32 @@
+{
+  "id" : "ffs_episode_0_5",
+  "mainQuest" : true,
+  "title" : "^red;FFS ^green;EP.0 - Main ^White;Find survivors:Papachino",
+  "text" : "According to chica said, Another survivor papachino is alive somewhere in 3rd basement.",
+  "completionText" : "I found him and he is still alive!",
+  "completionCinema" : "/cinematics/ffs_cinema/ffs_nadya.cinematic",
+  "moneyRange" : [1, 1],
+  "rewards" : [
+    [ ["ffs_dressingkit", 10] ]
+  ],
+  "canBeAbandoned" : false,
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "money",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+    "followUp" : "ffs_episode_0_6",
+    "requireTurnIn" : true,
+    "turnInEntityUid" : "ffs_episode_0_5"
+  },
+  "prerequisites" : [ "ffs_episode_0_4" ]
+}

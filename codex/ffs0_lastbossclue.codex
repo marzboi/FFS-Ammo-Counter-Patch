@@ -1,0 +1,48 @@
+{
+  "id" : "ffs0_lastbossclue",
+  "title" : "^red;FFS^white; - ^#aa42f5;Captain's log",
+  "description" : "A note stained with blood",
+  "icon" : "ffs_memo.png",
+  "contentPages" : [
+
+    "^white;01.02 wednesday. 
+Thanks to arms dealer Papachino, after winning the battle against the cultist, our survivors from the earth decided to live in abandoned mines.",
+
+"02.01 Monday.
+After the battle, someone keeps whispering ^red;''66.6 seconds''^white; in my ears. 
+'Big eye' was quite worried about me, because he is always conscious about spiritual issues, so i don't care about it.",
+
+"02.02 Tuesday.
+The number of people complaining of headaches has increased.
+Sometimes there were people sympathetic to the cultist, so they were all quarantined.
+Everyone is anxious.",
+
+"02.10 Sunday.
+Complaining of mental pain from patients were reported.
+Among them, people who had seizures were quarantined.",
+
+"02.23 Saturday.
+^orange;(The paper is covered with scribbles.)^white;
+I released the prisoners who had been quarantined because they seemed to have no problem.
+Unless freedom of religion is wrong, it should be recognized.
+
+I imprisoned Papachino, who was instigating the quarantine of normal people, and killed those who tried to rebel.",
+
+"03.04 Monday. 
+^orange;(The paper is covered with purple blood.)^white;
+Today morning, master was appeared in my dream.
+
+Yes..
+
+We must be integrated.
+
+As master's wish.
+
+GLORY FOR THE INTEGRATED EARTH AND MASTER RUIN."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Legendary",
+    "price" : 100
+  }
+}

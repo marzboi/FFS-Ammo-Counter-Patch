@@ -1,0 +1,18 @@
+{
+  "name" : "ffs_fixmag",
+  "effectConfig" : {
+    "regenBonusAmount" : -1000000,
+    "emissionRate" : 5
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "ffs_fixmag.lua"
+  ],
+  "scriptDelta" : 0,
+
+  "animationConfig" : "ffs_fixmag.animation",
+
+  "label" : "^#ff0000;FFS^white; : If you insert ^green;energy^white; into magazine, it'll cause ^#ff0000;malfunction^white;.",
+  "icon" : "/interface/statuses/ffs_fixmag.png"
+}

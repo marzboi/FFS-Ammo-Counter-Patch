@@ -1,0 +1,7 @@
+{
+  "itemName" : "ffs_weaponparts",
+  "rarity" : "legendary",
+  "inventoryIcon" : "ffs_weaponparts.png",
+  "description" : "A bundle of illegal weapons parts",
+  "shortdescription" : "^#bb00ff;Weapons Parts"
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "fullbright",
+  "category" : "ffs1_lastboss",
+  "type" : "fullbright",
+
+  "frames" : {
+    "fullbright" : "fullbright.png"
+  }
+}

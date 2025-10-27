@@ -1,0 +1,18 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_us_dollar", 
+	"count" : 1440
+	},
+    { 
+	"item" : "tungstenbar", 
+	"count" : 3
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_2tier_lapdhead",
+	"count" : 1
+	},
+	"groups" : [ "ffs_trade",  "ffs_yuri" ]
+}

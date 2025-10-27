@@ -1,0 +1,34 @@
+{
+  "id" : "ffs_episode_2_14",
+  "mainQuest" : true,
+  "title" : "^red;FFS ^green;EP.2 - Main ^White;END",
+  "text" : "Home! Sweet home!
+Let's get back to PSS White crow.",
+  "completionText" : "Well, I can take a rest now.
+^red;*System : ^green;Congratulation! FFS-EP2 is over!
+^return;Sub quests will be added to white crow. Let's do it for reparing White crow!",
+  "completionCinema" : "/cinematics/ffs_cinema/ffs_ep2_ending.cinematic",
+  "moneyRange" : [1, 1],
+  "rewards" : [
+    [ ["ffs_us_100dollar", 10000] ]
+  ],
+  "canBeAbandoned" : false,
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "money",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+    "requireTurnIn" : true,
+    "turnInEntityUid" : "ffs_episode_2_14"
+  },
+  "prerequisites" : [ "ffs_episode_2_13" ]
+}

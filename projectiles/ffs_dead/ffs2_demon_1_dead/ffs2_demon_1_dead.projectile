@@ -1,0 +1,20 @@
+{
+  "projectileName" : "ffs2_demon_1_dead",
+  "image" : "ffs2_demon_1_dead.png",
+  "physics" : "ffs_deadbody",
+  "animationLoops" : false,
+  "animationCycle" : 4.05,
+  "frameNumber" : 40,
+  "power" : 0,
+  "timeToLive" : 4,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Player+2",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,22 @@
+{
+  "projectileName" : "ffs_spark_frag_penet",
+  "image" : "ffs_spark_20mm.png",
+  "animationCycle" : 1.0,
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "frameNumber" : 10,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 0.2,
+  "power" : 10,
+  "speed" : 0,
+  "statusEffects" : [
+    "ffs_penetration"
+  ],
+  "damagePoly" : [ [-40, 0], [-40, -40], [0, -40], [40, -40], [40, 0], [40, 40], [0, 40], [-40, 40] ],
+  "damageKind" : "default",
+  "damageType" : "ignoresdef",
+  "damageTeam" : { "type" : "indiscriminate" },
+  "fullbright" : true
+}

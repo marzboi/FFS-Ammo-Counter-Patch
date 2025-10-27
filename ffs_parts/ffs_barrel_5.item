@@ -1,0 +1,7 @@
+{
+  "itemName" : "ffs_barrel_5",
+  "rarity" : "rare",
+  "inventoryIcon" : "ffs_barrel_5.png",
+  "description" : "A volcanium plated barrel.",
+  "shortdescription" : "^#00c3ff;Volcanium Barrel"
+}

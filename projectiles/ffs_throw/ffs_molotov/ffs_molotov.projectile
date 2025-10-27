@@ -1,0 +1,30 @@
+{
+  "projectileName" : "ffs_molotov",
+  "image" : "ffs_molotov.png",
+  "animationCycle" : 0.25,
+  "physics" : "grenade",
+  "frameNumber" : 4,
+  "pointLight" : false,
+  "speed" : 180,
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/throw/ffs_he_explosion.ogg" ]
+    },
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_bigexplosionknockback.config"
+    }
+  ],
+  "statusEffects" : [
+    "ffs_thickerflame"
+  ],
+  "emitters" : [ "tinyrocketsmoke" ],
+  "power" : 5.0,
+  "damageType" : "ignoresdef",
+  "damageKind" : "fire",
+  "fullbright" : true
+}
+
+

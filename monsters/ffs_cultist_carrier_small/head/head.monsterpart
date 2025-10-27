@@ -1,0 +1,9 @@
+{
+  "name" : "head",
+  "category" : "ffs_cultist_carrier_small",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "head.png"
+  }
+}

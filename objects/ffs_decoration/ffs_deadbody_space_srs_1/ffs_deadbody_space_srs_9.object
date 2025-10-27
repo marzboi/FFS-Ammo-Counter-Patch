@@ -1,0 +1,34 @@
+{
+  "objectName" : "ffs_deadbody_space_srs_9",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "decorative",
+
+  "description" : "Dead body.",
+  "shortdescription" : "Dead body",
+  "race" : "generic",
+
+  "apexDescription" : "R.I.P.",
+  "avianDescription" : "R.I.P.",
+  "floranDescription" : "R.I.P.",
+  "glitchDescription" : "R.I.P.",
+  "humanDescription" : "R.I.P.",
+  "hylotlDescription" : "R.I.P.",
+  "novakidDescription" : "R.I.P.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "ffs_deadbody_space_srs_9.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true
+    },
+    {
+      "image" : "ffs_deadbody_space_srs_9.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right"
+    }
+  ]
+}

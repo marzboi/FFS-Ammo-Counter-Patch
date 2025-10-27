@@ -1,0 +1,30 @@
+{
+  "name" : "ffs0_4boss_punchattack",
+  "label" : "FRENZY",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/ffs0_4boss/skills/ffs0_4boss_punchattack.lua" ],
+    "ffs0_4boss_punchattack" : {
+      "distanceRange" : [0, 5],
+	  
+      "windupTime" : 1.0,
+      "winddownTime" : 1.0,
+
+      "projectile" : {
+        "type" : "ffs_light_explosion",
+        "config" : {
+          "power" : 40,
+          "speed" : 0
+        },
+        "offset" : [2.2, -2.7]
+      }
+    }
+  },
+
+  "animationParameters" : {
+    "sounds" : {
+      "punch" : [ "/sfx/gun/rocketblast1.ogg", "/sfx/gun/rocketblast2.ogg", "/sfx/gun/rocketblast3.ogg" ]
+    }
+  }
+}

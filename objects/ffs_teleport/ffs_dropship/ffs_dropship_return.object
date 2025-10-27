@@ -1,0 +1,54 @@
+{
+  "objectName" : "ffs_dropship_return",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "category" : "teleporter",
+
+  "description" : "MOVE ARROW",
+  "shortdescription" : "MOVE ARROW",
+  "race" : "generic",
+
+  "apexDescription" : "Let's go!",
+  "avianDescription" : "Let's go!",
+  "floranDescription" : "Let's go!",
+  "glitchDescription" : "Let's go!",
+  "humanDescription" : "Let's go!",
+  "hylotlDescription" : "Let's go!",
+  "novakidDescription" : "Let's go!",
+
+  "lightColor" : [100, 90, 80],
+
+  "inventoryIcon" : "ffs_dropship.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ 
+	  { "image" : "ffs_dropship.png:<color>.<frame>", "fullbright" : true }, 
+	  { "image" : "ffs_dropshiplit.png:<color>.<frame>" } 
+	  ],
+      "imagePosition" : [0, 0],
+      "animationPosition" : [0, 0],
+      "spaceScan" : 0.1,
+
+
+      "direction" : "right",
+
+      "detectArea" : [ [-1, 0], [1, 1] ]
+    }
+  ],
+
+  "animation" : "ffs_dropship.animation",
+  "animationParts" : {
+    "bg" : "ffs_dropship.png",
+    "fg" : "ffs_dropshiplit.png"
+  },
+
+  "scripts" : [ "ffs_dropship_1.lua" ],
+  "scriptDelta" : 20,
+
+  "returnDoor" : true,
+    
+
+  "soundEffect" : "/sfx/ffs_dropship_jet.ogg",
+  "soundEffectRangeMultiplier" : 0.25
+}

@@ -1,0 +1,29 @@
+{
+  "itemName" : "ffs_morphine",
+  "rarity" : "uncommon",
+  "tooltipKind" : "ffs_base_small",
+  "price" : 800,
+  "category" : "medicine",
+  "inventoryIcon" : "ffs_morphine.png",
+  "description" : "^#7c7c7c;C17H19NO3
+  
+Statex
+MSContin
+Oramorph
+Sevredol
+Morphine is one of the natural plant alkaloids found in opium and is the prototype opiate, against which other derivatives are measured in terms of analgesic effects and side effects. Morphine has not been linked to serum enzyme elevations during therapy or to clinically apparent liver injury.
+^white;A painkiller that has been used by U.S.C.M for a long time.
+It recovers 10 hp per a second for 10 minutes.",
+  "shortdescription" : "^green;Morphine",
+  "effects" : [ [
+      {
+        "effect" : "ffs_heal_morphine"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "stimuse" ],
+  "blockingEffects" : [
+    "ffs_heal_morphine",
+    "redstim"
+  ]
+}

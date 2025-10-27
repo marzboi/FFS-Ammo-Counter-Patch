@@ -1,0 +1,46 @@
+{
+  "projectileName" : "ffs0_3boss_dead_start",
+  "image" : "ffs0_3boss_dead_start.png",
+  "animationLoops" : false,
+  "animationCycle" : 1.0,
+  "frameNumber" : 10,
+  "power" : 0,
+  "timeToLive" : 3,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Object+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/melee/axe_kill_organic1.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_3boss_dead",
+      "speed" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_3boss_dead_head",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_3boss_dead_smg",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    }
+  ]
+}

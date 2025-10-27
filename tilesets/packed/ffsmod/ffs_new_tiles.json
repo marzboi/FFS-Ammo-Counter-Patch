@@ -1,0 +1,34 @@
+{ "columns":0,
+ "margin":0,
+ "name":"ffs_new_tiles",
+ "properties":
+    {
+
+    },
+ "spacing":0,
+ "tilecount":2,
+ "tileheight":104,
+ "tilewidth":316,
+ "tileproperties":
+    {
+     "0":
+        {
+         "material":"ffs_spidersilkblock_black_bg"
+        },
+     "1":
+        {
+         "liquid":"ffs_fleshjuice"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"ffs_spidersilkblock_black_bg.png"
+        },
+     "1":
+        {
+         "image":"ffs_fleshjuice.png"
+        }
+    }
+}

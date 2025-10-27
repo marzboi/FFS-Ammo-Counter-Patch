@@ -1,0 +1,10 @@
+{
+  "itemName" : "ffs_cultist_banner_teared",
+  "rarity" : "legendary",
+  "maxStack" : 1000,
+  "inventoryIcon" : "ffs_cultist_banner_teared.png",
+  "description" : "A piece of cultist's banner.
+This will be useful.
+I'll keep this somewhere safe.",
+  "shortdescription" : "^#bb00ff;A piece of cultist's banner"
+}

@@ -1,0 +1,15 @@
+{
+  "projectileName" : "ffs_muzzlefiringspark_end_nolight",
+  "image" : "ffs_invisible.png",
+  "piercing" : true,
+  "bounces" : -1,
+  "frameNumber" : 1,
+  "timeToLive" : 0.05,
+  "renderLayer" : "FrontParticle+1",
+  "emitters" : [ "ffs_muzzlefiringspark" ],
+  "power" : 5.0,
+  "speed" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "fullbright" : true
+}

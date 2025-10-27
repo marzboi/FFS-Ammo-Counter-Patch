@@ -1,0 +1,9 @@
+{
+  "itemName" : "ffs_ammo_m202flash",
+  "rarity" : "common",
+  "inventoryIcon" : "ffs_ammo_m202flash.png",
+  "description" : "Ammunition
+66mm M235 Incendiary TPA",
+  "itemTags" : ["ffs_ammo_m202flash","ffs"],
+  "shortdescription" : "M202 FLASH AMMO"
+}

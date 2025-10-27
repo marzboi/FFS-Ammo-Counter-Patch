@@ -1,0 +1,32 @@
+{
+  "name" : "ffs0_lastbossC1Attack",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/ffs0_lastboss/skills/ffs0_lastbossC1Attack.lua" ],
+
+    "ffs0_lastbossC1Attack" : {
+      "skillTime": 2,
+      "bobTime" : 4,
+      "bobHeight" : 2,
+
+      "projectileOffset" : [-29, 6],
+      "fireInterval" : 2.0,
+      "projectile" : {
+        "type" : "ffs_cannonblasttriple_trigger",
+        "config" : {
+          "power" : 100000,
+          "periodicActions" : [
+            {
+              "time" : 0,
+              "repeat" : false,
+              "action" : "sound",
+              "options" : [ "/sfx/single/ffs_highcalibre_single.ogg" ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

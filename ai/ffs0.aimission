@@ -1,0 +1,17 @@
+{
+  "missionName" : "ffs0",
+  "icon" : "ffs0.png",
+  "missionWorld" : "ffs0",
+
+  "speciesText" : {
+    "default" : {
+      "buttonText" : "U.S.C.M Dropship",
+      "repeatButtonText" : "U.S.C.M Dropship",
+      "selectSpeech" : {
+        "animation" : "talk",
+        "text" : "This is U.S.C.M Dropship.",
+        "speedModifier" : 1.0
+      }
+    }
+  }
+}

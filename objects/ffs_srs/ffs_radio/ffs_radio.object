@@ -1,0 +1,60 @@
+{
+  "objectName" : "ffs_radio",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "category" : "^yellow;Difficulty : ^white;Hard - 1Tier",
+
+  "description" : "^red;Feast of Fire and Smoke Mod
+^white;When you turned on the radio, you received an s.o.s signal from nearby planet.",
+  "shortdescription" : "^red;F.F.S mod Mission radio",
+  "race" : "generic",
+
+  "lightColor" : [76, 60, 86],
+
+  "apexDescription" : "Radio.",
+  "avianDescription" : "Radio.",
+  "floranDescription" : "Radio.",
+  "glitchDescription" : "Radio.",
+  "humanDescription" : "Radio.",
+  "hylotlDescription" : "Radio.",
+  "novakidDescription" : "Radio.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ 
+	  { "image" : "ffs_radio.png:<color>.<frame>", "fullbright" : true }, 
+	  { "image" : "ffs_radiolit.png:<color>.<frame>" } 
+	  ],
+      "imagePosition" : [-16, 0],
+      "animationPosition" : [-16, 0],
+      "spaceScan" : 0.1,
+
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+
+      "lightPosition" : [0, 3],
+
+      "detectArea" : [ [-3, 0], [3, 5] ]
+    }
+  ],
+
+  "animation" : "ffs_radio.animation",
+  "animationParts" : {
+    "bg" : "ffs_radio.png",
+    "fg" : "ffs_radiolit.png"
+  },
+
+  "scripts" : [ "ffs_radio.lua" ],
+  "scriptDelta" : 20,
+
+  "messagePlayerInterval" : 0.5,
+  "messagePlayerRange" : 30,
+  "offeredQuests" : [
+    "ffs_episode_0_0"
+  ],
+  "turnInQuests" : [
+    "ffs_episode_0_0"
+  ]
+}

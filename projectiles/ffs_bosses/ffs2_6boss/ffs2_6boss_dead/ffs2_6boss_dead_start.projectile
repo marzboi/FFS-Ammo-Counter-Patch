@@ -1,0 +1,34 @@
+{
+  "projectileName" : "ffs2_6boss_dead_start",
+  "image" : "icon.png",
+  "animationLoops" : false,
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 0,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "FrontParticle+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs2_6boss_dead_land",
+	  "offset": [ 0, 0 ],
+	  "angle" : 0,
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs2_6boss_dead_1",
+	  "offset": [ 0, 0 ],
+	  "angle" : 0,
+      "inheritDamageFactor" : 0
+    }
+  ]
+}

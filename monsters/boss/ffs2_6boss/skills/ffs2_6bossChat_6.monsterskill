@@ -1,0 +1,32 @@
+{
+  "name" : "ffs2_6bossChat_6",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/ffs2_6boss/skills/ffs2_6bossChat_6.lua" ],
+
+    "ffs2_6bossChat_6" : {
+      "skillTime": 12,
+      "bobTime" : 0,
+      "bobHeight" : 0,
+
+      "projectileOffset" : [0, 0],
+      "fireInterval" : 12,
+      "projectile" : {
+        "type" : "ffs2_6bossChat_6_start",
+        "config" : {
+          "power" : 0,
+          "periodicActions" : [
+            {
+              "time" : 0,
+              "repeat" : false,
+              "action" : "sound",
+              "options" : [ "/sfx/humanoid/ffs_humanhurt_female.ogg" ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

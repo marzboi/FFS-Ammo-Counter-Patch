@@ -1,0 +1,22 @@
+{
+  "projectileName" : "ffs_bullet_fmj_2_crit",
+  "image" : "ffs_bullet.png",
+  "frameNumber" : 100,
+  "timeToLive" : 2.0,
+  "animationCycle" : 2.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet_small.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 130,
+  "statusEffects" : [
+    "ffs_criticalhit"
+  ],
+  "physics" : "ffs_bullet_trajectory",
+  "damageKind" : "default",
+  "damageType" : "ignoresdef"
+}

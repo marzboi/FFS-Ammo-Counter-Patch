@@ -1,0 +1,34 @@
+{
+  "objectName" : "ffs_rootbush_4",
+  "colonyTags" : ["FFS"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 110,
+  "description" : "This is just normal plants.",
+  "shortdescription" : "FFS Plant",
+  "race" : "avian",
+
+  "apexDescription" : "This is just normal plants.",
+  "avianDescription" : "This is just normal plants.",
+  "floranDescription" : "This is just normal plants.",
+  "glitchDescription" : "This is just normal plants.",
+  "humanDescription" : "This is just normal plants.",
+  "hylotlDescription" : "This is just normal plants..",
+  "novakidDescription" : "This is just normal plants.",
+
+  "inventoryIcon" : "ffs_rootbush_4icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "ffs_rootbush_4.png:<color>",
+
+      "imagePosition" : [0, 0],
+	  "renderLayer" : "player+9",
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

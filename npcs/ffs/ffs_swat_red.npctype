@@ -1,0 +1,135 @@
+{
+  "type" : "ffs_swat_red",
+  "baseType" : "ffs_base_swat_red",
+
+  "levelVariance" : [1, 1],
+  "persistent" : true,
+
+  "damageTeamType" : "friendly",
+
+  "scriptConfig" : {
+    "behavior" : "follower",
+
+    "behaviorConfig" : {
+      "greetingChance" : 0.67,
+      "patrolTime" : 1,
+
+      "hostileDamageTeam" : { "type" : "friendly", "team" : 1 }
+    },
+    "attackerLimit" : 8,
+    "attackerLimitCooldown" : 3,
+    
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+
+    "reactions" : {
+      "spontaneous" : [
+        [5.0, "sleep", { "timeRange" : [0.7, 0.9] }],
+        [1.0, "patrol"]
+      ]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+
+      "follower" : {
+        "attack" : {
+          "default" : {
+            "default" : [
+              "Tango spotted.",
+              "Tango!",
+              "Fire!",
+              "Covering fire!",
+              "Suppressing fire!",
+              "There's an enemy in sight.",
+              "The enemy's on visual!"
+            ]
+          }
+        },
+        "join" : {
+          "default" : {
+            "default" : [
+              "*Salute",
+              "Red team reporting.",
+              "Nice to meet you, agent."
+            ]
+          }
+        },
+        "returnFromCombat" : {
+          "default" : {
+            "default" : [
+              "Area clear.",
+              "Cease fire.",
+              "Tango down."
+            ]
+          }
+        },
+        "wait" : {
+          "default" : {
+            "default" : [
+              "Copy.",
+              "Copy that.",
+              "Roger.",
+              "Ok, Waiting your command."
+            ]
+          }
+        },
+        "returnFromWait" : {
+          "default" : {
+            "default" : [
+              "Yes, I'm moving.",
+              "Copy that. I'm moving.",
+              "Roger. I'm moving."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "ffs_4tier_swat_redhead" } ],
+            "chest" : [ { "name" : "ffs_4tier_swat_redchest" } ],
+            "legs" : [ { "name" : "ffs_4tier_swat_redlegs" } ],
+            "primary" : [ "ffs_benelli_npc" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.65
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 100
+      },
+      "ffs_bleedingImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

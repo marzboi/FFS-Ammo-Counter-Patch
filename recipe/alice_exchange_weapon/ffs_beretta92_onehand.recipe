@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_beretta92_onehand", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 100
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

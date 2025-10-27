@@ -1,0 +1,8 @@
+{
+  "itemName" : "ffs_trizium",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "ffs_trizium.png",
+  "description" : "This is an alloy of aegisalt, ferozium and violium.
+'Trizium is one of the brilliant achievement in mankind.'",
+  "shortdescription" : "^green;Trizium"
+}

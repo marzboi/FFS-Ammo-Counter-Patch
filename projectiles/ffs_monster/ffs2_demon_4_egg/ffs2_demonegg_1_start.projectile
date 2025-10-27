@@ -1,0 +1,83 @@
+{
+  "projectileName" : "ffs2_demonegg_1_start",
+  "physics" : "grenade",
+  "bounces" : 1,
+  "damageKindImage" : "icon.png",
+  "image" : "icon.png",
+  "animationCycle" : 0.4,
+  "piercing" : true,
+  "timeToLive" : 0,
+  "frameNumber" : 4,
+  "renderLayer" : "Player+1",
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/melee/axe_kill_organic1.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs2_demon_4_egg",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+	  "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs2_demon_4_egg",
+      "allowFlip" : true,
+      "fuzzAngle" : 15,
+	  "angle" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs2_demon_4_egg",
+      "allowFlip" : true,
+      "fuzzAngle" : 15,
+	  "angle" : 120
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_2_dead_leg_white",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_2_dead_leg_white",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_2_dead_leg_white",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_2_dead_leg_white",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_2_dead_leg_white",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    }
+  ],
+  "power" : 20,
+  "speed" : 40,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,15 @@
+{
+  "projectileName" : "ffs_cultist_aircraft_dead3",
+  "image" : "ffs_cultist_aircraft_dead3.png",
+  "physics" : "ffs_deadbody",
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 600,
+  "bounces" : -1,
+  "speed" : 0,
+  "piercing" : true,
+  "emitters" : [ "tinyrocketsmoke", "fireflames", "firesparks", "smoke" ],
+  "renderLayer" : "Object+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,119 @@
+{
+  "projectileName" : "ffs_bullet_trigger_shell_buck_fullchoke2",
+  "image" : "icon.png",
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_fast",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_fast",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_fast",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_fast",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_fast",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_mid",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_mid",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_mid",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_mid",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_mid",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_slow",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_slow",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_slow",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_slow",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_buckshot_slow",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

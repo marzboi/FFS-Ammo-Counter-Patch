@@ -1,0 +1,16 @@
+{
+  "name" : "ffs_missed",
+  "blockingStat" : "ffs_missedImmunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "ffs_missed.lua"
+  ],
+
+  "animationConfig" : "ffs_missed.animation",
+
+  "label" : "FFS: Missed!!!",
+  "icon" : "/interface/statuses/ffs_missed.png"
+}

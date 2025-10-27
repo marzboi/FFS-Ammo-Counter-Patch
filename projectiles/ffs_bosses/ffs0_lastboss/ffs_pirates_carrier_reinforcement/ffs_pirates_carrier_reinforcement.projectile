@@ -1,0 +1,26 @@
+{
+  "projectileName" : "ffs_pirates_carrier_reinforcement",
+  "image" : "ffs_pirates_carrier_reinforcement.png",
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 5,
+  "bounces" : 0,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 4,
+  "piercing" : true,
+  "renderLayer" : "MiddleParticle+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "spawnmonster",
+      "type" : "ffs_pirates_aircraft",
+	  "level":1,
+	  "offset": [ 0, 0 ],
+	  "arguments":{}
+    }
+  ]
+}
