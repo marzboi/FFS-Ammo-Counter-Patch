@@ -4,10 +4,10 @@ require "/items/active/weapons/weapon.lua"
 
 function init()
   animator.setGlobalTag("paletteSwaps", config.getParameter("paletteSwaps", ""))
-  
+
   self.weapon = Weapon:new()
 
-  self.weapon:addTransformationGroup("weapon", {0,0}, 0)
+  self.weapon:addTransformationGroup("weapon", { 0, 0 }, 0)
 
   local primaryAbility = getPrimaryAbility()
   self.weapon:addAbility(primaryAbility)
@@ -23,15 +23,13 @@ end
 function update(dt, fireMode, shiftHeld)
   self.weapon:update(dt, fireMode, shiftHeld)
   mcontroller.controlModifiers({
-      speedModifier = 1.0
-    })
+    speedModifier = 1.0
+  })
   mcontroller.controlModifiers({
-      airJumpModifier = 1.0
-    })
-  status.setResourcePercentage("energyRegenBlock", 1.0)
+    airJumpModifier = 1.0
+  })
 end
 
 function uninit()
   self.weapon:uninit()
 end
-

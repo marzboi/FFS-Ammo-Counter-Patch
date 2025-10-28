@@ -6,11 +6,9 @@ function init()
   activeItem.setCursor("/cursors/ffs_reticle0.cursor")
   animator.setGlobalTag("paletteSwaps", config.getParameter("paletteSwaps", ""))
 
-  status.setResource("energy", 100)
-  
   self.weapon = Weapon:new()
 
-  self.weapon:addTransformationGroup("weapon", {0,0}, 0)
+  self.weapon:addTransformationGroup("weapon", { 0, 0 }, 0)
 
   local primaryAbility = getPrimaryAbility()
   self.weapon:addAbility(primaryAbility)
@@ -26,15 +24,14 @@ end
 function update(dt, fireMode, shiftHeld)
   self.weapon:update(dt, fireMode, shiftHeld)
   mcontroller.controlModifiers({
-      speedModifier = 0.0
-    })
+    speedModifier = 0.0
+  })
   mcontroller.controlModifiers({
-      airJumpModifier = 0.0
-    })
+    airJumpModifier = 0.0
+  })
   mcontroller.controlModifiers({
-	  movementSuppressed = true
-    })
-  status.setResourcePercentage("energyRegenBlock", 1.0)
+    movementSuppressed = true
+  })
 end
 
 function uninit()
