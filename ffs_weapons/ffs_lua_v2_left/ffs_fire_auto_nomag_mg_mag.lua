@@ -465,7 +465,6 @@ end
 function GunFire:auto()
   if storage.totalAmmo >= 1 then
     self.weapon:setStance(self.stances.fire)
-    activeItem.setCursor("/cursors/ffs_reticle_aim.cursor")
     animator.setParticleEmitterActive("smoke", false)
     animator.setParticleEmitterActive("ember", false)
     local progress = 0
@@ -521,7 +520,6 @@ function GunFire:auto()
     animator.setParticleEmitterActive("smoke_end", true)
     self:fireProjectile()
     self:consumeAmmo()
-    activeItem.setCursor("/cursors/ffs_reticle_fire.cursor")
 
     local progress = 0
     util.wait(self.stances.motion2.duration, function()
@@ -579,9 +577,7 @@ function GunFire:auto()
     coroutine.yield()
   end
 
-
   self.weapon:setStance(self.stances.motion5)
-  activeItem.setCursor("/cursors/ffs_reticle_release.cursor")
   animator.stopAllSounds("fireLoop")
   animator.playSound("fireEnd")
   animator.setParticleEmitterActive("smoke_end", false)
@@ -603,7 +599,6 @@ function GunFire:auto()
 
   self.weapon:setStance(self.stances.cooldown)
   self.weapon:updateAim()
-
 
   local progress = 0
   util.wait(self.stances.cooldown.duration, function()

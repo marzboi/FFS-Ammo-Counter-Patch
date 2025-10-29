@@ -467,7 +467,6 @@ end
 function GunFire:auto()
   if storage.totalAmmo >= 1 then
     self.weapon:setStance(self.stances.fire)
-    activeItem.setCursor("/cursors/ffs_reticle_aim.cursor")
     animator.setParticleEmitterActive("smoke_end", false)
     animator.setParticleEmitterActive("ember", false)
     animator.setParticleEmitterActive("smoke", false)
@@ -592,7 +591,6 @@ function GunFire:auto()
     end)
 
     self.weapon:setStance(self.stances.motion7)
-    activeItem.setCursor("/cursors/ffs_reticle_release.cursor")
 
     local progress = 0
     util.wait(self.stances.motion7.duration, function()

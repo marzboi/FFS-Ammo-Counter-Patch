@@ -20,462 +20,501 @@ function GunFire:update(dt, fireMode, shiftHeld)
   self.cooldownTimer = 0
 
   if self.fireMode == (self.activatingFireMode or self.abilitySlot)
-    and not self.weapon.currentAbility
-    and self.cooldownTimer == 0
-    and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
-
+      and not self.weapon.currentAbility
+      and self.cooldownTimer == 0
+      and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
     if self.fireType == "auto" then
-      self:setState(self.auto)
+      self:setState(self.reload)
     end
   end
 end
 
-function GunFire:auto()
-  while self.fireMode == (self.activatingFireMode or self.abilitySlot) and status.resource("energy") > 1 and  self.fireMode == (self.activatingFireMode or self.abilitySlot) do 
-  self.weapon:setStance(self.stances.fire)
-  animator.setParticleEmitterActive("smoke_end", false)
-  animator.setParticleEmitterActive("ember", false)
-  local progress = 0
-  util.wait(self.stances.fire.duration, function()
-    local from = self.stances.fire.weaponOffset or {0,0}
-    local to = self.stances.motion1.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+function GunFire:reload()
+  while self.fireMode == (self.activatingFireMode or self.abilitySlot) and storage.totalAmmo < storage.maxAmmo do
+    storage.totalAmmo = 0
+    self.weapon:setStance(self.stances.fire)
+    animator.setParticleEmitterActive("smoke_end", false)
+    animator.setParticleEmitterActive("ember", false)
+    local progress = 0
+    util.wait(self.stances.fire.duration, function()
+      local from = self.stances.fire.weaponOffset or { 0, 0 }
+      local to = self.stances.motion1.weaponOffset or { 0, 0 }
+      self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.fire.weaponRotation, self.stances.motion1.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.fire.armRotation, self.stances.motion1.armRotation))
+      self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.fire.weaponRotation,
+        self.stances.motion1.weaponRotation))
+      self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.fire.armRotation,
+        self.stances.motion1.armRotation))
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.fire.duration))
-  end)
-  
-  self.weapon:setStance(self.stances.motion1)
-  animator.playSound("fireAT_1")
+      progress = math.min(1.0, progress + (self.dt / self.stances.fire.duration))
+    end)
 
-  local progress = 0
-  util.wait(self.stances.motion1.duration, function()
-    local from = self.stances.motion1.weaponOffset or {0,0}
-    local to = self.stances.motion2.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+    self.weapon:setStance(self.stances.motion1)
+    animator.playSound("fireAT_1")
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.motion1.weaponRotation, self.stances.motion2.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.motion1.armRotation, self.stances.motion2.armRotation))
+    local progress = 0
+    util.wait(self.stances.motion1.duration, function()
+      local from = self.stances.motion1.weaponOffset or { 0, 0 }
+      local to = self.stances.motion2.weaponOffset or { 0, 0 }
+      self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.motion1.duration))
-  end)
-  
-  self.weapon:setStance(self.stances.motion2)
+      self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.motion1.weaponRotation,
+        self.stances.motion2.weaponRotation))
+      self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.motion1.armRotation,
+        self.stances.motion2.armRotation))
 
-  local progress = 0
-  util.wait(self.stances.motion2.duration, function()
-    local from = self.stances.motion2.weaponOffset or {0,0}
-    local to = self.stances.motion3.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+      progress = math.min(1.0, progress + (self.dt / self.stances.motion1.duration))
+    end)
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.motion2.weaponRotation, self.stances.motion3.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.motion2.armRotation, self.stances.motion3.armRotation))
+    self.weapon:setStance(self.stances.motion2)
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.motion2.duration))
-  end)
-  
-  while self.fireMode == (self.activatingFireMode or self.abilitySlot) and status.resource("energy") >= 1 do
+    local progress = 0
+    util.wait(self.stances.motion2.duration, function()
+      local from = self.stances.motion2.weaponOffset or { 0, 0 }
+      local to = self.stances.motion3.weaponOffset or { 0, 0 }
+      self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
 
-  self.weapon:setStance(self.stances.motion3)
+      self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.motion2.weaponRotation,
+        self.stances.motion3.weaponRotation))
+      self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.motion2.armRotation,
+        self.stances.motion3.armRotation))
 
-  local progress = 0
-  util.wait(self.stances.motion3.duration, function()
-    local from = self.stances.motion3.weaponOffset or {0,0}
-    local to = self.stances.motion4.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+      progress = math.min(1.0, progress + (self.dt / self.stances.motion2.duration))
+    end)
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.motion3.weaponRotation, self.stances.motion4.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.motion3.armRotation, self.stances.motion4.armRotation))
+    while self.fireMode == (self.activatingFireMode or self.abilitySlot) and storage.totalAmmo >= 1 do
+      self.weapon:setStance(self.stances.motion3)
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.motion3.duration))
-  end)
-  
-    self.weapon:setStance(self.stances.motion4)
-  activeItem.setCursor("/cursors/ffs_reticle_aim.cursor")
-  status.addEphemeralEffect("ffs_at")
+      local progress = 0
+      util.wait(self.stances.motion3.duration, function()
+        local from = self.stances.motion3.weaponOffset or { 0, 0 }
+        local to = self.stances.motion4.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
 
-  local progress = 0
-  util.wait(self.stances.motion4.duration, function()
-    local from = self.stances.motion4.weaponOffset or {0,0}
-    local to = self.stances.motion5.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.motion3.weaponRotation,
+          self.stances.motion4.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.motion3.armRotation,
+          self.stances.motion4.armRotation))
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.motion4.weaponRotation, self.stances.motion5.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.motion4.armRotation, self.stances.motion5.armRotation))
+        progress = math.min(1.0, progress + (self.dt / self.stances.motion3.duration))
+      end)
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.motion4.duration))
-  end)
+      self.weapon:setStance(self.stances.motion4)
 
-  self.weapon:setStance(self.stances.motion5)
-  status.addEphemeralEffect("ffs_at")
-  animator.setParticleEmitterActive("at_smoke", true)
-  animator.playSound("fireAT_2")
+      local progress = 0
+      util.wait(self.stances.motion4.duration, function()
+        local from = self.stances.motion4.weaponOffset or { 0, 0 }
+        local to = self.stances.motion5.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
 
-  local progress = 0
-  util.wait(self.stances.motion5.duration, function()
-    local from = self.stances.motion5.weaponOffset or {0,0}
-    local to = self.stances.motion6.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.motion4.weaponRotation,
+          self.stances.motion5.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.motion4.armRotation,
+          self.stances.motion5.armRotation))
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.motion5.weaponRotation, self.stances.motion6.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.motion5.armRotation, self.stances.motion6.armRotation))
+        progress = math.min(1.0, progress + (self.dt / self.stances.motion4.duration))
+      end)
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.motion5.duration))
-  end)
+      self.weapon:setStance(self.stances.motion5)
+      status.addEphemeralEffect("ffs_at")
+      animator.setParticleEmitterActive("at_smoke", true)
+      animator.playSound("fireAT_2")
 
-  self.weapon:setStance(self.stances.motion6)
-  activeItem.setCursor("/cursors/ffs_reticle_fire.cursor")
-  status.addEphemeralEffect("ffs_at")
-  status.overConsumeResource("energy", self:energyPerShot()) 
-  animator.setParticleEmitterActive("ember", true)
-  animator.setParticleEmitterActive("smoke_end", true)
-  animator.playSound("fireAT_fire")
-  self:fireProjectile()
+      local progress = 0
+      util.wait(self.stances.motion5.duration, function()
+        local from = self.stances.motion5.weaponOffset or { 0, 0 }
+        local to = self.stances.motion6.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
 
-  local progress = 0
-  util.wait(self.stances.motion6.duration, function()
-    local from = self.stances.motion6.weaponOffset or {0,0}
-    local to = self.stances.cooldown.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.motion5.weaponRotation,
+          self.stances.motion6.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.motion5.armRotation,
+          self.stances.motion6.armRotation))
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.motion6.weaponRotation, self.stances.cooldown.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.motion6.armRotation, self.stances.cooldown.armRotation))
+        progress = math.min(1.0, progress + (self.dt / self.stances.motion5.duration))
+      end)
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.motion6.duration))
-  end)
+      self.weapon:setStance(self.stances.motion6)
+      animator.setParticleEmitterActive("ember", true)
+      animator.setParticleEmitterActive("smoke_end", true)
+      animator.playSound("fireAT_fire")
+      self:fireProjectile()
 
-  self.weapon:setStance(self.stances.cooldown)
-  activeItem.setCursor("/cursors/ffs_reticle_release.cursor")
-  self.weapon:updateAim()
-  
-  animator.setParticleEmitterActive("smoke", false)
-  animator.setParticleEmitterActive("at_smoke", false)
-  animator.setParticleEmitterActive("ember", false)
-  animator.setParticleEmitterActive("smoke_end", false)
+      local progress = 0
+      util.wait(self.stances.motion6.duration, function()
+        local from = self.stances.motion6.weaponOffset or { 0, 0 }
+        local to = self.stances.cooldown.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
 
-  local progress = 0
-  util.wait(self.stances.cooldown.duration, function()
-    local from = self.stances.cooldown.weaponOffset or {0,0}
-    local to = self.stances.idle.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.motion6.weaponRotation,
+          self.stances.cooldown.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.motion6.armRotation,
+          self.stances.cooldown.armRotation))
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.weaponRotation, self.stances.idle.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.armRotation, self.stances.idle.armRotation))
+        progress = math.min(1.0, progress + (self.dt / self.stances.motion6.duration))
+      end)
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.cooldown.duration))
-  end)
- end
- 
- item.consume( 1 )
-  
-	if not status.resourceLocked("energy") then
-      activeItem.setCursor("/cursors/ffs_reticle_normal.cursor")
+      self.weapon:setStance(self.stances.cooldown)
+      self.weapon:updateAim()
+
+      animator.setParticleEmitterActive("smoke", false)
+      animator.setParticleEmitterActive("at_smoke", false)
+      animator.setParticleEmitterActive("ember", false)
+      animator.setParticleEmitterActive("smoke_end", false)
+
+      local progress = 0
+      util.wait(self.stances.cooldown.duration, function()
+        local from = self.stances.cooldown.weaponOffset or { 0, 0 }
+        local to = self.stances.idle.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.weaponRotation,
+          self.stances.idle.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.armRotation,
+          self.stances.idle.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.cooldown.duration))
+      end)
     end
-  
-	if status.resourceLocked("energy") and status.resource("energy") <= 0 then
-      activeItem.setCursor("/cursors/ffs_reticle_empty.cursor")
-    self.weapon:setStance(self.stances.reloadmotion1)
-    self:firemagazineProjectile()
-    status.setResourcePercentage("energy", 0.0)
 
-  local progress = 0
-  util.wait(self.stances.reloadmotion1.duration, function()
-    local from = self.stances.reloadmotion1.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion2.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+    item.consume(1)
+
+    if storage.totalAmmo < 1 then
+      self.weapon:setStance(self.stances.reloadmotion1)
+      self:firemagazineProjectile()
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion1.weaponRotation, self.stances.reloadmotion2.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion1.armRotation, self.stances.reloadmotion2.armRotation))
+      local progress = 0
+      util.wait(self.stances.reloadmotion1.duration, function()
+        local from = self.stances.reloadmotion1.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion2.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion1.duration))
-  end)
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion1.weaponRotation, self.stances.reloadmotion2.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion1.armRotation,
+          self.stances.reloadmotion2.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion1.duration))
+      end)
 
-  self.weapon:setStance(self.stances.reloadmotion2)
+      self.weapon:setStance(self.stances.reloadmotion2)
 
-  local progress = 0
-  util.wait(self.stances.reloadmotion2.duration, function()
-    local from = self.stances.reloadmotion2.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion3.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+      local progress = 0
+      util.wait(self.stances.reloadmotion2.duration, function()
+        local from = self.stances.reloadmotion2.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion3.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion2.weaponRotation, self.stances.reloadmotion3.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion2.armRotation, self.stances.reloadmotion3.armRotation))
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion2.weaponRotation, self.stances.reloadmotion3.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion2.armRotation,
+          self.stances.reloadmotion3.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion2.duration))
+      end)
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion2.duration))
-  end)
+      self.weapon:setStance(self.stances.reloadmotion3)
+      animator.setParticleEmitterActive("smoke", true)
 
-  self.weapon:setStance(self.stances.reloadmotion3)
-  animator.setParticleEmitterActive("smoke", true)
+      local progress = 0
+      util.wait(self.stances.reloadmotion3.duration, function()
+        local from = self.stances.reloadmotion3.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion4.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion3.weaponRotation, self.stances.reloadmotion4.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion3.armRotation,
+          self.stances.reloadmotion4.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion3.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion4)
+      animator.playSound("reload_1")
 
-  local progress = 0
-  util.wait(self.stances.reloadmotion3.duration, function()
-    local from = self.stances.reloadmotion3.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion4.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+      local progress = 0
+      util.wait(self.stances.reloadmotion4.duration, function()
+        local from = self.stances.reloadmotion4.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion5.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion4.weaponRotation, self.stances.reloadmotion5.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion4.armRotation,
+          self.stances.reloadmotion5.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion4.duration))
+      end)
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion3.weaponRotation, self.stances.reloadmotion4.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion3.armRotation, self.stances.reloadmotion4.armRotation))
+      self.weapon:setStance(self.stances.reloadmotion5)
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion3.duration))
-  end)
+      local progress = 0
+      util.wait(self.stances.reloadmotion5.duration, function()
+        local from = self.stances.reloadmotion5.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion6.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion5.weaponRotation, self.stances.reloadmotion6.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion5.armRotation,
+          self.stances.reloadmotion6.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion5.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion6)
 
-  self.weapon:setStance(self.stances.reloadmotion4)
-  activeItem.setCursor("/cursors/ffs_reticle_reload_at.cursor")
-  animator.playSound("reload_1")
+      local progress = 0
+      util.wait(self.stances.reloadmotion6.duration, function()
+        local from = self.stances.reloadmotion6.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion7.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion6.weaponRotation, self.stances.reloadmotion7.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion6.armRotation,
+          self.stances.reloadmotion7.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion6.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion7)
 
-  local progress = 0
-  util.wait(self.stances.reloadmotion4.duration, function()
-    local from = self.stances.reloadmotion4.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion5.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+      local progress = 0
+      util.wait(self.stances.reloadmotion7.duration, function()
+        local from = self.stances.reloadmotion7.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion8.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion7.weaponRotation, self.stances.reloadmotion8.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion7.armRotation,
+          self.stances.reloadmotion8.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion7.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion8)
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion4.weaponRotation, self.stances.reloadmotion5.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion4.armRotation, self.stances.reloadmotion5.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion4.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion5)
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion5.duration, function()
-    local from = self.stances.reloadmotion5.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion6.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion5.weaponRotation, self.stances.reloadmotion6.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion5.armRotation, self.stances.reloadmotion6.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion5.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion6)
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion6.duration, function()
-    local from = self.stances.reloadmotion6.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion7.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion6.weaponRotation, self.stances.reloadmotion7.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion6.armRotation, self.stances.reloadmotion7.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion6.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion7)
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion7.duration, function()
-    local from = self.stances.reloadmotion7.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion8.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion7.weaponRotation, self.stances.reloadmotion8.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion7.armRotation, self.stances.reloadmotion8.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion7.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion8)
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion8.duration, function()
-    local from = self.stances.reloadmotion8.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion9.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion8.weaponRotation, self.stances.reloadmotion9.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion8.armRotation, self.stances.reloadmotion9.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion8.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion9)
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion9.duration, function()
-    local from = self.stances.reloadmotion9.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion10.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion9.weaponRotation, self.stances.reloadmotion10.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion9.armRotation, self.stances.reloadmotion10.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion9.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion10)
-  animator.playSound("reload_2")
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion10.duration, function()
-    local from = self.stances.reloadmotion10.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion11.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion10.weaponRotation, self.stances.reloadmotion11.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion10.armRotation, self.stances.reloadmotion11.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion10.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion11)
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion11.duration, function()
-    local from = self.stances.reloadmotion11.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion12.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion11.weaponRotation, self.stances.reloadmotion12.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion11.armRotation, self.stances.reloadmotion12.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion11.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion12)
-  animator.playSound("reload_3")
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion12.duration, function()
-    local from = self.stances.reloadmotion12.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion13.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion12.weaponRotation, self.stances.reloadmotion13.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion12.armRotation, self.stances.reloadmotion13.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion12.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion13)
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion13.duration, function()
-    local from = self.stances.reloadmotion13.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion14.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion13.weaponRotation, self.stances.reloadmotion14.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion13.armRotation, self.stances.reloadmotion14.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion13.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion14)
-  animator.playSound("reload_4")
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion14.duration, function()
-    local from = self.stances.reloadmotion14.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion15.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion14.weaponRotation, self.stances.reloadmotion15.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion14.armRotation, self.stances.reloadmotion15.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion14.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion15)
-  animator.playSound("reload_4")
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion15.duration, function()
-    local from = self.stances.reloadmotion15.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion16.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion15.weaponRotation, self.stances.reloadmotion16.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion15.armRotation, self.stances.reloadmotion16.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion15.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion16)
-  animator.playSound("reload_4")
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion16.duration, function()
-    local from = self.stances.reloadmotion16.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion17.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion16.weaponRotation, self.stances.reloadmotion17.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion16.armRotation, self.stances.reloadmotion17.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion16.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion17)
-  animator.playSound("reload_5")
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion17.duration, function()
-    local from = self.stances.reloadmotion17.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion18.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion17.weaponRotation, self.stances.reloadmotion18.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion17.armRotation, self.stances.reloadmotion18.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion17.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion18)
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion18.duration, function()
-    local from = self.stances.reloadmotion18.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion19.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion18.weaponRotation, self.stances.reloadmotion19.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion18.armRotation, self.stances.reloadmotion19.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion18.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion19)
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion19.duration, function()
-    local from = self.stances.reloadmotion19.weaponOffset or {0,0}
-    local to = self.stances.reloadmotion20.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion19.weaponRotation, self.stances.reloadmotion20.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion19.armRotation, self.stances.reloadmotion20.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion19.duration))
-  end)
-
-  self.weapon:setStance(self.stances.reloadmotion20)
-  self.weapon:updateAim()
-
-  local progress = 0
-  util.wait(self.stances.reloadmotion20.duration, function()
-    local from = self.stances.reloadmotion20.weaponOffset or {0,0}
-    local to = self.stances.idle.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
-
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion20.weaponRotation, self.stances.idle.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion20.armRotation, self.stances.idle.armRotation))
-
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion20.duration))
-  end)
-  
-  
-  status.setResource("energy", 100)
-  animator.setParticleEmitterActive("smoke", false)
-  status.setResourceLocked("energy")
-  activeItem.setCursor("/cursors/ffs_reticle_normal.cursor")
+      local progress = 0
+      util.wait(self.stances.reloadmotion8.duration, function()
+        local from = self.stances.reloadmotion8.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion9.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion8.weaponRotation, self.stances.reloadmotion9.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion8.armRotation,
+          self.stances.reloadmotion9.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion8.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion9)
+
+      local progress = 0
+      util.wait(self.stances.reloadmotion9.duration, function()
+        local from = self.stances.reloadmotion9.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion10.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion9.weaponRotation, self.stances.reloadmotion10.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion9.armRotation,
+          self.stances.reloadmotion10.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion9.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion10)
+      animator.playSound("reload_2")
+
+      local progress = 0
+      util.wait(self.stances.reloadmotion10.duration, function()
+        local from = self.stances.reloadmotion10.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion11.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion10.weaponRotation, self.stances.reloadmotion11.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion10.armRotation,
+          self.stances.reloadmotion11.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion10.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion11)
+
+      local progress = 0
+      util.wait(self.stances.reloadmotion11.duration, function()
+        local from = self.stances.reloadmotion11.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion12.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion11.weaponRotation, self.stances.reloadmotion12.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion11.armRotation,
+          self.stances.reloadmotion12.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion11.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion12)
+      animator.playSound("reload_3")
+
+      local progress = 0
+      util.wait(self.stances.reloadmotion12.duration, function()
+        local from = self.stances.reloadmotion12.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion13.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion12.weaponRotation, self.stances.reloadmotion13.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion12.armRotation,
+          self.stances.reloadmotion13.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion12.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion13)
+
+      local progress = 0
+      util.wait(self.stances.reloadmotion13.duration, function()
+        local from = self.stances.reloadmotion13.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion14.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion13.weaponRotation, self.stances.reloadmotion14.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion13.armRotation,
+          self.stances.reloadmotion14.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion13.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion14)
+      animator.playSound("reload_4")
+
+      local progress = 0
+      util.wait(self.stances.reloadmotion14.duration, function()
+        local from = self.stances.reloadmotion14.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion15.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion14.weaponRotation, self.stances.reloadmotion15.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion14.armRotation,
+          self.stances.reloadmotion15.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion14.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion15)
+      animator.playSound("reload_4")
+
+      local progress = 0
+      util.wait(self.stances.reloadmotion15.duration, function()
+        local from = self.stances.reloadmotion15.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion16.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion15.weaponRotation, self.stances.reloadmotion16.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion15.armRotation,
+          self.stances.reloadmotion16.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion15.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion16)
+      animator.playSound("reload_4")
+
+      local progress = 0
+      util.wait(self.stances.reloadmotion16.duration, function()
+        local from = self.stances.reloadmotion16.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion17.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion16.weaponRotation, self.stances.reloadmotion17.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion16.armRotation,
+          self.stances.reloadmotion17.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion16.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion17)
+      animator.playSound("reload_5")
+
+      local progress = 0
+      util.wait(self.stances.reloadmotion17.duration, function()
+        local from = self.stances.reloadmotion17.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion18.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion17.weaponRotation, self.stances.reloadmotion18.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion17.armRotation,
+          self.stances.reloadmotion18.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion17.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion18)
+
+      local progress = 0
+      util.wait(self.stances.reloadmotion18.duration, function()
+        local from = self.stances.reloadmotion18.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion19.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion18.weaponRotation, self.stances.reloadmotion19.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion18.armRotation,
+          self.stances.reloadmotion19.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion18.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion19)
+
+      local progress = 0
+      util.wait(self.stances.reloadmotion19.duration, function()
+        local from = self.stances.reloadmotion19.weaponOffset or { 0, 0 }
+        local to = self.stances.reloadmotion20.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion19.weaponRotation, self.stances.reloadmotion20.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion19.armRotation,
+          self.stances.reloadmotion20.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion19.duration))
+      end)
+
+      self.weapon:setStance(self.stances.reloadmotion20)
+      self.weapon:updateAim()
+
+      local progress = 0
+      util.wait(self.stances.reloadmotion20.duration, function()
+        local from = self.stances.reloadmotion20.weaponOffset or { 0, 0 }
+        local to = self.stances.idle.weaponOffset or { 0, 0 }
+        self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
+
+        self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress,
+          self.stances.reloadmotion20.weaponRotation, self.stances.idle.weaponRotation))
+        self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion20.armRotation,
+          self.stances.idle.armRotation))
+
+        progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion20.duration))
+      end)
+
+      storage.totalAmmo = storage.maxAmmo
+      animator.setParticleEmitterActive("smoke", false)
+    end
+    animator.setParticleEmitterActive("smoke", false)
   end
-  animator.setParticleEmitterActive("smoke", false)
-end
 end
 
 function GunFire:firemagazineProjectile(projectileType2, projectileParams, inaccuracy, firePosition, projectileCount)
@@ -498,13 +537,13 @@ function GunFire:firemagazineProjectile(projectileType2, projectileParams, inacc
     end
 
     projectileId = world.spawnProjectile(
-        projectileType2,
-        firePosition or self:firePosition(),
-        activeItem.ownerEntityId(),
-        self:aimVector(inaccuracy or self.inaccuracy),
-        false,
-        params
-      )
+      projectileType2,
+      firePosition or self:firePosition(),
+      activeItem.ownerEntityId(),
+      self:aimVector(inaccuracy or self.inaccuracy),
+      false,
+      params
+    )
   end
   return projectileId
 end
@@ -529,13 +568,13 @@ function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, fi
     end
 
     projectileId = world.spawnProjectile(
-        projectileType,
-        firePosition or self:firePosition(),
-        activeItem.ownerEntityId(),
-        self:aimVector(inaccuracy or self.inaccuracy),
-        false,
-        params
-      )
+      projectileType,
+      firePosition or self:firePosition(),
+      activeItem.ownerEntityId(),
+      self:aimVector(inaccuracy or self.inaccuracy),
+      false,
+      params
+    )
   end
   return projectileId
 end
@@ -545,17 +584,14 @@ function GunFire:firePosition()
 end
 
 function GunFire:aimVector(inaccuracy)
-  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
+  local aimVector = vec2.rotate({ 1, 0 }, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
 end
 
-function GunFire:energyPerShot()
-  return self.energyUsage
-end
-
 function GunFire:damagePerShot()
-  return (self.baseDamage or self.baseDps ) * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
+  return (self.baseDamage or self.baseDps) * (self.baseDamageMultiplier or 1.0) *
+      config.getParameter("damageLevelMultiplier") / self.projectileCount
 end
 
 function GunFire:uninit()
