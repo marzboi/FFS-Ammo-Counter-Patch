@@ -842,7 +842,10 @@ function GunFire:reload()
   end)
 
   self.weapon:setStance(self.stances.reloadmotion10)
-  self:fireProjectile("ffs_case_carlgustaf_start")
+  if storage.magazineIn then
+    self:fireProjectile("ffs_case_carlgustaf_start")
+    storage.magazineIn = false
+  end
   animator.playSound("reload_2")
 
   local progress = 0
@@ -1026,6 +1029,7 @@ function GunFire:reload()
   end)
 
   storage.totalAmmo = storage.maxAmmo
+  storage.magazineIn = true
   animator.setParticleEmitterActive("smoke", false)
 end
 

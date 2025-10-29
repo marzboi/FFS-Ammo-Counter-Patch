@@ -444,7 +444,6 @@ function GunFire:draw20()
 end
 
 function GunFire:update(dt, fireMode, shiftHeld)
-  self.totalAmmo = storage.totalAmmo
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
@@ -678,9 +677,12 @@ function GunFire:reload()
   storage.totalAmmo = 0
 
   self.weapon:setStance(self.stances.reloadmotion1)
-  self:fireProjectile("ffs_case_small_revolver")
-  animator.playSound("reload_1")
-  self:firemagazineProjectile()
+  if storage.magazineIn then
+    self:fireProjectile("ffs_case_small_revolver")
+    animator.playSound("reload_1")
+    self:firemagazineProjectile()
+    storage.magazineIn = false
+  end
 
   local progress = 0
   util.wait(self.stances.reloadmotion1.duration, function()
@@ -1008,6 +1010,7 @@ function GunFire:reload()
   end)
 
   storage.totalAmmo = storage.maxAmmo
+  storage.magazineIn = true
   animator.setParticleEmitterActive("smoke", false)
 end
 

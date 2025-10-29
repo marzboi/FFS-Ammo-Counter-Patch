@@ -757,7 +757,10 @@ function GunFire:reload()
 
   self.weapon:setStance(self.stances.reloadmotion2)
   animator.playSound("fireBolt_2")
-  self:fireProjectile("ffs_case_large_bolt_start")
+  if storage.magazineIn then
+    self:fireProjectile("ffs_case_large_bolt_start")
+    storage.magazineIn = false
+  end
 
   local progress = 0
   util.wait(self.stances.reloadmotion2.duration, function()
@@ -1068,6 +1071,7 @@ function GunFire:reload()
   end)
 
   storage.totalAmmo = storage.maxAmmo
+  storage.magazineIn = true
 end
 
 function GunFire:damagePerShot()

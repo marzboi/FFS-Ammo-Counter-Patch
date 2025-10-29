@@ -789,7 +789,10 @@ function GunFire:reload()
 
   self.weapon:setStance(self.stances.reloadmotion8)
   animator.playSound("reload_3")
-  self:fireProjectile("ffs_case_large_bolt_start")
+  if storage.magazineIn then
+    self:fireProjectile("ffs_case_large_bolt_start")
+    storage.magazineIn = false
+  end
 
   local progress = 0
   util.wait(self.stances.reloadmotion8.duration, function()
@@ -1003,6 +1006,7 @@ function GunFire:reload()
   end)
 
   storage.totalAmmo = storage.maxAmmo
+  storage.magazineIn = true
   animator.setParticleEmitterActive("smoke", false)
 end
 

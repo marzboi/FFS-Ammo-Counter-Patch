@@ -800,7 +800,10 @@ function GunFire:reload()
   end)
 
   self.weapon:setStance(self.stances.reloadmotion7)
-  self:fireProjectile("ffs_shotshell_doublebarrel_start")
+  if storage.magazineIn then
+    self:fireProjectile("ffs_shotshell_doublebarrel_start")
+    storage.magazineIn = false
+  end
 
   local progress = 0
   util.wait(self.stances.reloadmotion7.duration, function()
@@ -1031,6 +1034,7 @@ function GunFire:reload()
 
 
   storage.totalAmmo = storage.maxAmmo
+  storage.magazineIn = true
   animator.setParticleEmitterActive("smoke", false)
 end
 
