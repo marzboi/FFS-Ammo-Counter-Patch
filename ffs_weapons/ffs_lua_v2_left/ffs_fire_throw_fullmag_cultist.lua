@@ -9,6 +9,9 @@ function GunFire:init()
 
   self.cooldownTimer = self.stances.draw.duration
 
+  storage.totalAmmo = 1
+
+  activeItem.setCursor("/cursors/ffs_reticle_normal.cursor")
   self.weapon.onLeaveAbility = function()
     self.weapon:setStance(self.stances.idle)
   end
@@ -23,7 +26,6 @@ function GunFire:draw()
   animator.stopAllSounds("reload_3")
   animator.stopAllSounds("reload_4")
   animator.stopAllSounds("reload_5")
-  status.setResourcePercentage("energy", 0.0)
 
   local progress = 0
   util.wait(self.stances.draw.duration, function()
@@ -388,7 +390,6 @@ end
 
 function GunFire:draw19()
   self.weapon:setStance(self.stances.draw19)
-  status.setResource("energy", 100)
 
   local progress = 0
   util.wait(self.stances.draw19.duration, function()
@@ -409,8 +410,6 @@ end
 
 function GunFire:draw20()
   self.weapon:setStance(self.stances.draw20)
-  status.setResource("energy", 100)
-  status.setResourceLocked("energy")
 
   local progress = 0
   util.wait(self.stances.draw20.duration, function()
@@ -425,14 +424,6 @@ function GunFire:draw20()
 
     progress = math.min(1.0, progress + (self.dt / self.stances.draw20.duration))
   end)
-
-  if not status.resourceLocked("energy") then
-    activeItem.setCursor("/cursors/ffs_reticle_normal.cursor")
-  end
-
-  if status.resourceLocked("energy") and status.resource("energy") <= 0 then
-    activeItem.setCursor("/cursors/ffs_reticle_empty.cursor")
-  end
 end
 
 function GunFire:update(dt, fireMode, shiftHeld)
@@ -443,7 +434,6 @@ function GunFire:update(dt, fireMode, shiftHeld)
   if self.fireMode == (self.activatingFireMode or self.abilitySlot)
       and not self.weapon.currentAbility
       and self.cooldownTimer == 0
-      and not status.resourceLocked("energy")
       and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
     if self.fireType == "auto" then
       self:setState(self.auto)
@@ -454,7 +444,7 @@ end
 function GunFire:auto()
   self.weapon:setStance(self.stances.fire)
 
-  while self.fireMode == (self.activatingFireMode or self.abilitySlot) and status.resource("energy") >= 0.1 do
+  while self.fireMode == (self.activatingFireMode or self.abilitySlot) and storage.totalAmmo >= 1 do
     self.weapon:setStance(self.stances.fire)
     if self.stances.fire.duration then
       util.wait(self.stances.fire.duration)
@@ -466,15 +456,13 @@ function GunFire:auto()
     end
 
     self:fireProjectile()
-    status.overConsumeResource("energy", self:energyPerShot())
+    self:consumeAmmo()
     animator.playSound("fireSingle")
 
     if self.stances.fire.duration then
       util.wait(self.fireTime - (self.stances.fire.duration + self.stances.motion1.duration))
     end
   end
-
-
 
   self:setState(self.cooldown)
 end
@@ -515,17 +503,10 @@ function GunFire:cooldown()
     progress = math.min(1.0, progress + (self.dt / self.stances.cooldown.duration))
   end)
 
-  if not status.resourceLocked("energy") then
-    activeItem.setCursor("/cursors/ffs_reticle_normal.cursor")
-  end
-
-  if status.resourceLocked("energy") and status.resource("energy") <= 0 then
-    activeItem.setCursor("/cursors/ffs_reticle_empty.cursor")
-
+  if storage.totalAmmo < 1 then
     animator.playSound("reload_1")
     self.weapon:setStance(self.stances.reloadmotion1)
     self:firemagazineProjectile()
-    status.setResourcePercentage("energy", 0.0)
 
     local progress = 0
     util.wait(self.stances.reloadmotion1.duration, function()
@@ -574,7 +555,6 @@ function GunFire:cooldown()
     end)
 
     self.weapon:setStance(self.stances.reloadmotion4)
-    activeItem.setCursor("/cursors/ffs_reticle_reload.cursor")
     animator.playSound("reload_2")
 
     local progress = 0
@@ -853,10 +833,7 @@ function GunFire:cooldown()
       progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion20.duration))
     end)
 
-
-    status.setResource("energy", 100)
-    status.setResourceLocked("energy")
-    activeItem.setCursor("/cursors/ffs_reticle_normal.cursor")
+    self:reload()
   end
 end
 
@@ -932,13 +909,17 @@ function GunFire:aimVector(inaccuracy)
   return aimVector
 end
 
-function GunFire:energyPerShot()
-  return self.energyUsage
+function GunFire:consumeAmmo()
+  storage.totalAmmo = storage.totalAmmo - 1
+end
+
+function GunFire:reload()
+  storage.totalAmmo = 1
 end
 
 function GunFire:damagePerShot()
   return (self.baseDamage or self.baseDps) * (self.baseDamageMultiplier or 1.0) *
-  config.getParameter("damageLevelMultiplier") / self.projectileCount
+      config.getParameter("damageLevelMultiplier") / self.projectileCount
 end
 
 function GunFire:uninit()

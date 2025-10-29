@@ -5,11 +5,7 @@ require "/scripts/interp.lua"
 GunFire = WeaponAbility:new()
 
 function GunFire:init()
-  if storage.initialLoad == nil then
-    storage.initialLoad = true
-  end
-
-  if storage.initialLoad then
+  if not storage.isWeaponReady then
     self:setState(self.draw)
     self.cooldownTimer = self.stances.draw.duration
   elseif storage.totalAmmo < 1 then
@@ -443,7 +439,8 @@ function GunFire:draw20()
     progress = math.min(1.0, progress + (self.dt / self.stances.draw20.duration))
   end)
 
-  storage.initialLoad = false
+  storage.isWeaponReady = true
+  storage.magazineIn = true
 end
 
 function GunFire:update(dt, fireMode, shiftHeld)
@@ -510,7 +507,6 @@ function GunFire:auto()
   animator.setParticleEmitterActive("ember", false)
 
   self.weapon:setStance(self.stances.motion2)
-
 
   local progress = 0
   util.wait(self.stances.motion2.duration, function()
@@ -679,7 +675,10 @@ function GunFire:reload()
 
   animator.playSound("reload_1")
   self.weapon:setStance(self.stances.reloadmotion1)
-  self:firemagazineProjectile()
+  if storage.magazineIn then
+    self:firemagazineProjectile()
+    storage.magazineIn = false
+  end
 
   local progress = 0
   util.wait(self.stances.reloadmotion1.duration, function()
@@ -1006,6 +1005,7 @@ function GunFire:reload()
   end)
 
   storage.totalAmmo = storage.maxAmmo
+  storage.magazineIn = true
   animator.setParticleEmitterActive("smoke", false)
 end
 
