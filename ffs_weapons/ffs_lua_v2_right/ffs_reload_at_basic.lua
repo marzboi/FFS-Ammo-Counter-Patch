@@ -116,7 +116,6 @@ function GunFire:reload()
       end)
 
       self.weapon:setStance(self.stances.motion5)
-      status.addEphemeralEffect("ffs_at")
       animator.setParticleEmitterActive("at_smoke", true)
       animator.playSound("fireAT_2")
 

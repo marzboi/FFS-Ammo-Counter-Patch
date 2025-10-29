@@ -428,7 +428,6 @@ end
 
 function GunFire:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
-  status.addEphemeralEffect("ffs_fixmag")
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
 

@@ -91,7 +91,6 @@ function GunFire:auto()
 
   while self.fireMode == (self.activatingFireMode or self.abilitySlot) and self.altAmmoPerShot <= storage.totalAmmo do
     self.weapon:setStance(self.stances.motion3)
-    status.addEphemeralEffect("ffs_heavy")
     animator.playSound("fireLoop2")
     self:fireProjectile()
     self:consumeAmmo()
@@ -111,7 +110,6 @@ function GunFire:auto()
     end)
 
     self.weapon:setStance(self.stances.motion4)
-    status.addEphemeralEffect("ffs_heavy")
 
     local progress = 0
     util.wait(self.stances.motion4.duration, function()
