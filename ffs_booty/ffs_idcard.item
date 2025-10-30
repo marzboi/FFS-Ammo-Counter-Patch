@@ -1,8 +1,0 @@
-{
-  "itemName" : "ffs_idcard",
-  "rarity" : "uncommon",
-  "inventoryIcon" : "ffs_idcard.png",
-  "description" : "Protectorate S.R.S id card.
-I have to get these to the SRS.",
-  "shortdescription" : "^green;SRS AGENT ID CARD"
-}

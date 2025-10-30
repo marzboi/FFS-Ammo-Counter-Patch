@@ -700,7 +700,9 @@ function GunFire:reload()
 
   animator.playSound("reload_1")
   self.weapon:setStance(self.stances.reloadmotion1)
-  self:firemagazineProjectile()
+  if storage.magazineIn then
+    self:firemagazineProjectile()
+  end
 
   local progress = 0
   util.wait(self.stances.reloadmotion1.duration, function()

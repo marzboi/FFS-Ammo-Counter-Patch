@@ -1,9 +1,0 @@
-{
-  "name" : "sword",
-  "category" : "ffs0_demon_2",
-  "type" : "sword",
-
-  "frames" : {
-    "sword" : "sword.png"
-  }
-}

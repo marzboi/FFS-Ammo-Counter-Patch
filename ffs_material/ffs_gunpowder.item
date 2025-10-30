@@ -1,7 +1,0 @@
-{
-  "itemName" : "ffs_gunpowder",
-  "rarity" : "uncommon",
-  "inventoryIcon" : "ffs_gunpowder.png",
-  "description" : "It is a refined gunpowder.",
-  "shortdescription" : "^green;Refined Gunpowder"
-}

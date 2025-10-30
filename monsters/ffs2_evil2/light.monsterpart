@@ -1,9 +1,0 @@
-{
-  "name" : "light",
-  "category" : "ffs2_evil2",
-  "type" : "light",
-
-  "frames" : {
-    "light" : "light.png"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "itemName" : "ffs_ammunition_2",
-  "rarity" : "uncommon",
-  "inventoryIcon" : "ffs_ammunition_2.png",
-  "description" : "A titanium ammunition.",
-  "shortdescription" : "^green;Titanium Ammo"
-}

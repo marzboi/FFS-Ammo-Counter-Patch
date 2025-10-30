@@ -1,9 +1,0 @@
-{
-  "name" : "fullbright",
-  "category" : "ffs2_lastboss_mainpower",
-  "type" : "fullbright",
-
-  "frames" : {
-    "fullbright" : "fullbright.png"
-  }
-}

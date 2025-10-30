@@ -1,9 +1,0 @@
-{
-  "name" : "ffs_airborne_stop",
-  "effectConfig" : {},
-  "defaultDuration" : 100.0,
-
-  "scripts" : [
-    "ffs_airborne_stop.lua"
-  ]
-}

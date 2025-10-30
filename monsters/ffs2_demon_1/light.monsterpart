@@ -1,9 +1,0 @@
-{
-  "name" : "light",
-  "category" : "ffs2_demon_1",
-  "type" : "light",
-
-  "frames" : {
-    "light" : "light.png"
-  }
-}

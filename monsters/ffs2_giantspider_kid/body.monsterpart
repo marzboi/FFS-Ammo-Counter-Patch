@@ -1,9 +1,0 @@
-{
-  "name" : "body",
-  "category" : "ffs2_giantspider_kid",
-  "type" : "body",
-
-  "frames" : {
-    "body" : "body.png"
-  }
-}

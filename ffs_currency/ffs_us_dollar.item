@@ -1,9 +1,0 @@
-{
-  "itemName" : "ffs_us_dollar",
-  "rarity" : "common",
-  "inventoryIcon" : "ffs_us_dollar.png",
-  "description" : "Universal Space credit 1$.",
-  "shortdescription" : "^white;1 Dollar",
-  "maxStack" : 1000000,
-  "price" : 1
-}

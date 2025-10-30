@@ -1,8 +1,0 @@
-{
-  "itemName" : "ffs_solariumpowder",
-  "rarity" : "uncommon",
-  "inventoryIcon" : "ffs_solariumpowder.png",
-  "description" : "Refined solarium star's dust.
-It can be an alternative to hi-tier gunpowder.",
-  "shortdescription" : "^green;Solarium Powder"
-}

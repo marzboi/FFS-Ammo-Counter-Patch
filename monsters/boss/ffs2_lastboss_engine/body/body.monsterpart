@@ -1,9 +1,0 @@
-{
-  "name" : "body",
-  "category" : "ffs2_lastboss_engine",
-  "type" : "body",
-
-  "frames" : {
-    "body" : "body.png"
-  }
-}

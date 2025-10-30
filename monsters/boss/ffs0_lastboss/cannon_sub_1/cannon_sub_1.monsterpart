@@ -1,9 +1,0 @@
-{
-  "name" : "cannon_sub_1",
-  "category" : "ffs0_lastboss",
-  "type" : "cannon_sub_1",
-
-  "frames" : {
-    "cannon_sub_1" : "cannon_sub_1.png"
-  }
-}

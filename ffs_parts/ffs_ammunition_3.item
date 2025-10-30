@@ -1,7 +1,0 @@
-{
-  "itemName" : "ffs_ammunition_3",
-  "rarity" : "uncommon",
-  "inventoryIcon" : "ffs_ammunition_3.png",
-  "description" : "A durasteel ammunition.",
-  "shortdescription" : "^green;Durasteel Ammo"
-}

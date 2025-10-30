@@ -1,9 +1,0 @@
-{
-  "itemName" : "ffs_breadnut_OperationDiary",
-  "rarity" : "uncommon",
-  "inventoryIcon" : "ffs_breadnut_OperationDiary.png",
-  "description" : "^red;'Dissemination Diary' 
-  ^white;'Date : xxxx. xx. xx. xxx.' 
-  ^white;'coordinate : xxx. xx. xxxx'",
-  "shortdescription" : "^green;Second-class secret"
-}

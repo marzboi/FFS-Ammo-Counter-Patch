@@ -1,9 +1,0 @@
-{
-  "name" : "ffs_punchy",
-  "category" : "ffs_punchy",
-  "type" : "body",
-
-  "frames" : {
-    "body" : "ffs_punchy.png"
-  }
-}

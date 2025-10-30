@@ -1,9 +1,0 @@
-{
-  "name" : "light",
-  "category" : "ffs2_giantspider_kid",
-  "type" : "light",
-
-  "frames" : {
-    "light" : "light.png"
-  }
-}

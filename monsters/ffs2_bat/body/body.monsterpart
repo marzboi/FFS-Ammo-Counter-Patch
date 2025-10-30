@@ -1,9 +1,0 @@
-{
-  "name" : "ffs2_bat",
-  "category" : "ffs2_bat",
-  "type" : "body",
-
-  "frames" : {
-    "body" : "ffs2_bat.png"
-  }
-}

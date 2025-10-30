@@ -1,9 +1,0 @@
-{
-  "name" : "body",
-  "category" : "ffs2_giantspider",
-  "type" : "body",
-
-  "frames" : {
-    "body" : "body.png"
-  }
-}

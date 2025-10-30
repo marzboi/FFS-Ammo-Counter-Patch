@@ -1,9 +1,0 @@
-{
-  "name" : "body",
-  "category" : "ffs_cultist_carrier_medium",
-  "type" : "body",
-
-  "frames" : {
-    "body" : "body.png"
-  }
-}

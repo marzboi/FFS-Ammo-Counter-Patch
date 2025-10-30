@@ -1,8 +1,0 @@
-{
-  "itemName" : "ffs_us_100dollarx100",
-  "rarity" : "rare",
-  "inventoryIcon" : "ffs_us_100dollarx100.png",
-  "description" : "A hundred of Universal Space credit 100$.",
-  "shortdescription" : "^#00a2ff;10k Dollars",
-  "price" : 10000
-}

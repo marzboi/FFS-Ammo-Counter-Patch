@@ -1,9 +1,0 @@
-{
-  "name" : "aagun_4",
-  "category" : "ffs0_lastboss",
-  "type" : "aagun_4",
-
-  "frames" : {
-    "aagun_4" : "aagun_4.png"
-  }
-}

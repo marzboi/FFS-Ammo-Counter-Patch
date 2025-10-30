@@ -1,9 +1,0 @@
-{
-  "name" : "cannon_2",
-  "category" : "ffs0_lastboss",
-  "type" : "cannon_2",
-
-  "frames" : {
-    "cannon_2" : "cannon_2.png"
-  }
-}
