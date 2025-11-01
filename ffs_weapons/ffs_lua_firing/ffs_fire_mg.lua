@@ -712,7 +712,7 @@ function GunFire:reload()
     self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadmotion1.armRotation,
       self.stances.reloadmotion2.armRotation))
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion1.duration))
+    progress = math.min(1.0, progress + (self.stances.reloadmotion1.duration))
   end)
 
   self.weapon:setStance(self.stances.reloadmotion2)

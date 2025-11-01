@@ -463,8 +463,6 @@ function GunFire:auto()
     end
   end
 
-
-
   self:setState(self.cooldown)
 end
 
