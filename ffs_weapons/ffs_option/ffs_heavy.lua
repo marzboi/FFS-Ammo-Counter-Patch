@@ -29,9 +29,6 @@ function update(dt, fireMode, shiftHeld)
   mcontroller.controlModifiers({
     airJumpModifier = 1.0
   })
-  mcontroller.controlModifiers({
-    runningSuppressed = true
-  })
 end
 
 function uninit()

@@ -446,7 +446,6 @@ end
 
 function GunFire:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
-  status.addEphemeralEffect("ffs_fixmag")
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
 
@@ -534,7 +533,6 @@ function GunFire:auto()
 
   while storage.totalAmmo >= 1 do
     self.weapon:setStance(self.stances.motion3)
-    status.addEphemeralEffect("ffs_heavy")
     self:fireProjectile()
     self:consumeAmmo()
 
@@ -553,7 +551,6 @@ function GunFire:auto()
     end)
 
     self.weapon:setStance(self.stances.motion4)
-    status.addEphemeralEffect("ffs_heavy")
 
     local progress = 0
     util.wait(self.stances.motion4.duration, function()

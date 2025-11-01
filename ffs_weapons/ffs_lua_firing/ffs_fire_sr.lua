@@ -550,7 +550,6 @@ function GunFire:auto()
     end)
 
     self.weapon:setStance(self.stances.motion5)
-    status.addEphemeralEffect("ffs_concentration")
 
     local progress = 0
     util.wait(self.stances.motion5.duration, function()
@@ -568,7 +567,6 @@ function GunFire:auto()
 
     self.weapon:setStance(self.stances.motion6)
     animator.playSound("fireBolt_1")
-    status.addEphemeralEffect("ffs_concentration")
 
     local progress = 0
     util.wait(self.stances.motion6.duration, function()
@@ -590,7 +588,6 @@ function GunFire:auto()
     animator.setParticleEmitterActive("smoke_end", false)
     animator.setParticleEmitterActive("ember", false)
     animator.setParticleEmitterActive("smoke", true)
-    status.addEphemeralEffect("ffs_concentration")
 
     local progress = 0
     util.wait(self.stances.motion7.duration, function()
@@ -608,7 +605,6 @@ function GunFire:auto()
 
     self.weapon:setStance(self.stances.motion8)
     animator.playSound("fireBolt_3")
-    status.addEphemeralEffect("ffs_concentration")
 
     local progress = 0
     util.wait(self.stances.motion8.duration, function()
@@ -626,7 +622,6 @@ function GunFire:auto()
 
     self.weapon:setStance(self.stances.motion9)
     animator.playSound("fireBolt_4")
-    status.addEphemeralEffect("ffs_concentration")
 
     local progress = 0
     util.wait(self.stances.motion9.duration, function()
@@ -643,7 +638,6 @@ function GunFire:auto()
     end)
 
     self.weapon:setStance(self.stances.motion10)
-    status.addEphemeralEffect("ffs_concentration")
 
     local progress = 0
     util.wait(self.stances.motion10.duration, function()

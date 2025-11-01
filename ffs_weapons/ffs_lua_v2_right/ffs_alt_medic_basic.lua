@@ -34,7 +34,6 @@ function GunFire:auto()
   self.weapon:setStance(self.stances.fire)
   self:fireProjectile()
   self:consumeAmmo()
-  status.addEphemeralEffect("ffs_treatment")
 
   local progress = 0
   util.wait(self.stances.fire.duration, function()
