@@ -499,6 +499,7 @@ function GunFire:auto()
     self:fireProjectile()
     self:consumeAmmo()
 
+
     local progress = 0
     util.wait(self.stances.motion2.duration, function()
       local from = self.stances.motion2.weaponOffset or { 0, 0 }
@@ -1006,6 +1007,7 @@ function GunFire:reload()
 
     progress = math.min(1.0, progress + (self.dt / self.stances.reloadmotion20.duration))
   end)
+
 
   storage.totalAmmo = storage.maxAmmo
   animator.setParticleEmitterActive("smoke", false)
