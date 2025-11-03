@@ -1,0 +1,214 @@
+{
+  "projectileName" : "ffs_bullet_PL10Overheat",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "ffs_bullet_PL10.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 20,
+  "speed" : 10,
+  "lightColor" : [70, 130, 180],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_PL10_exp/ffs_PL10_expOverheat.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 45,
+      "delaySteps" : 2,
+      "angle" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 45,
+      "delaySteps" : 5,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 45,
+      "delaySteps" : 9,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 0,
+      "angle" : 315
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 1,
+      "angle" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 2,
+      "angle" : 225
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 3,
+      "angle" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 4,
+      "angle" : 135
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 5,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 6,
+      "angle" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 7,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 0,
+      "angle" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 0,
+      "angle" : 330
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 1,
+      "angle" : 300
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 2,
+      "angle" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 3,
+      "angle" : 240
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 4,
+      "angle" : 210
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 5,
+      "angle" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 6,
+      "angle" : 150
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 7,
+      "angle" : 120
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 8,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 9,
+      "angle" : 60
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 10,
+      "angle" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_small",
+      "inheritDamageFactor" : 0.0,
+      "delaySteps" : 10,
+      "fuzzAngle" : 15,
+      "angle" : 0
+    }
+  ],
+  "power" : 75,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

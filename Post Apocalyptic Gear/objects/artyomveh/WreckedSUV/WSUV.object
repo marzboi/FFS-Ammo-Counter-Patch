@@ -1,0 +1,42 @@
+{
+  "objectName" : "WSUV",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Wrecked Ford Flex.",
+  "shortdescription" : "Wrecked SUV",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's Ford Flex. But, wrecked.",
+  "avianDescription" : "It's Ford Flex. But, wrecked.",
+  "floranDescription" : "It'sss Ford Flexr. But, wrecked.",
+  "glitchDescription" : "It's Ford Flex. But, wrecked.",
+  "humanDescription" : "It's Ford Flexr. But, wrecked.",
+  "hylotlDescription" : "It's Ford Flex. But, wrecked.",
+  "novakidDescription":  "It's Ford Flex. But, wrecked.",
+
+  "inventoryIcon" : "WSUVIcon.png",
+  "orientations" : [
+    {
+      "image" : "WSUV.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "WSUV.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_m4a1_1", 
+	"count" : 1
+	},
+    { 
+	"item" : "ffs_barrel_4", 
+	"count" : 10
+	},
+    { 
+	"item" : "ffs_ammunition_4", 
+	"count" : 5
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffsar_M4A1Desert",
+	"count" : 1
+	},
+	"groups" : [ "ffs_modify",  "ffs_yuri" ]
+}

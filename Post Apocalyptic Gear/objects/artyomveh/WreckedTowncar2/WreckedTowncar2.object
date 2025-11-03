@@ -1,0 +1,42 @@
+{
+  "objectName" : "WreckedTowncar2",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Wrecked Towncar.",
+  "shortdescription" : "Wrecked Towncar 2",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's generic American Sedan. But, wrecked.",
+  "avianDescription" : "It's generic American Sedan. But, wrecked.",
+  "floranDescription" : "It'sss generic American Sedan. But, wrecked.",
+  "glitchDescription" : "It's generic American Sedan. But, wrecked.",
+  "humanDescription" : "It's generic American Sedan. But, wrecked.",
+  "hylotlDescription" : "It's generic American Sedan. But, wrecked.",
+  "novakidDescription":  "It's generic American Sedan. But, wrecked.",
+
+  "inventoryIcon" : "TowncarIcon.png",
+  "orientations" : [
+    {
+      "image" : "Towncar.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "Towncar.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

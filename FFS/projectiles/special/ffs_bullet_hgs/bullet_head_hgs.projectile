@@ -1,0 +1,29 @@
+{
+  "projectileName" : "bullet_head_hgs",
+  "image" : "bullet_head_hgs.png",
+  "animationCycle" : 2.0,
+  "piercing" : false,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 2.0,
+  "emitters" : [ "iceplasma" ],
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "bullet_head_hgs2",
+      "inheritDamageFactor" : 0,
+      "fuzzAngle" : 360
+    },
+    {
+      "action" : "config",
+      "file" : "/gunshop/bullet/bullet_head_hgs.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 200,
+  "lightColor" : [0, 0, 60],
+  "damageKind" : "default",
+  "fullbright" : true
+}

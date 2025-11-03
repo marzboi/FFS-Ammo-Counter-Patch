@@ -1,0 +1,53 @@
+{
+  "projectileName" : "ffs_ruin_bigspike_start2",
+  "image" : "icon.png",
+  "piercing" : false,
+  "timeToLive" : 0,
+  "frameNumber" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_bigspike_1",
+      "inheritDamageFactor" : 1,
+      "offset" : [-50, 0],
+      "delaySteps" : 0,
+      "angle" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_bigspike_1",
+      "inheritDamageFactor" : 1,
+      "offset" : [-20, 0],
+      "delaySteps" : 25,
+      "angle" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_bigspike_1",
+      "inheritDamageFactor" : 1,
+      "offset" : [10, 0],
+      "delaySteps" : 50,
+      "angle" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_bigspike_1",
+      "inheritDamageFactor" : 1,
+      "offset" : [40, 0],
+      "delaySteps" : 75,
+      "angle" : -90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_bigspike_1",
+      "inheritDamageFactor" : 1,
+      "offset" : [70, 0],
+      "delaySteps" : 100,
+      "angle" : -90
+    }
+  ],
+  "power" : 1,
+  "speed" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

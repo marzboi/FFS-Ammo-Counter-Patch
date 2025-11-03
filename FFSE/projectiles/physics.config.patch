@@ -1,0 +1,60 @@
+[ 
+  {
+    "op":"add",
+    "path":"/ffs_RGPC",
+    "value":{
+    "mass" : 0.1,
+    "gravityMultiplier" : 1.0,
+    "bounceFactor" : 0.7,
+    "stopOnFirstBounce" : true,
+    "maxMovementPerStep" : 0.4,
+    "collisionEnabled" : false,
+    "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+    "ignorePlatformCollision" : true,
+    "liquidBuoyancy" : 1.0,
+
+    "airFriction" : 0.1,
+    "liquidFriction" : 0.1,
+    "groundFriction" : 0.1,
+    "maximumCorrection" : 0.75
+    }
+  },
+  {
+    "op":"add",
+    "path":"/ffs_RG",
+    "value":{
+    "mass" : 0.5,
+    "gravityMultiplier" : 1.0,
+    "bounceFactor" : 0.7,
+    "stopOnFirstBounce" : true,
+    "maxMovementPerStep" : 0.4,
+    "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+    "ignorePlatformCollision" : true,
+    "liquidBuoyancy" : 1.0,
+
+    "airFriction" : 1,
+    "liquidFriction" : 1.5,
+    "groundFriction" : 7.5,
+    "maximumCorrection" : 0.75
+    }
+  },
+  {
+    "op":"add",
+    "path":"/ffs_Las",
+    "value":{
+    "mass" : 30.0,
+    "gravityMultiplier" : 0.0,
+    "bounceFactor" : 0.7,
+    "stopOnFirstBounce" : true,
+    "maxMovementPerStep" : 0.4,
+    "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+    "ignorePlatformCollision" : true,
+    "liquidBuoyancy" : 1.0,
+
+    "airFriction" : 0.25,
+    "liquidFriction" : 0.5,
+    "groundFriction" : 0.5,
+    "maximumCorrection" : 0.75
+    }
+  }
+]

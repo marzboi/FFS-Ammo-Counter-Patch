@@ -1,0 +1,34 @@
+{
+  "id" : "ffs_episode_0_7",
+  "mainQuest" : true,
+  "title" : "^red;FFS ^green;EP.0 - Main ^White;Great Escape",
+  "text" : "I rescued all survivors.
+So, there is only last objective left.
+Let's get back to dropship.",
+  "completionText" : "Pirates captain blocked our way.",
+  "completionCinema" : "/cinematics/ffs_cinema/ffs_dropship.cinematic",
+  "moneyRange" : [1, 1],
+  "rewards" : [
+    [ ["ffs_dressingkit", 10] ]
+  ],
+  "canBeAbandoned" : false,
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "money",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+    "followUp" : "ffs_episode_0_8",
+    "requireTurnIn" : true,
+    "turnInEntityUid" : "ffs_episode_0_7"
+  },
+  "prerequisites" : [ "ffs_episode_0_6" ]
+}

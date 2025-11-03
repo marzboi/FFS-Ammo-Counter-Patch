@@ -1,0 +1,42 @@
+{
+  "objectName" : "artyomapocHumveeD",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Makeshift Military Jeep.",
+  "shortdescription" : "Survivor's Desert Humvee",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "A wheeled machine, clumpy.",
+  "avianDescription" : "How unelegant this machine is.",
+  "floranDescription" : "Sssmells funny.",
+  "glitchDescription" : "Interested. Human military transporting machine.",
+  "humanDescription" : "It's military jeep.",
+  "hylotlDescription" : "Human's wheeled vehicle.",
+  "novakidDescription":  "It looks like a wheeled... rhino.",
+  
+  "inventoryIcon" : "Humveeicon.png",
+  "orientations" : [
+    {
+      "image" : "Humvee.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "Humvee.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

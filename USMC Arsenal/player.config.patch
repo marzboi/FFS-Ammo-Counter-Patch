@@ -1,0 +1,30 @@
+[   
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_m39_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_m41a_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_m56_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_m4a3_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_vp78_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_m4ra_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_m40frag"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_m37a2_U"} },
+
+
+
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_back_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_Antitankback_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_sniperback_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_supportback_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_PLU_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_Assaulterchest_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_Antitankchest_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_sniperchest_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_supportchest_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_Antitankhead_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_Assaulterhead_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_sniperhead_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_supporthead_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_Antitanklegs_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_Assaulterlegs_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_sniperlegs_U"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_USCM_supportlegs_U"} }
+]

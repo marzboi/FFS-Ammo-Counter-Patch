@@ -1,0 +1,13 @@
+{
+  "name" : "ffs_inquisitorshield40",
+  "effectConfig" : {
+  },
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "ffs_inquisitorshield40.lua"
+  ],
+  "scriptDelta" : 1,
+
+  "animationConfig" : "ffs_inquisitorshield.animation"
+}

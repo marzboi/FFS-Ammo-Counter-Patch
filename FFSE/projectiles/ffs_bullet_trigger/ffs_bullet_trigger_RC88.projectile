@@ -1,0 +1,33 @@
+{
+  "projectileName" : "ffs_bullet_trigger_RC88",
+  "image" : "icon.png",
+  "lightColor" : [0, 191, 255],
+  "pointLight" : true,
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0.0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RCHVAPFSDS_start",
+      "inheritDamageFactor" : 1,
+	  "offset" : [1.0, -0.8],
+      "speed" : 75,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_none",
+      "inheritDamageFactor" : 0,
+      "fuzzAngle" : 45,
+      "speed" : 10,
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 75,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

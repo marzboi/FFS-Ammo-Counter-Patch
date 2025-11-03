@@ -1,0 +1,20 @@
+{
+  "projectileName" : "ffs_bullet_Laserbeam",
+  "image" : "ffs_bullet_Laserbeam.png",
+  "frameNumber" : 30,
+  "timeToLive" : 3.0,
+  "animationCycle" : 2.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_Laser_head.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 3000,
+  "physics" : "ffs_Las",
+  "lightColor" : [186, 34, 62],
+  "damageKind" : "default",
+  "fullbright" : true
+}

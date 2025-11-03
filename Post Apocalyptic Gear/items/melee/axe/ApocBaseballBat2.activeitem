@@ -1,0 +1,44 @@
+{
+  "itemName" : "ApocBaseballBat2",
+  "price" : 150,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "Let's home run some heads.",
+  "shortdescription" : "Nailed Baseball Bat",
+  "tooltipKind" : "base",
+  "category" : "Axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","axe"],
+ 
+  "inventoryIcon" : "ApocBaseballBat2.png",
+
+  "animation" : "/items/active/weapons/melee/axe/axe.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "ApocBaseballBat2.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "axecleave",
+  "primaryAbility" : {
+    "fireTime" : 0.76,
+    "baseDps" : 25,
+    "damageConfig" : {
+      "damageSourceKind" : "slash",
+      "knockbackRange" : 35
+    }
+  },
+
+  "altAbilityType" : "",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

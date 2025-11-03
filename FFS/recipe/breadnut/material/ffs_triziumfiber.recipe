@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_trizium", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_triziumfiber",
+	"count" : 3
+	},
+	"groups" : [ "ffs_material",  "ffs_breadnut" ]
+}

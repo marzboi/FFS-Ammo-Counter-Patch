@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "mk_k4sniper_bluoplasma_1", "count" : 1 },
+	{ "item" : "mk_compensator", "count" : 1 },
+	{ "item" : "mk_flashlight", "count" : 1 }
+  ],
+  "duration" : 1,
+  "output" : { "item" : "mk_k4sniper_bluoplasma_cf_1", "count" : 1 },
+  "groups" : [ "mk_attachmentworkshop", "mk_attachment_cf" ]
+}

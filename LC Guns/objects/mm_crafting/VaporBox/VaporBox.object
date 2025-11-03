@@ -1,0 +1,55 @@
+{
+  "objectName" : "VaporBox",
+  "colonyTags" : ["outpost","commerce"],
+  "price" : 200,
+  "rarity" : "uncommon",
+  "category" : "other",
+  "description" : "May I give u the waves?",
+  "shortdescription" : "My friends Cancer guns",
+  "race" : "generic",
+
+  "apexDescription" : "True waves.",
+  "avianDescription" : "Where my vape at?",
+  "floranDescription" : "Is this a fucking joke?",
+  "glitchDescription" : "Box?",
+  "humanDescription" : "Gang",
+  "hylotlDescription" : "AestheticBox.",
+  "novakidDescription" : "Yes give me the waves!.",
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/VaporBox.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "VaporBox",
+        "subtitle" : " ^#b9b5b2;My friends Cancer guns?"
+      }
+    },
+    "buyFactor" : 1.0,
+    "sellFactor" : 0.1,
+    "items" : [
+	  { "item" : "ffs_V1B1N" }
+    ]
+  },
+  "printable" : false,
+  "lightColor" : [50, 0, 150],
+  // Masking Fullbright Transparency Values: 0% brightness on lights, 70% brightness on posters in window, 70% on window
+
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "VaporBox.png:<color>.<frame>", "fullbright" : true }, { "image" : "VaporBoxlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 8,
+      "animationCycle" : 2.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+    "collision" : "null"
+
+    }
+  ]
+
+}

@@ -1,0 +1,128 @@
+{
+  "type" : "ffs_swat_tanker",
+  "baseType" : "ffs_base_swat_tanker",
+
+  "levelVariance" : [1, 1],
+  "persistent" : true,
+
+  "damageTeamType" : "friendly",
+
+  "scriptConfig" : {
+    "behavior" : "follower",
+
+    "behaviorConfig" : {
+      "greetingChance" : 0.67,
+      "patrolTime" : 1,
+
+      "hostileDamageTeam" : { "type" : "friendly", "team" : 1 }
+    },
+    "attackerLimit" : 8,
+    "attackerLimitCooldown" : 3,
+    
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+
+    "reactions" : {
+      "spontaneous" : [
+        [5.0, "sleep", { "timeRange" : [0.7, 0.9] }],
+        [1.0, "patrol"]
+      ]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+
+      "follower" : {
+        "attack" : {
+          "default" : {
+            "default" : [
+              "Attack!",
+              "I will take point!",
+              "Stay calm, I'll be there!"
+            ]
+          }
+        },
+        "join" : {
+          "default" : {
+            "default" : [
+              "It's an honor to meet you, agent!"
+            ]
+          }
+        },
+        "returnFromCombat" : {
+          "default" : {
+            "default" : [
+              "Area clear!"
+            ]
+          }
+        },
+        "wait" : {
+          "default" : {
+            "default" : [
+              "Yes!",
+              "Copy that!",
+              "Roger!",
+              "Ok! Waiting your command,agent!"
+            ]
+          }
+        },
+        "returnFromWait" : {
+          "default" : {
+            "default" : [
+              "Roger! I'm moving, agent!",
+              "Copy that. I'm moving, agent!",
+              "Roger! I'm moving, agent!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "ffs_4tier_swat_bluehead" } ],
+            "chest" : [ { "name" : "ffs_4tier_swat_bluechest" } ],
+            "legs" : [ { "name" : "ffs_4tier_swat_bluelegs" } ],
+            "primary" : [ "ffs_police_baton", "ffs_beretta92_npc" ],
+            "alt" : [ "riotshield" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 500.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.65
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 100
+      },
+      "ffs_bleedingImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

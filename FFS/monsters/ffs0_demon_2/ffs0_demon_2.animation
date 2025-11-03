@@ -1,0 +1,278 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "priority" : 0,
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "walk" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "loop"
+          },
+          "run" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "loop"
+          },
+          "jump" : {
+            "frames" : 3,
+            "cycle" : 0.3
+          },
+          "fall" : {
+            "frames" : 3,
+            "cycle" : 0.3
+          },
+          "chargeup" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "properties" : {
+            "immediateSound" : "/sfx/monster/ffs0_demon_2_attack.ogg"
+            }
+          },
+          "chargedown" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "properties" : {
+            "immediateSound" : "/sfx/melee/swing_dagger.ogg"
+            }
+          },
+          "chargewindup" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "loop",
+            "properties" : {
+            "immediateSound" : "/sfx/monster/ffs0_demon_2_attack.ogg"
+            }
+          },
+          "chargewinddown" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "loop",
+            "properties" : {
+            "immediateSound" : "/sfx/melee/swing_dagger.ogg"
+            }
+          }
+        }
+      },
+      "damage" : {
+        "priority" : 3,
+        "default" : "none",
+        "states" : {
+          "none" : {
+            "frames" : 1
+          },
+          "stunned" : {
+            "frames" : 1
+          }
+        }
+      },
+      "releaseParticles" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "frames" : 1,
+            "properties" : {
+              "particleEmittersOff" : [ "releaseParticles" ]
+            }
+          },
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "off",
+            "properties" : {
+              "particleEmittersOn" : [ "releaseParticles" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "transformationGroups" : [ "body" ],
+          "zLevel" : 2
+        },
+
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "walk" : {
+              "properties" : {
+                "image" : "<partImage>:walk.<frame>"
+              }
+            },
+            "run" : {
+              "properties" : {
+                "image" : "<partImage>:walk.<frame>"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "<partImage>:jump.<frame>"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "<partImage>:fall.<frame>"
+              }
+            },
+            "chargeup" : {
+              "properties" : {
+                "image" : "<partImage>:chargeup.<frame>"
+              }
+            },
+            "chargedown" : {
+              "properties" : {
+                "image" : "<partImage>:chargedown.<frame>"
+              }
+            },
+            "chargewindup" : {
+              "properties" : {
+                "image" : "<partImage>:melee.<frame>"
+              }
+            },
+            "chargewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:melee.<frame>"
+              }
+            },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:hurt.<frame>"
+              }
+            }
+		  }
+         }
+        }
+      },
+
+      "sword" : {
+        "properties" : {
+          "transformationGroups" : [ "body" ],
+          "zLevel" : 5
+        },
+
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : null
+              }
+            },
+            "walk" : {
+              "properties" : {
+                "image" : null
+              }
+            },
+            "run" : {
+              "properties" : {
+                "image" : null
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : null
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : null
+              }
+            },
+            "chargeup" : {
+              "properties" : {
+                "image" : "<partImage>:meleeup.<frame>",
+				"fullbright" : true,
+				"damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 1.0], [0, 4.25], [0.75, 1.0], [0.75, 1.0]]
+              }
+            },
+            "chargedown" : {
+              "properties" : {
+                "image" : "<partImage>:meleedown.<frame>",
+				"fullbright" : true,
+				"damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 1.0], [0, 4.25], [0.75, 1.0], [0.75, 1.0]]
+              }
+            },
+            "chargewindup" : {
+              "properties" : {
+                "image" : "<partImage>:melee.<frame>",
+				"fullbright" : true,
+				"damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 1.0], [0, 4.25], [0.75, 1.0], [0.75, 1.0]]
+              }
+            },
+            "chargewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:melee.<frame>",
+				"fullbright" : true,
+				"damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 1.0], [0, 4.25], [0.75, 1.0], [0.75, 1.0]]
+              }
+            },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:hurt.<frame>"
+              }
+            }
+          }
+		 }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "body" : { "interpolated" : true }
+  },
+
+  "particleEmitters" : {
+    "captureParticles" : {
+      "particles" : [
+        { "particle" : "monstercapture" }
+      ]
+    },
+    "releaseParticles" : {
+      "particles" : [
+        { "particle" : "monsterrelease" }
+      ]
+    },
+    "teleportOut" : {
+      "particles" : [
+        { "particle" : "monstercapture" }
+      ]
+    },
+    "teleportIn" : {
+      "particles" : [
+        { "particle" : "monsterrelease" }
+      ]
+    },
+    "deathPoof" : {
+      "particles" : [
+      ]
+    }
+  },
+
+  "sounds" : {
+    "aggroHop" : [ "/sfx/monster/ffs0_demon_2_spot.ogg" ],
+    "deathPuff" : [ "/sfx/monster/ffs0_demon_2_dying.ogg" ],
+    "fire" : [ "/sfx/monster/ffs0_demon_2_attack.ogg" ]
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0.25,
+      "directives" : "fade=ffffff;0.5"
+    }
+  }
+}

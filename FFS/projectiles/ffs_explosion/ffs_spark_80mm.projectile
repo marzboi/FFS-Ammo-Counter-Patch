@@ -1,0 +1,18 @@
+{
+  "projectileName" : "ffs_spark_80mm",
+  "image" : "ffs_spark_80mm.png",
+  "animationCycle" : 1.0,
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 0.5,
+  "power" : 10,
+  "speed" : 0,
+  "damagePoly" : [ [-30, 0], [-20, -20], [0, -30], [20, -20], [30, 0], [20, 20], [0, 30], [-20, 20] ],
+  "damageKind" : "default",
+  "damageType" : "NoDamage",
+  "fullbright" : true
+}

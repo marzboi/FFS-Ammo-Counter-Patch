@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "money", 
+	"count" : 200
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_peacestore",
+	"count" : 1
+	},
+	"groups" : [ "plain",  "all" ]
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "op": "replace",
+    "path": "/items/override/0/1/0/primary/0/name",
+    "value": "ffs_arblizzard"
+  },
+  {
+    "op": "replace",
+    "path": "/items/override/0/1/0/primary/1/name",
+    "value": "ffs_PDFrostbite"
+  },
+  {
+    "op": "replace",
+    "path": "/items/override/0/1/0/primary/2/name",
+    "value": "ffs_QRCType"
+  },
+  {
+    "op": "replace",
+    "path": "/items/override/0/1/0/primary/3/name",
+    "value": "ffs_FMFirelance"
+  },
+  {
+    "op": "remove",
+    "path": "/items/override/0/1/0/primary/4"
+  },
+  {
+    "op": "remove",
+    "path": "/items/override/0/1/0/primary/4"
+  },
+  {
+    "op": "remove",
+    "path": "/items/override/0/1/0/primary/4"
+  },
+  {
+    "op": "remove",
+    "path": "/items/override/0/1/0/primary/4"
+  },
+  {
+    "op": "remove",
+    "path": "/items/override/0/1/0/primary/4"
+  },
+  {
+    "op": "remove",
+    "path": "/items/override/0/1/0/primary/4"
+  },
+  {
+    "op": "remove",
+    "path": "/items/override/0/1/0/primary/4"
+  },
+  {
+    "op": "replace",
+    "path": "/items/override/0/1/0/alt/0/name",
+    "value": "commondagger"
+  },
+  {
+    "op": "add",
+    "path": "/items/override/0/1/0/alt/-",
+    "value": {
+      "name": "commonaxe"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/items/override/0/1/0/alt/-",
+    "value": {
+      "name": "commonshortsword"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/items/override/0/1/0/alt/-",
+    "value": {
+      "name": "commonbroadsword"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/items/override/0/1/0/alt/-",
+    "value": {
+      "name": "commonhammer"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/items/override/0/1/0/alt/-",
+    "value": {
+      "name": "commonspear"
+    }
+  }
+]

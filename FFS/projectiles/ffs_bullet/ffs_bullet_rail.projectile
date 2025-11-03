@@ -1,0 +1,23 @@
+{
+  "projectileName" : "ffs_bullet_rail",
+  "image" : "ffs_bullet_rail.png",
+  "frameNumber" : 1,
+  "timeToLive" : 3.0,
+  "renderLayer" : "FrontParticle+1",
+  "piercing" : true,
+  "bounces" : 0,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head.config"
+    }
+  ],
+  "statusEffects" : [
+    "ffs_bleeding"
+  ],
+  "power" : 5.0,
+  "speed" : 170,
+  "damageKind" : "default",
+  "damageType" : "ignoresdef",
+  "fullbright" : true
+}

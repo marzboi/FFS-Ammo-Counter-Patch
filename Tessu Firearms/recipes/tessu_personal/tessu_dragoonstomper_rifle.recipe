@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 1997 }
+ 
+  ],
+  "output" : {
+    "item" : "tessu_dragoonstomper_rifle",
+    "count" : 1
+  },
+  "duration" : 0.1,
+  "groups" : [ "tessu_weaponbuilding", "tessu_personal" ]
+}

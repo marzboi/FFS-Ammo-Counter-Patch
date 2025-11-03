@@ -1,0 +1,102 @@
+[
+  {
+    "op": "add",
+    "path": "/items/default/0/1/0/primary/-",
+    "value": "ffs_SPR"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/0/primary/-",
+    "value": "ffs_arblizzard"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/0/primary/-",
+    "value": "ffs_LR-15"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/0/primary/-",
+    "value": "ffs_StrikerBK"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/1/primary/-",
+    "value": "ffs_SPR"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/1/primary/-",
+    "value": "ffs_arblizzard"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/1/primary/-",
+    "value": "ffs_LR-15"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/1/primary/-",
+    "value": "ffs_StrikerBK"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/2/primary/-",
+    "value": "ffs_SPR"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/2/primary/-",
+    "value": "ffs_arblizzard"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/2/primary/-",
+    "value": "ffs_LR-15"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/2/primary/-",
+    "value": "ffs_StrikerBK"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/3/primary/-",
+    "value": "ffs_BP15"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/4/primary/-",
+    "value": "ffs_BP15"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/4/primary/-",
+    "value": "ffs_PDFrostbite"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/5/primary/-",
+    "value": "ffs_svd_1_cultist"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/5/primary/-",
+    "value": "ffs_miniknog_plasmasniper"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/5/primary/-",
+    "value": "ffs_FMFirelance"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/6/primary/-",
+    "value": "ffs_miniknog_shot"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/6/primary/-",
+    "value": "ffs_QRCType"
+  }
+]

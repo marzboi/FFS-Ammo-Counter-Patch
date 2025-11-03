@@ -1,0 +1,95 @@
+{
+  "type" : "ffs_swat_guard",
+  "baseType" : "ffs_base_swat",
+
+  "levelVariance" : [1, 1],
+  "persistent" : true,
+
+  "damageTeamType" : "friendly",
+
+  "scriptConfig" : {
+    "behavior" : "guard",
+
+    "behaviorConfig" : {
+      "greetingChance" : 0.67,
+      "patrolTime" : 1,
+
+      "hostileDamageTeam" : { "type" : "friendly", "team" : 1 }
+    },
+    "attackerLimit" : 8,
+    "attackerLimitCooldown" : 3,
+    
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+
+    "reactions" : {
+      "spontaneous" : [
+        [5.0, "sleep", { "timeRange" : [0.7, 0.9] }],
+        [1.0, "patrol"]
+      ]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+
+      "greeting" : "/dialog/ffs_swat_converse.config:greeting",
+      "converse" : "/dialog/ffs_swat_converse.config:converse",
+      
+      "accuse" : "/dialog/thief.config:accuse",
+
+      "attack" : "/dialog/ffs_swat_combat.config:attack",
+      "reattack" : "/dialog/ffs_swat_combat.config:reattack",
+      "killedTarget" : "/dialog/ffs_swat_combat.config:killedTarget",
+      "lostTarget" : "/dialog/ffs_swat_combat.config:lostTarget",
+      "outOfSight" : "/dialog/ffs_swat_combat.config:outOfSight",
+      "cheerOn" : "/dialog/ffs_swat_combat.config:cheerOn",
+      "cantReach" : "/dialog/ffs_swat_combat.config:cantReach"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "ffs_4tier_swat_bluehead" } ],
+            "chest" : [ { "name" : "ffs_4tier_swat_bluechest" } ],
+            "legs" : [ { "name" : "ffs_4tier_swat_bluelegs" } ],
+            "primary" : [ "ffs_mp5_npc", "ffs_mp5_npc25" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.65
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 100
+      },
+      "ffs_bleedingImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

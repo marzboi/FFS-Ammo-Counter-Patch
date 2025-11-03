@@ -1,0 +1,239 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "movement" : {
+        "priority" : 0,
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1,
+            "cycle" : 1,
+            "mode" : "loop"
+          },
+          "move" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+          "punch" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "properties" : {
+            "immediateSound" : "/sfx/melee/swing_dagger.ogg"
+            }
+          },
+          "fire" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+          "throw" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+          "special" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+          "jump" : {
+            "frames" : 4,
+            "cycle" : 0.4
+          },
+          "fall" : {
+            "frames" : 4,
+            "cycle" : 0.4
+          },
+          "windup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "charge"
+          },
+          "charge" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "winddown"
+          },
+          "winddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "arm" : {
+        "properties" : {
+          "offset" : [ 0, 0],
+          "centered" : true,
+          "rotationGroup" : "projectileAim",
+          "rotationCenter" : [ 0, 0],
+          "zLevel" : 4
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
+              }
+            },
+            "throw" : {
+              "properties" : {
+                "image" : "<partImage>:throw.<frame>"
+              }
+            },
+            "special" : {
+              "properties" : {
+                "image" : "<partImage>:special.<frame>"
+              }
+            },
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:windup.<frame>"
+              }
+            },
+            "charge" : {
+              "properties" : {
+                "image" : "<partImage>:charge.<frame>"
+              }
+            },
+            "winddown" : {
+              "properties" : {
+                "image" : "<partImage>:winddown.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "body" : {
+        "properties" : {
+          "zLevel" : 2,
+          "offset" : [ 0, 0],
+          "centered" : true
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "move" : {
+              "properties" : {
+                "image" : "<partImage>:move.<frame>"
+              }
+            },
+            "punch" : {
+              "properties" : {
+                "image" : "<partImage>:punch.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
+              }
+            },
+            "throw" : {
+              "properties" : {
+                "image" : "<partImage>:throw.<frame>"
+              }
+            },
+            "special" : {
+              "properties" : {
+                "image" : "<partImage>:special.<frame>"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "<partImage>:jump.<frame>"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "<partImage>:fall.<frame>"
+              }
+            },
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:windup.<frame>"
+              }
+            },
+            "winddown" : {
+              "properties" : {
+                "image" : "<partImage>:winddown.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "sword" : {
+        "properties" : {
+          "zLevel" : 5,
+          "offset" : [ 0, 0],
+          "centered" : true
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "punch" : {
+              "properties" : {
+                "image" : "<partImage>:punch.<frame>",
+				"damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 2.75], [0, 4.25], [0.75, 2.75], [0.75, 1.0]]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "projectileAim" : {
+      "angularVelocity" : 0.75
+    }
+  },
+
+  "particleEmitters" : {
+    "damage" : {
+      "emissionRate" : 0,
+      "particles" : [  ]
+    },
+
+    "deathPoof" : {
+      "particles" : [  ]
+    }
+  },
+
+  "sounds" : {
+    "turnHostile" : [  ],
+    "deathPuff" : [  ]
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0,
+      "directives" : "fade=ffffff;0.5"
+    }
+  }
+}

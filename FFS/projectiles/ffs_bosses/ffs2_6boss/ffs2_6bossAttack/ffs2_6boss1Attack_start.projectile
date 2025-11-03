@@ -1,0 +1,46 @@
+{
+  "projectileName" : "ffs2_6boss1Attack_start",
+  "bounces" : -1,
+  "damageKindImage" : "icon.png",
+  "image" : "icon.png",
+  "animationCycle" : 1,
+  "timeToLive" : 0,
+  "frameNumber" : 1,
+  "renderLayer" : "Player+1",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+	  "angle" : -90,
+      "type" : "ffs_spider_group_spawn",
+      "delaySteps" : 0,
+      "inheritDamageFactor" : 1
+    },
+    {
+      "action" : "projectile",
+	  "angle" : -90,
+      "type" : "ffs_spider_group_spawn",
+      "delaySteps" : 300,
+      "inheritDamageFactor" : 1
+    },
+    {
+      "action" : "projectile",
+	  "angle" : -90,
+	  "offset": [ -2, 1 ],
+      "type" : "ffs_andromeda_heal_start",
+      "delaySteps" : 0,
+      "inheritDamageFactor" : 1
+    },
+    {
+      "action" : "projectile",
+	  "angle" : -90,
+	  "offset": [ -2, 1 ],
+      "type" : "ffs_andromeda_heal_start",
+      "delaySteps" : 300,
+      "inheritDamageFactor" : 1
+    }
+  ],
+  "power" : 20,
+  "speed" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

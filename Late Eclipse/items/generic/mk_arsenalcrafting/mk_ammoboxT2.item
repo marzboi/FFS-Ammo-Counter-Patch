@@ -1,0 +1,10 @@
+{
+  "itemName" : "mk_ammoboxT2",
+  "price" : 200,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "mk_ammoboxT2.png",
+  "description" : "Late Eclipse level 2 grade ammunition.",
+  "shortdescription" : "^green;LE.G2 Ammunition^reset;",
+  "itemTags" : [ "reagent" ]
+}

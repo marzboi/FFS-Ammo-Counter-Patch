@@ -1,0 +1,86 @@
+{
+  "projectileName" : "ffs_bullet_trigger_QRCT_2_hs",
+  "image" : "icon.png",
+  "lightColor" : [130, 130, 100],
+  "pointLight" : true,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0.01,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RGSP_hs",
+      "inheritDamageFactor" : 10,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RGSP_hs",
+      "inheritDamageFactor" : 10,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RGSP_fast",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffs_bullet_RGSP_fast",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RGSP_mid",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RGSP_mid",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RGSP_slow",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RGSP_slow",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RGSP_last",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RGSP_last",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 100,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

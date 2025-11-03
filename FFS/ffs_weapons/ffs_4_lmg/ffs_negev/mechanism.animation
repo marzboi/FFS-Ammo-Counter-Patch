@@ -1,0 +1,242 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "ffs_mechanism" : {
+        "default" : "idle",
+        "states" : {
+          "draw" : {
+            "frames" : 10,
+            "cycle" : 1.0,
+            "mode" : "transition",
+            "transition" : "empty"
+          },
+          "empty" : {
+            "frames" : 10,
+            "cycle" : 1.0,
+            "mode" : "loop"
+          },
+          "idle" : {
+            "frames" : 20,
+            "cycle" : 1.0,
+            "mode" : "loop"
+          },
+          "firing" : {
+            "frames" : 4,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "reload" : {
+            "frames" : 50,
+            "cycle" : 5.0,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "attach" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.65, 0.35], // x offset is set dynamically
+          "zLevel" : 0.4,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ffs_mechanism" : {
+            "draw" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "reload" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            }
+		  }
+		}
+      },
+      "body" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.3, 0.4], // x offset is set dynamically
+          "zLevel" : 0.5,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ffs_mechanism" : {
+            "draw" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "reload" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            }
+		  }
+		}
+      },
+      "ani_mag" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.3, 0.2], // x offset is set dynamically
+          "zLevel" : 1.1,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ffs_mechanism" : {
+            "draw" : {
+              "properties" : {
+                "image" : "<partImage>:draw.<frame>"
+              }
+            },
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:empty.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            },
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>:firing.<frame>"
+              }
+            },
+            "reload" : {
+              "properties" : {
+                "image" : "<partImage>:reload.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "ani_parts" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.05, 0.7], // x offset is set dynamically
+          "zLevel" : 1.2,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ffs_mechanism" : {
+            "draw" : {
+              "properties" : {
+                "image" : "<partImage>:draw.<frame>"
+              }
+            },
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            },
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>:firing.<frame>"
+              }
+            },
+            "reload" : {
+              "properties" : {
+                "image" : "<partImage>:reload.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "flash" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [3.7, 0.97],
+          "zLevel" : 1,
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ffs_mechanism" : {
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>:<variants>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {}
+  },
+  
+  "particleEmitters" : {
+    "smoke" : {
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 20.0,
+      "zLevel" : 10,
+      "offsetRegion" : [2.6, 1.0, 2.6, 1.0],
+      "particles" : [{ "particle" : "ffs_frontsmoke"}]
+    },
+    "smoke_end" : {
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 5.0,
+      "zLevel" : 10,
+      "offsetRegion" : [2.9, 1.0, 2.9, 1.0],
+      "particles" : [{ "particle" : "ffs_frontsmoke_end"}]
+    },
+    "ember" : {
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 10.0,
+      "zLevel" : 11,
+      "offsetRegion" : [2.6, 1.0, 2.6, 1.0],
+      "particles" : [{ "particle" : "ffs_frontember"}]
+    }
+  }
+}

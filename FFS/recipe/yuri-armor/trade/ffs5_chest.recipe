@@ -1,0 +1,18 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_us_dollar", 
+	"count" : 4800
+	},
+    { 
+	"item" : "ffs_trizium", 
+	"count" : 5
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_5tier_pmcchest",
+	"count" : 1
+	},
+	"groups" : [ "ffs_trade",  "ffs_yuri" ]
+}

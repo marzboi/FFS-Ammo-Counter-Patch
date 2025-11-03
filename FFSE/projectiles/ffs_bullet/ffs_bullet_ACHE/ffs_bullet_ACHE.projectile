@@ -1,0 +1,64 @@
+{
+  "projectileName" : "ffs_bullet_ACHE",
+  "image" : "ffs_bullet_ACHE.png",
+  "animationCycle" : 0.5,
+  "loops" : false,
+  "piercing" : false,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 1.0,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_Boltscrit_exp/ffs_bolts_exp.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_boltsfrag",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_boltsfrag",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_boltsfrag",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_boltsfrag",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_boltsfrag",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_boltsfrag",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 200,
+  "physics" : "ffs_bullet_trajectory",
+  "damageKind" : "default",
+  "fullbright" : true
+}

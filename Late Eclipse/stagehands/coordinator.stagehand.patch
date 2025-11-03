@@ -1,0 +1,407 @@
+[
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_h8pistol_1",
+    "value": {
+      "minRange": 6,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_h8pistol_bluoplasma_1",
+    "value": {
+      "minRange": 6,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_h8pistol_bluoplasma_f_1",
+    "value": {
+      "minRange": 6,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_h8pistol_bluoplasma_s_1",
+    "value": {
+      "minRange": 6,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_h8pistol_bluoplasma_sf_1",
+    "value": {
+      "minRange": 6,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_h8pistol_f_1",
+    "value": {
+      "minRange": 6,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_h8pistol_s_1",
+    "value": {
+      "minRange": 6,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_h8pistol_sf_1",
+    "value": {
+      "minRange": 6,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_n16shotgun_1",
+    "value": {
+      "minRange": 9,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_n16shotgun_bluoplasma_1",
+    "value": {
+      "minRange": 9,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_n16shotgun_bluoplasma_f_1",
+    "value": {
+      "minRange": 9,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_n16shotgun_f_1",
+    "value": {
+      "minRange": 9,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_s64smg_1",
+    "value": {
+      "minRange": 9,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_s64smg_bluoplasma_1",
+    "value": {
+      "minRange": 9,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_s64smg_bluoplasma_f_1",
+    "value": {
+      "minRange": 9,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_s64smg_bluoplasma_s_1",
+    "value": {
+      "minRange": 9,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_s64smg_bluoplasma_sf_1",
+    "value": {
+      "minRange": 9,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_s64smg_f_1",
+    "value": {
+      "minRange": 9,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_s64smg_s_1",
+    "value": {
+      "minRange": 9,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_s64smg_sf_1",
+    "value": {
+      "minRange": 9,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_g512assault_1",
+    "value": {
+      "minRange": 10,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_g512assault_bluoplasma_1",
+    "value": {
+      "minRange": 10,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_g512assault_bluoplasma_c_1",
+    "value": {
+      "minRange": 10,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_g512assault_bluoplasma_cf_1",
+    "value": {
+      "minRange": 10,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_g512assault_bluoplasma_f_1",
+    "value": {
+      "minRange": 10,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_g512assault_bluoplasma_s_1",
+    "value": {
+      "minRange": 10,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_g512assault_bluoplasma_sf_1",
+    "value": {
+      "minRange": 10,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_g512assault_c_1",
+    "value": {
+      "minRange": 10,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_g512assault_cf_1",
+    "value": {
+      "minRange": 10,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_g512assault_f_1",
+    "value": {
+      "minRange": 10,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_g512assault_s_1",
+    "value": {
+      "minRange": 10,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_g512assault_sf_1",
+    "value": {
+      "minRange": 10,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4sniper_1",
+    "value": {
+      "minRange": 18,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4sniper_bluoplasma_1",
+    "value": {
+      "minRange": 18,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4sniper_bluoplasma_c_1",
+    "value": {
+      "minRange": 18,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4sniper_bluoplasma_cf_1",
+    "value": {
+      "minRange": 18,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4sniper_bluoplasma_f_1",
+    "value": {
+      "minRange": 18,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4sniper_bluoplasma_s_1",
+    "value": {
+      "minRange": 18,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4sniper_bluoplasma_sf_1",
+    "value": {
+      "minRange": 18,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4sniper_c_1",
+    "value": {
+      "minRange": 18,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4sniper_cf_1",
+    "value": {
+      "minRange": 18,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4sniper_f_1",
+    "value": {
+      "minRange": 18,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4sniper_s_1",
+    "value": {
+      "minRange": 18,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4sniper_sf_1",
+    "value": {
+      "minRange": 18,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/mk_k4amr_1",
+    "value": {
+      "minRange": 20,
+      "maxRange": 75,
+      "forceMoveRange": 75
+    }
+  }
+]

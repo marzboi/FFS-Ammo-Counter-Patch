@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "mk_g512assault_1", "count" : 1 },
+    { "item" : "mk_compensator", "count" : 1 }
+  ],
+  "duration" : 1,
+  "output" : { "item" : "mk_g512assault_c_1", "count" : 1 },
+  "groups" : [ "mk_attachmentworkshop", "mk_attachment_c" ]
+}

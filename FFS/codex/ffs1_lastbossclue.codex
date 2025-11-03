@@ -1,0 +1,40 @@
+{
+  "id" : "ffs1_lastbossclue",
+  "title" : "^red;FFS^white; - ^#aa42f5;Jang-i-ho's log",
+  "description" : "A note stained with blood",
+  "icon" : "ffs_memo.png",
+  "contentPages" : [
+
+    "^white;I am Search and rescue service team's leader, i-ho jang.
+The operation is failed. We lost Dr.breadnut.
+I leave the record of after that.",
+
+"3days later, I was caught by pirates.
+I already sent automatic s.o.s message to public frequency, but no one responded.
+But I decided not to lose hope.",
+
+"Jesus.
+The pirates are working together with USCM researchers.
+I don't know what's going to happen.",
+
+"Dr.breadnut's sabotage was failed.
+And I have been inserted ruin's parasites in my body.
+I can't last long.",
+
+"Unlike researchers who don't know anything, I found that the chief researcher has a connection to cultists.
+I have to kill him and escape this place with breadnut tonight.
+But, i often loses my mind.. I might be failed.",
+
+"(It is written in trembling letters.)
+I
+WILL
+
+NOT
+(I can't read after this.)"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Legendary",
+    "price" : 100
+  }
+}

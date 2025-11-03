@@ -1,0 +1,100 @@
+{
+  "objectName" : "postapocvending2",
+  "colonyTags" : ["mechanical","commerce"],
+  "rarity" : "Uncommon",
+  "category" : "other",
+  "price" : 300,
+  "printable" : false,
+  "description" : "Post-Apoc Object Vending Machine.",
+  "shortdescription" : "Post-Apoc Vending Machine2",
+  "race" : "generic",
+
+  "apexDescription" : "It's Post-Apoc Object Vending Machine..",
+  "avianDescription" : "It's Post-Apoc Object Vending Machine..",
+  "floranDescription" : "It's Posst-Apoc Object Vending Machine.!",
+  "glitchDescription" : "Interested. It's Post-Apoc Object Vending Machine..",
+  "humanDescription" : "It's Post-Apoc Object Vending Machine..",
+  "hylotlDescription" : "It's Post-Apoc Object Vending Machine..",
+  "novakidDescription" : "It's Post-Apoc Object Vending Machine..",
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Post-Apoc Object Vending Machine",
+        "subtitle" : " Post-Apoc Objects"
+      }
+    },
+    "buyFactor" : 1,
+    "sellFactor" : 0.2,
+    "items" : [
+	
+      { "item" : "DODI" },
+	  { "item" : "ForgiveSign" },
+	  { "item" : "DeadbodyBO" },
+	  { "item" : "DeadbodyBO2" },
+	  { "item" : "DeadbodyBO3" },
+	  { "item" : "DeadbodyBO4" },
+	  { "item" : "DeadbodyBO5" },
+	  { "item" : "DeadbodyUS1" },
+	  { "item" : "DeadbodyUS2" },
+	  { "item" : "DeadbodyUS3" },
+	  { "item" : "DeadbodyUS4" },
+	  { "item" : "DeadbodyUS5" },
+	  { "item" : "DeadHumvee" },
+	  { "item" : "DeadBearcatX3" },
+	  { "item" : "BearcatX3BO" },
+	  { "item" : "artyomUAZJeep" },
+      { "item" : "artyomapocHumveeD" },
+      { "item" : "ApocSchoolBus" },
+	  { "item" : "WHum" },
+	  { "item" : "WHum2" },
+	  { "item" : "WHum3" },
+	  { "item" : "artyomapocvan" },
+      { "item" : "CrownVicTaxi" },
+	  { "item" : "ApocChallenger" },
+	  { "item" : "WreckedTaxi" },
+      { "item" : "WreckedTaxi2" },
+	  { "item" : "WSUV" },
+      { "item" : "WreckedCopCar" },
+      { "item" : "WreckedCopCar2" },
+      { "item" : "ApocCrownVicCop" },
+      { "item" : "Caferacer" },
+	  { "item" : "ApocCrownVicCop" },
+	  { "item" : "ApocCrownVicTaxi" },
+	  { "item" : "GeneralLee" },
+	  { "item" : "RustyDodge" },
+	  { "item" : "WreckedTowncar" },
+	  { "item" : "WreckedTowncar2" },
+      { "item" : "WreckedChallenger" },
+	  { "item" : "WreckedChallenger2" },
+	  { "item" : "WreckedTruck1" },
+	  { "item" : "WreckedSchoolBus" }
+	  ]
+  },
+ 
+ 
+  "inventoryIcon" : "postapocobjvendingicon.png",
+  "orientations" : [
+    {
+      "image" : "postapocobjvending.png",
+      "imagePosition" : [-16, -0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : ["bottom"]
+    },
+    {
+      "image" : "postapocobjvending.png",
+      "imagePosition" : [-16, -0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : ["bottom"]
+    }
+  ]
+}

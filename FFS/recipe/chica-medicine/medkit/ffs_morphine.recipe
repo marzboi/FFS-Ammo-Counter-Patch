@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_us_dollar", 
+	"count" : 800
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_morphine",
+	"count" : 1
+	},
+	"groups" : [ "ffs_medkit",  "ffs_chiquita" ]
+}

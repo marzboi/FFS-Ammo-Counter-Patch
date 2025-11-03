@@ -1,0 +1,18 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_carbonfiber", 
+	"count" : 5
+	},
+    { 
+	"item" : "ffs_durasteelfiber", 
+	"count" : 5
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_USCM_Assaulterchest_U",
+	"count" : 1
+	},
+	"groups" : [ "ffs_diy",  "ffs_yuri" ]
+}

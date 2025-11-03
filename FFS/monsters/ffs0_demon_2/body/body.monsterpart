@@ -1,0 +1,14 @@
+{
+  "name" : "body",
+  "category" : "ffs0_demon_2",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  },
+
+  "parameters" : {
+    "meleeProjectile" : "meleeslash",
+    "projectileSourcePosition" : [1, -1]
+  }
+}

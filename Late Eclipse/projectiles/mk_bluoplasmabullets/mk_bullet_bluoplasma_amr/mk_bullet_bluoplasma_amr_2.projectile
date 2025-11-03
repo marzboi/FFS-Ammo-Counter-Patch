@@ -1,0 +1,33 @@
+{
+  "projectileName" : "mk_bullet_bluoplasma_amr_2",
+  "image" : "mk_bullet_loop.png",
+  "frameNumber" : 1,
+  "timeToLive" : 0.1,
+  "piercing" : true,
+  "renderLayer" : "FrontParticle-1",
+  "actionOnHit" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/stat/ffs_penetration_1.ogg", "/sfx/stat/ffs_penetration_2.ogg" , "/sfx/stat/ffs_penetration_3.ogg" ]
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "mk_bullet_bluoplasma_amr_3",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 200,
+  "statusEffects" : [
+    "ffs_penetration",
+	"mk_bluoplasma"
+  ],
+  "movementSettings":{"collisionEnabled":false},
+  "physics" : "ffs_bullet_trajectory_penetration",
+  "damageKind" : "mk_bluoplasma",
+  "damageType" : "ignoresdef",
+  "fullbright" : true
+}

@@ -1,0 +1,21 @@
+{
+  "projectileName" : "ffs_bullet_frag2",
+  "image" : "ffs_bullet_small.png",
+  "frameNumber" : 100,
+  "timeToLive" : 2,
+  "renderLayer" : "FrontParticle+1",
+  "piercing" : true,
+  "bounces" : 1,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet_small.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 40,
+  "physics" : "grenade",
+  "damageKind" : "default",
+  "damageTeam" : { "type" : "indiscriminate" },
+  "fullbright" : true
+}

@@ -1,0 +1,946 @@
+{
+  "ffs0_0_0" : {
+    "type" : "mission",
+    "senderName" : "System",
+    "portraitImage" : "/interface/chatbubbles/ffs_system.png:<frame>",
+    "text" : 
+	"^red;Welcome to Feast of Fire and Smoke. 
+^white;I am 1-Y3TZ1, survival system A.I. of drop pod.
+Checking vital sign.. Clear. 
+Checking equipments.. Insufficient.
+^green;Move to downstairs."
+  },
+  "ffs0_0_1" : {
+    "type" : "mission",
+    "senderName" : "System",
+    "portraitImage" : "/interface/chatbubbles/ffs_system.png:<frame>",
+    "text" : 
+	"^green;Check cabinet for finding equipments.
+^white;Finding life sign of this area..
+Objective is renewed.
+Search and rescue the survivors.
+^green;When you finish armed, go east from here."
+  },
+  "ffs0_0_2" : {
+    "type" : "mission",
+    "senderName" : "System",
+    "portraitImage" : "/interface/chatbubbles/ffs_system.png:<frame>",
+    "text" : 
+	"Good luck out there."
+  },
+  "ffs0_0_3" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"I heard a child sobbing loudly.
+There are tracks of a fierce battle."
+  },
+  "ffs0_0_4" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "I have to investigate this area.
+^green;Hint : Use 'E'key to interact objects."
+  },
+  "ffs0_0_5" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "When i finish searching here, i have to go east for finding other survivors.
+^green;Hint : Use 'E'key to interact the blue arrow."
+  },
+  "ffs0_1_1" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^green;+Hint. When you're using F.F.S weapons,
+^white;Energy = ^green;Magazine
+^white;Left mouse button : ^green;Fire
+^white;Right mouse button : ^green;Reload
+^red;Regenerating energy ^white;will cause ^red;malfunction."
+  },
+  "ffs0_1_2" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : "This way! I can help you. You can count on me!
+If you are unable to fight, I'll bring you here to heal your wound.
+^green;Hint. This kid supports you at checkpoints."
+  },
+  "ffs0_1_3" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : "''Enemies ahead.''
+^red;''Watch out, sniper!''
+^green;Hint.The sniper's shot delay is long.
+Move and cover yourself with two or more stacked blocks."
+  },
+  "ffs0_1_4" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"^green;Hint.Pirates don't have touch damage.
+You can pass through them, but becareful. 
+^red;They have melee weapon.
+^green;Use your sidearm wisely."
+  },
+  "ffs0_1_6" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"I found an elevator that connects to the basement."
+  },
+  "ffs0_2_1" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"So, where is next?"
+  },
+  "ffs0_2_2" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"I found secret passage."
+  },
+  "ffs0_2_3" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Maybe.. another way is nearby..
+^green;Hint : use 'E' key to find way."
+  },
+  "ffs0_2_4" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"How deep is this place?
+Do i have to search the whole basement?"
+  },
+  "ffs0_2_5" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Wait.. I heard something.."
+  },
+  "ffs0_2_6" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"What the.. 
+Hey kid! Can you hear me?!"
+  },
+  "ffs0_2_7" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	".. I think i've found the source of the problem.
+Am I prepared perfectly?
+^green;Hint. You can't retreat or use checkpoints in hidden dungeon.
+^red;Challenge it carefully."
+  },
+  "ffs0_3_1" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"Here is 1st basement of abandoned mine.
+We have to check 01 sector.
+You can find it from deepest area of the west.
+As far as i know, pirates are using it as barracks.
+Please becareful."
+  },
+  "ffs0_3_2" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Maybe there are survivors somewhere."
+  },
+  "ffs0_3_3" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Nobody here.. but i found lever.
+What's this lever for?"
+  },
+  "ffs0_3_4" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"An escape passage.
+Nice."
+  },
+  "ffs0_3_5" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Another passage..
+I have to check 02 sector.
+but, where is it?"
+  },
+  "ffs0_3_6" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"Nobody..? 
+Ok, next is 02 sector.
+I've never been here before.
+But I've heard that this place was used for execution.
+I hope there's nobody."
+  },
+  "ffs0_3_7" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"Becareful!
+I saw something in the dark!"
+  },
+  "ffs0_3_8" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Next is 03 sector.. Am i right?
+Anyway, How can she pop up of my way?"
+  },
+  "ffs0_3_9" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"Uh... I found a hidden passage, but I'm getting a bad vibe from this place.
+Wait, did you hear that? I heard a scream...
+I'll use the vent. Meet me upper stairs."
+  },
+  "ffs0_3_12" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"I think that kid already knows what happened here.
+Let's get back to elevator."
+  },
+  "ffs0_3_13" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Before leaving here, i have to find ^red;wallace's id card."
+  },
+  "ffs0_3_boss" : {
+    "type" : "mission",
+    "senderName" : "Big eye",
+    "portraitImage" : "/interface/chatbubbles/ffs_bigeye.png:<frame>",
+    "text" : 
+	"^#7c7c7c;So do not fear for i am with you.
+do not be dismayed, for I am your God.
+I will strengthen you and help you.
+^white;I will uphold you with my righteous right hand!
+^red;DEVIL, GET OUT OF MY SIGHT!"
+  },
+  "ffs0_4_1" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"Psst, I'm here, in the vent. Listen, I won't go out of here.
+Let's split up and gather some information.
+This sector is close to pirate's HQ.
+So, try to avoid the enemy please.
+^red;Warning. ^red;Checkpoint unavailable."
+  },
+  "ffs0_4_2" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"I can hear the sound of the crowd.
+^red;I think this is the wrong way.
+^green;I have to find another way to avoid pirates."
+  },
+  "ffs0_4_3" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"The enemies are beyond this door. 
+^red;I'll not open it."
+  },
+  "ffs0_4_4" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"There must be passage."
+  },
+  "ffs0_4_5" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"^green;Hint. Use 'E' key to find secret passage."
+  },
+  "ffs0_4_6" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Ok, let's find some clue for survivors.."
+  },
+  "ffs0_4_7" : {
+    "type" : "mission",
+    "senderName" : "Pirates",
+    "portraitImage" : "/interface/chatbubbles/ffs_pirates.png:<frame>",
+    "text" : 
+	"..Did you saw it?
+The chef becoming psycho too.
+Nobody goes to the restaurant.
+Bloody..
+Now, we're going to only eat MREs. Fantastic."
+  },
+  "ffs0_4_8" : {
+    "type" : "mission",
+    "senderName" : "Pirates",
+    "portraitImage" : "/interface/chatbubbles/ffs_pirates.png:<frame>",
+    "text" : 
+	"Big eye controlled the elevators.
+I can't understand it. He must be crazy.
+You know that?
+There's no stairs in this fucking tunnel!
+What the hell am I supposed to do?"
+  },
+  "ffs0_4_9" : {
+    "type" : "mission",
+    "senderName" : "Pirates",
+    "portraitImage" : "/interface/chatbubbles/ffs_pirates.png:<frame>",
+    "text" : 
+	"You know that?
+Somewhere in this mine, Evil is living!!
+HAHAHA...ha..  ..really?
+..You got to be kidding me."
+  },
+  "ffs0_4_9_2" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	".. I have to kill those two guys.
+Am I ready?"
+  },
+  "ffs0_4_10" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"W..wait, what's going on?
+I have to get out of here.
+^green;Let's go back to passage.
+There must be another way."
+  },
+  "ffs0_4_11" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"Hey! Are you ok?
+I'm here! over the left door!"
+  },
+  "ffs0_4_12" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"The refrigerated storage for the restaurant is here.
+I don't think survivors are here, but...
+..Anyway, good luck.
+I have to move to another vent. It's so cold here."
+  },
+  "ffs0_4_13" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"I found a chopped body.
+^red;I have to search here for clues."
+  },
+  "ffs0_4_boss" : {
+    "type" : "mission",
+    "senderName" : "Chef",
+    "portraitImage" : "/interface/chatbubbles/ffs_chef.png:<frame>",
+    "text" : 
+	"^#7c7c7c;Ah.. There you are.
+You did a bad thing..
+A really... really bad thing...
+...Don't you know what i'm said?
+^red;You devil! I'll kill you!"
+  },
+  "ffs0_5_1" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"Psst, Hey!
+I found a survivor that isn't part of the crew, but he is badly injured.
+I have to go for him, so... I can't follow you.
+Here, Take this. I hope this will help you. 
+^red;Warning. ^red;Checkpoint unavailable."
+  },
+  "ffs0_5_2" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"A Lever.
+Where is it connected to?"
+  },
+  "ffs0_5_3" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Blood and jail...
+This place is terrible."
+  },
+  "ffs0_5_4" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Wait, I heard somethng..
+Who's there?"
+  },
+  "ffs0_5_5" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"I'd better prepare for the worst.."
+  },
+  "ffs0_5_6" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Bloody! 
+Aaaargh,
+HELL!!"
+  },
+  "ffs0_5_7" : {
+    "type" : "mission",
+    "senderName" : "Pirates",
+    "portraitImage" : "/interface/chatbubbles/ffs_pirates.png:<frame>",
+    "text" : 
+	"Intruder!!!
+Kill it!"
+  },
+  "ffs0_5_8" : {
+    "type" : "mission",
+    "senderName" : "Captain",
+    "portraitImage" : "/interface/chatbubbles/ffs_captain.png:<frame>",
+    "text" : 
+	"Alarm! Alarm!
+All units, catch that rat!
+I don't care dead or alive. 
+Bring it to me!!"
+  },
+  "ffs0_5_9" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Ah... SHIT!"
+  },
+  "ffs0_5_10" : {
+    "type" : "mission",
+    "senderName" : "Captain",
+    "portraitImage" : "/interface/chatbubbles/ffs_captain.png:<frame>",
+    "text" : 
+	"Aaaaaaaaaaaaargh!!
+YOU ARE DEAD MAN!
+ARE YOU HEARING ME?!
+I'M GONNA TEAR YOU UP!!!
+SEND THE ARMORED TROOPS!!"
+  },
+  "ffs0_5_11" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"^green;Hint.
+Armored troopers have bullet proof armor.
+Throw molotovs at troopers."
+  },
+  "ffs0_5_12" : {
+    "type" : "mission",
+    "senderName" : "Trooper",
+    "portraitImage" : "/interface/chatbubbles/ffs_trooper.png:<frame>",
+    "text" : 
+	"Armored troops have arrived, sir!
+Engaging the hostile!"
+  },
+  "ffs0_5_13" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"Hey! I'm here.
+Don't worry about him.
+I can handle it.
+Go ahead, I'll follow you.
+HEY! Don't move, papa!"
+  },
+  "ffs0_5_14" : {
+    "type" : "mission",
+    "senderName" : "Papacino",
+    "portraitImage" : "/interface/chatbubbles/ffs_papachino.png:<frame>",
+    "text" : 
+	"Chiquita, Non sono tuo padre!
+Arrrgh! 
+Maledizione!
+Fa male! Smettila!"
+  },
+  "ffs0_5_15" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"Shhh, Do not blame me, but who named you.
+Anyways, Stop making a big fuss.
+(*Screaming)"
+  },
+  "ffs0_6_1" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"That Kid said the 4th basement is used as the pirates armory.
+I can pass through here, because no survivors are here.
+^green;But, if I want to take their weapons, I have to find their secret safe."
+  },
+  "ffs0_6_2" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"hm, Sector 1..
+Maybe there is another control panel somewhere.
+^green;Hint. You have to activate 3 consoles to open the secret safe in this armory."
+  },
+  "ffs0_6_hind" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"There must be a secret passage somewhere nearby..
+^green;Hint. Use the 'E'key to find secret passage."
+  },
+  "ffs0_6_3" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Oh, wait, wait!
+What is this?
+A secret passage?"
+  },
+  "ffs0_6_4" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"There you are..
+I found sector 2."
+  },
+  "ffs0_6_5" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"I found sector 3.
+Let's check the safe."
+  },
+  "ffs0_6_6" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Good.
+Let's get out of here."
+  },
+  "ffs0_7_1" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"^red;WARNING. The 5th basement is one way only to the final stage.^white;If you didn't clear other floors yet, go back to the elevator.^green;And if you are ready, the door on your right will be open in 15 seconds. ^yellow;Good luck."
+  },
+  "ffs0_7_2" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"I found out where the pilot was taken.
+Let's go!"
+  },
+  "ffs0_7_3" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"I'm here in front of vents!
+My fingers are crossed for you."
+  },
+  "ffs0_7_4" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"Becareful.
+There are many enemies beyond the gate."
+  },
+  "ffs0_7_5" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"Over here!
+..Can you smell something around here?
+It's disgusting."
+  },
+  "ffs0_7_6" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"No way!
+The pirates were controled already with the Cultist's parasite!
+We have to stop their crazy summoning and rescue the pilot!"
+  },
+  "ffs0_7_7" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"Ok, she's still alive. Leave her to me!
+Break the handcuffs and escape through the Ruin larva's carcass!
+Let's meet outside!"
+  },
+  "ffs0_8_1" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Aww.
+That smells like hell.
+^green;Anyway, I have to tear this blood clot."
+  },
+  "ffs0_8_2" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"What the hell is that?
+Is that a monster?
+^green;Hint. Infected pirates can revive 3 times.
+Beware of parasites."
+  },
+  "ffs0_8_3" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Ok, almost done!"
+  },
+  "ffs0_f_1" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : 
+	"Fresh air!
+
+
+And.. disgusting pirates."
+  },
+  "ffs0_f_2" : {
+    "type" : "mission",
+    "senderName" : "Pirates",
+    "portraitImage" : "/interface/chatbubbles/ffs_pirates.png:<frame>",
+    "text" : 
+	"Enemy in sight.
+Engaging hostile!"
+  },
+  "ffs0_f_3" : {
+    "type" : "mission",
+    "senderName" : "Trooper",
+    "portraitImage" : "/interface/chatbubbles/ffs_trooper.png:<frame>",
+    "text" : 
+	"Armored troopers have arrived.
+Defend the line!"
+  },
+  "ffs0_f_4" : {
+    "type" : "mission",
+    "senderName" : "Aircraft",
+    "portraitImage" : "/interface/chatbubbles/ffs_pirates.png:<frame>",
+    "text" : 
+	"Air support has arrived!
+Wipe them out. All of them!"
+  },
+  "ffs0_lastboss_0_1" : {
+    "type" : "mission",
+    "senderName" : "Papacino",
+    "portraitImage" : "/interface/chatbubbles/ffs_papachino.png:<frame>",
+    "text" : 
+	"Ehi, tu!
+Prendi questo!
+.....?
+Ah.
+I mean, use this!"
+  },
+  "ffs0_lastboss_0_2" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : 
+	"We can't run away without disabling the pirate ship's air defense system.
+..
+We have to shoot them down.
+^green;Ready for battle!"
+  },
+  "ffs0_lastboss_1_1" : {
+    "type" : "mission",
+    "senderName" : "Captain Pirate",
+    "portraitImage" : "/interface/chatbubbles/ffs_captain.png:<frame>",
+    "text" : 
+	"How foolish mortals!
+Become a glorious foundation for my master's integration!
+
+^red;GLORY FOR THE INTEGRATED EARTH AND MASTER RUIN!!"
+  },
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  "ffs_breadnut1_0_0" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;I am 1-Y3TZ1, survival system A.I. of drop pod. 
+Checking vital sign.. Clear. Checking equipment.. Clear. 
+^green;Please use the door on the right."
+  },
+   "ffs_breadnut1_0_1" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^red;Find out where the VIP and Alpha team members are."
+   },
+    "ffs_breadnut1_0_2" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;There are signs of engagement.
+Get ready for battle and search for missing persons."
+  },
+  "ffs_breadnut1_1_0" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;'Those pirates seem to have something to do with the missing persons.'
+^red;Find the leader, kill him, and gather information about the missing."
+  },
+  "ffs_breadnut1_2_0" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^red;According to the documents obtained, VIP is here. Rescue Vip."
+  },
+  "ffs_breadnut1_2_1" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^green;'Hint! : You can find something useful in the box.' "
+  },
+  "ffs_breadnut1_2_2" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^red;Get information about this place"
+  },
+  "ffs_breadnut1_2_3" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^red;I got a blueprint. Find and destroy the generator."
+  },
+   "ffs_breadnut1_2_4" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^green;'Hint! : If the generator is next to you when it explodes, you can wear the damage.' "
+  },
+   "ffs_breadnut1_2_5" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^red;Find and activate the valve. "
+  },
+   "ffs_breadnut1_2_6" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^red;Kill all enemies, and get on the elevator."
+  },
+   "ffs_breadnut1_3_0" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^red;Step into the lab "
+  },
+  "ffs_breadnut1_3_1" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^green;'If you don't have a good view, use a light-emitting item!' "
+  },
+  "ffs_breadnut1_3_2" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;'There's something in the safe.' "
+  },
+   "ffs_breadnut1_3_3" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^green;'Beware of poisonous zombie!' "
+  },
+   "ffs_breadnut1_3_4" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;'Something is coming!' "
+  },
+   "ffs_breadnut1_3_5" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;'Glitch's radio signal is caught in the cave. It is expected to be VIP.' 
+^red;Enter the cave."
+  },
+  "ffs_breadnut1_4_0" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;'The signal is getting closer. Keep going.'"
+  },
+  "ffs_breadnut1_4_1" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;'I hear a strange sound.'"
+  },
+  "ffs_breadnut1_5_0" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;'There are useful things in the box.'"
+  },
+   "ffs_breadnut1_5_1" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;There's someone over there.
+^red;Make him rest in peace."
+  },
+   "ffs_breadnut1_5_2" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;The signal is sending out from here."
+  },
+  "ffs_breadnut1_5_3" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;I've secured a VIP. I'm coming back.
+^red;Use the arrow."
+  }
+}

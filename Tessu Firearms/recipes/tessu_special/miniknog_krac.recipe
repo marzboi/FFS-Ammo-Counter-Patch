@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 6000 }
+ 
+  ],
+  "output" : {
+    "item" : "miniknog_krac",
+    "count" : 1
+  },
+  "duration" : 0.1,
+  "groups" : [ "tessu_weaponbuilding", "tessu_special" ]
+}

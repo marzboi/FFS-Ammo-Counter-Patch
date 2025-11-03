@@ -1,0 +1,19 @@
+{
+  "projectileName" : "V1B1N_bullet",
+  "image" : "V1B1N_bullet.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 8,
+  "damageKindImage" : "icon.png",
+  "piercing" : true,
+  "physics" : "bullet",
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 10,
+  "damageKind" : "standardbullet"
+}

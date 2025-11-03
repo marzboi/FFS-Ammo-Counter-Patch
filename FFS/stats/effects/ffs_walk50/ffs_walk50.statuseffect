@@ -1,0 +1,12 @@
+{
+  "name" : "ffs_walk50",
+  "effectConfig" : {},
+  "defaultDuration" : 1.5,
+
+  "scripts" : [
+    "ffs_walk50.lua"
+  ],
+
+  "label" : "^red;Changing Difficulty^white; : You can't run. & Slow 50%",
+  "icon" : "/interface/statuses/ffs_veryhard.png"
+}

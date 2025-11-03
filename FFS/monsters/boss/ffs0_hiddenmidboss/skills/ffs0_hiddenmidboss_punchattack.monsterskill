@@ -1,0 +1,31 @@
+{
+  "name" : "ffs0_hiddenmidboss_punchattack",
+  "label" : "FRENZY",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/ffs0_hiddenmidboss/skills/ffs0_hiddenmidboss_punchattack.lua" ],
+    "ffs0_hiddenmidboss_punchattack" : {
+      "distanceRange" : [0, 5],
+	  
+      "windupTime" : 0.5,
+      "winddownTime" : 1.0,
+
+      "projectile" : {
+        "type" : "ffs_hidden_midboss_smash",
+        "config" : {
+          "power" : 50,
+          "speed" : 0
+        },
+        "offset" : [3.0, -2.0]
+      }
+    }
+  },
+
+  "animationParameters" : {
+    "sounds" : {
+      "ready" : [ "/sfx/monster/ffs0_demon_2_attack.ogg" ],
+      "punch" : [ "/sfx/monster/ffs0_demon_midboss_attack.ogg" ]
+    }
+  }
+}

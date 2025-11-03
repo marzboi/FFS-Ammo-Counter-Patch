@@ -1,0 +1,32 @@
+{
+  "projectileName" : "ffs_molotovflame_GL79",
+  "bounces" : -1,
+  "timeToLive" : 4,
+  "speed" : 8,
+  "physics" : "grenadenobounce",
+  "image" : "ffs_molotovflame.png",
+  "animationCycle" : 1.0,
+  "lightColor" : [235, 126, 2],
+  "frameNumber" : 10,
+  "renderLayer" : "Player+3",
+  "emitters" : [ "flames" ],
+  "piercing" : true,
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "damageKind" : "fire",
+  "damageTeam" : { "type" : "indiscriminate" },
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_mid_GL79",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 0,
+      "angleAdjust" : 0
+    }
+  ],
+  "statusEffects" : [
+    "ffs_thickerflame",
+    "ffs_pinneddown"
+  ],
+  "hydrophobic" : true
+}

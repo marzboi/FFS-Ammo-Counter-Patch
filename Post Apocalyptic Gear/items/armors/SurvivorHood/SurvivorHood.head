@@ -1,0 +1,68 @@
+{
+  "itemName" : "SurvivorHood",
+  "price" : 2800,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "I am the last man stand survivor. I'll be the last man home.",
+  "shortdescription" : "Survivor Hood",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "level" : 5,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "separatorArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.10
+    },
+    {
+      "levelFunction" : "separatorArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.65
+    },
+    {
+      "levelFunction" : "separatorArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 7
+    },
+    {
+      "levelFunction" : "separatorArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 5.1
+    }
+  ],
+
+  "itemTags" : [ "tier5armour" ],  
+
+  "colorOptions" : [
+    // DEFAULT
+    { "977949" : "977949", "a28250" : "a28250", "8a6e42" : "8a6e42", "ac8b57" : "ac8b57" },
+    // BLACK
+    { "977949" : "3c3c3c", "a28250" : "404040", "8a6e42" : "363636", "ac8b57" : "454545" },
+    // GREY
+    { "977949" : "636363", "a28250" : "6b6b6b", "8a6e42" : "5b5b5b", "ac8b57" : "737373" },
+    // WHITE
+    { "977949" : "e8e8e8", "a28250" : "fbfbfb", "8a6e42" : "d5d5d5", "ac8b57" : "ffffff" },
+    // RED
+    { "977949" : "a63b3b", "a28250" : "b33f3f", "8a6e42" : "973636", "ac8b57" : "be4545" },
+    // ORANGE
+    { "977949" : "c17620", "a28250" : "d07f22", "8a6e42" : "af6b1d", "ac8b57" : "dc8827" },
+    // YELLOW
+    { "977949" : "c29e1e", "a28250" : "d2ab21", "8a6e42" : "b1901c", "ac8b57" : "ddb525" },
+    // GREEN
+    { "977949" : "616a4b", "a28250" : "687250", "8a6e42" : "596144", "ac8b57" : "6f7955" },
+    // BLUE
+    { "977949" : "4067a0", "a28250" : "4670ad", "8a6e42" : "3b5e92", "ac8b57" : "4b77b7" },
+    // PURPLE
+    { "977949" : "75538e", "a28250" : "7e5999", "8a6e42" : "6a4b81", "ac8b57" : "8760a3" },
+    // PINK
+    { "977949" : "9c456b", "a28250" : "a84a73", "8a6e42" : "8e3f61", "ac8b57" : "b2507a" },
+    // BROWN
+    { "977949" : "584423", "a28250" : "5f4926", "8a6e42" : "503d1f", "ac8b57" : "644e2a" }
+  ]
+}

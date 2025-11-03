@@ -1,0 +1,42 @@
+{
+  "objectName" : "ApocChallenger",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Post-Apocalyptic Dodge Challenger.",
+  "shortdescription" : "Apocalypse Dodge Challenger",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's generic American Muscle Car.",
+  "avianDescription" : "It's generic American Muscle Car.",
+  "floranDescription" : "It'sss generic American Muscle Car",
+  "glitchDescription" : "It's generic American Muscle Car.",
+  "humanDescription" : "It's generic American Muscle Car.",
+  "hylotlDescription" : "It's generic American Muscle Car",
+  "novakidDescription":  "It's generic American Muscle Car.",
+
+  "inventoryIcon" : "ApocChallengerIcon.png",
+  "orientations" : [
+    {
+      "image" : "ApocChallenger.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "ApocChallenger.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

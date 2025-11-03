@@ -1,0 +1,57 @@
+[
+  {
+    "op": "replace",
+    "path": "/price",
+    "value": 40000
+  },
+  {
+    "op": "replace",
+    "path": "/description",
+    "value": "^#00FFFF;Federal Special Force\n^#7c7c7c;1Tier : S.E.A.U Service\n^#7c7c7c;Aiming speed : ^white;0.5s\n^#7c7c7c;Equiping speed : ^white;2s\n^#7c7c7c;LMB=Fire : ^white;M442 12.7×42mm bolts \n^#7c7c7c;RMB=Fast Reloading : ^white;1.2s\n^#7c7c7c;Auto Reloading speed : ^white;2s\n^#7c7c7c;Ballistic spec : ^white;15 /shot\n^#7c7c7c;Ballistic effect : Bolts = ^#828282;40% MissedShot^#fff700;20% Suppress, 5% Critital, ^yellow;+Knockback  ^orange;Suppression deals 75% damage.\n^#7c7c7c;Effective firing range & Accuracy : ^white;100block & 80%\n^#7c7c7c;Trigger Mechanism : Gas-operated, rotating bolt = ^white;540rpm\n^#7c7c7c;Feed system : Box magazine = ^white;25rds\n^#7c7c7c;Attachment : ^white;Nothing"
+  },
+  {
+    "op": "add",
+    "path": "/itemTags/-",
+    "value": "assaultrifle"
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/fireTime",
+    "value": 0.168
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/baseDps",
+    "value": 15
+  },
+  {
+    "op": "remove",
+    "path": "/primaryAbility/projectileType"
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/projectileType",
+    "value": [
+      "ffs_bullet_trigger_bolts",
+      "ffs_bullet_trigger_bolts",
+      "ffs_bullet_trigger_bolts",
+      "ffs_bullet_trigger_bolts",
+      "ffs_bullet_trigger_bolts",
+      "ffs_bullet_trigger_bolts",
+      "ffs_bullet_trigger_bolts",
+      "ffs_bullet_trigger_bolts_sup",
+      "ffs_bullet_trigger_bolts_sup",
+      "ffs_bullet_trigger_bolts_sup",
+      "ffs_bullet_trigger_bolts_sup",
+      "ffs_bullet_trigger_bolts_miss",
+      "ffs_bullet_trigger_bolts_miss",
+      "ffs_bullet_trigger_bolts_miss",
+      "ffs_bullet_trigger_bolts_miss",
+      "ffs_bullet_trigger_bolts_miss",
+      "ffs_bullet_trigger_bolts_miss",
+      "ffs_bullet_trigger_bolts_miss",
+      "ffs_bullet_trigger_bolts_miss",
+      "ffs_bullet_trigger_bolts_crit"
+    ]
+  }
+]

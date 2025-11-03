@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 3500 }
+ 
+  ],
+  "output" : {
+    "item" : "tessu_howa_t64",
+    "count" : 1
+  },
+  "duration" : 0.1,
+  "groups" : [ "tessu_weaponbuilding", "tessu_primary" ]
+}

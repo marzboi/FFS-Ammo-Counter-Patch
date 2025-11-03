@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 6000 }
+ 
+  ],
+  "output" : {
+    "item" : "miniknog_proto_plasmasniper",
+    "count" : 1
+  },
+  "duration" : 0.1,
+  "groups" : [ "tessu_weaponbuilding", "tessu_special" ]
+}

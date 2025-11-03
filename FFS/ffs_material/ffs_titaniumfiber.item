@@ -1,0 +1,10 @@
+{
+  "itemName" : "ffs_titaniumfiber",
+  "price" : 0,
+  "rarity" : "uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ffs_titaniumfiber.png",
+  "description" : "A long, fiber of Titanium.",
+  "shortdescription" : "^green;Titanium fiber",
+  "itemTags" : [ "ffs_diy" ]
+}

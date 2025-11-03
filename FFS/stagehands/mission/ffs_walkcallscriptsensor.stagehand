@@ -1,0 +1,15 @@
+{
+  "type" : "ffs_walkcallscriptsensor",
+
+  "scripts" : [
+    "/stagehands/mission/ffs_walkcallscriptsensor.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "broadcastArea" : [-1, -1, 1, 1],
+
+  "senseEntityTypes" : [ "player" ],
+  "targetUniqueId" : null,
+  "functionName" : null,
+  "arguments" : []
+}

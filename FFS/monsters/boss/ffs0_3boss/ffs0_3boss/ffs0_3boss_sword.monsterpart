@@ -1,0 +1,11 @@
+{
+  "name" : "ffs0_3boss_sword",
+  "category" : "ffs0_3boss",
+  "type" : "sword",
+
+  "frames" : {
+    "sword" : "ffs0_3boss_sword.png"
+  },
+
+  "parameters" : { }
+}

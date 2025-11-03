@@ -1,0 +1,42 @@
+{
+  "objectName" : "DODI",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Don't Open Dead Inside Sign.",
+  "shortdescription" : "Don't Open Dead Inside Sign",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "Don't Open Dead Inside.",
+  "avianDescription" : "Don't Open Dead Inside.",
+  "floranDescription" : "Don't Open Dead Inside.",
+  "glitchDescription" : "Don't Open Dead Inside.",
+  "humanDescription" : "Don't Dead Open Inside?.. lol XDD",
+  "hylotlDescription" : "Don't Open Dead Inside.",
+  "novakidDescription":  "Don't Open Dead Inside.",
+
+  "inventoryIcon" : "SignIcon.png",
+  "orientations" : [
+    {
+      "image" : "DODI.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+	  "anchors" : [ "background" ]
+      
+    },
+    {
+      "image" : "DODI.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+	  "anchors" : [ "background" ]
+      
+    }
+  ]
+}

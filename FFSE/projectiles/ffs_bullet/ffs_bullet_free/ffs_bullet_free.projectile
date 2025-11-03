@@ -1,0 +1,50 @@
+{
+  "projectileName" : "ffs_bullet_free",
+  "image" : "ffs_bullet_free.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_spark_40mm",
+      "inheritDamageFactor" : 0,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_missile_rpg7_1",
+      "inheritDamageFactor" : 1.0,
+      "directional" : "true",
+      "delaySteps" : 10
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 10,
+      "offset" : [-1, 1],
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 10,
+      "offset" : [1, 1],
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 10,
+      "offset" : [0, -1],
+	  "angle" : 0
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 75,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

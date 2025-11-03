@@ -1,0 +1,18 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_FT8", 
+	"count" : 1
+	},
+    { 
+	"item" : "ffs_GL79", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_PL10",
+	"count" : 1
+	},
+	"groups" : [ "ffs_Human_ess",  "ffs_FOH" ]
+}

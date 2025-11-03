@@ -1,0 +1,9 @@
+{
+  "name" : "sword",
+  "category" : "ffs_parasite",
+  "type" : "sword",
+
+  "frames" : {
+    "sword" : "sword.png"
+  }
+}

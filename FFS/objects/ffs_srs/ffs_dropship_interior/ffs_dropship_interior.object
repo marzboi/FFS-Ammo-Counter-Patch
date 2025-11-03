@@ -1,0 +1,34 @@
+{
+  "objectName" : "ffs_dropship_interior",
+  "category" : "crafting",
+  "rarity" : "legendary",
+  "description" : "...",
+  "shortdescription" : "ffs_dropship_interior",
+  "race" : "generic",
+  "printable" : false,
+  "price" : 0,
+  
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+  "novakidDescription" : "...",
+  
+  "inventoryIcon" : "ffs_dropship_interior.png",
+  "orientations" : [
+	{
+      "imageLayers" : [ { "image" : "ffs_dropship_interior.png:<color>.<frame>", "fullbright" : true }, { "image" : "ffs_dropship_interiorlit.png:<color>.<frame>" } ],
+	  
+	  "imagePosition" : [0, 0],
+	  "frames" : 10,
+	  "animationCycle" : 0.5,
+	  "renderLayer" : "BackgroundOverlay-1"
+	}
+  ],
+    
+
+  "soundEffect" : "/sfx/ffs_dropship_jet.ogg",
+  "soundEffectRangeMultiplier" : 0.1
+}

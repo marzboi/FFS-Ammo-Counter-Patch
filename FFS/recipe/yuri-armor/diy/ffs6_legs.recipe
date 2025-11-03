@@ -1,0 +1,18 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_kevlar", 
+	"count" : 2
+	},
+    { 
+	"item" : "ffs_volcaniumfiber", 
+	"count" : 2
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_6tier_nglegs",
+	"count" : 1
+	},
+	"groups" : [ "ffs_diy",  "ffs_yuri" ]
+}

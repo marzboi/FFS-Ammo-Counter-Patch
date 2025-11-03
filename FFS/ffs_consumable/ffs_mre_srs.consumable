@@ -1,0 +1,19 @@
+{
+  "itemName" : "ffs_mre_srs",
+  "rarity" : "Common",
+  "price" : 40,
+  "category" : "food",
+  "inventoryIcon" : "ffs_mre_srs.png",
+  "description" : "SRS service MRE.
+Not the best quality food, but it's filling and will keep for a long time.",
+  "shortdescription" : "SRS service MRE",
+  "foodValue" : 50,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 100,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 20,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

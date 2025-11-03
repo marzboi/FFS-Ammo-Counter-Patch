@@ -1,0 +1,1095 @@
+[
+  [
+    {
+      "op": "remove",
+      "path": "/ffs_uscm_weapons_boss"
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.004,
+        "item": [
+          "ffs_BP15",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.004,
+        "item": [
+          "ffs_PDFrostbite",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.004,
+        "item": [
+          "ffs_SPP-38",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.004,
+        "item": [
+          "ffs_Firestorm",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.001,
+        "item": [
+          "ffs_QRCType",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.001,
+        "item": [
+          "ffs_Cyclone",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.0005,
+        "item": [
+          "ffs_FT8",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.0015,
+        "item": [
+          "ffs_LR-15C",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.0015,
+        "item": [
+          "ffs_Striker",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.0015,
+        "item": [
+          "ffs_StrikerBK",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.0015,
+        "item": [
+          "ffs_arblizzard",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.001,
+        "item": [
+          "ffs_LR-15",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.001,
+        "item": [
+          "ffs_LR-15BK",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.001,
+        "item": [
+          "ffs_M36Kantrael",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.001,
+        "item": [
+          "ffs_RFStormSruge",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.00025,
+        "item": [
+          "ffs_Suppressor",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.00025,
+        "item": [
+          "ffs_SuppressorBK",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.00025,
+        "item": [
+          "ffs_LR14",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.00025,
+        "item": [
+          "ffs_RAR",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.000075,
+        "item": [
+          "ffs_AC242",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_lootbox_guns/1/1/pool/-",
+      "value": {
+        "weight": 0.000075,
+        "item": [
+          "ffs_AG556",
+          1
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_uscm_weapons_boss",
+      "value": [
+        [
+          0,
+          {
+            "pool": [
+              {
+                "weight": 0.214,
+                "item": [
+                  "ffs_AG556",
+                  1
+                ]
+              },
+              {
+                "weight": 0.214,
+                "item": [
+                  "ffs_AC242",
+                  20
+                ]
+              },
+              {
+                "weight": 0.214,
+                "item": [
+                  "ffs_Suppressor",
+                  1
+                ]
+              },
+              {
+                "weight": 0.214,
+                "item": [
+                  "ffs_Firestorm",
+                  1
+                ]
+              },
+              {
+                "weight": 0.071,
+                "item": [
+                  "ffs_MGHailstorm",
+                  1
+                ]
+              },
+              {
+                "weight": 0.071,
+                "item": [
+                  "ffs_RSR",
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  // Hardcore is ON
+  [
+    {
+      "op": "test",
+      "path": "/ffs_uscm_weapons_assaulter/1",
+      "inverse": true
+    },
+    {
+      "op": "remove",
+      "path": "/ffs_uscm_weapons_assaulter"
+    },
+    {
+      "op": "remove",
+      "path": "/ffs_uscm_weapons_para"
+    },
+    {
+      "op": "remove",
+      "path": "/ffs_uscm_weapons_sniper"
+    },
+    {
+      "op": "remove",
+      "path": "/ffs_uscm_weapons_tanker"
+    },
+    {
+      "op": "remove",
+      "path": "/ffs_uscm_weapons_rocket"
+    },
+    {
+      "op": "add",
+      "path": "/ffs_uscm_weapons_assaulter",
+      "value": [
+        [
+          1,
+          {
+            "pool": [
+              {
+                "weight": 0.3,
+                "item": [
+                  "ffs_LR-15C",
+                  1
+                ]
+              },
+              {
+                "weight": 0.3,
+                "item": [
+                  "ffs_LR-15",
+                  1
+                ]
+              },
+              {
+                "weight": 0.3,
+                "item": [
+                  "ffs_Striker",
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "op": "add",
+      "path": "/ffs_uscm_weapons_para",
+      "value": [
+        [
+          1,
+          {
+            "pool": [
+              {
+                "weight": 0.425,
+                "item": [
+                  "ffs_Suppressor",
+                  1
+                ]
+              },
+              {
+                "weight": 0.425,
+                "item": [
+                  "ffs_Firestorm",
+                  1
+                ]
+              },
+              {
+                "weight": 0.05,
+                "item": [
+                  "ffs_Striker",
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "op": "add",
+      "path": "/ffs_uscm_weapons_sniper",
+      "value": [
+        [
+          1,
+          {
+            "pool": [
+              {
+                "weight": 0.111,
+                "item": [
+                  "ffs_aw_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.111,
+                "item": [
+                  "ffs_iws2000_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.111,
+                "item": [
+                  "ffs_barrett_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.111,
+                "item": [
+                  "ffs_dsr_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.111,
+                "item": [
+                  "ffs_m24_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.111,
+                "item": [
+                  "ffs_hk417_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.333,
+                "item": [
+                  "ffs_LR14",
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "op": "add",
+      "path": "/ffs_uscm_weapons_tanker",
+      "value": [
+        [
+          1,
+          {
+            "pool": [
+              {
+                "weight": 1,
+                "item": [
+                  "ffs_BP15_1H",
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "op": "add",
+      "path": "/ffs_uscm_weapons_rocket",
+      "value": [
+        [
+          1,
+          {
+            "pool": [
+              {
+                "weight": 0.5,
+                "item": [
+                  "ffs_aigm129",
+                  1
+                ]
+              },
+              {
+                "weight": 0.5,
+                "item": [
+                  "ffs_aigm129_AT",
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  // Hardcore is NOT on!
+  [
+    {
+      "op": "test",
+      "path": "/ffs_uscm_weapons_assaulter/1"
+    },
+    {
+      "op": "remove",
+      "path": "/ffs_uscm_weapons_assaulter"
+    },
+    {
+      "op": "remove",
+      "path": "/ffs_uscm_weapons_para"
+    },
+    {
+      "op": "remove",
+      "path": "/ffs_uscm_weapons_sniper"
+    },
+    {
+      "op": "remove",
+      "path": "/ffs_uscm_weapons_tanker"
+    },
+    {
+      "op": "remove",
+      "path": "/ffs_uscm_weapons_rocket"
+    },
+    {
+      "op": "add",
+      "path": "/ffs_uscm_weapons_assaulter",
+      "value": [
+        [
+          1,
+          {
+            "pool": [
+              {
+                "weight": 1,
+                "item": [
+                  "ffs_LR-15C",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          2.6,
+          {
+            "pool": [
+              {
+                "weight": 0.5,
+                "item": [
+                  "ffs_LR-15C",
+                  1
+                ]
+              },
+              {
+                "weight": 0.5,
+                "item": [
+                  "ffs_LR-15",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          3,
+          {
+            "pool": [
+              {
+                "weight": 0.429,
+                "item": [
+                  "ffs_LR-15C",
+                  1
+                ]
+              },
+              {
+                "weight": 0.429,
+                "item": [
+                  "ffs_LR-15",
+                  1
+                ]
+              },
+              {
+                "weight": 0.143,
+                "item": [
+                  "ffs_Striker",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          4,
+          {
+            "pool": [
+              {
+                "weight": 0.375,
+                "item": [
+                  "ffs_LR-15C",
+                  1
+                ]
+              },
+              {
+                "weight": 0.375,
+                "item": [
+                  "ffs_LR-15",
+                  1
+                ]
+              },
+              {
+                "weight": 0.25,
+                "item": [
+                  "ffs_Striker",
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "op": "add",
+      "path": "/ffs_uscm_weapons_para",
+      "value": [
+        [
+          1,
+          {
+            "pool": [
+              {
+                "weight": 1,
+                "item": [
+                  "ffs_mossberg_1",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          2,
+          {
+            "pool": [
+              {
+                "weight": 0.75,
+                "item": [
+                  "ffs_mossberg_1_dae",
+                  1
+                ]
+              },
+              {
+                "weight": 0.25,
+                "item": [
+                  "ffs_benelli_1",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          2.6,
+          {
+            "pool": [
+              {
+                "weight": 0.6,
+                "item": [
+                  "ffs_mossberg_1_dae",
+                  1
+                ]
+              },
+              {
+                "weight": 0.2,
+                "item": [
+                  "ffs_benelli_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.2,
+                "item": [
+                  "ffs_Firestorm",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          3,
+          {
+            "pool": [
+              {
+                "weight": 0.5,
+                "item": [
+                  "ffs_LR-15",
+                  1
+                ]
+              },
+              {
+                "weight": 0.5,
+                "item": [
+                  "ffs_Firestorm",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          4,
+          {
+            "pool": [
+              {
+                "weight": 0.5,
+                "item": [
+                  "ffs_LR-15",
+                  1
+                ]
+              },
+              {
+                "weight": 0.333,
+                "item": [
+                  "ffs_Firestorm",
+                  1
+                ]
+              },
+              {
+                "weight": 0.167,
+                "item": [
+                  "ffs_Suppressor",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          5,
+          {
+            "pool": [
+              {
+                "weight": 0.75,
+                "item": [
+                  "ffs_LR-15",
+                  1
+                ]
+              },
+              {
+                "weight": 0.25,
+                "item": [
+                  "ffs_Suppressor",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          6,
+          {
+            "pool": [
+              {
+                "weight": 0.5,
+                "item": [
+                  "ffs_LR-15",
+                  1
+                ]
+              },
+              {
+                "weight": 0.5,
+                "item": [
+                  "ffs_Suppressor",
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "op": "add",
+      "path": "/ffs_uscm_weapons_sniper",
+      "value": [
+        [
+          1,
+          {
+            "pool": [
+              {
+                "weight": 1,
+                "item": [
+                  "ffs_ar15dmr_1",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          2,
+          {
+            "pool": [
+              {
+                "weight": 1,
+                "item": [
+                  "ffs_LR14",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          4.5,
+          {
+            "pool": [
+              {
+                "weight": 0.7,
+                "item": [
+                  "ffs_LR14",
+                  1
+                ]
+              },
+              {
+                "weight": 0.1,
+                "item": [
+                  "ffs_aw_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.1,
+                "item": [
+                  "ffs_iws2000_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.1,
+                "item": [
+                  "ffs_barrett_1",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          4.5,
+          {
+            "pool": [
+              {
+                "weight": 0.249,
+                "item": [
+                  "ffs_hk417_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.249,
+                "item": [
+                  "ffs_m24_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.249,
+                "item": [
+                  "ffs_psg_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.083,
+                "item": [
+                  "ffs_aw_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.083,
+                "item": [
+                  "ffs_iws2000_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.083,
+                "item": [
+                  "ffs_barrett_1",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          5,
+          {
+            "pool": [
+              {
+                "weight": 0.1,
+                "item": [
+                  "ffs_hk417_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.3,
+                "item": [
+                  "ffs_m24_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.3,
+                "item": [
+                  "ffs_psg_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.1,
+                "item": [
+                  "ffs_aw_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.1,
+                "item": [
+                  "ffs_iws2000_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.1,
+                "item": [
+                  "ffs_barrett_1",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          6,
+          {
+            "pool": [
+              {
+                "weight": 0.375,
+                "item": [
+                  "ffs_aw_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.125,
+                "item": [
+                  "ffs_iws2000_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.125,
+                "item": [
+                  "ffs_dsr_1",
+                  1
+                ]
+              },
+              {
+                "weight": 0.375,
+                "item": [
+                  "ffs_barrett_1",
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "op": "add",
+      "path": "/ffs_uscm_weapons_tanker",
+      "value": [
+        [
+          1,
+          {
+            "pool": [
+              {
+                "weight": 1,
+                "item": [
+                  "ffs_LP9_1H",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          3,
+          {
+            "pool": [
+              {
+                "weight": 0.833,
+                "item": [
+                  "ffs_LP9_1H",
+                  1
+                ]
+              },
+              {
+                "weight": 0.167,
+                "item": [
+                  "ffs_BP15_1H",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          4,
+          {
+            "pool": [
+              {
+                "weight": 0.25,
+                "item": [
+                  "ffs_LP9_1H",
+                  1
+                ]
+              },
+              {
+                "weight": 0.75,
+                "item": [
+                  "ffs_BP15_1H",
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "op": "add",
+      "path": "/ffs_uscm_weapons_rocket",
+      "value": [
+        [
+          1,
+          {
+            "pool": [
+              {
+                "weight": 1,
+                "item": [
+                  "ffs_MGL25",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          4,
+          {
+            "pool": [
+              {
+                "weight": 1,
+                "item": [
+                  "ffs_aigm129",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          5,
+          {
+            "pool": [
+              {
+                "weight": 1,
+                "item": [
+                  "ffs_aigm129_AT",
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ]
+]

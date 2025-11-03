@@ -1,0 +1,21 @@
+{
+  "projectileName" : "ffs_carrier_damaged_cannon2",
+  "image" : "ffs_carrier_damaged_cannon.png",
+  "physics" : "ffs_deadbody",
+  "animationLoops" : false,
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 0,
+  "timeToLive" : 30,
+  "bounces" : -1,
+  "collisionPoly " : [ [-4, 4], [-4, -4], [4, -4], [4, 4] ],
+  "orientationLocked" : false,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 7.5,
+  "piercing" : true,
+  "renderLayer" : "FrontParticle-1",
+  "damageType" : "NoDamage",
+  "emitters" : [ "fireflames", "firesparks" ],
+  "damageKind" : "default"
+}

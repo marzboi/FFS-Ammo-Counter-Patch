@@ -1,0 +1,19 @@
+{
+  "kind" : "ffs_frontember",
+  "definition" : {
+    "type" : "ember",
+    "size" : 0.5,
+    "color" : [253, 200, 57, 255],
+    "fade" : 0.5,
+    "initialVelocity" : [5.0, 0.0],
+    "finalVelocity" : [10.0, 0.0],
+    "approach" : [5, 5],
+    "timeToLive" : 0.3,
+    "layer" : "front",
+	"fullbright" : true,
+    "variance" : {
+      "initialVelocity" : [2.0, 2.0],
+	  "color" : [253, 200, 57, 255]
+    }
+  }
+}

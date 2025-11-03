@@ -1,0 +1,31 @@
+{
+  "frameGrid" : {
+    "size" : [30, 20],
+    "dimensions" : [1, 20],
+    "names" : [
+      ["firing.1"],
+      ["firing.2"],
+      ["firing.3"],
+      ["firing.4"],
+      ["firing.5"],
+      ["firing.6"],
+      ["firing.7"],
+      ["firing.8"],
+      ["firing.9"],
+      ["firing.10"],
+      ["firing2.1"],
+      ["firing2.2"],
+      ["firing2.3"],
+      ["firing2.4"],
+      ["firing2.5"],
+      ["firing2.6"],
+      ["firing2.7"],
+      ["firing2.8"],
+      ["firing2.9"],
+      ["firing2.10"]
+    ]
+  },
+
+  "aliases" : {
+  }
+}

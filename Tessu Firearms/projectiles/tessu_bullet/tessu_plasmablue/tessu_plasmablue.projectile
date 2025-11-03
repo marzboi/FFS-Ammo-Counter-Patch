@@ -1,0 +1,24 @@
+{
+  "projectileName" : "tessu_plasmablue",
+  "image" : "tessu_plasmablue.png",
+  "physics" : "laser",
+  "animationCycle" : 1.1,
+  "frameNumber" : 19,
+  "timeToLive" : 3.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head_small.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 75,
+  "knockback" : 2,
+  "knockbackDirectional" : true,
+  "lightColor" : [0, 0, 73],
+  "emitters" : [ "electricplasma" ],
+  "damageKind" : "plasma",
+  "hydrophobic" : true,
+  "fullbright" : true
+}

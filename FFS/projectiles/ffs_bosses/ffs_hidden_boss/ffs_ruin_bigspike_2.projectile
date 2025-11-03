@@ -1,0 +1,28 @@
+{
+  "projectileName" : "ffs_ruin_bigspike_2",
+  "image" : "ffs_ruin_bigspike_2.png",
+  "animationCycle" : 1.0,
+  "piercing" : true,
+  "bounces" : -1,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+2",
+  "physics" : "laser",
+  "timeToLive" : 1.0,
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/monster/ffs0_demon_midboss_attack.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_ruin_bigspike_3",
+	  "angle" : 0,
+      "inheritDamageFactor" : 1
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 0,
+  "damageKind" : "default",
+  "damageType" : "NoDamage",
+  "fullbright" : true
+}

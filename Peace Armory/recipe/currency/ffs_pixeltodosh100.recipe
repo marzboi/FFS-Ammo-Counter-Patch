@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 500 }
+  ],
+  "output" : { "item" : "ffs_dosh", "count" : 100 },
+  "groups" : [ "ffs_atm" ]
+}

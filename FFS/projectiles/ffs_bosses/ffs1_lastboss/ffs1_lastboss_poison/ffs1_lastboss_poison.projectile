@@ -1,0 +1,23 @@
+{
+  "projectileName" : "ffs1_lastboss_poison",
+  "physics" : "stickybullet",
+  "bounces" : -1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : true,
+  "lightColor" : [40, 80, 40],
+  "image" : "ffs1_lastboss_poison.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 10,
+  "frameNumber" : 4,
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_monster/ffs_scientist_poison/ffs_scientist_poison_knockback.config"
+    }
+  ],
+  "power" : 40,
+  "speed" : 10,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

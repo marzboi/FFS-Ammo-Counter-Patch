@@ -1,0 +1,19 @@
+{
+  "projectileName" : "ffs_bullet_tracer_4",
+  "image" : "ffs_bullet_tracer.png",
+  "frameNumber" : 100,
+  "timeToLive" : 2.0,
+  "animationCycle" : 2.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet_medium.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 160,
+  "physics" : "ffs_bullet_trajectory",
+  "damageKind" : "default",
+  "fullbright" : true
+}

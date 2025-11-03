@@ -1,0 +1,10 @@
+{
+  "itemName" : "mk_ammoboxT3",
+  "price" : 200,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "mk_ammoboxT3.png",
+  "description" : "Late Eclipse level 3 grade ammunition.",
+  "shortdescription" : "^blue;LE.G3 Ammunition^reset;",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,28 @@
+{
+  "projectileName" : "ffs_frag_rgo_cultist_1",
+  "image" : "ffs_frag_rgo_cultist_1.png",
+  "animationCycle" : 5.0,
+  "timeToLive" : 1.5,
+  "physics" : "ffs_grenade",
+  "piercing" : true,
+  "bounces" : -1,
+  "frameNumber" : 50,
+  "pointLight" : false,
+  "speed" : 35,
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_frag_rgo_cultist_2",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    }
+  ],
+  "power" : 5.0,
+  "emitters" : [ "ffs_muzzlefiringspark" ],
+  "renderLayer" : "Player+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}
+
+

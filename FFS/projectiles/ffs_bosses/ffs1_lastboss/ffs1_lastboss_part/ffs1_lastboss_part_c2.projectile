@@ -1,0 +1,29 @@
+{
+  "projectileName" : "ffs1_lastboss_part_c2",
+  "image" : "ffs1_lastboss_part_c.png",
+  "physics" : "grenade",
+  "animationLoops" : true,
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 0,
+  "timeToLive" : 10,
+  "bounces" : 2,
+  "flippable" : true,
+  "orientationLocked" : false,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 20,
+  "piercing" : true,
+  "renderLayer" : "FrontParticle+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs1_lastboss_part_c3",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "directional" : "true"
+    }
+  ]
+}

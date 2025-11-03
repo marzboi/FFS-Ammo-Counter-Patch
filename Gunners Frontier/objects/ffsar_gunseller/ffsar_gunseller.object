@@ -1,0 +1,48 @@
+{
+  "objectName" : "ffsar_gunseller",
+  "colonyTags" : ["crafting"],
+  "rarity" : "uncommon",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/objects/ffs_ui/ffs_merchant_papachino.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "  Gun Shop",
+        "subtitle" : "Here I can buy some new weapons",
+        "icon" : {
+          "file" : "/interface/crafting/ffsar_gunseller.png"
+        }
+      }
+    },
+    "filter" : [ "ffs_papachino" ]
+  },
+  "printable" : false,
+  "description" : "Gun Shop",
+  "shortdescription" : "Gun Shop",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 30,
+
+  "apexDescription" : "Here I can buy some new weapons.",
+  "avianDescription" : "Here I can buy some new weapons.",
+  "floranDescription" : "Here I can buy some new weapons.",
+  "glitchDescription" : "Here I can buy some new weapons.",
+  "humanDescription" : "Here I can buy some new weapons.",
+  "hylotlDescription" : "Here I can buy some new weapons.",
+  "novakidDescription" : "Here I can buy some new weapons.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "ffsar_gunseller.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

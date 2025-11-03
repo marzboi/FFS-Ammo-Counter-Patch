@@ -1,0 +1,88 @@
+{
+  "projectileName" : "ffs_case_small_9rds_revolver_extr",
+  "image" : "icon.png",
+  "frameNumber" : 1,
+  "renderLayer" : "Player+1",
+  "physics" : "grenade",
+  "piercing" : true,
+  "bounces" : 0,
+  "speed" : 0,
+  "timeToLive" : 0,
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_small",
+      "fuzzAngle" : 30,
+      "speed" : -0.1,
+      "offset" : [ 0,-0.5 ],
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_small",
+      "fuzzAngle" : 30,
+      "speed" : -0.2,
+      "offset" : [ 0,-0.5 ],
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_small",
+      "fuzzAngle" : 30,
+      "speed" : -0.3,
+      "offset" : [ 0,-0.5 ],
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_small",
+      "fuzzAngle" : 30,
+      "speed" : -0.4,
+      "offset" : [ 0,-0.5 ],
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_small",
+      "fuzzAngle" : 30,
+      "speed" : -0.5,
+      "offset" : [ 0,-0.5 ],
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_small",
+      "fuzzAngle" : 30,
+      "speed" : -0.6,
+      "offset" : [ 0,-0.5 ],
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_small",
+      "fuzzAngle" : 30,
+      "speed" : -0.7,
+      "offset" : [ 0,-0.5 ],
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_small",
+      "fuzzAngle" : 30,
+      "speed" : -0.8,
+      "offset" : [ 0,-0.5 ],
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_small",
+      "fuzzAngle" : 30,
+      "speed" : -0.9,
+      "offset" : [ 0,-0.5 ],
+      "directional" : "true"
+    }
+  ]
+}

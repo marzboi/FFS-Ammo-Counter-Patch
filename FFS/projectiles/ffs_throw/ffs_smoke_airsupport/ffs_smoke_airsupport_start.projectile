@@ -1,0 +1,25 @@
+{
+  "projectileName" : "ffs_smoke_airsupport_start",
+  "image" : "ffs_nothing.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0,
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/throw/ffs_nadya_support_radio.ogg" ]
+    }, 
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_airsupport",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 75,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

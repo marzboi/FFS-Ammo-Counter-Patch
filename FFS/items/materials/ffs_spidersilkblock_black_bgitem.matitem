@@ -1,0 +1,14 @@
+{
+  "itemName" : "ffs_spidersilkblock_black_bgitem",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "ffs_spidersilkblock_black_bgitem.png",
+  "description" : "This strange rock comes from an alien world.",
+  "shortdescription" : "Spider silk",
+  "glitchdescription" : "Amazed. This rock is of an alien origin.",
+  "florandescription" : "Floran like sstrange rocks.",
+  "novakiddescription" : "Some kinda alien lookin' rock.",
+
+  "materialId" : 221
+}

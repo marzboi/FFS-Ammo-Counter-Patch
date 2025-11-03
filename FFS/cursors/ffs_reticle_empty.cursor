@@ -1,0 +1,10 @@
+{
+  "offset" : [44, 50],
+  "animation" : {
+    "frames" : "/cursors/ffs_reticle_empty.png:reticle.<index>?scale=1",
+    "frameNumber" : 20,
+    "animationCycle" : 1.0,
+    "centered" : false,
+    "mode" : "loopforever"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "light",
+  "category" : "ffs2_rat",
+  "type" : "light",
+
+  "frames" : {
+    "light" : "light.png"
+  }
+}

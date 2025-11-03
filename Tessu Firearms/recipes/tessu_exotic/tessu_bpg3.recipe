@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 7500 }
+ 
+  ],
+  "output" : {
+    "item" : "tessu_bpg3",
+    "count" : 1
+  },
+  "duration" : 0.1,
+  "groups" : [ "tessu_weaponbuilding", "tessu_exotic" ]
+}

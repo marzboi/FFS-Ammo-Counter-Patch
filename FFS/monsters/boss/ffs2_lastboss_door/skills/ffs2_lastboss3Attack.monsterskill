@@ -1,0 +1,24 @@
+{
+  "name" : "ffs2_lastboss3Attack",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/ffs2_lastboss_door/skills/ffs2_lastboss3Attack.lua" ],
+
+    "ffs2_lastboss3Attack" : {
+      "skillTime": 2,
+      "bobTime" : 4,
+      "bobHeight" : 2,
+
+      "projectileOffset" : [3, 0],
+      "fireInterval" : 2.0,
+      "projectile" : {
+        "type" : "ffs2_lastboss_door_start3",
+        "config" : {
+          "power" : 50
+        }
+      }
+    }
+  }
+}

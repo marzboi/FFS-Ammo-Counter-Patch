@@ -1,0 +1,21 @@
+{
+  "projectileName" : "mk_bullet_bluoplasma_0_normal",
+  "image" : "mk_bullet_bluoplasma.png",
+  "frameNumber" : 100,
+  "timeToLive" : 1.5,
+  "animationCycle" : 1.5,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet_small.config"
+    }
+  ],
+  "statusEffects" : [ "mk_bluoplasma" ],
+  "power" : 5.0,
+  "speed" : 80,
+  "physics" : "ffs_bullet_trajectory",
+  "knockback" : 10,
+  "damageKind" : "mk_bluoplasma",
+  "fullbright" : true
+}

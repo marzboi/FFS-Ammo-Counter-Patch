@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "titaniumbar", "count" : 6 }
+  ],
+  "duration" : 1,
+  "output" : { "item" : "mk_g512assault_1", "count" : 1 },
+  "groups" : [ "mkioworkshopcrafter", "mkioworkshoptab2" ]
+}

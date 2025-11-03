@@ -1,0 +1,22 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_ro635_1", 
+	"count" : 1
+	},
+    { 
+	"item" : "ffs_barrel_4", 
+	"count" : 7
+	},
+    { 
+	"item" : "ffs_ammunition_4", 
+	"count" : 7
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffsar_ro991",
+	"count" : 1
+	},
+	"groups" : [ "ffs_modify",  "ffs_yuri" ]
+}

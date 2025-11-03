@@ -1,0 +1,13 @@
+{
+  "projectileName" : "ffsar_grenadeexplosion_L",
+  "image" : "grenadeexplosion.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "damagePoly" : [ [-80, 0], [-80, -80], [0, -80], [80, -80], [80, 0], [80, 80], [0, 80], [-80, 80] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageTeam" : { "type" : "indiscriminate" },
+  "damageKind" : "default"
+}

@@ -1,0 +1,42 @@
+{
+  "objectName" : "DeadbodyUS1",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "US Soldier Corpse.",
+  "shortdescription" : "US Soldier Corpse",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's US Soldier Corpse.",
+  "avianDescription" : "It's US Soldier Corpse.",
+  "floranDescription" : "It'sss US Soldier Corpse.",
+  "glitchDescription" : "It's US Soldier Corpse.",
+  "humanDescription" : "It's US Soldier Corpse. I think they tried.",
+  "hylotlDescription" : "It's US Soldier Corpse.",
+  "novakidDescription":  "It's US Soldier Corpse.",
+
+  "inventoryIcon" : "DeadbodyIcon.png",
+  "orientations" : [
+    {
+      "image" : "DeadbodyUS1.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "DeadbodyUS1.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

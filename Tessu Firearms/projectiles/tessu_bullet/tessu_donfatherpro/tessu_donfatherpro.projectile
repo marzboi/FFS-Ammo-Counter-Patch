@@ -1,0 +1,26 @@
+{
+  "projectileName" : "tessu_donfatherpro",
+  "image" : "tessu_donfatherpro.png",
+  "physics" : "laser",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "timeToLive" : 3.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head_small.config"
+    }
+  ],
+  "statusEffects" : [
+    "ffs_bleeding"
+  ],
+  "power" : 5.0,
+  "speed" : 100,
+  "flippable" : true,
+  "lightColor" : [70, 0, 0],
+  "emitters" : [ "fireplasma" ],
+  "damageKind" : "plasma",
+  "hydrophobic" : false,
+  "fullbright" : true
+}

@@ -1,0 +1,19 @@
+{
+  "projectileName" : "ffs_cultist_dead_flyingassaulter",
+  "image" : "ffs_cultist_dead_flyingassaulter.png",
+  "animationLoops" : false,
+  "animationCycle" : 1.0,
+  "frameNumber" : 10,
+  "power" : 0,
+  "timeToLive" : 60,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Player-1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

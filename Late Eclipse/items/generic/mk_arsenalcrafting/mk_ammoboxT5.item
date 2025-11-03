@@ -1,0 +1,10 @@
+{
+  "itemName" : "mk_ammoboxT5",
+  "price" : 200,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "mk_ammoboxT5.png",
+  "description" : "Late Eclipse level 5 grade ammunition.",
+  "shortdescription" : "^#FF6A00;LE.G5 Ammunition^reset;",
+  "itemTags" : [ "reagent" ]
+}

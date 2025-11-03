@@ -1,0 +1,31 @@
+{
+  "projectileName" : "ffs_hidden_midboss_deadbody_start",
+  "image" : "ffs_hidden_midboss_deadbody_start.png",
+  "animationLoops" : false,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 0,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Object+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/monster/ffs0_demon_midboss_dying.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_hidden_midboss_deadbody",
+      "allowFlip" : true,
+      "angle" : 0
+    }
+  ]
+}

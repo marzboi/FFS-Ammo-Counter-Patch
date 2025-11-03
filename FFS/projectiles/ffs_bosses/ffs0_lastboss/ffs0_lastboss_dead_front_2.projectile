@@ -1,0 +1,64 @@
+{
+  "projectileName" : "ffs0_lastboss_dead_front_2",
+  "image" : "ffs0_lastboss_dead_front.png",
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 1.5,
+  "bounces" : 0,
+  "flippable" : false,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 2,
+  "piercing" : true,
+  "renderLayer" : "BackParticle-1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "emitters" : [ "ffs_bigfireflames", "ffs_bigfiresparks", "ffs_bigsmoke" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_bigexplosionknockback.config",
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cannonblast_explosion",
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs0_lastboss_dead_front_3",
+	  "angle" : -93,
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_carrier_dead_explosion_start",
+      "delaySteps" : 10,
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_carrier_dead_explosion_start",
+      "delaySteps" : 20,
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_carrier_dead_explosion_start",
+      "delaySteps" : 30,
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_carrier_dead_explosion_start",
+      "delaySteps" : 40,
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0
+    }
+  ]
+}

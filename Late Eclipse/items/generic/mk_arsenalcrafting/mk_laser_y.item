@@ -1,0 +1,10 @@
+{
+  "itemName" : "mk_laser_y",
+  "price" : 200,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "mk_laser_y.png",
+  "description" : "Yellow laser attachment. Increases accuracy.",
+  "shortdescription" : "Laser Sight [^yellow;YELLOW^reset;]",
+  "itemTags" : [ "reagent" ]
+}

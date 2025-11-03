@@ -1,0 +1,65 @@
+{
+  "objectName" : "ffs_mobileteleporter",
+  "colonyTags" : ["misc"],
+  "objectType" : "teleporter",
+  "rarity" : "Legendary",
+  "description" : "A personal teleporter, connects to bookmarked locations. \n^red;Destroyed when broken.",
+  "shortdescription" : "Scientific Teleporter",
+  "price" : 3000,
+  "printable" : false,
+
+    "apexDescription" : "This is Chica's mobile teleporter. ..Cute.",
+  "avianDescription" : "This is Chica's mobile teleporter. ..Cute.",
+  "floranDescription" : "This is Chica's mobile teleporter. ..Cute.",
+  "glitchDescription" : "This is Chica's mobile teleporter. ..Cute.",
+  "humanDescription" : "This is Chica's mobile teleporter. ..Cute.",
+  "hylotlDescription" : "This is Chica's mobile teleporter. ..Cute.",
+  "novakidDescription" : "This is Chica's mobile teleporter. ..Cute.",
+
+  "category" : "teleporter",
+  "lightColor" : [30, 30, 30],
+  "lightPosition" : [1, 0],
+
+  "interactAction" : "OpenTeleportDialog",
+  "interactData" : "/interface/warping/destinationonly.config",
+
+  "inventoryIcon" : "ffs_mobileteleportericon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "ffs_mobileteleporter.png:<color>", "fullbright" : true }, { "image" : "ffs_mobileteleporterlit.png:<color>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1
+    }
+  ],
+
+  "health" : 10,
+  "rooting" : true,
+
+  "breakDropPool" : "remoteteleporter",
+
+  "teleporterFootPosition" : [1, 0],
+
+  "scripts" : [ "/scripts/npcToyObject.lua"],
+  "npcToy" : {
+    "influence" : [
+      "teleporter",
+      "teleporterComplete"
+    ],
+    "defaultReactions" : {
+      "teleporter" : [
+        [1.0, "beamaway"]
+      ],
+      "teleporterComplete" : [
+        [1.0, "vomit"],
+        [1.0, "smile"]
+      ]
+    },
+    "preciseStandPositionLeft" : [0, 0.0],
+    "preciseStandPositionRight" : [0, 0.0],
+    "maxNpcs" : 1
+  }
+}

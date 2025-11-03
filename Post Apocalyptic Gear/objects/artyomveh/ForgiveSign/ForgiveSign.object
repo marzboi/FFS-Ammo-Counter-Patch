@@ -1,0 +1,42 @@
+{
+  "objectName" : "ForgiveSign",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "God Forgive Us.",
+  "shortdescription" : "God Forgive Us",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "God Forgive Us.",
+  "avianDescription" : "God Forgive Us.",
+  "floranDescription" : "God Forgive Us.",
+  "glitchDescription" : "God Forgive Us.",
+  "humanDescription" : "God Forgive Us.",
+  "hylotlDescription" : "God Forgive Us.",
+  "novakidDescription":  "God Forgive Us.",
+
+  "inventoryIcon" : "SignIcon.png",
+  "orientations" : [
+    {
+      "image" : "ForgiveSign.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+	  "anchors" : [ "background" ]
+      
+    },
+    {
+      "image" : "ForgiveSign.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+	  "anchors" : [ "background" ]
+      
+    }
+  ]
+}

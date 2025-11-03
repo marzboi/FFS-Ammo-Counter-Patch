@@ -1,0 +1,159 @@
+{
+  "projectileName" : "ffs_bullet_trigger_M445",
+  "image" : "icon.png",
+  "lightColor" : [130, 130, 100],
+  "pointLight" : true,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0.01,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+	  "delaySteps" : 1,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+	  "delaySteps" : 2,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+      "delaySteps" : 3,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+	  "delaySteps" : 4,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+	  "delaySteps" : 5,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+	  "delaySteps" : 6,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+      "delaySteps" : 7,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+      "delaySteps" : 8,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+	  "delaySteps" : 9,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+	  "delaySteps" : 10,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+      "delaySteps" : 11,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+      "delaySteps" : 12,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+	  "delaySteps" : 13,
+      "speed" : 25,
+      "directional" : "true"
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+	  "delaySteps" : 14,
+      "speed" : 25,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffsea_M445",
+      "inheritDamageFactor" : 1,
+	  "fuzzAngle" : 5,
+      "delaySteps" : 15,
+      "speed" : 25,
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 100,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,35 @@
+{
+  "projectileName" : "ffs_bullet_RGHVAPFSDSexp",
+  "image" : "ffs_bullet_RGHVAPFSDS.png",
+  "animationCycle" : 0.5,
+  "loops" : false,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 10,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_mediumexplosionknockback.config"
+    }, 
+	{
+	  "action": "explosion",
+      "foregroundRadius": 3,
+      "backgroundRadius": 0,
+      "explosiveDamageAmount": 75,
+      "harvestLevel": 99,
+      "delaySteps": 0
+  }],
+  "power" : 5.0,
+  "speed" : 1350,
+  "lightColor" : [100, 200, 255],
+  "damageType" : "ignoresdef",
+  "damagePoly": [
+    [-15, 3],
+    [-15, -3],
+    [15, -3],
+    [15, 3]
+  ],
+  "fullbright" : true
+}

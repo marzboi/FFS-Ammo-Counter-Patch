@@ -1,0 +1,42 @@
+{
+  "objectName" : "Caferacer",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Caferacer style motocycle.",
+  "shortdescription" : "Caferacer bike",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's a Caferacer style motocycle.",
+  "avianDescription" : "It's a Caferacer style motocycle.",
+  "floranDescription" : "It's a Caferacer style motocycle.",
+  "glitchDescription" : "It's a Caferacer style motocycle.",
+  "humanDescription" : "It's a Caferacer style motocycle.",
+  "hylotlDescription" : "It's a Caferacer style motocycle.",
+  "novakidDescription":  "It's a Caferacer style motocycle.",
+
+  "inventoryIcon" : "CaferacerIcon.png",
+  "orientations" : [
+    {
+      "image" : "Caferacer.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "Caferacer.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

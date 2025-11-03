@@ -1,0 +1,17 @@
+{
+  "projectileName" : "ffs_monster_flash_aa",
+  "image" : "ffs_monster_flash_aa.png",
+  "animationCycle" : 0.2,
+  "piercing" : true,
+  "flippable" : true,
+  "bounces" : -1,
+  "speed" : 0,
+  "renderLayer" : "Player+1",
+  "frameNumber" : 2,
+  "timeToLive" : 0.1,
+  "damageKindImage" : "icon.png",
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "fullbright" : true
+}

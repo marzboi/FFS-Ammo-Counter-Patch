@@ -1,0 +1,69 @@
+{
+  "projectileName" : "tessu_20mm_1",
+  "image" : "ffs_bullet.png",
+  "frameNumber" : 100,
+  "timeToLive" : 2.0,
+  "animationCycle" : 2.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "sound",
+      "options" : [ 
+	  "/sfx/throw/ffs_he_explosion.ogg"
+	  ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "grenadeexplosion",
+      "inheritDamageFactor" : 1.5,
+      "fuzzAngle" : 15,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.5,
+      "fuzzAngle" : 15,
+      "angle" : 60
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.5,
+      "fuzzAngle" : 15,
+      "angle" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.5,
+      "fuzzAngle" : 15,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.5,
+      "fuzzAngle" : 15,
+      "angle" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.5,
+      "fuzzAngle" : 15,
+      "angle" : 330
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag2",
+      "inheritDamageFactor" : 0.5,
+      "fuzzAngle" : 15,
+      "angle" : 300
+    }
+  ],
+  "power" : 10.0,
+  "speed" : 100,
+  "physics" : "ffs_missiledown2",
+  "damageKind" : "default"
+}

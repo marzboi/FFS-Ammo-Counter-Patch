@@ -1,0 +1,190 @@
+{
+  "type" : "ffs_cultist_mortar",
+  "shortdescription" : "demon",
+  "description" : "DEMON!",
+
+  "categories" : [ "ffs_cultist_mortar" ],
+  "parts" : [ "body" ],
+  "partParameters" : "ffs_cultist_mortar.partparams",
+
+  "animation" : "ffs_cultist_mortar.animation",
+  "reversed" : false,
+
+  "dropPools" : [ "ffs_cultist_vehicle" ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/ffs_cultist_mortar/ffs_cultist_mortar.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 150,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : false,
+      "keepTargetInRange" : 999,
+      "targetOutOfSightTime" : 99999.0,
+
+      "foundTargetActions" : [],
+
+      "fleeActions" : [],
+
+      "hostileActions" : [
+        {
+          "name" : "action-fire",
+          "cooldown" : 5.0,
+          "parameters" : {
+            "requireLineOfSight" : false,
+            "maximumRange" : 200,
+            "minimumRange" : 0,
+            "windupState" : "windup",
+            "windupTime" : 0,
+
+            "projectileType" : "ffs_monster_mortar_start",
+			"projectileParameters": {
+			"power" : 1500
+			},
+            "aimAtTarget" : true,
+            "fireOffset" : [1.5, -0.5],
+            "projectileCount" : 1,
+            "projectileInterval" : 1.0,
+            "fireState" : "fire",
+            "fireDelay" : 0,
+            "fireSound" : "fire",
+
+            "fireArc": false,
+            "projectileSpeed": 40,
+            "gravityMultiplier": 0,
+            "inaccuracy" : 0.0,
+
+            "winddownState" : "fire",
+            "winddownTime" : 1.0
+          }
+        }
+      ],
+
+      "periodicActions" : [],
+
+      "approachActions" : [],
+
+      "followActions" : [ ],
+
+      "wanderActions" : [ ]
+    },
+
+    "knockoutTime" : 0.0,
+    "knockoutEffect" : "",
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "",
+
+    "metaBoundBox" : [-2, -2, 2, 2],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-1, -1], [-1, -2.5], [1, -2.5], [1, -1], [1, 0.3], [1, 0.3], [-1, 0.3], [-1, 0.3] ],
+      "mass" : 1.0,
+      "walkSpeed" : 0,
+      "runSpeed" : 0,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 0.0
+      }
+    },
+
+    "touchDamage" : {
+      "poly" : [ [-1, -1], [-1, -2.5], [1, -2.5], [1, -1], [1, 0.3], [1, 0.3], [-1, 0.3], [-1, 0.3] ],
+      "damage" : 50,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "hammer",
+      "knockback" : 50,
+      "statusEffects" : [ ]
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 100
+        },
+        "maxHealth" : {
+          "baseValue" : 300
+        },
+        "protection" : {
+          "baseValue" : 50.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "lavaImmunity" : {
+          "baseValue" : 1.0
+        },
+        "ffs_bleedingImmunity" : {
+          "baseValue" : 1.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "ffs_criticalhitImmunity" : {
+          "baseValue" : 1.0
+        },
+        "ffs_headshotImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -21],
+    "capturable" : false,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

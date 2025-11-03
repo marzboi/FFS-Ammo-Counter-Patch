@@ -1,0 +1,10 @@
+{
+  "itemName" : "mk_flashlight",
+  "price" : 200,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "mk_flashlight.png",
+  "description" : "Flashlight Atttachment.",
+  "shortdescription" : "Flashlight Attachment",
+  "itemTags" : [ "reagent" ]
+}

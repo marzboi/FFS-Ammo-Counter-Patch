@@ -1,0 +1,22 @@
+{
+  "kind" : "ffs_frontsmoke",
+  "definition" : {
+    "type" : "animated",
+    "size" : 0.6,
+    "animation" : "/particles/gunsmoke/gunsmoke.animation",
+    "position" : [0, 0],
+    "initialVelocity" : [0, 1],
+    "finalVelocity" : [0, 1],
+    "approach" : [5, 5],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "fade" : 1.0,
+    "layer" : "front",
+    "timeToLive" : 1.0,
+    "variance" : {
+      "initialVelocity" : [0.5, 1],
+      "rotation" : 360,
+      "angularVelocity" : 10
+    }
+  }
+}

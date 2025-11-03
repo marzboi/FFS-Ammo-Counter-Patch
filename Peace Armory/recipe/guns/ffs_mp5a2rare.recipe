@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "ffs_dosh", "count" : 10000 }
+  ],
+  "output" : { "item" : "ffs_mp5a2rare", "count" : 1 },
+  "groups" : [ "ffs_peacestore" ]
+}

@@ -1,0 +1,243 @@
+{
+  "type" : "ffs2_evil1",
+  "shortdescription" : "..",
+  "description" : "..",
+
+  "categories" : [ "ffs2_evil1" ],
+  "parts" : [ "body", "sword" ],
+  "partParameters" : "ffs2_evil1.partparams",
+
+  "animation" : "ffs2_evil1.animation",
+  "reversed" : false,
+
+  "dropPools" : [ "ffs_parasite" ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/ffs2_evil1/ffs2_evil1.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 500,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 500,
+      "targetOutOfSightTime" : 10.0,
+
+      "foundTargetActions" : [
+		{
+		  "name" : "action-aggrohop",
+		  "aggroHopSpeed": 0,
+		  "aggroHopWait": 0,
+		  "aggroHopState": "melee"
+		}
+	  ],
+
+      "fleeActions" : [],
+
+       "hostileActions" : [
+        {
+          "name" : "action-fire",
+          "cooldown" : 2,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 50,
+            "minimumRange" : 0,
+            "windupState" : "jump",
+            "windupTime" : 1.0,
+
+            "projectileType" : "ffs_scientist_poison_trigger",
+			"projectileParameters": {
+			"power" : 20
+			},
+            "aimAtTarget" : true,
+            "fireOffset" : [0.2, -0.5],
+            "projectileCount" : 1,
+            "projectileInterval" : 0.5,
+            "fireState" : "melee",
+            "fireDelay" : 0,
+            "fireSound" : "aggroHop",
+
+            "fireArc": false,
+            "projectileSpeed": 10,
+            "gravityMultiplier": 0,
+            "inaccuracy" : 0.02,
+
+            "winddownState" : "walk",
+            "winddownTime" : 1.0
+          }
+		},
+        {
+          "name" : "action-charge",
+          "cooldown" : 1.0,
+          "parameters" : {
+            "maximumRange" : 5,
+            "windupState" : "idle",
+            "windupTime" : 0.3,
+
+            "chargeTime" : 0.5,
+            "chargeSpeed" : 20,
+            "chargeControlForce" : 1000,
+            "chargeState" : "melee",
+            "wallCrashSound" : "",
+            "wallCrashEmitter" : "",
+
+            "winddownTime" : 0.5,
+            "winddownStopForce" : 1000,
+            "winddownState" : "idle"
+          }
+        }
+      ],
+
+      "periodicActions" : [],
+
+      "approachActions" : [
+        {
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 20,
+            "jumpXVelocity" : 20,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 30,
+            "run" : true,
+            "moveState" : "walk"
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 50,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "run" : true,
+            "moveState" : "run"
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-walk",
+          "cooldown" : 6.0,
+          "parameters" : {
+            "wanderTime" : [5, 15]
+          }
+        }
+      ]
+    },
+
+    "knockoutTime" : 0.0,
+    "knockoutEffect" : "",
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "",
+
+    "metaBoundBox" : [-2.5, -2.5, 2.5, 2.5],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ],
+      "mass" : 1.0,
+      "walkSpeed" : 8,
+      "runSpeed" : 8,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 0.0
+      }
+    },
+
+    "damageParts" : {
+      "sword" : {
+        "damage" : 20,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "slash",
+        "knockback" : 20,
+        "statusEffects" : [ ]
+      }
+    },
+
+    "touchDamage" : {
+      "poly" : [ [-0.5, -0.5], [-0.5, -0.5], [0.5, -0.5], [0.5, -0.5], [0.5, 0.5], [0.5, 0.5], [-0.5, 0.5], [-0.5, 0.5] ],
+      "damage" : 50,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "hammer",
+      "knockback" : 0,
+      "statusEffects" : [ ]
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 2
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 150
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -21],
+    "capturable" : false,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

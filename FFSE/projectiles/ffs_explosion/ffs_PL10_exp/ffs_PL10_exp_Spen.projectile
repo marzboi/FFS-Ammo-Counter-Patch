@@ -1,0 +1,17 @@
+{
+  "projectileName" : "ffs_PL10_exp_Spen",
+  "image" : "ffs_PL10_exp.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "statusEffects" : [
+    "ffs_penetration"
+  ],
+  "damagePoly" : [ [-36, 0], [-24, -24], [0, -36], [24, -24], [36, 0], [24, 24], [0, 36], [-24, 24] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "default",
+  "damageType" : "ignoresdef",
+  "fullbright" : true
+}

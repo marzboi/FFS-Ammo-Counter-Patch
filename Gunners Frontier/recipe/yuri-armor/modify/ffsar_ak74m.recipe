@@ -1,0 +1,22 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_ak74_1", 
+	"count" : 1
+	},
+    { 
+	"item" : "ffs_barrel_2", 
+	"count" : 7
+	},
+    { 
+	"item" : "ffs_ammunition_2", 
+	"count" : 5
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffsar_ak74m",
+	"count" : 1
+	},
+	"groups" : [ "ffs_modify",  "ffs_yuri" ]
+}

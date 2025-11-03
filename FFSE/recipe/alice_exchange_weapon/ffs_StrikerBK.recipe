@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_StrikerBK", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 3000
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

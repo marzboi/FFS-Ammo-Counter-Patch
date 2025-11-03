@@ -1,0 +1,12 @@
+[
+  {
+    "op" : "replace",
+    "path" : "/messageDefaults/textSpeed",
+    "value": 50
+  },
+  {
+    "op" : "replace",
+    "path" : "/messageDefaults/persistTime",
+    "value": 5
+  }
+]

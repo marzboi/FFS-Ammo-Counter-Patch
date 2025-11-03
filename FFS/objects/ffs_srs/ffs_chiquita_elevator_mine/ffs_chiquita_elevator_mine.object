@@ -1,0 +1,62 @@
+{
+  "objectName" : "ffs_chiquita_elevator_mine",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "rare",
+  "category" : "crafting",
+  
+  "description" : "What a smart chick.",
+  "shortdescription" : "chiquita",
+  "race" : "generic",
+  
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/objects/ffs_srs/ffs_chiquita_elevator_mine/ffs_chiquita_elevator_mine.config",
+    "filter" : [ "ffs_chiquita_elevator_mine" ]
+  },
+  "price" : 0,
+
+  "apexDescription" : "''So, where is next?''",
+  "avianDescription" : "''So, where is next?''",
+  "floranDescription" : "''So, where is next?''",
+  "glitchDescription" : "''So, where is next?''",
+  "humanDescription" : "''So, where is next?''",
+  "hylotlDescription" : "''So, where is next?''",
+
+  
+  "inventoryIcon" : "ffs_chiquita_elevator_mine.png",
+  "orientations" : [
+	{
+      "imageLayers" : [ 
+	  { "image" : "ffs_chiquita_elevator_mine.png:<color>.<frame>", "fullbright" : true }, 
+	  { "image" : "ffs_chiquita_elevator_minelit.png:<color>.<frame>" } 
+	  ],
+
+	  "imagePosition" : [0, 0],
+	  "frames" : 20,
+	  "animationCycle" : 2.0,
+      "direction" : "left",
+      "flipImages" : true,
+
+	  "spaceScan" : 0.1
+	},
+	{
+      "imageLayers" : [ 
+	  { "image" : "ffs_chiquita_elevator_mine.png:<color>.<frame>", "fullbright" : true }, 
+	  { "image" : "ffs_chiquita_elevator_minelit.png:<color>.<frame>" } 
+	  ],
+
+	  "imagePosition" : [0, 0],
+	  "frames" : 20,
+	  "animationCycle" : 2.0,
+      "direction" : "right",
+
+	  "spaceScan" : 0.1
+	}
+  ],
+  "turnInQuests" : [
+    "ffs_episode_0_2",
+    "ffs_episode_0_3",
+    "ffs_episode_0_4"
+  ]
+}

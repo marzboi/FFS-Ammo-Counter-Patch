@@ -1,0 +1,10 @@
+{
+  "itemName" : "mk_ammoboxT4",
+  "price" : 200,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "mk_ammoboxT4.png",
+  "description" : "Late Eclipse level 4 grade ammunition.",
+  "shortdescription" : "^#9700FF;LE.G4 Ammunition^reset;",
+  "itemTags" : [ "reagent" ]
+}

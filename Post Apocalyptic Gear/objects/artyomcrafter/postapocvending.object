@@ -1,0 +1,135 @@
+{
+  "objectName" : "postapocvending",
+  "colonyTags" : ["mechanical","commerce"],
+  "rarity" : "Uncommon",
+  "category" : "other",
+  "price" : 300,
+  "printable" : false,
+  "description" : "Post-Apoc Vending Machine.",
+  "shortdescription" : "Post-Apoc Vending Machine",
+  "race" : "generic",
+
+  "apexDescription" : "It's Post-Apoc Vending Machine.",
+  "avianDescription" : "It's Post-Apoc Vending Machine.",
+  "floranDescription" : "It's Posst-Apoc Vending Machine!",
+  "glitchDescription" : "Interested. It's Post-Apoc Vending Machine.",
+  "humanDescription" : "It's Post-Apoc Vending Machine.",
+  "hylotlDescription" : "It's Post-Apoc Vending Machine.",
+  "novakidDescription" : "It's Post-Apoc Vending Machine.",
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Post-Apoc Vending Machine",
+        "subtitle" : " Post-Apoc Gears"
+      }
+    },
+    "buyFactor" : 1,
+    "sellFactor" : 0.2,
+    "items" : [
+	
+	  { "item" : "artyombikerhelm" },
+	  { "item" : "artyombikerhelmgog" },
+	  { "item" : "artyombikerscarf" },
+	  { "item" : "artyombikerscarf2" },
+      { "item" : "armoredworkout" },
+	  { "item" : "DeserterTelnyashka" },
+      { "item" : "hotbloodedigor" },
+      { "item" : "LISAbrad" },
+      { "item" : "PunkMohawk" },
+      { "item" : "EyepatchFace" },
+      { "item" : "artyomMiliPack" },
+      { "item" : "SOVhelm" },
+      { "item" : "SOVarmor" },
+      { "item" : "RoadmasterJoe" },
+      { "item" : "Footballhelm" },
+      { "item" : "WastelanderGas" },
+	  { "item" : "WastelanderGas2" },
+	  { "item" : "PPM88" },
+	  { "item" : "PPM88-2" },
+	  { "item" : "PMGGasmask" },
+      { "item" : "RobotEye" },
+      { "item" : "flumask" },
+      { "item" : "CultistMask" },
+      { "item" : "Cultistarmor" }, 
+      { "item" : "Flying Cap with Goggles" },
+	  { "item" : "Blood Bag Mask" },
+	  { "item" : "HazmatPants" },
+	  { "item" : "HazmatVest" },
+	  { "item" : "HazmatGas" },
+	  { "item" : "HazmatFilter" },
+	  { "item" : "WastelanderMICH" },
+	  { "item" : "Bikerjacket" },
+	  { "item" : "CowboyGas" },
+	  { "item" : "CowboyMask" },
+      { "item" : "ApocClothmask" },
+	  { "item" : "ApocSkiMask" },
+	  { "item" : "ApocSkiMask2" },
+	  { "item" : "ApocSkiMask3" },
+	  { "item" : "ApocSkiMask4" },
+	  { "item" : "SurvivorHood" },
+	  { "item" : "SurvivorHood2" },
+	  { "item" : "SurvivorHood3" },
+	  { "item" : "SurvivorHood4" },
+	  { "item" : "SurvivorHood5" },
+	  { "item" : "SurvivorCoatTop" },
+	  { "item" : "SurvivorCoatJeans" },
+	  { "item" : "SurvivorJacket" },
+	  { "item" : "SurvivorJacket2" },
+	  { "item" : "SurvivorJacketPuffer" },
+	  { "item" : "ScavengerCoatTop" },
+      { "item" : "ScavengerCoatShorts" },
+	  { "item" : "ApocHikingBackPack" },
+	  { "item" : "GoProStrap" },
+	  { "item" : "MotoHelm" },
+	  { "item" : "MotoHelm2" },
+	  { "item" : "Flap Cap1" },
+	  { "item" : "Flap Cap2" },
+	  { "item" : "Flap Cap3" },
+	  { "item" : "PASurvivorJeans" },
+	  { "item" : "MakeshiftSpear" },
+	  { "item" : "ApocBaseballBat" },
+	  { "item" : "ApocBaseballBat2" },
+	  { "item" : "ApocBaseballBat3" },
+	  { "item" : "ApocBaseballBat4" },
+	  { "item" : "ApocBaseballBat5" },
+	  { "item" : "ApocBaseballBat6" },
+	  { "item" : "ffs_MarxRifle" },
+	  { "item" : "ffs_HAR-4" },
+	  { "item" : "ffs_BuranRevolver" },
+	  { "item" : "ffs_m14Apoc" },
+	  { "item" : "ffs_m14SawnOff" },
+	  { "item" : "ffs_Revlolving1858Rifle" },
+	  { "item" : "ffs_ak74Ud_1" },
+	  { "item" : "ffs_ak74Ud_silencer" },
+	  { "item" : "ffs_m16 Wastelander" },
+	  { "item" : "MakeshiftPPSH" }
+	  ]
+  },
+ 
+ 
+  "inventoryIcon" : "postapocvendingicon.png",
+  "orientations" : [
+    {
+      "image" : "postapocvending.png",
+      "imagePosition" : [-16, -0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : ["bottom"]
+    },
+    {
+      "image" : "postapocvending.png",
+      "imagePosition" : [-16, -0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : ["bottom"]
+    }
+  ]
+}

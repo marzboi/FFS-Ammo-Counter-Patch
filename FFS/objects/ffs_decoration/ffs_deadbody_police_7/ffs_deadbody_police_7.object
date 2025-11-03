@@ -1,0 +1,35 @@
+{
+  "objectName" : "ffs_deadbody_police_7",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "category" : "A dead body.",
+  
+  "description" : "A dead body.",
+  "shortdescription" : "A dead body",
+  "race" : "generic",
+  
+  "apexDescription" : "R.I.P",
+  "avianDescription" : "R.I.P",
+  "floranDescription" : "R.I.P",
+  "glitchDescription" : "R.I.P",
+  "humanDescription" : "R.I.P",
+  "hylotlDescription" : "R.I.P",
+  "novakidDescription" : "R.I.P",
+  
+  "inventoryIcon" : "ffs_deadbody_police_7.png",
+  "orientations" : [
+	{
+	  "image" : "ffs_deadbody_police_7.png:<color>.<frame>",
+	  "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true
+	},
+    {
+      "image" : "ffs_deadbody_police_7.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right"
+
+    }
+  ]
+}

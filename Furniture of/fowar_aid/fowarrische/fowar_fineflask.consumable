@@ -1,0 +1,31 @@
+{
+  "itemName" : "fowar_fineflask",
+  "rarity" : "essential",
+  "tooltipKind" : "wowar_base_small",
+  "price" : 300,
+  "category" : "medicine",
+  "inventoryIcon" : "fowar_flask.png",
+  "description" : "^#7c7c7c;Rische Estate Prescription Flask
+  
+
+
+^#7c7c7c;Preservation : ^green;Precursor Cyrofreeze Preservation.
+^#7c7c7c;Expiration Date : ^green;No expiration date.
+^#7c7c7c;Capacity : ^#cb42f5;240ml
+
+^white;the finest drink from the finest space slave colony. made from 5 secret ingredients",
+  "shortdescription" : "^#cb42f5;The same thing that sterilize hospitals.",
+  "effects" : [ [
+      {
+        "effect" : "/sfx/objects/fowar_sip.ogg"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "stimuse" ],
+  "blockingEffects" : [
+    "ffs_heal_stimpak_1",
+	"ffs_heal_stimpak_2",
+	"ffs_heal_stimpak_3",
+	"ffs_heal_stimpak_4"
+  ]
+}

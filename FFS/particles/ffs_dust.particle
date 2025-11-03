@@ -1,0 +1,19 @@
+{
+  "kind" : "ffs_dust",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/dust2/dust2.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 4],
+    "approach" : [0, 20],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.85,
+    "fade" : 1,
+    "size" : 0.5,
+    "layer" : "back",
+    "timeToLive" : 0.45,
+    "variance" : {
+      "initialVelocity" : [1.0, 1.0]
+    }
+  }
+}

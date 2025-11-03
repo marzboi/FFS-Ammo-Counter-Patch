@@ -1,0 +1,10 @@
+{
+  "itemName" : "ffs_carbonfiber",
+  "price" : 10,
+  "rarity" : "uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ffs_carbonfiber.png",
+  "description" : "A small square of carbon fiber.",
+  "shortdescription" : "^green;Carbon fiber",
+  "itemTags" : [ "ffs_diy" ]
+}

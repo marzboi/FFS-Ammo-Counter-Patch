@@ -1,0 +1,32 @@
+{
+  "id" : "ffs_episode_0_2",
+  "mainQuest" : true,
+  "title" : "^red;FFS ^green;EP.0 - Main ^White;Abandoned mine",
+  "text" : "Thanks to the verbal evidence from the survivor who called her chica, I decided to search the abandoned mine.",
+  "completionText" : "I entered abandoned mine.",
+  "completionCinema" : "/cinematics/ffs_cinema/ffs_srs.cinematic",
+  "moneyRange" : [1, 1],
+  "rewards" : [
+    [ ["ffs_elevator_1", 1] ]
+  ],
+  "canBeAbandoned" : false,
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "money",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+    "followUp" : "ffs_episode_0_3",
+    "requireTurnIn" : true,
+    "turnInEntityUid" : "ffs_episode_0_2"
+  },
+  "prerequisites" : [ "ffs_episode_0_1" ]
+}

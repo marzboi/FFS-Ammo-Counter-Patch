@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "mk_g512assault_1", "count" : 1 },
+	{ "item" : "mk_suppressor", "count" : 1 },
+	{ "item" : "mk_flashlight", "count" : 1 }
+  ],
+  "duration" : 1,
+  "output" : { "item" : "mk_g512assault_sf_1", "count" : 1 },
+  "groups" : [ "mk_attachmentworkshop", "mk_attachment_sf" ]
+}

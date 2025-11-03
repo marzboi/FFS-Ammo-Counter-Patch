@@ -1,0 +1,291 @@
+{
+  "ffs_whitecrow_1_1" : {
+    "type" : "mission",
+    "senderName" : "White crow crew",
+    "portraitImage" : "/interface/chatbubbles/ffs_whitecrow_crew.png:<frame>",
+    "text" : "^white;Agent, We are in North-East from your coordinate.
+^green;Move North-East.^white;
+We are waiting for you."
+  },
+  "ffs_whitecrow_1_2" : {
+    "type" : "mission",
+    "senderName" : "White crow crew",
+    "portraitImage" : "/interface/chatbubbles/ffs_whitecrow_crew.png:<frame>",
+    "text" : "^white;Welcome to aboard, Agent.
+We always welcome you. 
+Before get some rest, ^green;Please check the teleporter and ^yellow;book mark^green; on the 2nd floor."
+  },
+  "ffs_whitecrow_1_3" : {
+    "type" : "mission",
+    "senderName" : "SWAT Blue team",
+    "portraitImage" : "/interface/chatbubbles/ffs_swat_blue.png:<frame>",
+    "text" : "^white;Agent, This area has ^green;Armory^white; and ^green;Barracks^white;. 
+If you need ^green;recruits^white; and ^green;weapons^white;, this way."
+  },
+  "ffs_whitecrow_1_4" : {
+    "type" : "mission",
+    "senderName" : "SWAT Blue team",
+    "portraitImage" : "/interface/chatbubbles/ffs_swat_blue.png:<frame>",
+    "text" : "^white;Agent, This area has ^green;Bridge^white; and ^green;Cargo^white;. 
+If you need ^green;new missions^white;, ^green;equipments and technical support^white;, this way."
+  },
+  "ffs_whitecrow_1_5" : {
+    "type" : "mission",
+    "senderName" : "SWAT Blue team",
+    "portraitImage" : "/interface/chatbubbles/ffs_swat_blue.png:<frame>",
+    "text" : "^white;Agent, This area has ^green;Infirmary^white; and ^green;Laboratory^white;. 
+If you need ^green;medicines^white; and ^green;science support^white;, this way."
+  },
+  "ffs_whitecrow_lab_1" : {
+    "type" : "mission",
+    "senderName" : "Dr.Breadnut",
+    "portraitImage" : "/interface/chatbubbles/ffs_breadnut.png:<frame>",
+    "text" : "^white;Welcome to laboratory, Agent.
+What can I do for you?"
+  },
+  "ffs_whitecrow_lab_2" : {
+    "type" : "mission",
+    "senderName" : "Lt.Lily",
+    "portraitImage" : "/interface/chatbubbles/ffs_lily.png:<frame>",
+    "text" : "^white;Nah, Agent came here to see me! 
+Right?
+^green;*Smile"
+  },
+  "ffs_whitecrow_lab_3" : {
+    "type" : "mission",
+    "senderName" : "Lt.Alice",
+    "portraitImage" : "/interface/chatbubbles/ffs_alice_upset.png:<frame>",
+    "text" : "^green;*Sigh"
+  },
+  "ffs_whitecrow_lab_4" : {
+    "type" : "mission",
+    "senderName" : "Lt.Alice",
+    "portraitImage" : "/interface/chatbubbles/ffs_alice.png:<frame>",
+    "text" : "^white;Welcome, Agent. If you have any work for ^green;lab^white;, please ask ^green;Dr.Breadnut^white;. 
+Or, If you have anything useless, ^green;I can change it to dollars^white;. We need weapons, armors, ammunitions, foods.. Actually, We are in chronic privation."
+  },
+  "ffs_whitecrow_infirmary_1" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica_happy.png:<frame>",
+    "text" : "^white;Hi! Welcome to infirmary!"
+  },
+  "ffs_whitecrow_infirmary_2" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica.png:<frame>",
+    "text" : "^white;No, I'm not working here.
+I'm just keeping Lily's seat."
+  },
+  "ffs_whitecrow_infirmary_3" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica_happy.png:<frame>",
+    "text" : "^white;She must have gone to play with Alice!
+Because she like her!"
+  },
+  "ffs_whitecrow_infirmary_4" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;.....Ugh.
+Yes, uh.. Maybe?
+You're so smart, chica."
+  },
+  "ffs_whitecrow_infirmary_5" : {
+    "type" : "mission",
+    "senderName" : "Chiquita",
+    "portraitImage" : "/interface/chatbubbles/ffs_chica_happy.png:<frame>",
+    "text" : "^green;*Teehee
+^white;Anyway, She taught me what to do when you come.
+^green;Tell me if you want!"
+  },
+  "ffs_whitecrow_bridge_1" : {
+    "type" : "mission",
+    "senderName" : "Col.Xander",
+    "portraitImage" : "/interface/chatbubbles/ffs_xander_fight.png:<frame>",
+    "text" : "^white;.. What about Instrument clusters?
+Can you tell me the approximate completion time?"
+  },
+  "ffs_whitecrow_bridge_2" : {
+    "type" : "mission",
+    "senderName" : "White crow crew",
+    "portraitImage" : "/interface/chatbubbles/ffs_whitecrow_crew.png:<frame>",
+    "text" : "^white;Yes, Captain. Maybe a month.
+We have no Equipment, Resources, Fuel, Time. Sooner or later, we'll have to go hunting for food supplies. ..And Technical staffs had all become MIA or KIA except for a few."
+  },
+  "ffs_whitecrow_bridge_3" : {
+    "type" : "mission",
+    "senderName" : "Col.Xander",
+    "portraitImage" : "/interface/chatbubbles/ffs_xander_fight.png:<frame>",
+    "text" : "^white;..                                
+Alright.                              
+No matter how few people are, don't stop monitoring radar."
+  },
+  "ffs_whitecrow_bridge_4" : {
+    "type" : "mission",
+    "senderName" : "White crow crew",
+    "portraitImage" : "/interface/chatbubbles/ffs_whitecrow_crew.png:<frame>",
+    "text" : "^white;Yes, Captain."
+  },
+  "ffs_whitecrow_bridge_5" : {
+    "type" : "mission",
+    "senderName" : "Player",
+    "portraitImage" : "/interface/chatbubbles/ffs_player.png:<frame>",
+    "text" : "^white;..I'll come back later."
+  },
+  "ffs_whitecrow_barrack_1" : {
+    "type" : "mission",
+    "senderName" : "Sgt.Max",
+    "portraitImage" : "/interface/chatbubbles/ffs_max.png:<frame>",
+    "text" : "^white;Welcome, agent.
+What brought you to the barracks?"
+  },
+  "ffs_whitecrow_barrack_2" : {
+    "type" : "mission",
+    "senderName" : "Sgt.Max",
+    "portraitImage" : "/interface/chatbubbles/ffs_max.png:<frame>",
+    "text" : "^white;We remember your help. 
+Most of them are recruits, but We'll be glad to follow you if it helps you.
+I'm sorry I couldn't follow you myself."
+  },
+  "ffs_whitecrow_barrack_3" : {
+    "type" : "mission",
+    "senderName" : "Sgt.Max",
+    "portraitImage" : "/interface/chatbubbles/ffs_max_sorrow.png:<frame>",
+    "text" : "^white;That cabinet's just a supply. You'd better go see cargo for your performance.
+I'm so sorry, agent."
+  },
+  "ffs_whitecrow_barrack_4" : {
+    "type" : "mission",
+    "senderName" : "Pvt.Jessie",
+    "portraitImage" : "/interface/chatbubbles/ffs_jessie.png:<frame>",
+    "text" : "^white;Commander!
+Look at them. They're recruits of New red team.
+If you need backup, take them!"
+  },
+  "ffs_whitecrow_barrack_5" : {
+    "type" : "mission",
+    "senderName" : "Pvt.Jessie",
+    "portraitImage" : "/interface/chatbubbles/ffs_jessie.png:<frame>",
+    "text" : "^white;Oh Commander, There is shooting range.
+I'll suggest to captain that you want to use it, 
+But not now.
+Sorry!"
+  },
+  "ffs_whitecrow_armory_1" : {
+    "type" : "mission",
+    "senderName" : "Papacino",
+    "portraitImage" : "/interface/chatbubbles/ffs_papachino.png:<frame>",
+    "text" : "^white;Oh! Il nostro eroe!
+Benvenuto!
+Cosa posso fare per te?"
+  },
+  "ffs_whitecrow_armory_2" : {
+    "type" : "mission",
+    "senderName" : "Papacino",
+    "portraitImage" : "/interface/chatbubbles/ffs_papachino.png:<frame>",
+    "text" : "^white;Ahem..
+Thanks to hitting the cultists, we have a new product!
+I can't stop laughing!
+^green;*Smile"
+  },
+  "ffs_whitecrow_armory_3" : {
+    "type" : "mission",
+    "senderName" : "Papacino",
+    "portraitImage" : "/interface/chatbubbles/ffs_papachino.png:<frame>",
+    "text" : "^white;Chica? HAHAHA! Kid went to see Lily.
+She is quite a follower of her.
+Anyway, Even if Chica isn't here, come and see the weapon!"
+  },
+  "ffs_whitecrow_cargo_1" : {
+    "type" : "mission",
+    "senderName" : "Rebecca",
+    "portraitImage" : "/interface/chatbubbles/ffs_rebecca.png:<frame>",
+    "text" : "^yellow;Buried by ~
+Infinite workload ~"
+  },
+  "ffs_whitecrow_cargo_2" : {
+    "type" : "mission",
+    "senderName" : "Nemui",
+    "portraitImage" : "/interface/chatbubbles/ffs_nemui.png:<frame>",
+    "text" : "^white;...Ugh"
+  },
+  "ffs_whitecrow_cargo_3" : {
+    "type" : "mission",
+    "senderName" : "Rebecca",
+    "portraitImage" : "/interface/chatbubbles/ffs_rebecca.png:<frame>",
+    "text" : "^yellow;My life is already broken~"
+  },
+  "ffs_whitecrow_cargo_4" : {
+    "type" : "mission",
+    "senderName" : "Nemui",
+    "portraitImage" : "/interface/chatbubbles/ffs_nemui.png:<frame>",
+    "text" : "^white;.................."
+  },
+  "ffs_whitecrow_cargo_5" : {
+    "type" : "mission",
+    "senderName" : "Rebecca",
+    "portraitImage" : "/interface/chatbubbles/ffs_rebecca.png:<frame>",
+    "text" : "^yellow;Yayyeyeyeyeyeye ~"
+  },
+  "ffs_whitecrow_cargo_6" : {
+    "type" : "mission",
+    "senderName" : "Nemui",
+    "portraitImage" : "/interface/chatbubbles/ffs_nemui_scared.png:<frame>",
+    "text" : "^red;Stop that weird song!"
+  },
+  "ffs_whitecrow_cargo_7" : {
+    "type" : "mission",
+    "senderName" : "Rebecca",
+    "portraitImage" : "/interface/chatbubbles/ffs_rebecca.png:<frame>",
+    "text" : "^white;Then, help me, you little panda!"
+  },
+  "ffs_whitecrow_cargo_8" : {
+    "type" : "mission",
+    "senderName" : "Nemui",
+    "portraitImage" : "/interface/chatbubbles/ffs_nemui_sleep.png:<frame>",
+    "text" : "^red;Kaaaaaaaah-^white;
+...zzz                              
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+  },
+  "ffs_whitecrow_cargo_9" : {
+    "type" : "mission",
+    "senderName" : "Rebecca",
+    "portraitImage" : "/interface/chatbubbles/ffs_rebecca.png:<frame>",
+    "text" : "^green;Sigh                                         
+^white;Oh, Agent? 
+What can i do for you?
+If you need technical support, Please write it to paper somewhere nearby."
+  },
+  "ffs_whitecrow_cargo_10" : {
+    "type" : "mission",
+    "senderName" : "Rebecca",
+    "portraitImage" : "/interface/chatbubbles/ffs_rebecca.png:<frame>",
+    "text" : "^green;Sigh ^white;Or, you can tell her who talkless pretty.
+^green;*Psssst.
+^#666666;She can't say because of wound. 
+I heard it from nadya."
+  },
+  "ffs_whitecrow_cargo_11" : {
+    "type" : "mission",
+    "senderName" : "Yuri",
+    "portraitImage" : "/interface/chatbubbles/ffs_yuri.png:<frame>",
+    "text" : "..                           
+...                                        
+....                                "
+  },
+  "ffs_whitecrow_cargo_12" : {
+    "type" : "mission",
+    "senderName" : "Yuri",
+    "portraitImage" : "/interface/chatbubbles/ffs_yuri_talk.png:<frame>",
+    "text" : "^#666666;..Pretty? ..Thank you."
+  },
+  "ffs_whitecrow_cargo_13" : {
+    "type" : "mission",
+    "senderName" : "Rebecca",
+    "portraitImage" : "/interface/chatbubbles/ffs_rebecca.png:<frame>",
+    "text" : "^red;Eh???!!"
+  }
+}

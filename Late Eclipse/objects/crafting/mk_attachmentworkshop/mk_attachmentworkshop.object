@@ -1,0 +1,44 @@
+{
+  "objectName" : "mk_attachmentworkshop",
+  "colonyTags" : ["crafting"],
+  "category" : "crafting",
+  "rarity" : "legendary",
+  "description" : "Attachment Workshop",
+  "shortdescription" : "^orange;Attachment Workshop^white;",
+  "race" : "generic",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/mk_attachmentworkshop.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Attachment Workshop",
+        "icon" : {
+          "file" : "/interface/crafting/mk_attachmentworkshopicon.png"
+        }
+      }
+    },
+    "filter" : [ "mk_attachmentworkshop" ]
+  },
+  "printable" : false,
+  "price" : 65,
+  "apexDescription" : "Attachment Workshop",
+  "avianDescription" : "Attachment Workshop",
+  "floranDescription" : "Attachment Workshop",
+  "glitchDescription" : "Attachment Workshop",
+  "humanDescription" : "Attachment Workshop",
+  "hylotlDescription" : "Attachment Workshop",
+  "novakidDescription" : "Attachment Workshop",
+  
+  "inventoryIcon" : "icon.png",
+  
+  "orientations" : [
+    {
+      "dualImage" : "mk_attachmentworkshop.png",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 4.5,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  "npcToy" : {}
+}

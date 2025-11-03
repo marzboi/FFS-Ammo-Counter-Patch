@@ -1,0 +1,24 @@
+{
+  "projectileName" : "tessu_chomp_alt_start",
+  "image" : "icon.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0.01,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "tessu_chomp_alt",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    }
+  ],
+  "statusEffects" : [
+    "ffs_bleeding"
+  ],
+  "power" : 0,
+  "speed" : 200,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

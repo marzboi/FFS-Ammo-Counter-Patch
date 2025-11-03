@@ -1,0 +1,42 @@
+{
+  "objectName" : "artyomapocvan",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Some survivors made normal van to this thing.",
+  "shortdescription" : "Apocalyptic Van",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "A wheeled machine, solid.",
+  "avianDescription" : "Some Human survivors made this thing... it looks solid.",
+  "floranDescription" : "Sssmells bloody.",
+  "glitchDescription" : "interested. Human Survivor's wheeled machine.",
+  "humanDescription" : "Some survivor guys made this thing... it looks solid.",
+  "hylotlDescription" : "Human's makeshift vehicle.",
+  "novakidDescription":  "It's like a wheeled horse... with some junks.",
+
+  "inventoryIcon" : "artyomapocvanicon.png",
+  "orientations" : [
+    {
+      "image" : "artyomapocvan.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "artyomapocvan.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

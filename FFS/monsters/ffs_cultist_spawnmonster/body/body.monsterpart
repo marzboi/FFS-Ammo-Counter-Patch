@@ -1,0 +1,14 @@
+{
+  "name" : "body",
+  "category" : "ffs_cultist_spawnmonster",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  },
+
+  "parameters" : { 
+    "meleeProjectile" : "meleelash",
+    "projectileSourcePosition" : [1, -1]
+  }
+}

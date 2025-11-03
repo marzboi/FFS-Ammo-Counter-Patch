@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "tungstenbar", "count" : 3 },
+	{ "item" : "titaniumbar", "count" : 1 },
+	{ "item" : "hardenedcarapace", "count" : 1 }
+  ],
+  "output" : { "item" : "mk_compensator", "count" : 1 },
+  "groups" : [ "mkioworkshopcrafter", "mkioworkshoptab6" ]
+}

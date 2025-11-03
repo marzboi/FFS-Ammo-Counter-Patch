@@ -1,0 +1,58 @@
+{
+  "projectileName" : "ffs_missile_84MMHESH_start",
+  "image" : "ffs_missile_84MMHESH.png",
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_spark_40mm",
+      "inheritDamageFactor" : 0,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_missile_84MMHESH_mid",
+      "inheritDamageFactor" : 1.0,
+      "directional" : "true",
+      "delaySteps" : 10
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_missile_rpg7_back",
+      "inheritDamageFactor" : 1.0,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 10,
+      "offset" : [-1, 1],
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 10,
+      "offset" : [1, 1],
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 10,
+      "offset" : [0, -1],
+	  "angle" : 0
+    }
+  ],
+  "flippable" : true,
+  "renderLayer" : "Player-1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "piercing" : true,
+  "timeToLive" : 0.0,
+  "fullbright" : true
+}

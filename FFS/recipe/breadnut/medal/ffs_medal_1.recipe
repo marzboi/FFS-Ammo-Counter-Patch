@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_scientistlog", 
+	"count" : 5
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_medal_1",
+	"count" : 1
+	},
+	"groups" : [ "ffs_medal",  "ffs_breadnut" ]
+}

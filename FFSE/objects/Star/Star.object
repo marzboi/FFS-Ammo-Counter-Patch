@@ -1,0 +1,34 @@
+{
+  "objectName" : "USCMStar",
+  "colonyTags" : ["human","humanbunker" ], 
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 750,
+  "printable" : false,
+  "description" : "Star of The USCM,The Stars Forever.",
+  "shortdescription" : "USCMStar",
+  "race" : "human",
+
+  "apexDescription" : "Star of The USCM,The Stars Forever.",
+  "avianDescription" : "Star of The USCM,The Stars Forever.",
+  "floranDescription" : "Star of The USCM,The Stars Forever.",
+  "glitchDescription" : "Star of The USCM,The Stars Forever.",
+  "humanDescription" : "Star of The USCM,The Stars Forever.",
+  "hylotlDescription" : "Star of The USCM,The Stars Forever.",
+
+  "inventoryIcon" : "Star.png",
+  "orientations" : [
+    {
+      "dualImage" : "Star.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}
+
+

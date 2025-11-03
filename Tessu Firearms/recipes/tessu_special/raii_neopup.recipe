@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 9999999 }
+ 
+  ],
+  "output" : {
+    "item" : "raii_neopup",
+    "count" : 1
+  },
+  "duration" : 0.1,
+  "groups" : [ "tessu_weaponbuilding", "tessu_special" ]
+}

@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_smaw_1", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 1300
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

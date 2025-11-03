@@ -1,0 +1,35 @@
+{
+  "objectName" : "WaterBullAPC",
+  "colonyTags" : ["human","humanbunker" ], 
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 750,
+  "printable" : false,
+  "description" : "APC-4021 WaterBull APC.",
+  "shortdescription" : "WaterBullAPC",
+  "race" : "human",
+
+  "apexDescription" : "APC-4021 WaterBull APC.",
+  "avianDescription" : "APC-4021 WaterBull APC.",
+  "floranDescription" : "APC-4021 WaterBull APC.",
+  "glitchDescription" : "APC-4021 WaterBull APC.",
+  "humanDescription" : "APC-4021 WaterBull APC.",
+  "hylotlDescription" : "APC-4021 WaterBull APC.",
+
+  "inventoryIcon" : "WaterBullAPCicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "WaterBullAPC.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+    "collision" : "null"
+
+    }
+  ]
+}
+
+

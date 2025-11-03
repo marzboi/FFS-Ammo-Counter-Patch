@@ -1,0 +1,27 @@
+{
+  "projectileName" : "ffs_pirates_psycho_dead_blade",
+  "image" : "ffs_pirates_psycho_dead_blade.png",
+  "physics" : "grenade",
+  "animationLoops" : false,
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "renderLayer" : "Player+1",
+  "piercing" : true,
+  "bounces" : 0,
+  "speed" : -10,
+  "timeToLive" : 0,
+  "damageKindImage" : "icon.png",
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_pirates_psycho_dead_blade2",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    }
+  ]
+}

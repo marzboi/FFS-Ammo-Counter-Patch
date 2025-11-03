@@ -1,0 +1,42 @@
+{
+  "objectName" : "GeneralLee",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "I'm a charger that charges through the night, Like an orange bolt of lightning passing everything in sight.",
+  "shortdescription" : "General Lee",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's Iconic American Muscle Car.",
+  "avianDescription" : "It's Iconic American Muscle Car.",
+  "floranDescription" : "It'sss Iconic American Muscle Car",
+  "glitchDescription" : "It's Iconic American Muscle Car.",
+  "humanDescription" : "It's Iconic American Muscle Car.",
+  "hylotlDescription" : "It's Iconic American Muscle Car",
+  "novakidDescription":  "It's Iconic American Muscle Car.",
+
+  "inventoryIcon" : "GeneralLeeIcon.png",
+  "orientations" : [
+    {
+      "image" : "GeneralLee.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "GeneralLee.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

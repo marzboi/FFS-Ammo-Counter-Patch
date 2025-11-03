@@ -1,0 +1,10 @@
+{
+  "itemName" : "ffs_triziumfiber",
+  "price" : 0,
+  "rarity" : "uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ffs_triziumfiber.png",
+  "description" : "A long, fiber of Trizium.",
+  "shortdescription" : "^green;Trizium fiber",
+  "itemTags" : [ "ffs_diy" ]
+}

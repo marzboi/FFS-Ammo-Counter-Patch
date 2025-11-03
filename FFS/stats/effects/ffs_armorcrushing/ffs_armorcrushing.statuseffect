@@ -1,0 +1,16 @@
+{
+  "name" : "ffs_armorcrushing",
+  "blockingStat" : "ffs_armorcrushingImmunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 3,
+
+  "scripts" : [
+    "ffs_armorcrushing.lua"
+  ],
+
+  "animationConfig" : "ffs_armorcrushing.animation",
+
+  "label" : "FFS: Armor is crushed! Take cover!",
+  "icon" : "/interface/statuses/ffs_armorcrushing.png"
+}

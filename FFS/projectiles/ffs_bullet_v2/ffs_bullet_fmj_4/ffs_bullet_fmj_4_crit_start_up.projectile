@@ -1,0 +1,37 @@
+{
+  "projectileName" : "ffs_bullet_fmj_4_crit_start_up",
+  "image" : "ffs_invisible.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_fmj_4_crit",
+      "inheritDamageFactor" : 3,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_medium",
+      "inheritDamageFactor" : 0,
+      "fuzzAngle" : 15,
+	  "angle" : 90,
+      "speed" : -15,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_muzzlefiringspark",
+      "inheritDamageFactor" : 0,
+      "fuzzAngle" : 7.5,
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 75,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

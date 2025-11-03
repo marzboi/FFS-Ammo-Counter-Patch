@@ -1,0 +1,195 @@
+{
+  "type" : "ffs_whitecrow_crew_blue",
+  "baseType" : "ffs_base_swat",
+
+  "identity" : {
+    "imagePath" : "ffs_human",
+    "hairGroup" : "hair"
+  },
+  "humanoidConfig" : "/npcs/crew/ffs_whitecrow_crewmember.config",
+
+  "dropPools" : [ "villagertreasure" ],
+
+  "damageTeamType" : "friendly",
+
+  // Remove protection and powermultiplier gained from being level 1 as scaling is from player armor
+  "innateStatusEffects" : [ { "stat" : "protection", "amount": -25 }, {"stat" : "powerMultiplier", "amount" : -0.5} ], 
+
+  "persistent" : true,
+
+  "scriptConfig" : {
+    "behavior" : "crewmember",
+    "behaviorConfig" : {
+      "emptyHands" : false,
+
+      // Wander behavior config
+      "wanderTime" : 1,
+      "idleTime" : 10,
+      "outerHomeRange" : 20,
+      "innerHomeRange" : 15,
+
+      "hostileDamageTeam" : {"type" : "friendly", "team" : 1}
+    },
+
+    "crew" : {
+      "recruitable" : true,
+
+      "recruitInteractAction" : {
+        "messageType" : "recruits.offerRecruit",
+        "messageArgs" : []
+      },
+
+      "powerMultiplierExponent" : 1.0,
+
+      "role" : {
+        "type" : "Soldier",
+        "name" : "Soldier",
+        "field" : "Security",
+        "uniformColorIndex" : 4
+      },
+
+      "ranks" : [
+        "Private <role>",
+        "Private E-2 <role>",
+        "Private First Class <role>",
+        "Specialist <role>",
+        "Corporal <role>",
+        "Sergeant <role>"
+      ],
+
+      "defaultUniform" : {
+      },
+      "uniformSlots" : [ ]
+    },
+
+    "questGenerator" : {
+      // Disable participation of crewmembers in generated quests until the
+      // generated quest system knows how to deal with entities that can
+      // disappear from the world and/or change uniqueId.
+      "enableParticipation" : false
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "default" : {
+            "default" : [
+              "*Salute",
+              "Blue team reporting.",
+              "Nice to meet you, agent."
+            ]
+          }
+        },
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "*Salute",
+              "Blue team reporting.",
+              "Nice to meet you, agent."
+            ]
+          }
+        },
+        "respawned" : {
+          "default" : {
+            "default" : [
+              "*Salute",
+              "Blue team reporting.",
+              "Nice to meet you, agent."
+            ]
+          }
+        },
+        "unfollow" : {
+          "default" : {
+            "default" : [
+              "Copy.",
+              "Copy that.",
+              "Roger.",
+              "Ok, Waiting your command."
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "Yes, I'm moving.",
+              "Copy that. I'm moving.",
+              "Roger. I'm moving."
+            ]
+          }
+        },
+        "cantreach" : {
+          "default" : {
+            "default" : [
+              "I can't reach you, Commander."
+            ]
+          }
+        }
+      },
+
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+
+      "converse" : "/dialog/crewmember.config:converse",
+
+      "attack" : "/dialog/ffs_swat_combat.config:attack",
+      "reattack" : "/dialog/ffs_swat_combat.config:reattack",
+      "killedTarget" : "/dialog/ffs_swat_combat.config:killedTarget",
+      "lostTarget" : "/dialog/ffs_swat_combat.config:lostTarget",
+      "outOfSight" : "/dialog/ffs_swat_combat.config:outOfSight",
+      "cheerOn" : "/dialog/ffs_swat_combat.config:cheerOn",
+      "cantReach" : "/dialog/ffs_swat_combat.config:cantReach"
+    }
+  },
+
+  "movementParameters" : {
+    // Run at the same speed as the player
+    "runSpeed" : 14.0
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "ffs_4tier_swat_bluehead" } ],
+            "chest" : [ { "name" : "ffs_4tier_swat_bluechest" } ],
+            "legs" : [ { "name" : "ffs_4tier_swat_bluelegs" } ],
+            "primary" : [ "ffs_mp5_npc" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "statusProperties" : {
+      "hitInvulnerability" : true,
+      "hitInvulnerabilityThreshold" : 0.0333,
+      "hitInvulnerabilityTime" : 1,
+      "hitInvulnerabilityFlash" : 0.15,
+      "damageFlashOnDirectives" : "",
+      "damageFlashOffDirectives" : ""
+    },
+
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 300.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.25
+      },
+      "healthRegen" : {
+        "baseValue" : 2.0
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+[   
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_lord_1"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_selfloading_1"} },
+
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_22special_1"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_defender_1"} },
+
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_handygun_1"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_m520_1"} },
+
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_reising_1"} },
+
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_favorite_1"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_ideal44_1"} },
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ffs_marksman_1"} }
+]

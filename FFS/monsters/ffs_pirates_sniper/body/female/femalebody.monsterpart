@@ -1,0 +1,14 @@
+{
+  "name" : "femalebody",
+  "category" : "ffs_pirates_sniper",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "femalebody.png"
+  },
+
+  "parameters" : {
+    "meleeProjectile" : "meleeslash",
+    "projectileSourcePosition" : [1, -1]
+  }
+}

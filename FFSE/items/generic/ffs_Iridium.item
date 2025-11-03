@@ -1,0 +1,7 @@
+{
+  "itemName" : "ffs_Iridium",
+  "rarity" : "rare",
+  "inventoryIcon" : "ffs_Iridium.png",
+  "description" : "This is a piece of Iridium.",
+  "shortdescription" : "^blue;Iridium"
+}

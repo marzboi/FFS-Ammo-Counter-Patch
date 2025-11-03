@@ -1,0 +1,9 @@
+{
+  "name" : "body_light",
+  "category" : "ffs2_giantspider",
+  "type" : "body_light",
+
+  "frames" : {
+    "body_light" : "body_light.png"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "background" : {
+    "type" : "background",
+    "fileHeader" : "/interface/tooltips/ffs_header.png",
+    "fileBody" : "/interface/tooltips/ffs_body.png",
+    "fileFooter" : "/interface/tooltips/ffs_foot.png"
+  },
+  "moneyIcon" : {
+    "type" : "image",
+    "position" : [150, 129],
+    "file" : "/interface/money.png"
+  },
+  "priceLabel" : {
+    "type" : "label",
+    "position" : [163, 129],
+    "hAnchor" : "left",
+    "value" : "0"
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [6, 182],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "lineSpacing" : 1.2,
+    "wrapWidth" : 300
+  },
+  "rarityLabel" : {
+    "type" : "label",
+    "position" : [150, 170],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "objectImage" : {
+    "type" : "image",
+    "position" : [222, 155],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [130, 37],
+    "minSize" : [80, 37]
+  }
+}

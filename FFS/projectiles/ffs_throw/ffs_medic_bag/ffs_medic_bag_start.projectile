@@ -1,0 +1,28 @@
+{
+  "projectileName" : "ffs_medic_bag_start",
+  "image" : "icon.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_firstaidzone_1",
+      "inheritDamageFactor" : 0,
+      "offset" : [0, 2],
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_medic_bag",
+      "inheritDamageFactor" : 0,
+      "angle" : 0
+    }
+  ],
+  "power" : 0,
+  "speed" : 75,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

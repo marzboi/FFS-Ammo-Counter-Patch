@@ -1,0 +1,32 @@
+{
+  "name" : "ffs1_lastboss2Attack",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/ffs1_lastboss/skills/ffs1_lastboss2Attack.lua" ],
+
+    "ffs1_lastboss2Attack" : {
+      "skillTime": 4,
+      "bobTime" : 4,
+      "bobHeight" : 2,
+
+      "projectileOffset" : [0, 0],
+      "fireInterval" : 4,
+      "projectile" : {
+        "type" : "ffs1_lastboss_poison_start",
+        "config" : {
+          "power" : 30,
+          "periodicActions" : [
+            {
+              "time" : 0,
+              "repeat" : false,
+              "action" : "sound",
+              "options" : [ "/sfx/monster/ffs1_lastboss_scream.ogg" ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

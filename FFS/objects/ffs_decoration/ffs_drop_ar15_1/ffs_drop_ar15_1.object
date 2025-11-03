@@ -1,0 +1,37 @@
+{
+  "objectName" : "ffs_drop_ar15_1",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "category" : "decorative",
+
+  "description" : "ar15",
+  "shortdescription" : "ar15",
+  "race" : "generic",
+
+  "apexDescription" : "..I found something.",
+  "avianDescription" : "..I found something.",
+  "floranDescription" : "..I found something.",
+  "glitchDescription" : "..I found something.",
+  "humanDescription" : "..I found something.",
+  "hylotlDescription" : "..I found something.",
+  "novakidDescription" : "..I found something.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "ffs_drop_ar15_1.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : ["/objects/scripts/breakoninteract.lua"],
+  "scriptDelta" : 0,
+
+  "breakDropOptions" : [
+    [ [ "ffs_ar15_1", 1, { } ] ]
+  ]
+}

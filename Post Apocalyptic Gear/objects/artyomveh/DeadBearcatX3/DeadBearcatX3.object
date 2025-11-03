@@ -1,0 +1,42 @@
+{
+  "objectName" : "DeadBearcatX3",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Bearcat X3 with Corpse.",
+  "shortdescription" : "Bearcat X3 with Corpse",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's just dead guy.",
+  "avianDescription" : "It's just dead guy.",
+  "floranDescription" : "It's just dead guy.",
+  "glitchDescription" : "It's just dead guy.",
+  "humanDescription" : "What a poor guy.",
+  "hylotlDescription" : "It's just dead guy.",
+  "novakidDescription":  "It's just dead guy.",
+
+  "inventoryIcon" : "DeadbodyIcon.png",
+  "orientations" : [
+    {
+      "image" : "DeadBearcatX3.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "DeadBearcatX3.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

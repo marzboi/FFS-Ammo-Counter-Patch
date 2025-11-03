@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 15000 }
+ 
+  ],
+  "output" : {
+    "item" : "tessu_thepatriot",
+    "count" : 1
+  },
+  "duration" : 0.1,
+  "groups" : [ "tessu_weaponbuilding", "tessu_exotic" ]
+}

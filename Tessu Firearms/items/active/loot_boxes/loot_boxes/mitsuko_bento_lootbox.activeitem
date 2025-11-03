@@ -1,0 +1,24 @@
+{
+  "itemName" : "mitsuko_bento_lootbox",
+  "price" : 0,
+  "level" : 0,
+  "maxStack" : 25,
+  "rarity" : "Legendary",
+  "category" : "mysteriousReward",
+  "description" : "Contains special 'kawaii!' edition weapons!",
+  "shortdescription" : "Lootbox: Mitsuko's Bento!",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "mitsuko_bento_lootbox.png",
+  "animation" : "mitsuko_bento_lootbox.animation",
+  "animationCustom" : {},
+  "scripts" : ["stupidreq.lua"],
+
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "mitsukobentolootbox",
+    "level" : 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "projectileName" : "ffs0_demon_2_dead2",
+  "image" : "ffs0_demon_2_dead.png",
+  "physics" : "grenade",
+  "animationLoops" : true,
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 0,
+  "timeToLive" : 10,
+  "bounces" : 2,
+  "flippable" : true,
+  "orientationLocked" : false,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 7.5,
+  "piercing" : true,
+  "renderLayer" : "Player+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs0_demon_2_dead3",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "speed" : 15,
+      "directional" : "true"
+    }
+  ]
+}

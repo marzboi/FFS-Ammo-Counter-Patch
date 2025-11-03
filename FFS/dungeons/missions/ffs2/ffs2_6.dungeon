@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "ffs2_6",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "ffs2_6" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "ffs2_6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "ffs2_6.json" ]
+    }
+  ]
+}

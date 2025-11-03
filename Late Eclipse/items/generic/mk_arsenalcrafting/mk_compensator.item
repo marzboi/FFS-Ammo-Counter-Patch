@@ -1,0 +1,10 @@
+{
+  "itemName" : "mk_compensator",
+  "price" : 200,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "mk_compensator.png",
+  "description" : "Compensator attachment. Reduces recoil strength.",
+  "shortdescription" : "Compensator",
+  "itemTags" : [ "reagent" ]
+}

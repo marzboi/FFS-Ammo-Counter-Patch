@@ -1,0 +1,9 @@
+{
+  "itemName" : "ffs_breadnut_researchlog2",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "ffs_breadnut_researchlog2.png",
+  "description" : " ^white; ' Date : xxxx. 08. 03. 19:32. '
+^white;'C76,C77,C78,C79 ^red;failed^white;'  
+^white;'C80 ^green;Succeeded^white;'",
+  "shortdescription" : "^green;Research Log-2p"
+}

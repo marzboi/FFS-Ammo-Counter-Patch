@@ -1,0 +1,18 @@
+{
+  "projectileName" : "ffs2_lastboss_engine_dead",
+  "image" : "ffs2_lastboss_engine_dead.png",
+  "animationLoops" : false,
+  "animationCycle" : 1.0,
+  "frameNumber" : 10,
+  "power" : 0,
+  "timeToLive" : 99999,
+  "bounces" : -1,
+  "flippable" : false,
+  "orientationLocked" : true,
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Object+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,7 @@
+{
+  "itemName" : "ffs_extract_heal",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "ffs_extract_heal.png",
+  "description" : "Seperated recovery cells from ruin's sample extract.",
+  "shortdescription" : "^green;Recovery Cell Extract"
+}

@@ -1,0 +1,24 @@
+{
+  "projectileName" : "ffs_mag_aps",
+  "image" : "ffs_mag_aps.png",
+  "damageKindImage" : "ffs_mag_aps.png",
+  "animationCycle" : 4.0,
+  "physics" : "grenade",
+  "piercing" : true,
+  "flippable" : true,
+  "bounces" : 2,
+  "speed" : 10,
+  "renderLayer" : "Player+1",
+  "frameNumber" : 38,
+  "timeToLive" : 4,
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_mag_aps2",
+      "fuzzAngle" : 360
+    }
+  ]
+}

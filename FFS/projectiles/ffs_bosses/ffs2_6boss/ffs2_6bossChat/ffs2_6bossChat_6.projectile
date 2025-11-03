@@ -1,0 +1,19 @@
+{
+  "projectileName" : "ffs2_6bossChat_6",
+  "image" : "ffs2_6bossChat_6.png",
+  "animationLoops" : false,
+  "animationCycle" : 10.0,
+  "frameNumber" : 25,
+  "power" : 0,
+  "timeToLive" : 10,
+  "bounces" : -1,
+  "flippable" : false,
+  "orientationLocked" : true,
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "FrontParticle+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "fullbright" : true
+}

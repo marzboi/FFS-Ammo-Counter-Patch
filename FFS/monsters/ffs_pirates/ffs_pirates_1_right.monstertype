@@ -1,0 +1,264 @@
+{
+  "type" : "ffs_pirates_1_right",
+  "shortdescription" : "Pirates",
+  "description" : "P-I-R-A-T-E-S!",
+
+  "categories" : [ "ffs_pirates" ],
+  "parts" : [ "body", "head", "sword" ],
+  "partParameters" : "ffs_pirates.partparams",
+
+  "animation" : "ffs_pirates.animation",
+  "reversed" : false,
+
+  "dropPools" : [ "ffs_pirates" ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/ffs_pirates/ffs_pirates_1_right.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : false,
+
+      "targetQueryRange" : 500,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 500,
+      "targetOutOfSightTime" : 10.0,
+
+      "foundTargetActions" : [
+		{
+		  "name" : "action-aggrohop",
+		  "aggroHopSpeed": 0,
+		  "aggroHopWait": 0,
+		  "aggroHopState": "idle"
+		}
+	  ],
+
+      "fleeActions" : [],
+
+      "hostileActions" : [
+		{
+			"name" : "action-leap", 
+			"cooldown" : 4.0,
+			"parameters" : {
+			"skillName" : "pounceAttack",
+
+			"minimumRange" : 5,
+			"maximumRange" : 40,
+			"windupTime" : 0.5,
+			"windupState" : "chargewindup",
+
+			"leapVelocity" : 35,
+			"collisionCheck" : true,
+			"highArc" : true,
+			"leapState" : "chargewindup",
+			"fallState" : "chargewinddown",
+		
+			"winddownTime" : 0.5,
+			"winddownState" : "chargewinddown"
+			}
+		},
+        {
+          "name" : "action-fire",
+          "cooldown" : 6.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 45,
+            "minimumRange" : 5,
+            "windupState" : "windup",
+            "windupTime" : 0.5,
+
+            "projectileType" : "ffs_pirates_trigger_burst",
+			"projectileParameters": {
+			"power" : 10
+			},
+            "aimAtTarget" : true,
+            "fireOffset" : [-0.3, -0.5],
+            "projectileCount" : 3,
+            "projectileInterval" : 0.085,
+            "fireState" : "fire",
+            "fireDelay" : 1.0,
+            "fireSound" : "fire",
+
+            "fireArc": false,
+            "projectileSpeed": 25,
+            "gravityMultiplier": 0,
+            "inaccuracy" : 0.04,
+
+            "winddownState" : "winddown",
+            "winddownTime" : 0.3
+          }
+        },
+        {
+          "name" : "action-charge",
+          "cooldown" : 2.0,
+          "parameters" : {
+            "maximumRange" : 7.5,
+            "windupState" : "chargewindup",
+            "windupTime" : 0.3,
+
+            "chargeTime" : 0.2,
+            "chargeSpeed" : 40,
+            "chargeControlForce" : 1000,
+            "chargeState" : "charge",
+            "wallCrashSound" : "",
+            "wallCrashEmitter" : "",
+
+            "winddownTime" : 0.5,
+            "winddownStopForce" : 1000,
+            "winddownState" : "chargewinddown"
+          }
+        }
+      ],
+
+      "periodicActions" : [],
+
+      "approachActions" : [
+        {
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 1000,
+            "jumpXVelocity" : 20,
+            "jumpYVelocity" : 40,
+            "jumpXControlForce" : 50,
+            "run" : true,
+            "moveState" : "run"
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 1000,
+            "jumpXVelocity" : 20,
+            "jumpYVelocity" : 40,
+            "jumpXControlForce" : 50,
+            "run" : true,
+            "moveState" : "run"
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-walk",
+          "cooldown" : 6.0,
+          "parameters" : {
+            "wanderTime" : [5, 15]
+          }
+        }
+      ]
+    },
+
+    "knockoutTime" : 0.0,
+    "knockoutEffect" : "",
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "",
+
+    "metaBoundBox" : [-2.5, -2.5, 2.5, 2.5],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-0.8, 0.5], [-0.6, -2], [-0.4, -2.5], [0.4, -2.5], [0.6, -2], [0.8, 0.5] ],
+      "mass" : 1.0,
+      "walkSpeed" : 4,
+      "runSpeed" : 8,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 0.0
+      }
+    },
+
+    "damageParts" : {
+      "sword" : {
+        "damage" : 20,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "slash",
+        "knockback" : 20,
+        "statusEffects" : [ ]
+      }
+    },
+
+    "touchDamage" : {
+      "poly" : [ [-0.5, -0.5], [-0.5, -0.5], [0.5, -0.5], [0.5, -0.5], [0.5, 0.5], [0.5, 0.5], [-0.5, 0.5], [-0.5, 0.5] ],
+      "damage" : 20,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "hammer",
+      "knockback" : 0,
+      "statusEffects" : [ ]
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 5
+        },
+        "protection" : {
+          "baseValue" : 50.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -21],
+    "capturable" : false,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

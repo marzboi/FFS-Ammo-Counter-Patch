@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "ffs2_evil3",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

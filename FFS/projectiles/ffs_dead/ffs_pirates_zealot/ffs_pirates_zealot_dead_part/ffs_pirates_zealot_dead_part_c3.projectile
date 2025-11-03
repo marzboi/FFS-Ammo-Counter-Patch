@@ -1,0 +1,20 @@
+{
+  "projectileName" : "ffs_pirates_zealot_dead_part_c3",
+  "image" : "ffs_pirates_zealot_dead_part_c.png",
+  "physics" : "ffs_deadbody",
+  "animationLoops" : false,
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 0,
+  "timeToLive" : 10,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : false,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 7.5,
+  "piercing" : true,
+  "renderLayer" : "Player+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,74 @@
+{
+  "projectileName" : "ffs_cultist_dead_grenadier_start",
+  "image" : "ffs_nothing.png",
+  "animationLoops" : false,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 0,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Player-1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/melee/axe_kill_organic1.ogg" ]
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/monster/ffs_dying_1.ogg", "/sfx/monster/ffs_dying_2.ogg", "/sfx/monster/ffs_dying_3.ogg", "/sfx/monster/ffs_dying_4.ogg", "/sfx/monster/ffs_dying_5.ogg", "/sfx/monster/ffs_dying_6.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_dead_grenadier",
+      "speed" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_frag_rgo_cultist_2",
+      "inheritDamageFactor" : 1,
+      "allowFlip" : true,
+      "fuzzAngle" : 30,
+      "angle" : -90,
+      "delaySteps" : 0,
+      "speed" : 15
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_frag_rgo_cultist_1",
+      "inheritDamageFactor" : 1,
+      "allowFlip" : true,
+      "fuzzAngle" : 30,
+      "angle" : -45,
+      "delaySteps" : 20,
+      "speed" : 15
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_frag_rgo_cultist_1",
+      "inheritDamageFactor" : 1,
+      "allowFlip" : true,
+      "fuzzAngle" : 30,
+      "angle" : -90,
+      "delaySteps" : 40,
+      "speed" : 15
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_frag_rgo_cultist_1",
+      "inheritDamageFactor" : 1,
+      "allowFlip" : true,
+      "fuzzAngle" : 30,
+      "angle" : -135,
+      "delaySteps" : 60,
+      "speed" : 15
+    }
+  ]
+}

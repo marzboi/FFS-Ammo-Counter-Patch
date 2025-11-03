@@ -1,0 +1,20 @@
+{
+  "projectileName" : "rgbbullet",
+  "image" : "rgbbullet.png",
+  "animationCycle" : 0.45,
+  "frameNumber" : 8,
+  "damageKindImage" : "icon.png",
+  "piercing" : true,
+  "projectileCount" : 12,
+  "physics" : "bullet",
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 10,
+  "damageKind" : "standardbullet"
+}

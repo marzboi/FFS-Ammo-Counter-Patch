@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "ffs0_lastboss",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

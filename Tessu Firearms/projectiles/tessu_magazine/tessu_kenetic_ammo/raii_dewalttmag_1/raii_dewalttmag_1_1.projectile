@@ -1,0 +1,16 @@
+{
+  "projectileName" : "raii_dewalttmag_1_1",
+  "image" : "raii_dewalttmag_1_1.png",
+  "physics" : "stickygrenade",
+  "piercing" : true,
+  "flippable" : true,
+  "bounces" : -1,
+  "speed" : 0,
+  "renderLayer" : "Player+1",
+  "frameNumber" : 1,
+  "timeToLive" : 10,
+  "damageKindImage" : "raii_dewalttmag_1_1.png",
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

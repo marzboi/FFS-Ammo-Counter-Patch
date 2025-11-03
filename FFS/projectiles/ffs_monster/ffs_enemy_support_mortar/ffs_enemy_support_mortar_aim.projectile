@@ -1,0 +1,16 @@
+{
+  "projectileName" : "ffs_enemy_support_mortar_aim",
+  "image" : "ffs_enemy_support_mortar_aim.png",
+  "animationCycle" : 2.0,
+  "piercing" : true,
+  "bounces" : -1,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "physics" : "laser",
+  "timeToLive" : 2.0,
+  "power" : 5.0,
+  "speed" : 0,
+  "damageKind" : "default",
+  "damageType" : "NoDamage",
+  "fullbright" : true
+}

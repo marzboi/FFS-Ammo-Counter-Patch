@@ -1,0 +1,38 @@
+{
+  "objectName" : "ffs_blood_small",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "legendary",
+  "category" : "crafting",
+  
+  "description" : "object.",
+  "shortdescription" : "ffs_blood_small",
+  "race" : "generic",
+  
+  "apexDescription" : "Jeez.. Is this blood?",
+  "avianDescription" : "Jeez.. Is this blood?",
+  "floranDescription" : "Jeez.. Is this blood?",
+  "glitchDescription" : "Jeez.. Is this blood?",
+  "humanDescription" : "Jeez.. Is this blood?",
+  "hylotlDescription" : "Jeez.. Is this blood?",
+  "novakidDescription" : "Jeez.. Is this blood?",
+  
+  "inventoryIcon" : "ffs_blood_small.png",
+  "orientations" : [
+	{
+      "image" : "ffs_blood_small.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1
+	},
+    {
+      "image" : "ffs_blood_small.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1
+    }
+  ]
+}

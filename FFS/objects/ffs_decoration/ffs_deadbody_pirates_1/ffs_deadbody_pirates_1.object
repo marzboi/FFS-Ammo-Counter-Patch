@@ -1,0 +1,40 @@
+{
+  "objectName" : "ffs_deadbody_pirates_1",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "category" : "Good pirate is dead pirate.",
+  
+  "description" : "A dead body.",
+  "shortdescription" : "Dead pirates",
+  "race" : "generic",
+  
+  "objectType" : "container",
+  "tooltipKind" : "container",  
+
+  "apexDescription" : "A dead body.",
+  "avianDescription" : "A dead body.",
+  "floranDescription" : "A dead body.",
+  "glitchDescription" : "A dead body.",
+  "humanDescription" : "A dead body.",
+  "hylotlDescription" : "A dead body.",
+  "novakidDescription" : "A dead body.",
+
+  "orientations" : [
+    {
+      "dualImage" : "ffs_deadbody_pirates_1.png:<color>.<key>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  "inventoryIcon" : "icon.png",
+  "openSounds" : [ "/sfx/objects/fleshdoor_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/fleshdoor_close.ogg" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+  "treasurePools" : [ "ffs_deadbody_pirates" ]
+}

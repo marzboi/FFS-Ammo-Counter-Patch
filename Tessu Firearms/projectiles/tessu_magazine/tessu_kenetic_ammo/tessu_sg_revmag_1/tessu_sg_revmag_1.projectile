@@ -1,0 +1,24 @@
+{
+  "projectileName" : "tessu_sg_revmag_1",
+  "image" : "tessu_sg_revmag_1.png",
+  "damageKindImage" : "tessu_sg_revmag_1.png",
+  "animationCycle" : 4.0,
+  "physics" : "grenade",
+  "piercing" : true,
+  "flippable" : true,
+  "bounces" : 2,
+  "speed" : 10,
+  "renderLayer" : "Player+1",
+  "frameNumber" : 38,
+  "timeToLive" : 4,
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "tessu_sg_revmag_1_1",
+      "fuzzAngle" : 360
+    }
+  ]
+}

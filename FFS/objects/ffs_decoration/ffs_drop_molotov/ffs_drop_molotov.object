@@ -1,0 +1,37 @@
+{
+  "objectName" : "ffs_drop_molotov",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "category" : "decorative",
+
+  "description" : "molotov",
+  "shortdescription" : "molotov",
+  "race" : "generic",
+
+  "apexDescription" : "..I found something.",
+  "avianDescription" : "..I found something.",
+  "floranDescription" : "..I found something.",
+  "glitchDescription" : "..I found something.",
+  "humanDescription" : "..I found something.",
+  "hylotlDescription" : "..I found something.",
+  "novakidDescription" : "..I found something.",
+
+  "inventoryIcon" : "ffs_drop_molotov.png",
+  "orientations" : [
+    {
+      "dualImage" : "ffs_drop_molotov.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : ["/objects/scripts/breakoninteract.lua"],
+  "scriptDelta" : 0,
+
+  "breakDropOptions" : [
+    [ [ "ffs_molotov", 1, { } ] ]
+  ]
+}

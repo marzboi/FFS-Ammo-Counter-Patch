@@ -1,0 +1,10 @@
+{
+  "version" : "1.1.0",
+  "tags" : "Weapons",
+  "author" : "JohnCalico",
+  "description" : "NOTE: THE VENDING MACHINE IS TEMPORAILY BROKEN, ONLY SPAWNING IT VIA. /admin COMMAND WORKS FOR NOW.\n_______________________________________________________________________\nThe Collection of arms from my favorites implemented to be used with FFS!\nThe Collection of these armaments can all be purchased from Furnitures of War Vending Machine found in Inventor's table for x300 pixel\n\nElephant gun : feeling a bit needing to get started on survivng the harsh of colonization and ruining those that have lived before you? now you got a chance to do so with fraction of a price! with an Elephant gun, you can do the same thing as one of our top models we have! Doesn't matter if it's a big game animal to a flying drones. Sadly, it only holds 2 cases of bullets at a time. but it's .500 Nitro so we can't really argue.\n\nUnica 6: An Italian was known for pizzas ,romans and war crimes, but some might just heard of them actually working on weapons! with 6 rounds of .357 firing from an underbarrel you should felt lesser recoil than those you can find on galactic flea markets.\n\nGalil : Known for being the fanciest bottle opener that holds a gun! capable of firing in Fully-Automatic and holds 20 rounds of .308! however this one is still in mint condition! not even a single scratch just for your cold one!\n\nHecate II : The French Made Anti-Materiel rifle! each part of it was precisely manufactered to fits all it takes to make a perfect .50 BMG Precision Rifle! This gun will surely packs a punch to a deathclaw and makes you wish for a nuclear winter!\n\nBut if you feel a little bit cheaty, here's some weapon id(s):\nElephant gun - \"fowar_elephant_1\"\nUnica 6 - \"fowar_mateba_6\"\nIMI Galil - \"fowar_galil\"\nHecate II - \"fowar_hecate_2\"\nYCS/186 - \"fowar_ycs\"\nTOZ-34 - \"fowar_toz_34\"",
+  "name" : "[FFS Addon] Furnitures of War",
+  "friendlyName" : "[FFS Addon] Furnitures of War",
+  "steamContentId" : "3022595612",
+  "link" : "steam://url/CommunityFilePage/3022595612"
+}

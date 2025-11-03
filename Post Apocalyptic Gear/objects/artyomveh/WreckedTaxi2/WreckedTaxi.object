@@ -1,0 +1,42 @@
+{
+  "objectName" : "WreckedTaxi2",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Wrecked Taxi.",
+  "shortdescription" : "Wrecked Taxi 2",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's generic American Taxi. But, wrecked.",
+  "avianDescription" : "It's generic American Taxi. But, wrecked.",
+  "floranDescription" : "It'sss generic American Taxi. But, wrecked.",
+  "glitchDescription" : "It's generic American Taxi. But, wrecked.",
+  "humanDescription" : "It's generic American Taxi. But, wrecked.",
+  "hylotlDescription" : "It's generic American Taxi. But, wrecked.",
+  "novakidDescription":  "It's generic American Taxi. But, wrecked.",
+
+  "inventoryIcon" : "CrownVicIcon.png",
+  "orientations" : [
+    {
+      "image" : "CrownVic.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "CrownVic.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

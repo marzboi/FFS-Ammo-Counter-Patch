@@ -1,0 +1,48 @@
+{
+  "objectName" : "tessu_weaponbuilder",
+  "colonyTags" : ["crafting"],
+  "rarity" : "uncommon",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/objects/tessu_weaponbuilder.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Weapon Crafting Bench",
+        "subtitle" : "We got what you don't!",
+        "icon" : {
+          "file" : "/objects/crafting/tessu_weaponbuilder/icon.png"
+        }
+      }
+    },
+    "filter" : [ "tessu_weaponbuilding" ]
+  },
+  "printable" : false,
+  "description" : "A bench perfect for building all sorts of weapons!",
+  "shortdescription" : "^purple;Weapon Workbench",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 30,
+
+  "apexDescription" : "Weapon Printer for human battleforce.",
+  "avianDescription" : "Weapon Printer for human battleforce.",
+  "floranDescription" : "Weapon Printer for human battleforce.",
+  "glitchDescription" : "Weapon Printer for human battleforce.",
+  "humanDescription" : "Weapon Printer for human battleforce.",
+  "hylotlDescription" : "Weapon Printer for human battleforce.",
+  "novakidDescription" : "Weapon Printer for human battleforce.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "tessu_weaponbuilder.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

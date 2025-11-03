@@ -1,0 +1,32 @@
+{
+  "name" : "ffs1_lastboss1Attack",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/ffs1_lastboss/skills/ffs1_lastboss1Attack.lua" ],
+
+    "ffs1_lastboss1Attack" : {
+      "skillTime": 3,
+      "bobTime" : 4,
+      "bobHeight" : 2,
+
+      "projectileOffset" : [0, 0],
+      "fireInterval" : 3.0,
+      "projectile" : {
+        "type" : "ffs1_lastboss_claw_1",
+        "config" : {
+          "power" : 100,
+          "periodicActions" : [
+            {
+              "time" : 0,
+              "repeat" : false,
+              "action" : "sound",
+              "options" : [ "/sfx/monster/ffs1_lastboss_claw.ogg" ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

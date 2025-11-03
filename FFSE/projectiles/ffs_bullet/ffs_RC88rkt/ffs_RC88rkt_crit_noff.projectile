@@ -1,0 +1,145 @@
+{
+  "projectileName" : "ffs_RC88rkt_crit_noff",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 0.75,
+  "damageKindImage" : "icon.png",
+  "image" : "ffs_RC88rkt.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_mediumexplosionknockback_penet_noff.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 360
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RC88frag_noff",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 45,
+      "angleAdjust" : 270
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

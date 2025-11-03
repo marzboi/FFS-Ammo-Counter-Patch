@@ -1,0 +1,41 @@
+{
+  "particleEmitters" : {
+    "criticalhit" : {
+      "enabled" : true,
+      "emissionRate" : 1.0,
+      "particles" : [
+        {
+          "particle" : {
+		  "type" : "text",
+		  "size" : 0.7,
+		  "text" : "^#fcba03;Critical Hit!",
+		  "color" : [200, 150, 100, 255],
+		  "light" : [0, 0, 0],
+		  "initialVelocity" : [0, 2.0],
+		  "finalVelocity" : [0, 2.0],
+		  "approach" : [1, 0],
+		  "position" : [0, 2],
+		  "timeToLive" : 1.0,
+		  "layer" : "front",
+		  "destructionAction" : "shrink",
+		  "destructionTime" : 0.5,
+		  "variance" : {
+		  "initialVelocity" : [1, 3]
+		  },
+		  "flippable" : false
+          }
+        }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [50, 0, 0]
+    }
+  },
+  "sounds" : {
+    "criticalhit" : [ "/sfx/stat/ffs_criticalhit.ogg" ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "ffs_walk",
+
+  "scripts" : [
+	"/stagehands/mission/ffs_walk.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "broadcastArea" : [-1, -1, 1, 1],
+
+  "entityTypes" : [ "npc" ],
+  "effectCategory" : "battle",
+  "effects" : [ "ffs_walk50" ]
+}

@@ -1,0 +1,27 @@
+{
+  "projectileName" : "ffs_medic_bag",
+  "image" : "ffs_medic_bag.png",
+  "animationCycle" : 1,
+  "physics" : "grenade",
+  "bounces" : 0,
+  "frameNumber" : 10,
+  "pointLight" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "damagePoly" : [ [0, -0.2], [0.5, -0.2], [0.5, 0.2], [0, 0.2] ],
+  "timeToLive" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_medic_bag2",
+      "allowFlip" : true,
+      "angle" : 0
+    }
+  ],
+  "power" : 0,
+  "renderLayer" : "Player+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}
+
+

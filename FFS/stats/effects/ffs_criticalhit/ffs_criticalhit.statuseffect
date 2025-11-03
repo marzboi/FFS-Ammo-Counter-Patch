@@ -1,0 +1,16 @@
+{
+  "name" : "ffs_criticalhit",
+  "blockingStat" : "ffs_criticalhitImmunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "ffs_criticalhit.lua"
+  ],
+
+  "animationConfig" : "ffs_criticalhit.animation",
+
+  "label" : "FFS: Sharp shooter!!!",
+  "icon" : "/interface/statuses/ffs_criticalhit.png"
+}

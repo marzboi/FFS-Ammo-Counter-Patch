@@ -1,0 +1,31 @@
+{
+  "projectileName" : "ffs_bullet_hanyangRG_head_1",
+  "image" : "icon.png",
+  "lightColor" : [100, 200, 255],
+  "pointLight" : true,
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0.0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_hanyangRG_head",
+      "inheritDamageFactor" : 10,
+      "speed" : 75,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_muzzlefiringspark",
+      "inheritDamageFactor" : 0,
+      "fuzzAngle" : 7.5,
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 75,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,25 @@
+{
+  "projectileName" : "ffs_bullet_plasma_yellow",
+  "image" : "ffs_plasma_yellow.png",
+  "physics" : "laser",
+  "animationCycle" : 3.1,
+  "frameNumber" : 100,
+  "timeToLive" : 3.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 200,
+  "statusEffects" : [
+    "ffs_headshot"
+  ],
+  "lightColor" : [115, 119, 38],
+  "emitters" : [ "fireplasma" ],
+  "damageKind" : "plasma",
+  "hydrophobic" : true,
+  "fullbright" : true
+}

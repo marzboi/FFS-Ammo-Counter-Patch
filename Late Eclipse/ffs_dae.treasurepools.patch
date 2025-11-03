@@ -1,0 +1,442 @@
+[
+  {
+    "op": "add",
+    "path": "/ffs_lootbox_guns/0/1/pool/-",
+    "value": {
+      "weight": 0.025,
+      "pool": "ffs_kitsune_pistol"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ffs_lootbox_guns/0/1/pool/-",
+    "value": {
+      "weight": 0.0125,
+      "pool": "ffs_kitsune_smg"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ffs_lootbox_guns/1/1/pool/-",
+    "value": {
+      "weight": 0.025,
+      "pool": "ffs_kitsune_pistol"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ffs_lootbox_guns/1/1/pool/-",
+    "value": {
+      "weight": 0.0125,
+      "pool": "ffs_kitsune_smg"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ffs_lootbox_guns/1/1/pool/-",
+    "value": {
+      "weight": 0.011875,
+      "pool": "ffs_kitsune_shotgun"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ffs_lootbox_guns/1/1/pool/-",
+    "value": {
+      "weight": 0.01375,
+      "pool": "ffs_kitsune_ar"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ffs_lootbox_guns/1/1/pool/-",
+    "value": {
+      "weight": 0.011875,
+      "pool": "ffs_kitsune_sniper"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ffs_lootbox_guns/1/1/pool/-",
+    "value": {
+      "weight": 0.00125,
+      "item": [
+        "mk_k4amr_1",
+        1
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ffs_kitsune_pistol",
+    "value": [
+      [
+        1,
+        {
+          "pool": [
+            {
+              "weight": 0.3,
+              "item": [
+                "mk_h8pistol_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.1,
+              "item": [
+                "mk_h8pistol_bluoplasma_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.1,
+              "item": [
+                "mk_h8pistol_bluoplasma_f_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.1,
+              "item": [
+                "mk_h8pistol_bluoplasma_s_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.1,
+              "item": [
+                "mk_h8pistol_bluoplasma_sf_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.1,
+              "item": [
+                "mk_h8pistol_f_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.1,
+              "item": [
+                "mk_h8pistol_s_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.1,
+              "item": [
+                "mk_h8pistol_sf_1",
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ffs_kitsune_shotgun",
+    "value": [
+      [
+        1,
+        {
+          "pool": [
+            {
+              "weight": 0.5,
+              "item": [
+                "mk_n16shotgun_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.15,
+              "item": [
+                "mk_n16shotgun_bluoplasma_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.15,
+              "item": [
+                "mk_n16shotgun_bluoplasma_f_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.2,
+              "item": [
+                "mk_n16shotgun_f_1",
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ffs_kitsune_smg",
+    "value": [
+      [
+        1,
+        {
+          "pool": [
+            {
+              "weight": 0.4,
+              "item": [
+                "mk_s64smg_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.15,
+              "item": [
+                "mk_s64smg_bluoplasma_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.1,
+              "item": [
+                "mk_s64smg_bluoplasma_f_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.025,
+              "item": [
+                "mk_s64smg_bluoplasma_s_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.025,
+              "item": [
+                "mk_s64smg_bluoplasma_sf_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.2,
+              "item": [
+                "mk_s64smg_f_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.05,
+              "item": [
+                "mk_s64smg_s_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.05,
+              "item": [
+                "mk_s64smg_sf_1",
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ffs_kitsune_ar",
+    "value": [
+      [
+        1,
+        {
+          "pool": [
+            {
+              "weight": 0.2,
+              "item": [
+                "mk_g512assault_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.15,
+              "item": [
+                "mk_g512assault_bluoplasma_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.1,
+              "item": [
+                "mk_g512assault_bluoplasma_c_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.05,
+              "item": [
+                "mk_g512assault_bluoplasma_cf_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.05,
+              "item": [
+                "mk_g512assault_bluoplasma_f_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.0125,
+              "item": [
+                "mk_g512assault_bluoplasma_s_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.0125,
+              "item": [
+                "mk_g512assault_bluoplasma_sf_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.15,
+              "item": [
+                "mk_g512assault_c_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.075,
+              "item": [
+                "mk_g512assault_cf_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.15,
+              "item": [
+                "mk_g512assault_f_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.025,
+              "item": [
+                "mk_g512assault_s_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.025,
+              "item": [
+                "mk_g512assault_sf_1",
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ffs_kitsune_sniper",
+    "value": [
+      [
+        1,
+        {
+          "pool": [
+            {
+              "weight": 0.2,
+              "item": [
+                "mk_k4sniper_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.15,
+              "item": [
+                "mk_k4sniper_bluoplasma_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.1,
+              "item": [
+                "mk_k4sniper_bluoplasma_c_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.05,
+              "item": [
+                "mk_k4sniper_bluoplasma_cf_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.05,
+              "item": [
+                "mk_k4sniper_bluoplasma_f_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.0125,
+              "item": [
+                "mk_k4sniper_bluoplasma_s_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.0125,
+              "item": [
+                "mk_k4sniper_bluoplasma_sf_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.15,
+              "item": [
+                "mk_k4sniper_c_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.075,
+              "item": [
+                "mk_k4sniper_cf_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.15,
+              "item": [
+                "mk_k4sniper_f_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.025,
+              "item": [
+                "mk_k4sniper_s_1",
+                1
+              ]
+            },
+            {
+              "weight": 0.025,
+              "item": [
+                "mk_k4sniper_sf_1",
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "objectName" : "ffs_spiderarea",
+  "colonyTags" : ["ffs"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 55,
+  "description" : "ffs_spiderarea",
+  "shortdescription" : "ffs_spiderarea",
+  "race" : "generic",
+  "breakDropOptions" : [],
+
+  "apexDescription" : "Damn, I can't through this.
+..Let's blow this up!",
+  "avianDescription" : "Damn, I can't through this.
+..Let's blow this up!",
+  "floranDescription" : "Damn, I can't through this.
+..Let's blow this up!",
+  "glitchDescription" : "Damn, I can't through this.
+..Let's blow this up!",
+  "humanDescription" : "Damn, I can't through this.
+..Let's blow this up!",
+  "hylotlDescription" : "Damn, I can't through this.
+..Let's blow this up!",
+  "novakidDescription" : "Damn, I can't through this.
+..Let's blow this up!",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "ffs_spiderarea.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1
+    }
+  ],
+  "touchDamage" : {
+    "poly" : [ [-2, 0], [2, 0], [2, 5], [-2, 5] ],
+    "damage" : 0,
+    "knockback" : 0,
+
+    "damageType" : "Environment",
+    "damageSourceKind" : "applystatus",
+    "statusEffects" : [ "ffs_spiderslow" ]
+  },
+
+  "smashable" : false,
+  "smashParticles" : [ { "count" : 50, "particle" : "generatorshard" }, { "count" : 50, "particle" : "generatorredshard" }, { "count" : 50, "particle" : "generatorglassshard" } ],
+  "smashSounds" : [ "/sfx/melee/kill_robotic1.ogg", "/sfx/melee/kill_robotic2.ogg" ],
+  "health" : 50,
+  "smashDropPool" : "empty",
+  
+  "scripts" : [
+    "ffs_spiderarea.lua"
+  ],
+  "explosionProjectile" : "ffs_break_explosion",
+  "explosionOffset" : [1, 1]
+}

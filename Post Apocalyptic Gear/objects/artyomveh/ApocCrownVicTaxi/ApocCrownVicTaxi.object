@@ -1,0 +1,42 @@
+{
+  "objectName" : "ApocCrownVicTaxi",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Post-Apocalyptic Taxi.",
+  "shortdescription" : "Apocalypse Crown Vic Taxi",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's generic American Taxi.",
+  "avianDescription" : "It's generic American Taxi.",
+  "floranDescription" : "Sssmells funny.",
+  "glitchDescription" : "It's generic American Taxi.",
+  "humanDescription" : "It's generic American Taxi.",
+  "hylotlDescription" : "It's generic American Taxi.",
+  "novakidDescription":  "It's generic American Taxi.",
+
+  "inventoryIcon" : "CrownVicIcon.png",
+  "orientations" : [
+    {
+      "image" : "CrownVic.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "CrownVic.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

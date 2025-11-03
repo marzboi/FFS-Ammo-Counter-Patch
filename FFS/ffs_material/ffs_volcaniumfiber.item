@@ -1,0 +1,10 @@
+{
+  "itemName" : "ffs_volcaniumfiber",
+  "price" : 0,
+  "rarity" : "uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ffs_volcaniumfiber.png",
+  "description" : "A long, fiber of Volcanium.",
+  "shortdescription" : "^green;Volcanium fiber",
+  "itemTags" : [ "ffs_diy" ]
+}

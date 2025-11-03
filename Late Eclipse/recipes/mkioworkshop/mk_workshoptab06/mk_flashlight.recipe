@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "tungstenbar", "count" : 3 },
+	{ "item" : "glass", "count" : 2 },
+	{ "item" : "wire", "count" : 1 },
+	{ "item" : "smallbattery", "count" : 1 },
+	{ "item" : "staticcell", "count" : 1 }
+  ],
+  "output" : { "item" : "mk_flashlight", "count" : 1 },
+  "groups" : [ "mkioworkshopcrafter", "mkioworkshoptab6" ]
+}

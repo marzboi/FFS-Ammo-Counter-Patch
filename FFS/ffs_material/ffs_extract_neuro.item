@@ -1,0 +1,7 @@
+{
+  "itemName" : "ffs_extract_neuro",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "ffs_extract_neuro.png",
+  "description" : "Seperated neuroactive cells from ruin's sample extract.",
+  "shortdescription" : "^green;Neuroactive cell Extract"
+}

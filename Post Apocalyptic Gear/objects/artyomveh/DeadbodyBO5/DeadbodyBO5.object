@@ -1,0 +1,42 @@
+{
+  "objectName" : "DeadbodyBO5",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Black Ops Soldier Corpse.",
+  "shortdescription" : "Black Ops Soldier Corpse5",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's Black Ops Soldier Corpse.",
+  "avianDescription" : "It's Black Ops Soldier Corpse.",
+  "floranDescription" : "It'sss Black Ops Soldier Corpse.",
+  "glitchDescription" : "It's Black Ops Soldier Corpse.",
+  "humanDescription" : "It's Black Ops Soldier Corpse. I think they tried.",
+  "hylotlDescription" : "It's Black Ops Soldier Corpse.",
+  "novakidDescription":  "It's Black Ops Soldier Corpse.",
+
+  "inventoryIcon" : "DeadbodyIcon.png",
+  "orientations" : [
+    {
+      "image" : "DeadbodyBO5.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+	  
+    },
+    {
+      "image" : "DeadbodyBO5.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+	  
+    }
+  ]
+}

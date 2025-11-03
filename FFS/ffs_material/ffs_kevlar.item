@@ -1,0 +1,10 @@
+{
+  "itemName" : "ffs_kevlar",
+  "price" : 10,
+  "rarity" : "uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ffs_kevlar.png",
+  "description" : "A small square of Kevlar fiber.",
+  "shortdescription" : "^green;Kevlar fiber",
+  "itemTags" : [ "ffs_diy" ]
+}

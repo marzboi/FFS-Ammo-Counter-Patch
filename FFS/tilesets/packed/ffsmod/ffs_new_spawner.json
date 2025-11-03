@@ -1,0 +1,28 @@
+{ "columns":0,
+ "margin":0,
+ "name":"ffs_new_spawner",
+ "properties":
+    {
+
+    },
+ "spacing":0,
+ "tilecount":1,
+ "tileheight":104,
+ "tilewidth":316,
+ "tileproperties":
+    {
+     "0":
+        {
+         "object":"ffs_projectilespawner",
+         "tilesetDirection":"right"
+        }
+    },
+    
+ "tiles":
+    {
+     "0":
+        {
+         "image":"ffs_mine_small.png"
+        }
+    }
+}

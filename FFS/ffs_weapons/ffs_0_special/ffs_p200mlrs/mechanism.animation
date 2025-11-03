@@ -1,0 +1,473 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "ffs_mechanism" : {
+        "default" : "idle",
+        "states" : {
+          "draw" : {
+            "frames" : 20,
+            "cycle" : 1.0,
+            "mode" : "transition",
+            "transition" : "idle",
+            "properties" : {
+              "persistentSound" : "/sfx/ai/ffs_cv_mlrs_draw.ogg",
+              "persistentSoundRangeMultiplier" : 1.0
+            }
+          },
+          "idle" : {
+            "frames" : 10,
+            "cycle" : 1.0,
+            "mode" : "loop"
+          },
+          "idle2" : {
+            "frames" : 10,
+            "cycle" : 1.0,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/ai/ffs_plasma_sliding_permanent.ogg",
+              "persistentSoundRangeMultiplier" : 2.0
+            }
+          },
+          "firing" : {
+            "frames" : 10,
+            "cycle" : 0.2,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/ai/ffs_plasma_sliding_permanent.ogg",
+              "persistentSoundRangeMultiplier" : 2.0
+            }
+          },
+          "firing2" : {
+            "frames" : 10,
+            "cycle" : 0.3,
+            "properties" : {
+              "persistentSound" : "/sfx/ai/ffs_plasma_sliding_permanent.ogg",
+              "persistentSoundRangeMultiplier" : 2.0
+            }
+          },
+          "prepare" : {
+            "frames" : 10,
+            "cycle" : 0.7,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/ai/ffs_cv_activated.ogg",
+              "persistentSoundRangeMultiplier" : 1.0
+            }
+          },
+          "firing_in" : {
+            "frames" : 10,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle2",
+            "properties" : {
+              "persistentSound" : "/sfx/ai/ffs_plasma_aiming.ogg",
+              "persistentSoundRangeMultiplier" : 1.0
+            }
+          },
+          "firing_out" : {
+            "frames" : 10,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle",
+            "properties" : {
+              "persistentSound" : "/sfx/ai/ffs_plasma_sliding_close.ogg",
+              "persistentSoundRangeMultiplier" : 1.0
+            }
+          },
+          "reload" : {
+            "frames" : 50,
+            "cycle" : 2.0,
+            "mode" : "transition",
+            "transition" : "idle",
+            "properties" : {
+              "persistentSound" : "/sfx/ai/ffs_plasma_sliding_long.ogg",
+              "persistentSoundRangeMultiplier" : 1.0
+            }
+          },
+          "fastreload" : {
+            "frames" : 50,
+            "cycle" : 0.0,
+            "mode" : "transition",
+            "transition" : "idle",
+            "properties" : {
+              "persistentSound" : "/sfx/ai/ffs_plasma_sliding_long.ogg",
+              "persistentSoundRangeMultiplier" : 1.0
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "attach" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.1, 0.35], // x offset is set dynamically
+          "zLevel" : 0.4,
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ffs_mechanism" : {
+            "draw" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "idle2" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "firing2" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "prepare" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "firing_in" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "firing_out" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "reload" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "fastreload" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            }
+		  }
+		}
+      },
+      "body" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.1, 0.4], // x offset is set dynamically
+          "zLevel" : 0.5,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ffs_mechanism" : {
+            "draw" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "idle2" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "firing2" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "prepare" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "firing_in" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "firing_out" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "reload" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "fastreload" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            }
+		  }
+		}
+      },
+      "ani_mag" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [1.0, 0.1], // x offset is set dynamically
+          "zLevel" : 1.5,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ffs_mechanism" : {
+            "draw" : {
+              "properties" : {
+                "image" : "<partImage>:draw.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            },
+            "idle2" : {
+              "properties" : {
+                "image" : "<partImage>:default2.<frame>"
+              }
+            },
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>:firing.<frame>"
+              }
+            },
+            "firing2" : {
+              "properties" : {
+                "image" : "<partImage>:firing2.<frame>"
+              }
+            },
+            "prepare" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            },
+            "firing_in" : {
+              "properties" : {
+                "image" : "<partImage>:firing_in.<frame>"
+              }
+            },
+            "firing_out" : {
+              "properties" : {
+                "image" : "<partImage>:firing_out.<frame>"
+              }
+            },
+            "reload" : {
+              "properties" : {
+                "image" : "<partImage>:reload.<frame>"
+              }
+            },
+            "fastreload" : {
+              "properties" : {
+                "image" : "<partImage>:reload.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "ani_parts" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [3.3, -0.3], // x offset is set dynamically
+          "zLevel" : 1.0,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ffs_mechanism" : {
+            "draw" : {
+              "properties" : {
+                "image" : "<partImage>:draw.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            },
+            "idle2" : {
+              "properties" : {
+                "image" : "<partImage>:default2.<frame>"
+              }
+            },
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>:firing.<frame>"
+              }
+            },
+            "firing2" : {
+              "properties" : {
+                "image" : "<partImage>:firing2.<frame>"
+              }
+            },
+            "prepare" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            },
+            "firing_in" : {
+              "properties" : {
+                "image" : "<partImage>:firing_in.<frame>"
+              }
+            },
+            "firing_out" : {
+              "properties" : {
+                "image" : "<partImage>:firing_out.<frame>"
+              }
+            },
+            "reload" : {
+              "properties" : {
+                "image" : "<partImage>:reload.<frame>"
+              }
+            },
+            "fastreload" : {
+              "properties" : {
+                "image" : "<partImage>:default.1"
+              }
+            }
+          }
+        }
+      },
+      "ani_parts2" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [-0.25, 0.4], // x offset is set dynamically
+          "zLevel" : 1.1,
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ffs_mechanism" : {
+            "draw" : {
+              "properties" : {
+                "image" : "<partImage>:draw.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            },
+            "idle2" : {
+              "properties" : {
+                "image" : "<partImage>:default2.<frame>"
+              }
+            },
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>:firing.<frame>"
+              }
+            },
+            "firing2" : {
+              "properties" : {
+                "image" : "<partImage>:firing2.<frame>"
+              }
+            },
+            "prepare" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            },
+            "firing_in" : {
+              "properties" : {
+                "image" : "<partImage>:firing_in.<frame>"
+              }
+            },
+            "firing_out" : {
+              "properties" : {
+                "image" : "<partImage>:firing_out.<frame>"
+              }
+            },
+            "reload" : {
+              "properties" : {
+                "image" : "<partImage>:reload.<frame>"
+              }
+            },
+            "fastreload" : {
+              "properties" : {
+                "image" : "<partImage>:default.1"
+              }
+            }
+          }
+        }
+      },
+      "flash" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [-2.3, -0.8],
+          "zLevel" : 0.0,
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ffs_mechanism" : {
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>:firing.<frame>"
+              }
+            },
+            "firing2" : {
+              "properties" : {
+                "image" : "<partImage>:firing2.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {}
+  },
+  
+  "particleEmitters" : {
+    "smoke" : {
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 20.0,
+      "zLevel" : 10,
+      "offsetRegion" : [-0.5, -0.5, -0.5, -0.5],
+      "particles" : [{ "particle" : "ffs_frontsmoke"}]
+    },
+    "smoke_end" : {
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 50.0,
+      "zLevel" : 10,
+      "offsetRegion" : [-1.5, -1.0, -1.5, 1.0],
+      "particles" : [{ "particle" : "ffs_frontsmoke"}]
+    },
+    "ember" : {
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 50.0,
+      "zLevel" : 10,
+      "offsetRegion" : [0.0, -0.5, 2.0, -0.5],
+      "particles" : [{ "particle" : "ffs_frontsmoke"}]
+    }
+  }
+}

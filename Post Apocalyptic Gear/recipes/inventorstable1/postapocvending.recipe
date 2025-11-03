@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 300 }
+ 
+  ],
+  "output" : {
+    "item" : "postapocvending",
+    "count" : 1
+  },
+  "duration" : 0.1,
+  "groups" : [ "inventorstable", "all" ]
+}

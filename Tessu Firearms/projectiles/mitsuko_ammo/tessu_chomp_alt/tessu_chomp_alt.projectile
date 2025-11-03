@@ -1,0 +1,23 @@
+{
+  "projectileName" : "tessu_chomp_alt",
+  "image" : "tessu_chomp_alt.png",
+  "frameNumber" : 5,
+  "timeToLive" : 0.1,
+  "speed" : 0,
+  "actionOnReap" : [
+  ],
+  "statusEffects" : [
+    "ffs_bleeding"
+  ],
+  "power" : 1.0,
+  "damagePoly" : [ [-24, 0], [-16, -16], [0, -24], [16, -16], [24, 0], [16, 16], [0, 24], [-16, 16] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "default",
+  "fullbright" : true,
+  "renderLayer" : "Player+10",
+  "knockback" : 30,
+  "knockbackDirectional" : true,
+  "bounces" : -1
+}

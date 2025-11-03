@@ -1,0 +1,10 @@
+{
+  "itemName" : "mk_laser_g",
+  "price" : 200,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "mk_laser_g.png",
+  "description" : "Green laser attachment. Increases accuracy.",
+  "shortdescription" : "Laser Sight [^green;GREEN^reset;]",
+  "itemTags" : [ "reagent" ]
+}

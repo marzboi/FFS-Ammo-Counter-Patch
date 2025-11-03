@@ -1,0 +1,29 @@
+{
+  "projectileName" : "ffs_bullet_hanyangRG_head",
+  "image" : "ffs_bullet_hanyangRG_start.png",
+  "animationCycle" : 0.25,
+  "loops" : false,
+  "physics" : "ffs_hanyangRG",
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 4,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 0.2,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_hanyangRG_head_after",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 1000,
+  "statusEffects" : [
+  "ffs_headshot"
+  ],
+  "lightColor" : [100, 200, 255],
+  "damageKind" : "default",
+  "fullbright" : true,
+  "damageType" : "ignoresdef"
+}

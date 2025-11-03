@@ -1,0 +1,22 @@
+{
+  "projectileName" : "ffs_case_carlgustaf_start",
+  "image" : "ffs_case_carlgustaf.png",
+  "frameNumber" : 1,
+  "renderLayer" : "Player-1",
+  "piercing" : true,
+  "bounces" : 0,
+  "speed" : 0,
+  "timeToLive" : 0,
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_carlgustaf",
+      "fuzzAngle" : 15,
+      "angle" : -90,
+      "directional" : "true"
+    }
+  ]
+}

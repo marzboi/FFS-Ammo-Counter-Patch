@@ -1,0 +1,90 @@
+{
+  "objectName" : "ffs_invisible_crystaltrap",
+  "colonyTags" : ["avian","aviantemple","evil"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A crystal trap designed to deter invaders.",
+  "shortdescription" : "Carved Crystal Trap",
+  "race" : "avian",
+
+  "apexDescription" : "This crystal forms a deadly light beam.",
+  "avianDescription" : "I wouldn't want to get caught in that beam.",
+  "floranDescription" : "Crystal beam hurtsss Floran.",
+  "glitchDescription" : "Surprised. A crystal that projects deadly beams of light! Now I have seen everything.",
+  "humanDescription" : "That beam looks like it would hurt.",
+  "hylotlDescription" : "If I memorise the pattern of the crystal's beam I can act accordingly.",
+  "novakidDescription" : "I'd better watch out, these beams of light could fry me.",
+
+  "category" : "trap",
+  "price" : 200,
+
+  "inventoryIcon" : "crystaltrapicon.png",
+  "orientations" : [
+    {
+      "image" : "ffs_invisible_crystaltrap.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      
+      "animationPosition" : [-8, 0],
+      "animationParts" : {
+        "bg" : "ffs_invisible_crystaltrap.png",
+        "fg" : "ffs_invisible_crystaltrap.png"
+      },
+
+      "renderLayer" : "Object+50",
+      "lightPosition" : [-1, 0],
+
+      "beamDirection" : [-1, 0],
+      "beamStartOffset" : [-0.5, 1],
+      "maxBeamLength" : 50,
+      "metaBoundBox" : [-54, -4, 4, 4],
+
+      "spaceScan" : 0.1,
+      "collision" : "solid"
+    }
+  ],
+
+  "animation" : "/objects/wired/projectiletrap/projectiletrap.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "shoot" : [ ],
+      "on" : [ "/sfx/objects/crystaltrap_on1.ogg" ],
+      "off" : [ "/sfx/objects/crystaltrap_off.ogg" ]
+    }
+  },
+  "animationScripts" : [ "/objects/wired/projectiletrap/beamtraprendering.lua" ],
+  
+  "health" : 5,
+
+  "smashOnBreak" : true,
+  "smashSounds" : [ "/sfx/objects/rock_break1.ogg", "/sfx/objects/rock_break2.ogg", "/sfx/objects/rock_break3.ogg", "/sfx/objects/rock_break4.ogg", "/sfx/objects/rock_break5.ogg", "/sfx/objects/rock_crumble1.ogg", "/sfx/objects/rock_crumble2.ogg", "/sfx/objects/rock_crumble3.ogg", "/sfx/objects/rock_crumble4.ogg", "/sfx/objects/rock_crumble5.ogg" ],
+  "smashParticles" : [ { "count" : 10, "particle" : "potshard" } ],
+
+  "scripts" : [ "/objects/wired/projectiletrap/beamtrap.lua" ],
+  "scriptDelta" : 5,
+
+  "soundEffect" : "/sfx/objects/crystaltrap_loop.ogg",
+
+  "inputNodes" : [ [0, 0] ],
+
+  "inactiveLightColor" : [0, 0, 0],
+  "activeLightColor" : [255, 80, 80],
+
+  "beamLight" : [255, 80, 80],
+  "beamImages" : {
+    "first" : "/objects/traps/crystaltrap/beamstart.png",
+    "body" : "/objects/traps/crystaltrap/beambody.png",
+    "last" : "/objects/traps/crystaltrap/beamend.png"
+  },
+
+  "beamDamage" : {
+    "damage" : 40000,
+
+    "teamType" : "enemy",
+    "damageSourceKind" : "plasma",
+    "damageType" : "Environment",
+    "knockback" : 0,
+    "damageRepeatTimeout" : 0.5
+  }
+}

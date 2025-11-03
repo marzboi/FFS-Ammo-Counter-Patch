@@ -1,0 +1,9 @@
+{
+  "name" : "sword",
+  "category" : "ffs2_soul1",
+  "type" : "sword",
+
+  "frames" : {
+    "sword" : "sword.png"
+  }
+}

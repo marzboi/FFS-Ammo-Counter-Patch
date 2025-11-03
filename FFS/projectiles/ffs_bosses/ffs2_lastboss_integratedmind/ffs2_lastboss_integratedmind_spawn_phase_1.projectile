@@ -1,0 +1,36 @@
+{
+  "projectileName" : "ffs2_lastboss_integratedmind_spawn_phase_1",
+  "physics" : "laser",
+  "bounces" : -1,
+  "piercing" : true,
+  "damageKindImage" : "icon.png",
+  "image" : "icon.png",
+  "animationCycle" : 0.4,
+  "timeToLive" : 1,
+  "frameNumber" : 1,
+  "renderLayer" : "Player+1",
+  "periodicActions" : [
+    {
+      "time" : 0.25,
+      "repeat" : true,
+      "action" : "spawnmonster",
+      "type" : "tentaclegnat",
+	  "level":5,
+	  "offset": [ 0, 5 ],
+	  "arguments":{}
+    },
+    {
+      "time" : 0.25,
+      "repeat" : true,
+      "action" : "spawnmonster",
+      "type" : "tentaclegnat",
+	  "level":5,
+	  "offset": [ 0, -5 ],
+	  "arguments":{}
+    }
+  ],
+  "power" : 0,
+  "speed" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

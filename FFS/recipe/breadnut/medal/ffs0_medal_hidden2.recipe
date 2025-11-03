@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_666_memo", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_medal_0",
+	"count" : 1
+	},
+	"groups" : [ "ffs_medal",  "ffs_breadnut" ]
+}

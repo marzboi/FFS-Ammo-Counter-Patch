@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "ffs2_lastboss_integratedmind",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

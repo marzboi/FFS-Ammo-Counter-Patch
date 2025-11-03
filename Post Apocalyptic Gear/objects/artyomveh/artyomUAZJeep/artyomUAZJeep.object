@@ -1,0 +1,42 @@
+{
+  "objectName" : "artyomUAZJeep",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Generic Russian Jeep.",
+  "shortdescription" : "UAZ-469",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "A wheeled machine, clumpy.",
+  "avianDescription" : "How unelegant this machine is.",
+  "floranDescription" : "Sssmells funny.",
+  "glitchDescription" : "Uninterested. a military transporting machine.",
+  "humanDescription" : "It's Russian jeep.",
+  "hylotlDescription" : "Human's wheeled vehicle.",
+  "novakidDescription":  "It's like a wheeled horse.",
+
+  "inventoryIcon" : "UAZJeepicon.png",
+  "orientations" : [
+    {
+      "image" : "UAZJeep.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "UAZJeep.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "projectileName" : "ffs_missile_m202flash_start_up",
+  "image" : "ffs_invisible.png",
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_muzzlefiringspark_end",
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_missile_m202flash_front",
+      "inheritDamageFactor" : 1.0,
+      "directional" : "true",
+	  "offset": [ 0, 0.3 ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_missile_m202flash_back",
+      "inheritDamageFactor" : 1.0,
+      "directional" : "true",
+	  "offset": [ 0, 0.3 ]
+    }
+  ],
+  "flippable" : true,
+  "renderLayer" : "Player-1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "piercing" : true,
+  "timeToLive" : 0.0,
+  "fullbright" : true
+}

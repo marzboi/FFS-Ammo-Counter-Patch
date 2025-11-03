@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "mk_k4sniper_1", "count" : 1 },
+	{ "item" : "mk_flashlight", "count" : 1 }
+  ],
+  "duration" : 1,
+  "output" : { "item" : "mk_k4sniper_f_1", "count" : 1 },
+  "groups" : [ "mk_attachmentworkshop", "mk_attachment_f" ]
+}

@@ -1,0 +1,40 @@
+{
+  "objectName" : "ffs_dogge_grave",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "category" : "decorative",
+
+  "description" : "A stone structure perfect for dogge's grave.",
+  "shortdescription" : "Dogge's grave",
+  "race" : "generic",
+
+  "apexDescription" : "R.I.P",
+  "avianDescription" : "R.I.P",
+  "floranDescription" : "R.I.P",
+  "glitchDescription" : "R.I.P",
+  "humanDescription" : "R.I.P",
+  "hylotlDescription" : "R.I.P",
+  "novakidDescription" : "R.I.P",
+
+  "inventoryIcon" : "ffs_dogge_grave.png",
+  "orientations" : [
+    {
+      "image" : "ffs_dogge_grave.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "ffs_dogge_grave.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "ffs_whitecrow_lab",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "ffs_whitecrow_lab" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "ffs_whitecrow_lab",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "ffs_whitecrow_lab.json" ]
+    }
+  ]
+}

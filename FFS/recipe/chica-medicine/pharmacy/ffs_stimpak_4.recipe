@@ -1,0 +1,26 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_extract_heal", 
+	"count" : 1
+	},
+    { 
+	"item" : "livingroot", 
+	"count" : 5
+	},
+    { 
+	"item" : "liquidwater", 
+	"count" : 10
+	},
+    { 
+	"item" : "syringe", 
+	"count" : 10
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_stimpak_4",
+	"count" : 10
+	},
+	"groups" : [ "ffs_pharmacy",  "ffs_chiquita" ]
+}

@@ -1,0 +1,51 @@
+{
+  "objectName" : "ffs_peacestore",
+  "rarity" : "rare",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingmerchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Peace Store",
+        "subtitle" : "We Selling Weapons Not Soldiers",
+        "icon" : {
+          "file" : "/objects/ffs_peacestore/ffs_peacestoreicon.png"
+        }
+      }
+    },
+    "filter" : [ "ffs_peacestore" ]
+  },
+  "printable" : false,
+  "description" : "Dollar & Dosh Only",
+  "shortdescription" : "^orange;P.A Weapon Store",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 1000,
+
+
+  "apexDescription" : "weapons",
+  "avianDescription" : "weapons",
+  "floranDescription" : "weapons",
+  "glitchDescription" : "Excited.weapons",
+  "humanDescription" : "weapons",
+  "hylotlDescription" : "weapons",
+  "novakidDescription" : "weapons",
+
+  "inventoryIcon" : "ffs_peacestoreicon.png",
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "ffs_peacestore.png" } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "right",
+      "flipImages" : true,
+
+      "frames" : 1,
+      "animationCycle" : 0.1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

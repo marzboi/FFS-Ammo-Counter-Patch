@@ -1,0 +1,42 @@
+{
+  "objectName" : "ApocSchoolBus",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Survivor's School Bus.",
+  "shortdescription" : "Survivor's School Bus",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's Survivor's School Bus.",
+  "avianDescription" : "It's Survivor's School Bus.",
+  "floranDescription" : "It's Survivor's School Bus.",
+  "glitchDescription" : "Interested. It's Survivor's School Bus.",
+  "humanDescription" : "It's Survivor's School Bus.",
+  "hylotlDescription" : "It's Survivor's School Bus.",
+  "novakidDescription":  "It's Survivor's School Bus",
+
+  "inventoryIcon" : "ApocSchoolBusIcon.png",
+  "orientations" : [
+    {
+      "image" : "ApocSchoolBus.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "ApocSchoolBus.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "missionName" : "ffs1",
+  "icon" : "ffs1.png",
+  "missionWorld" : "operation1",
+
+  "speciesText" : {
+    "default" : {
+      "buttonText" : "G.E. Outpost",
+      "repeatButtonText" : "G.E. Outpost",
+      "selectSpeech" : {
+        "animation" : "talk",
+        "text" : "This is G.E.'s outpost where we've just lost contact.",
+        "speedModifier" : 1.0
+      }
+    }
+  }
+}

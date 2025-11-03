@@ -1,0 +1,24 @@
+{
+  "projectileName" : "mk_bullet_bluoplasma_4_head",
+  "image" : "mk_bullet_bluoplasma.png",
+  "frameNumber" : 100,
+  "timeToLive" : 2.0,
+  "animationCycle" : 2.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet_medium.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 160,
+  "statusEffects" : [
+    "ffs_headshot",
+	"mk_bluoplasma"
+  ],
+  "physics" : "ffs_bullet_trajectory",
+  "damageKind" : "mk_bluoplasma",
+  "damageType" : "ignoresdef",
+  "fullbright" : true
+}

@@ -1,0 +1,66 @@
+{
+  "projectileName" : "ffs_bullet_bolts_bleeding",
+  "image" : "ffs_bullet_bolts_bleeding.png",
+  "animationCycle" : 4.0,
+  "loops" : false,
+  "piercing" : false,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 4.0,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_Boltscrit_exp/ffs_bolts_exp.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_boltsfrag_bleeding",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_boltsfrag_bleeding",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_boltsfrag_bleeding",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_boltsfrag_bleeding",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_boltsfrag_bleeding",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_boltsfrag_bleeding",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 125,
+  "statusEffects" : [
+    "ffs_bleeding"
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,36 @@
+{
+  "projectileName" : "ffs_bullet_trigger_l_mg_nolink",
+  "image" : "icon.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_mg",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_large",
+      "inheritDamageFactor" : 0,
+      "fuzzAngle" : 45,
+      "speed" : -15,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_muzzlefiringspark",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 7.5,
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 75,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,42 @@
+{
+  "objectName" : "WreckedTruck1",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Wrecked Truck.",
+  "shortdescription" : "Wrecked Truck",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's a famous food brand, los Avian hermanos. it's finger lickin good.",
+  "avianDescription" : "It's a famous food brand, los Avian hermanos. it's finger lickin good.",
+  "floranDescription" : "It'sss a famous food brand, losss Avian hermanosss. it'sss finger lickin good.",
+  "glitchDescription" : "Interedted. It's a famous food brand, los Avian hermanos.",
+  "humanDescription" : "It's a famous food brand, los Avian hermanos. it's finger lickin good.",
+  "hylotlDescription" : "It's a famous food brand, los Avian hermanos. it's finger lickin good.",
+  "novakidDescription":  "It's a famous food brand, los Avian hermanos... maybe?",
+
+  "inventoryIcon" : "TruckIcon.png",
+  "orientations" : [
+    {
+      "image" : "Truck.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "Truck.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

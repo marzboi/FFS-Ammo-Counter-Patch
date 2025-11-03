@@ -1,0 +1,36 @@
+{
+  "frameGrid" : {
+    "size" : [32, 40],
+    "dimensions" : [10, 2],
+    "names" : [
+      [ "default.open.1", "default.open.2", "default.open.3", "default.open.4", "default.open.5", "default.open.6", "default.open.7", "default.open.8", "default.open.9", "default.open.10"	  ],
+      [ "default.open.11", "default.open.12", "default.open.13", "default.open.14", "default.open.15", "default.open.16", "default.open.17", "default.open.18", "default.open.19", "default.open.20"  ]
+    ]
+  },
+
+  "aliases" : {
+    "default.default" : "default.off",
+    "default.off" : "default.open.1",
+    "default.on" : "default.open.20",
+    "default.close.1" : "default.open.20",
+    "default.close.2" : "default.open.19",
+    "default.close.3" : "default.open.18",
+    "default.close.4" : "default.open.17",
+    "default.close.5" : "default.open.16",
+    "default.close.6" : "default.open.15",
+    "default.close.7" : "default.open.14",
+    "default.close.8" : "default.open.13",
+    "default.close.9" : "default.open.12",
+    "default.close.10" : "default.open.11",
+    "default.close.11" : "default.open.10",
+    "default.close.12" : "default.open.9",
+    "default.close.13" : "default.open.8",
+    "default.close.14" : "default.open.7",
+    "default.close.15" : "default.open.6",
+    "default.close.16" : "default.open.5",
+    "default.close.17" : "default.open.4",
+    "default.close.18" : "default.open.3",
+    "default.close.19" : "default.open.2",
+    "default.close.20" : "default.open.1"
+  }
+}

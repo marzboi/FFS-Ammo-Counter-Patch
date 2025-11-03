@@ -1,0 +1,24 @@
+{
+  "projectileName" : "ffs_bullet_mg_nodamage",
+  "image" : "ffs_bullet_small_tracer.png",
+  "frameNumber" : 100,
+  "timeToLive" : 2.0,
+  "animationCycle" : 2.0,
+  "renderLayer" : "Player-1",
+  "piercing" : true,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head.config"
+    }
+  ],
+  "statusEffects" : [
+    "ffs_pinneddown"
+  ],
+  "power" : 5.0,
+  "speed" : 170,
+  "physics" : "ffs_bullet_trajectory",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "fullbright" : true
+}

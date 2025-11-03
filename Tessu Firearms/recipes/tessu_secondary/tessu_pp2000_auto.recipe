@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 750 }
+ 
+  ],
+  "output" : {
+    "item" : "tessu_pp2000_auto",
+    "count" : 1
+  },
+  "duration" : 0.1,
+  "groups" : [ "tessu_weaponbuilding", "tessu_secondary" ]
+}

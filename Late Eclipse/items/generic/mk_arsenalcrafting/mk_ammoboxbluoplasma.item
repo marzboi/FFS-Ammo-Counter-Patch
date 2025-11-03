@@ -1,0 +1,10 @@
+{
+  "itemName" : "mk_ammoboxbluoplasma",
+  "price" : 200,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "mk_ammoboxbluoplasma.png",
+  "description" : "Bluoplasma special grade ammunition.",
+  "shortdescription" : "^#255BC6;Bluoplasma Special Ammunition^reset;",
+  "itemTags" : [ "reagent" ]
+}

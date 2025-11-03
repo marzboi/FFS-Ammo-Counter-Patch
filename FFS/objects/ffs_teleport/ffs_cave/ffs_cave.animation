@@ -1,0 +1,129 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "portal" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {},
+          "open" : {
+            "frames" : 1,
+            "cycle" : 1.0,
+            "mode" : "loop"
+          },
+          "close" : {
+            "frames" : 1,
+            "cycle" : 1.0,
+            "mode" : "loop"
+          },
+          "vanish" : {
+            "frames" : 1,
+            "cycle" : 1.0,
+            "mode" : "transition",
+            "transition" : "gone"
+          },
+          "gone" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "bg" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "portal" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.default"
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.default"
+              }
+            },
+
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.default"
+              }
+            },
+
+            "close" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.default"
+              }
+            },
+
+            "vanish" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.default"
+              }
+            },
+
+            "gone" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      },
+      "fg" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "portal" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.default"
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.default"
+              }
+            },
+
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.default"
+              }
+            },
+
+            "close" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.default"
+              }
+            },
+
+            "vanish" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.default"
+              }
+            },
+
+            "gone" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "on" : [],
+    "off" : []
+  }
+}

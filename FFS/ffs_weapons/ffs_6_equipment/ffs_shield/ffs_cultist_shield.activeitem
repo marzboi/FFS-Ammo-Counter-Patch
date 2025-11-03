@@ -1,0 +1,61 @@
+{
+  "itemName" : "ffs_cultist_shield",
+  "fixedLevel" : false,
+  "price" : 720,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "category" : "shield",
+  "description" : "A bastion of order in an uncertain world.",
+  "shortdescription" : "Riot Shield",
+  "tooltipKind" : "Shield",
+  "twoHanded" : false,
+  "itemTags" : ["shield"],
+
+  "inventoryIcon" : "images/riot.png:nearidle",
+
+  "animation" : "shield.animation",
+  "animationParts" : {
+    "shield" : "images/riot.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "shield" : { "properties" : {
+        "shieldPoly" : [ [0.5, -1.4], [0.5, 1.3], [0.75, 1.3], [0.75, -1.4] ]
+    }}}},
+    "sounds" : {
+      "raiseShield" : [ "/sfx/melee/sword_guard.ogg" ],
+      "perfectBlock" : [ "/sfx/melee/shield_block_metal_perfect.ogg" ],
+      "block" : [ "/sfx/melee/shield_block_metal.ogg" ],
+      "break" : [ "/sfx/melee/shield_break_metal.ogg" ]
+    }
+  },
+
+  "scripts" : ["/ffs_weapons/ffs_lua_shield/shield.lua"],
+
+  "minActiveTime" : 0,
+
+  "forceWalk" : true,
+  "baseShieldHealth" : 130,
+  "cooldownTime" : 0,
+
+  "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
+  "perfectBlockTime" : 1.0,
+
+  "knockback" : 10,
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "shieldRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "raised" : {
+      "armRotation" : 0,
+      "shieldRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandshield.lua"
+}

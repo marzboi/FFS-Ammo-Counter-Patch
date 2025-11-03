@@ -1,0 +1,32 @@
+{
+  "projectileName" : "ffs_dropship_airsupport",
+  "image" : "ffs_dropship_airsupport.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 0.5,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "pointLight" : true,
+  "speed" : 10.0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_dropship_airsupport2",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/ffs_dropship_jet.ogg" ]
+    }
+  ],
+  "power" : 20.0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}
+
+

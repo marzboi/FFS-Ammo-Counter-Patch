@@ -1,0 +1,36 @@
+{
+  "projectileName" : "ffs_case_garand",
+  "image" : "ffs_case_garand.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "renderLayer" : "Player+1",
+  "physics" : "grenade",
+  "piercing" : true,
+  "bounces" : 1,
+  "speed" : 15,
+  "timeToLive" : 5,
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_garand_end",
+      "fuzzAngle" : 360
+    },
+    {
+      "action" : "sound",
+      "options" : [ 
+	  "/sfx/ffs_case_drop_garand.ogg"
+	  ]
+    }
+  ],
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [ 
+	  "/sfx/ffs_case_drop_garand.ogg"
+	  ]
+    }
+  ]
+}

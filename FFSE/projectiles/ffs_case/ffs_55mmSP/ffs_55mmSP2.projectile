@@ -1,0 +1,15 @@
+{
+  "projectileName" : "ffs_55mmSP",
+  "image" : "ffs_55mmSP.png",
+  "physics" : "stickygrenade",
+  "piercing" : true,
+  "bounces" : -1,
+  "speed" : 0,
+  "renderLayer" : "Player+1",
+  "frameNumber" : 1,
+  "timeToLive" : 2,
+  "damageKindImage" : "ffs_55mmSP.png",
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

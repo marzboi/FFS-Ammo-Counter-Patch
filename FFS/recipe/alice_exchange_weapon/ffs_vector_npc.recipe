@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_vector_npc", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 1250
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

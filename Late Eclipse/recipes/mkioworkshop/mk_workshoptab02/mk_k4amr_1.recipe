@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "titaniumbar", "count" : 5 },
+	{ "item" : "durasteelbar", "count" : 5 },
+	{ "item" : "mk_bluoplasmacell", "count" : 5 }
+  ],
+  "duration" : 1,
+  "output" : { "item" : "mk_k4amr_1", "count" : 1 },
+  "groups" : [ "mkioworkshopcrafter", "mkioworkshoptab2" ]
+}

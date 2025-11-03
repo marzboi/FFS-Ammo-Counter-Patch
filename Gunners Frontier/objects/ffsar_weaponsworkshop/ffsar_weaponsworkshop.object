@@ -1,0 +1,48 @@
+{
+  "objectName" : "ffsar_weaponsworkshop",
+  "colonyTags" : ["crafting"],
+  "rarity" : "uncommon",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/objects/ffs_ui/ffs_merchant_yuri.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "  Weapons workshop",
+        "subtitle" : "Weapon modificat",
+        "icon" : {
+          "file" : "/interface/crafting/ffsar_weaponsworkshop.png"
+        }
+      }
+    },
+    "filter" : [ "ffs_yuri" ]
+  },
+  "printable" : false,
+  "description" : "Weapon modificat.",
+  "shortdescription" : "Weapons workshop;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 30,
+
+  "apexDescription" : "Here I can modificat my weapons.",
+  "avianDescription" : "Here I can modificat my weapons.",
+  "floranDescription" : "Here I can modificat my weapons.",
+  "glitchDescription" : "Here I can modificat my weapons.",
+  "humanDescription" : "Here I can modificat my weapons.",
+  "hylotlDescription" : "Here I can modificat my weapons.",
+  "novakidDescription" : "Here I can modificat my weapons.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "ffsar_weaponsworkshop.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

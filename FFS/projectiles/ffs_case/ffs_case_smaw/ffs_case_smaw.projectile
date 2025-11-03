@@ -1,0 +1,30 @@
+{
+  "projectileName" : "ffs_case_smaw",
+  "image" : "ffs_case_smaw.png",
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "renderLayer" : "Player-1",
+  "physics" : "grenade",
+  "piercing" : true,
+  "bounces" : 2,
+  "speed" : -15,
+  "timeToLive" : 3,
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [ 
+	  "/sfx/ffs_case_drop_1.ogg","/sfx/ffs_case_drop_2.ogg","/sfx/ffs_case_drop_3.ogg","/sfx/ffs_case_drop_4.ogg"
+	  ]
+    }
+  ],
+  "actionOnHit" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_smaw_end",
+      "fuzzAngle" : 360
+    }
+  ]
+}

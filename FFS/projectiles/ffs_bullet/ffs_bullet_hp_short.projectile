@@ -1,0 +1,20 @@
+{
+  "projectileName" : "ffs_bullet_hp_short",
+  "image" : "ffs_bullet_small.png",
+  "frameNumber" : 100,
+  "timeToLive" : 2.0,
+  "animationCycle" : 2.0,
+  "renderLayer" : "Player-1",
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head_small.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 110,
+  "knockback" : 15,
+  "knockbackDirectional" : true,
+  "physics" : "ffs_bullet_trajectory",
+  "damageKind" : "default"
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "ffs2_lastboss_door",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "objectName" : "cancerbox",
+  "colonyTags" : ["outpost","commerce"],
+  "rarity" : "uncommon",
+  "category" : "other",
+  "description" : "May I give u some cancer?",
+  "shortdescription" : "The Cancer Box",
+  "race" : "generic",
+
+  "apexDescription" : "The Cancer Box.",
+  "avianDescription" : "The Cancer Box.",
+  "floranDescription" : "The Cancer Box.",
+  "glitchDescription" : "The Cancer Box.",
+  "humanDescription" : "The Cancer Box.",
+  "hylotlDescription" : "The Cancer Box.",
+  "novakidDescription" : "The Cancer Box.",
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/cancerbox.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "The Cancer Box",
+        "subtitle" : " ^#b9b5b2;May I give u some cancer?"
+      }
+    },
+    "buyFactor" : 1.0,
+    "sellFactor" : 0.7,
+    "items" : [
+      { "item" : "ffs_FG420" },
+      { "item" : "ffs_A06" },	  
+	  { "item" : "ffs_A8B" },
+	  { "item" : "ffs_AUJ" },
+	  { "item" : "ffs_DMS-10" },
+	  { "item" : "ffs_AK-F" },
+	  { "item" : "ffs_AK-T" },
+	  { "item" : "ffs_K7G -0X" },
+	  { "item" : "ffs_JP17" },
+	  { "item" : "ffs_Deus" },
+	  { "item" : "ffs_SPU" },
+	  { "item" : "ffs_BRD12" },
+	  { "item" : "ffs_G8" },
+      { "item" : "ffs_JK5" },
+      { "item" : "ffs_KYUS" },
+	  { "item" : "ffs_ZUB-4" },
+	  { "item" : "ffs_RB-X" },
+      { "item" : "ffs_STL" },
+      { "item" : "ffs_TC-12" },
+	  { "item" : "ffs_TC-R" },
+	  { "item" : "ffs_TC-5" },
+	  { "item" : "ffs_K12" },
+      { "item" : "ffs_Woodlander" },
+	  { "item" : "ffs_LSD-7" },
+	  { "item" : "ffs_AFPG" },
+	  { "item" : "VaporBox" }
+    ]
+  },
+  "printable" : false,
+  "lightColor" : [100, 0, 15],
+  // Masking Fullbright Transparency Values: 0% brightness on lights, 70% brightness on posters in window, 70% on window
+
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "cancerbox.png:<color>.<frame>", "fullbright" : true }, { "image" : "cancerboxlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 8,
+      "animationCycle" : 2.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+    "collision" : "null"
+
+    }
+  ]
+
+}

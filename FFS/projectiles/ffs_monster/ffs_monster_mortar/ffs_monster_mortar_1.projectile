@@ -1,0 +1,29 @@
+{
+  "projectileName" : "ffs_monster_mortar_1",
+  "image" : "ffs_monster_mortar.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 0.3,
+  "physics" : "ffs_mortar_up",
+  "piercing" : false,
+  "bounces" : 0,
+  "frameNumber" : 2,
+  "pointLight" : false,
+  "speed" : 10,
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_monster_mortar_2",
+      "inheritDamageFactor" : 1,
+      "directional" : "true",
+	  "fuzzAngle" : 15
+    }
+  ],
+  "power" : 5.0,
+  "emitters" : [ "smoke", "firesparks" ],
+  "movementSettings":{"collisionEnabled":false},
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}
+
+

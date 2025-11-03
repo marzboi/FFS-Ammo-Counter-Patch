@@ -1,0 +1,29 @@
+{
+  "projectileName" : "ffs_bullet_rail_he",
+  "image" : "ffs_bullet_rail.png",
+  "frameNumber" : 1,
+  "timeToLive" : 3.0,
+  "renderLayer" : "FrontParticle+1",
+  "piercing" : true,
+  "bounces" : 0,
+  "actionOnHit" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_spark_20mm",
+      "inheritDamageFactor" : 0.5,
+	  "angle" : 0
+    }
+  ],
+  "statusEffects" : [
+    "ffs_bleeding"
+  ],
+  "power" : 5.0,
+  "speed" : 170,
+  "damageKind" : "default",
+  "damageType" : "ignoresdef",
+  "fullbright" : true
+}

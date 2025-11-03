@@ -1,0 +1,30 @@
+{
+  "projectileName" : "ffs_cannonblast_explosion",
+  "image" : "ffs_cannonblast_explosion.png",
+  "animationCycle" : 0.6,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "power" : 1.0,
+  "damagePoly" : [ [-37, 0], [-28, -28], [0, -37], [28, -28], [37, 0], [28, 28], [0, 37], [-28, 28] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageType" : "ignoresdef",
+  "damageKind" : "default",
+  "damageTeam" : { "type" : "indiscriminate" },
+  "fullbright" : true,
+  "renderLayer" : "Player+10",
+  "bounces" : -1,
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ 
+	  "/sfx/single/ffs_cannonblast_explosion.ogg"
+	  ]
+    },
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_bigexplosionknockback.config"
+    }
+  ]
+}

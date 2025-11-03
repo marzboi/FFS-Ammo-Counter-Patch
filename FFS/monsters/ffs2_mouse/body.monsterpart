@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "ffs2_mouse",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "ffs2_mouse.png"
+  }
+}

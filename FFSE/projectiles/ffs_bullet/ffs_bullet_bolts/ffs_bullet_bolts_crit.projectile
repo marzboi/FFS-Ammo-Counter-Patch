@@ -1,0 +1,27 @@
+{
+  "projectileName" : "ffs_bullet_bolts_crit",
+  "image" : "ffs_bullet_bolts.png",
+  "animationCycle" : 4.0,
+  "loops" : false,
+  "piercing" : false,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 4.0,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionknockback.config"
+    }
+  ],
+  "statusEffects" : [
+    "ffs_criticalhit"
+  ],
+  "knockback" : 15,
+  //"physics" : "ffs_bullet_trajectory",
+  "physics" : "ffs_missiledown0",
+  "power" : 5.0,
+  "speed" : 125,
+  "damageType" : "ignoresdef",
+  "damageKind" : "default"
+}

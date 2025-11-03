@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_3tier_fbilegs", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 128
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_us_dollar", 
+	"count" : 1000
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffsar_KCCOhead",
+	"count" : 1
+	},
+	"groups" : [ "ffs_reward",  "ffs_yuri" ]
+}

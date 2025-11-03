@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "mk_s64smg_1", "count" : 1 },
+	{ "item" : "mk_bluoplasmacell", "count" : 4 }
+  ],
+  "duration" : 1,
+  "output" : { "item" : "mk_s64smg_bluoplasma_1", "count" : 1 },
+  "groups" : [ "mkioworkshopcrafter", "mkioworkshoptab2" ]
+}

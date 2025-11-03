@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 9999 }
+ 
+  ],
+  "output" : {
+    "item" : "tessu_ptrd41",
+    "count" : 1
+  },
+  "duration" : 0.1,
+  "groups" : [ "tessu_weaponbuilding", "tessu_heavy" ]
+}

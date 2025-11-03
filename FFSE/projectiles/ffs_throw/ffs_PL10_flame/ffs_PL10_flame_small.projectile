@@ -1,0 +1,23 @@
+{
+  "projectileName" : "ffs_PL10_flame_small",
+  "bounces" : -1,
+  "timeToLive" : 1.5,
+  "speed" : 12,
+  "physics" : "grenadenobounce",
+  "image" : "ffs_PL10_flame_small.png",
+  "animationCycle" : 1.0,
+  "lightColor" : [70, 130, 180],
+  "frameNumber" : 10,
+  "renderLayer" : "Player+1",
+  "piercing" : true,
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "damageKind" : "fire",
+  "damageTeam" : { "type" : "indiscriminate" },
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "statusEffects" : [
+    "ffs_thickerflame"
+  ],
+  "hydrophobic" : true,
+
+  "persistentAudio" : "/sfx/objects/torch.ogg"
+}

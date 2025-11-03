@@ -1,0 +1,22 @@
+{
+  "projectileName" : "ffs_dropship_bombing_chica_start",
+  "image" : "ffs_dropship_bombing_small.png",
+  "animationCycle" : 1.0,
+  "timeToLive" : 2.0,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_dropship_bombing_chica",
+	  "angle" : 0,
+      "inheritDamageFactor" : 1
+    }
+  ],
+  "power" : 0,
+  "speed" : 15,
+  "movementSettings":{"collisionEnabled":false},
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,30 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_pirates_carrier_remnant", 
+	"count" : 1
+	},
+    { 
+	"item" : "ffs_ammunition_1", 
+	"count" : 20
+	},
+    { 
+	"item" : "ffs_smoke", 
+	"count" : 20
+	},
+    { 
+	"item" : "reddye", 
+	"count" : 20
+	},
+    { 
+	"item" : "liquidfuel", 
+	"count" : 1000
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_smoke_airsupport",
+	"count" : 20
+	},
+	"groups" : [ "ffs_support",  "ffs_nadezhda" ]
+}

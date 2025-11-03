@@ -1,0 +1,13 @@
+{
+  "frameGrid" : {
+    "size" : [91, 91],
+    "dimensions" : [10, 4],
+
+    "names" : [
+      [ "reticle.0", "reticle.1", "reticle.2", "reticle.3", "reticle.4", "reticle.5", "reticle.6", "reticle.7", "reticle.8", "reticle.9" ],
+      [ "reticle.10", "reticle.11", "reticle.12", "reticle.13", "reticle.14", "reticle.15", "reticle.16", "reticle.17", "reticle.18", "reticle.19" ],
+      [ "reticle.20", "reticle.21", "reticle.22", "reticle.23", "reticle.24", "reticle.25", "reticle.26", "reticle.27", "reticle.28", "reticle.29" ],
+      [ "reticle.30", "reticle.31", "reticle.32", "reticle.33", "reticle.34", "reticle.35", "reticle.36", "reticle.37", "reticle.38", "reticle.39" ]
+    ]
+  }
+}

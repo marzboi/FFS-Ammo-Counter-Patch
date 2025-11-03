@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "ffs_dosh", "count" : 200 }
+  ],
+  "output" : { "item" : "ffs_us_dollar", "count" : 100 },
+  "groups" : [ "ffs_atm" ]
+}

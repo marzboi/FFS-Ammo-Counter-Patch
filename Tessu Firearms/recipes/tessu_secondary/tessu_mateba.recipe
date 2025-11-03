@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 650 }
+ 
+  ],
+  "output" : {
+    "item" : "tessu_mateba",
+    "count" : 1
+  },
+  "duration" : 0.1,
+  "groups" : [ "tessu_weaponbuilding", "tessu_secondary" ]
+}

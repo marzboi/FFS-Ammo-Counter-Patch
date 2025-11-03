@@ -1,0 +1,32 @@
+{
+  "projectileName" : "ffs_pirates_aircraft_dead_pilot_start",
+  "image" : "ffs_pirates_aircraft_dead_pilot_start.png",
+  "animationLoops" : false,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "power" : 0,
+  "timeToLive" : 0,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Object+1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/monster/ffs_dying_1.ogg", "/sfx/monster/ffs_dying_2.ogg", "/sfx/monster/ffs_dying_3.ogg", "/sfx/monster/ffs_dying_4.ogg", "/sfx/monster/ffs_dying_5.ogg", "/sfx/monster/ffs_dying_6.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_pirates_aircraft_dead_pilot_1",
+      "allowFlip" : true,
+      "fuzzAngle" : 45,
+      "angle" : 90
+    }
+  ]
+}

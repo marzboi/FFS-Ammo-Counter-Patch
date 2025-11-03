@@ -1,0 +1,31 @@
+{
+  "projectileName" : "ffs2_6boss_dead_3",
+  "image" : "ffs2_6boss_dead_3.png",
+  "frameNumber" : 1,
+  "power" : 0,
+  "bounces" : 0,
+  "timeToLive" : 0.7,
+  "flippable" : false,
+  "orientationLocked" : true,
+  "onlyHitTerrain" : false,
+  "speed" : 20,
+  "piercing" : true,
+  "renderLayer" : "Object+1",
+  "movementSettings":{"collisionEnabled":false},
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs2_6boss_dead_fin",
+	  "angle" : -90,
+      "inheritDamageFactor" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs2_6boss_dead_splash",
+	  "angle" : 0,
+      "inheritDamageFactor" : 0
+    }
+  ]
+}

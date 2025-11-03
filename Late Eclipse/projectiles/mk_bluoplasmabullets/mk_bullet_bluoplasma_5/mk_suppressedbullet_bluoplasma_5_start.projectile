@@ -1,0 +1,29 @@
+{
+  "projectileName" : "mk_suppressedbullet_bluoplasma_5_start",
+  "image" : "ffs_invisible.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "mk_bullet_bluoplasma_5",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_large",
+      "inheritDamageFactor" : 0,
+      "fuzzAngle" : 45,
+      "speed" : -15,
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 75,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

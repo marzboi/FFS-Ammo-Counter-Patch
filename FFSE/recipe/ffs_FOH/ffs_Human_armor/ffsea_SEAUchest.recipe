@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_us_dollar", 
+	"count" : 48000
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffsea_SEAUchest",
+	"count" : 1
+	},
+	"groups" : [ "ffs_Human_armor",  "ffs_FOH" ]
+}

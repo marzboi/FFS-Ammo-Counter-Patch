@@ -1,0 +1,27 @@
+{
+  "frameGrid" : {
+    "size" : [20, 20],
+    "dimensions" : [10, 16],
+    "names" : [
+      ["draw.1", "draw.2", "draw.3", "draw.4", "draw.5", "draw.6", "draw.7", "draw.8", "draw.9", "draw.10"],
+      ["draw.11", "draw.12", "draw.13", "draw.14", "draw.15", "draw.16", "draw.17", "draw.18", "draw.19", "draw.20"],
+      ["default.1", "default.2", "default.3", "default.4", "default.5", "default.6", "default.7", "default.8", "default.9", "default.10"],
+      ["default2.1", "default2.2", "default2.3", "default2.4", "default2.5", "default2.6", "default2.7", "default2.8", "default2.9", "default2.10"],
+      ["firing_in.1", "firing_in.2", "firing_in.3", "firing_in.4", "firing_in.5", "firing_in.6", "firing_in.7", "firing_in.8", "firing_in.9", "firing_in.10"],
+      ["firing.1", "firing.2", "firing.3", "firing.4", "firing.5", "firing.6", "firing.7", "firing.8", "firing.9", "firing.10"],
+      ["firing2.1", "firing2.2", "firing2.3", "firing2.4", "firing2.5", "firing2.6", "firing2.7", "firing2.8", "firing2.9", "firing2.10"],
+      ["firing_out.1", "firing_out.2", "firing_out.3", "firing_out.4", "firing_out.5", "firing_out.6", "firing_out.7", "firing_out.8", "firing_out.9", "firing_out.10"],
+      ["reload.1", "reload.2", "reload.3", "reload.4", "reload.5", "reload.6", "reload.7", "reload.8", "reload.9", "reload.10"],
+      ["reload.11", "reload.12", "reload.13", "reload.14", "reload.15", "reload.16", "reload.17", "reload.18", "reload.19", "reload.20"],
+      ["reload.21", "reload.22", "reload.23", "reload.24", "reload.25", "reload.26", "reload.27", "reload.28", "reload.29", "reload.30"],
+      ["reload.31", "reload.32", "reload.33", "reload.34", "reload.35", "reload.36", "reload.37", "reload.38", "reload.39", "reload.40"],
+      ["reload2.1", "reload2.2", "reload2.3", "reload2.4", "reload2.5", "reload2.6", "reload2.7", "reload2.8", "reload2.9", "reload2.10"],
+      ["reload2.11", "reload2.12", "reload2.13", "reload2.14", "reload2.15", "reload2.16", "reload2.17", "reload2.18", "reload2.19", "reload2.20"],
+      ["reload2.21", "reload2.22", "reload2.23", "reload2.24", "reload2.25", "reload2.26", "reload2.27", "reload2.28", "reload2.29", "reload2.30"],
+      ["reload2.31", "reload2.32", "reload2.33", "reload2.34", "reload2.35", "reload2.36", "reload2.37", "reload2.38", "reload2.39", "reload2.40"]
+    ]
+  },
+
+  "aliases" : {
+  }
+}

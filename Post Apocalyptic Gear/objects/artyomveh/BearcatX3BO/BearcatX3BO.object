@@ -1,0 +1,42 @@
+{
+  "objectName" : "BearcatX3BO",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Bearcat X3 BlackOps.",
+  "shortdescription" : "Bearcat X3 BlackOps",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's a armored car.",
+  "avianDescription" : "It's a armored car.",
+  "floranDescription" : "It's a armored car.",
+  "glitchDescription" : "It's a armored car.",
+  "humanDescription" : "It's a armored car.",
+  "hylotlDescription" : "It's a armored car.",
+  "novakidDescription":  "It's a armored car.",
+
+  "inventoryIcon" : "BearcatX3BOIcon.png",
+  "orientations" : [
+    {
+      "image" : "BearcatX3BO.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "BearcatX3BO.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

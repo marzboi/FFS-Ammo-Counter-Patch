@@ -1,0 +1,11 @@
+{
+  "offset" : [44, 50],
+  "image" : "/cursors/reticle_gs.png:gs1?scale=1",
+  "animation" : {
+    "frames" : "/cursors/reticle_gs.png",
+    "frameNumber" : 1,
+    "animationCycle" : 0.5,
+    "centered" : false,
+    "mode" : "loopforever"
+  }
+}

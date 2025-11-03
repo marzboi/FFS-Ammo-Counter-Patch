@@ -1,0 +1,18 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_RSR", 
+	"count" : 1
+	},
+    { 
+	"item" : "ffs_AFP", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_Siegehammer",
+	"count" : 1
+	},
+	"groups" : [ "ffs_avali_ess",  "ffs_ADF" ]
+}

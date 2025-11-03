@@ -1,0 +1,64 @@
+{
+  "objectName" : "ffs_dropship_checkpoint",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "category" : "teleporter",
+  
+  "description" : "If you die, you will respawn at this location.",
+  "shortdescription" : "Mission ffs_dropship_checkpoint",
+  "race" : "generic",
+  
+
+  "apexDescription" : "Nadya! Keep your fingers crossed for me!",
+  "avianDescription" : "Nadya! Keep your fingers crossed for me!",
+  "floranDescription" : "Nadya! Keep your fingers crossed for me!",
+  "glitchDescription" : "Nadya! Keep your fingers crossed for me!",
+  "humanDescription" : "Nadya! Keep your fingers crossed for me!",
+  "hylotlDescription" : "Nadya! Keep your fingers crossed for me!",
+  "novakidDescription" : "Nadya! Keep your fingers crossed for me!",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "ffs_dropship_checkpoint.png:default.<frame>",
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+	  "lightColor" : [250, 200, 153],
+      "pointLight" : true,
+      "lightPosition" : [15, -5],
+
+      "spaceScan" : 0.1
+    },
+    {
+      "image" : "ffs_dropship_checkpoint.png:default.<frame>",
+      "imagePosition" : [0, 0],
+
+      "direction" : "right",
+	  "lightColor" : [250, 200, 153],
+      "pointLight" : true,
+      "lightPosition" : [15, -5],
+
+      "spaceScan" : 0.1
+    }
+  ],
+
+  "health" : 10,
+
+  "animation" : "ffs_dropship_checkpoint.animation",
+  "animationParts" : {
+    "bg" : "ffs_dropship_checkpoint.png",
+    "fg" : "ffs_dropship_checkpointlit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/scripts/checkpoint.lua" ],
+
+  "queryArea" : [-0, -200, 30, 20],
+  "queryInterval" : 0.1,
+  "soundEffect" : "/sfx/ffs_dropship_jet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  "spawnOffset" : [15, 4.0]
+}

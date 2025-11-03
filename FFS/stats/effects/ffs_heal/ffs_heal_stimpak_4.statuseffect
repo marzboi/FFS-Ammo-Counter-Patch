@@ -1,0 +1,18 @@
+{
+  "name" : "ffs_heal_stimpak_4",
+  "blockingStat" : "healingStatusImmunity",
+  "effectConfig" : {
+    "healAmount" : 400,
+    "emissionRate" : 10
+  },
+  "defaultDuration" : 2,
+
+  "scripts" : [
+    "ffs_heal_stimpak.lua"
+  ],
+
+  "animationConfig" : "ffs_heal.animation",
+
+  "label" : "4th Grade Stimpak : The wound will be healed.",
+  "icon" : "/interface/statuses/ffs_stimpak_4.png"
+}

@@ -1,0 +1,429 @@
+[
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_BP15",
+    "value": {
+      "minRange": 5,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_BP15_1H",
+    "value": {
+      "minRange": 5,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_LP9",
+    "value": {
+      "minRange": 5,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_LP9_1H",
+    "value": {
+      "minRange": 5,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_PDFrostbite",
+    "value": {
+      "minRange": 5,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_PDFrostbite_1H",
+    "value": {
+      "minRange": 5,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_SPP38",
+    "value": {
+      "minRange": 5,
+      "maxRange": 20,
+      "forceMoveRange": 20
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_Cyclone",
+    "value": {
+      "minRange": 10,
+      "maxRange": 24,
+      "forceMoveRange": 24
+    }
+  },  
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_Firestorm",
+    "value": {
+      "minRange": 10,
+      "maxRange": 24,
+      "forceMoveRange": 24
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_QRCType",
+    "value": {
+      "minRange": 10,
+      "maxRange": 24,
+      "forceMoveRange": 24
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_sawoff_DB",
+    "value": {
+      "minRange": 10,
+      "maxRange": 24,
+      "forceMoveRange": 4
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_FT8",
+    "value": {
+      "minRange": 10,
+      "maxRange": 30,
+      "forceMoveRange": 30
+    }
+  },  
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_LR-15C",
+    "value": {
+      "minRange": 10,
+      "maxRange": 40,
+      "forceMoveRange": 40
+    }
+  },  
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_Striker",
+    "value": {
+      "minRange": 10,
+      "maxRange": 40,
+      "forceMoveRange": 40
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_StrikerBK",
+    "value": {
+      "minRange": 10,
+      "maxRange": 40,
+      "forceMoveRange": 40
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_arblizzard",
+    "value": {
+      "minRange": 10,
+      "maxRange": 35,
+      "forceMoveRange": 35
+    }
+  },
+  
+  
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_LR-15",
+    "value": {
+      "minRange": 15,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_LR-15BK",
+    "value": {
+      "minRange": 15,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_M36Kantrael",
+    "value": {
+      "minRange": 15,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_makeshiftautorifle",
+    "value": {
+      "minRange": 15,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_PlusRifle",
+    "value": {
+      "minRange": 15,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_RFStormSruge",
+    "value": {
+      "minRange": 15,
+      "maxRange": 50,
+      "forceMoveRange": 50
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_SPR",
+    "value": {
+      "minRange": 15,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_SPR_npc",
+    "value": {
+      "minRange": 15,
+      "maxRange": 45,
+      "forceMoveRange": 45
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_Suppressor",
+    "value": {
+      "minRange": 15,
+      "maxRange": 50,
+      "forceMoveRange": 50
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_SuppressorBK",
+    "value": {
+      "minRange": 15,
+      "maxRange": 50,
+      "forceMoveRange": 50
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_LR14",
+    "value": {
+      "minRange": 15,
+      "maxRange": 60,
+      "forceMoveRange": 60
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_RAR",
+    "value": {
+      "minRange": 15,
+      "maxRange": 60,
+      "forceMoveRange": 60
+    }
+  },  
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_AC242",
+    "value": {
+      "minRange": 10,
+      "maxRange": 50,
+      "forceMoveRange": 50
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_AC242_npc",
+    "value": {
+      "minRange": 10,
+      "maxRange": 50,
+      "forceMoveRange": 50
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_AG556",
+    "value": {
+      "minRange": 10,
+      "maxRange": 50,
+      "forceMoveRange": 50
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_AG556_npc",
+    "value": {
+      "minRange": 10,
+      "maxRange": 50,
+      "forceMoveRange": 40
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_MGHailstorm",
+    "value": {
+      "minRange": 10,
+      "maxRange": 50,
+      "forceMoveRange": 50
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_MGHailstorm_npc",
+    "value": {
+      "minRange": 10,
+      "maxRange": 50,
+      "forceMoveRange": 50
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_Punisher",
+    "value": {
+      "minRange": 10,
+      "maxRange": 40,
+      "forceMoveRange": 40
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_spearoffreedom",
+    "value": {
+      "minRange": 10,
+      "maxRange": 40,
+      "forceMoveRange": 40
+    }
+  },  
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_AFP",
+    "value": {
+      "minRange": 30,
+      "maxRange": 60,
+      "forceMoveRange": 60
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_GL79",
+    "value": {
+      "minRange": 15,
+      "maxRange": 50,
+      "forceMoveRange": 50
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_MGL25",
+    "value": {
+      "minRange": 15,
+      "maxRange": 50,
+      "forceMoveRange": 50
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_PL10",
+    "value": {
+      "minRange": 15,
+      "maxRange": 50,
+      "forceMoveRange": 50
+    }
+  },  
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_aigm129",
+    "value": {
+      "minRange": 30,
+      "maxRange": 60,
+      "forceMoveRange": 60
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_aigm129_AT",
+    "value": {
+      "minRange": 30,
+      "maxRange": 60,
+      "forceMoveRange": 60
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_AT15",
+    "value": {
+      "minRange": 30,
+      "maxRange": 60,
+      "forceMoveRange": 65
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_FBFH",
+    "value": {
+      "minRange": 30,
+      "maxRange": 60,
+      "forceMoveRange": 60
+    }
+  },
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_Siegehammer",
+    "value": {
+      "minRange": 35,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },  
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_FMFirelance",
+    "value": {
+      "minRange": 40,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  },  
+  {
+    "op": "add",
+    "path": "/npcCombat/rangedWeaponRanges/ffs_RSR",
+    "value": {
+      "minRange": 40,
+      "maxRange": 70,
+      "forceMoveRange": 70
+    }
+  }
+]

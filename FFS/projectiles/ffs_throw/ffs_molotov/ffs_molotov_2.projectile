@@ -1,0 +1,228 @@
+{
+  "projectileName" : "ffs_molotov_2",
+  "image" : "ffs_molotov.png",
+  "animationCycle" : 0.25,
+  "physics" : "grenade",
+  "frameNumber" : 4,
+  "pointLight" : false,
+  "speed" : 50,
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotov_explosion",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 15,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 45,
+      "delaySteps" : 2,
+      "angle" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 45,
+      "delaySteps" : 5,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 45,
+      "delaySteps" : 9,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 0,
+      "angle" : 315
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 1,
+      "angle" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 2,
+      "angle" : 225
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 3,
+      "angle" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 4,
+      "angle" : 135
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 5,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 6,
+      "angle" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 7,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 0,
+      "angle" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 0,
+      "angle" : 330
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 1,
+      "angle" : 300
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 2,
+      "angle" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 3,
+      "angle" : 240
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 4,
+      "angle" : 210
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 5,
+      "angle" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 6,
+      "angle" : 150
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 7,
+      "angle" : 120
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 8,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 9,
+      "angle" : 60
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 15,
+      "delaySteps" : 10,
+      "angle" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_molotovflame_small",
+      "inheritDamageFactor" : 0.0,
+      "delaySteps" : 10,
+      "fuzzAngle" : 15,
+      "angle" : 0
+    }
+  ],
+  "actionOnHit" : [
+    {
+      "action" : "sound",
+      "options" : [ 
+	  "/sfx/throw/ffs_molotov_break_1.ogg","/sfx/throw/ffs_molotov_break_2.ogg","/sfx/throw/ffs_molotov_break_3.ogg"
+	  ]
+    }
+  ],
+  "statusEffects" : [
+    "ffs_thickerflame"
+  ],
+  "emitters" : [ "tinyrocketsmoke" ],
+  "power" : 5.0,
+  "damageKind" : "fire",
+  "fullbright" : true
+}
+
+

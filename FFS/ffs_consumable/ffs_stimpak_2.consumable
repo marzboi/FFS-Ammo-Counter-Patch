@@ -1,0 +1,34 @@
+{
+  "itemName" : "ffs_stimpak_2",
+  "rarity" : "uncommon",
+  "tooltipKind" : "ffs_base_small",
+  "price" : 200,
+  "category" : "medicine",
+  "inventoryIcon" : "ffs_stimpak_2.png",
+  "description" : "^#7c7c7c;No.207 Stimpak
+  
+Anesthetic 0.05
+Hemostasis 0.15
+PDRN injection 0.3
+SRS#283 H/W 0.5
+^#7c7c7c;Preservation : ^green;Vacuum Preservation
+^#7c7c7c;Expiration Date : ^red;Expired
+^#7c7c7c;Capacity : ^green;6ml
+
+^white;A Stimpack for S.R.S Police. 
+It recovers 200 hp for 2 seconds and cures bad statuses instantly.",
+  "shortdescription" : "^green;Grade.2 Stim Pack",
+  "effects" : [ [
+      {
+        "effect" : "ffs_heal_stimpak_2"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "stimuse" ],
+  "blockingEffects" : [
+    "ffs_heal_stimpak_1",
+	"ffs_heal_stimpak_2",
+	"ffs_heal_stimpak_3",
+	"ffs_heal_stimpak_4"
+  ]
+}

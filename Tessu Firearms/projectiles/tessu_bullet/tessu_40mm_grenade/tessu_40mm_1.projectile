@@ -1,0 +1,28 @@
+{
+  "projectileName" : "tessu_40mm_1",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 3,
+  "damageKindImage" : "icon.png",
+  "image" : "tessu_40mm_1.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "speed" : 75,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "tessu_40mm_1_1",
+      "inheritDamageFactor" : 0.2,
+	 "speed" : 25,
+      "fuzzAngle" : 0,
+      "angle" : 30
+    },
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config"
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

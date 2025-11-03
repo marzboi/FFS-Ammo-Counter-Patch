@@ -1,0 +1,8 @@
+{
+  "itemName" : "ffs_breadnut_sample1",
+  "rarity" : "legendary",
+  "inventoryIcon" : "ffs_breadnut_sample1.png",
+  "description" : "This will be useful.
+I'll keep this somewhere safe.",
+  "shortdescription" : "^#bb00ff;Ruin's tissue sample"
+}

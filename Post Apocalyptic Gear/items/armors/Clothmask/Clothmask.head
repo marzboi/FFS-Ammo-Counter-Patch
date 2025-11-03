@@ -1,0 +1,42 @@
+{
+  "itemName" : "ApocClothmask",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "Bad guys will love this.",
+  "shortdescription" : "Cloth Mask",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "colorOptions" : [
+    // DEFAULT
+    { "8e8c80" : "8e8c80", "a2a197" : "a2a197", "99988f" : "99988f" },
+    // BLACK
+    { "8e8c80" : "2b2a27", "a2a197" : "31312e", "99988f" : "2e2e2b" },
+    // GREY
+    { "8e8c80" : "484743", "a2a197" : "52524e", "99988f" : "4e4d4a" },
+    // WHITE
+    { "8e8c80" : "8e8c80", "a2a197" : "a2a197", "99988f" : "99988f" },
+    // RED
+    { "8e8c80" : "752d2d", "a2a197" : "883434", "99988f" : "813232" },
+    // ORANGE
+    { "8e8c80" : "83441f", "a2a197" : "984f24", "99988f" : "904b23" },
+    // YELLOW
+    { "8e8c80" : "835e1f", "a2a197" : "986e24", "99988f" : "906823" },
+    // GREEN
+    { "8e8c80" : "323a28", "a2a197" : "3a432e", "99988f" : "373f2b" },
+    // BLUE
+    { "8e8c80" : "212b30", "a2a197" : "263138", "99988f" : "242f34" },
+    // PURPLE
+    { "8e8c80" : "272130", "a2a197" : "2e2638", "99988f" : "2a2434" },
+    // PINK
+    { "8e8c80" : "86627f", "a2a197" : "9a7593", "99988f" : "946c8c" },
+    // BROWN
+    { "8e8c80" : "675a47", "a2a197" : "776752", "99988f" : "71624e" }
+  ]
+}

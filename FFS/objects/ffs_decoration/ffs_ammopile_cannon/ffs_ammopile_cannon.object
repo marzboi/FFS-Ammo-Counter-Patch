@@ -1,0 +1,38 @@
+{
+  "objectName" : "ffs_ammopile_cannon",
+  "colonyTags" : ["ffs"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "category" : "decorative",
+
+  "description" : "Cannon ammo pile.",
+  "shortdescription" : "Cannon ammo pile.",
+  "race" : "generic",
+
+  "apexDescription" : "Cannon ammo pile.",
+  "avianDescription" : "Cannon ammo pile.",
+  "floranDescription" : "Cannon ammo pile.",
+  "glitchDescription" : "Cannon ammo pile.",
+  "humanDescription" : "Cannon ammo pile.",
+  "hylotlDescription" : "Cannon ammo pile.",
+  "novakidDescription" : "Cannon ammo pile.",
+
+  "inventoryIcon" : "ffs_ammopile_cannon.png",
+  "orientations" : [
+    {
+      "image" : "ffs_ammopile_cannon.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1
+    },
+    {
+      "image" : "ffs_ammopile_cannon.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1
+    }
+  ]
+}

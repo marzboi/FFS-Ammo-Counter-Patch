@@ -1,0 +1,31 @@
+{
+  "projectileName" : "ffs_pirates_aircraft",
+  "image" : "ffs_pirates_aircraft.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [255, 255, 128],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_spark_40mm",
+      "inheritDamageFactor" : 0.5
+    },
+    {
+      "action" : "sound",
+      "options" : [ 
+	  "/sfx/gun/rocketblast1.ogg","/sfx/gun/rocketblast2.ogg","/sfx/gun/rocketblast3.ogg"
+	  ]
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "tinyrocketsmoke" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 40.0,
+  "damageKind" : "default",
+  "damageType" : "ignoresdef",
+
+  "scripts" : [ "ffs_pirates_aircraft.lua" ]
+}

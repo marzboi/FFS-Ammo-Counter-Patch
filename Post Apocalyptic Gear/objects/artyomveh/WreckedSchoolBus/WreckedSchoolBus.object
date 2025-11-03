@@ -1,0 +1,42 @@
+{
+  "objectName" : "WreckedSchoolBus",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Wrecked School Bus.",
+  "shortdescription" : "Wrecked School Bus",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's Wrecked School Bus.",
+  "avianDescription" : "It's Wrecked School Bus.",
+  "floranDescription" : "It's Wrecked School Bus.",
+  "glitchDescription" : "Interested. It's Wrecked School Bus.",
+  "humanDescription" : "It's Wrecked School Bus.",
+  "hylotlDescription" : "It's Wrecked School Bus.",
+  "novakidDescription":  "It's Wrecked School Bus",
+
+  "inventoryIcon" : "WreckedSBIcon.png",
+  "orientations" : [
+    {
+      "image" : "WreckedSchoolBus.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "WreckedSchoolBus.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "itemName" : "ffs_barrel_2",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "ffs_barrel_2.png",
+  "description" : "A titanium plated barrel.",
+  "shortdescription" : "^green;Titanium Barrel"
+}

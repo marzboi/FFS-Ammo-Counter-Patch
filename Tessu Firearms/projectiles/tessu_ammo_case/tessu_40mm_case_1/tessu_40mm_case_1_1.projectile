@@ -1,0 +1,15 @@
+{
+  "projectileName" : "tessu_40mm_case_1_1",
+  "image" : "tessu_40mm_case_1.png",
+  "physics" : "stickygrenade",
+  "piercing" : true,
+  "bounces" : -1,
+  "speed" : 0,
+  "renderLayer" : "Player+1",
+  "frameNumber" : 1,
+  "timeToLive" : 2,
+  "damageKindImage" : "tessu_40mm_case_1.png",
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,18 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_carbonfiber", 
+	"count" : 5
+	},
+    { 
+	"item" : "ffs_titaniumfiber", 
+	"count" : 5
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_3tier_fbichest",
+	"count" : 1
+	},
+	"groups" : [ "ffs_diy",  "ffs_yuri" ]
+}

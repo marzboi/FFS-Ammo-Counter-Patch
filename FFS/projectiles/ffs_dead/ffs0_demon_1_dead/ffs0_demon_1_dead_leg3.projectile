@@ -1,0 +1,20 @@
+{
+  "projectileName" : "ffs0_demon_1_dead_leg3",
+  "image" : "ffs0_demon_1_dead_leg.png",
+  "physics" : "ffs_deadbody",
+  "animationLoops" : false,
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 0,
+  "timeToLive" : 5,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : false,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 7.5,
+  "piercing" : true,
+  "renderLayer" : "Player+2",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "ironbar", "count" : 2 }
+  ],
+  "duration" : 1,
+  "output" : { "item" : "mk_h8pistol_1", "count" : 1 },
+  "groups" : [ "mkioworkshopcrafter", "mkioworkshoptab2" ]
+}

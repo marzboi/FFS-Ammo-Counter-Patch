@@ -1,0 +1,10 @@
+{
+  "itemName" : "mk_suppressor",
+  "price" : 200,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "mk_suppressor.png",
+  "description" : "Suppressor attachment. Reduces sound volume generated. ^red;[It does NOT make you less detectable]^reset;",
+  "shortdescription" : "Suppressor",
+  "itemTags" : [ "reagent" ]
+}

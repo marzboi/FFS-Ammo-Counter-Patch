@@ -1,0 +1,37 @@
+{
+  "projectileName" : "ffs_bullet_trigger_s_fmj_short_up",
+  "image" : "icon.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_fmj_short",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_case_small",
+      "inheritDamageFactor" : 0,
+	  "angle" : -90,
+      "fuzzAngle" : 15,
+      "speed" : -10,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_muzzlefiringspark",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 7.5,
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 75,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

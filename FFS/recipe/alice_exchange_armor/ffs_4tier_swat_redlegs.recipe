@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_4tier_swat_redlegs", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 160
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

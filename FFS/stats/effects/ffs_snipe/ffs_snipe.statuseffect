@@ -1,0 +1,15 @@
+{
+  "name" : "ffs_snipe",
+
+  "effectConfig" : {},
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "ffs_snipe.lua"
+  ],
+
+  "animationConfig" : "ffs_snipe.animation",
+
+  "label" : "^red;FFS^white;:Hold the breath.",
+  "icon" : "/interface/statuses/ffs_snipe.png"
+}

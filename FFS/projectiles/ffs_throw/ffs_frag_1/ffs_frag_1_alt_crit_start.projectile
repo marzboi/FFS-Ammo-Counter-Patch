@@ -1,0 +1,21 @@
+{
+  "projectileName" : "ffs_frag_1_alt_crit_start",
+  "image" : "ffs_frag_1.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_frag_1_alt_crit",
+      "inheritDamageFactor" : 3,
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 75,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

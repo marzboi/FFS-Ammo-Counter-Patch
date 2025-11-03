@@ -1,0 +1,26 @@
+{
+  "projectileName" : "ffs_bullet_bolts_miss",
+  "image" : "ffs_bullet_bolts.png",
+  "animationCycle" : 4.0,
+  "loops" : false,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 4.0,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet_medium.config"
+    }
+  ],
+  "statusEffects" : [
+    "ffs_missed"
+  ],
+  "power" : 5.0,
+  //"physics" : "ffs_bullet_trajectory",
+  "physics" : "ffs_missiledown0",
+  "speed" : 125,
+  "damageType" : "ignoresdef",
+  "damageKind" : "default"
+}

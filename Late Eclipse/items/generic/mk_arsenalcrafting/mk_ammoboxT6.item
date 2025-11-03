@@ -1,0 +1,10 @@
+{
+  "itemName" : "mk_ammoboxT6",
+  "price" : 200,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "mk_ammoboxT6.png",
+  "description" : "Late Eclipse level 6 grade ammunition.",
+  "shortdescription" : "^#FF0000;LE.G6 Ammunition^reset;",
+  "itemTags" : [ "reagent" ]
+}

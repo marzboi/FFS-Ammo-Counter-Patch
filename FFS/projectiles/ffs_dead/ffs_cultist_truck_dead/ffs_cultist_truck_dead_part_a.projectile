@@ -1,0 +1,27 @@
+{
+  "projectileName" : "ffs_cultist_truck_dead_part_a",
+  "image" : "ffs_cultist_truck_dead_part_a.png",
+  "physics" : "grenade",
+  "animationLoops" : false,
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "renderLayer" : "frontParticle+1",
+  "piercing" : true,
+  "bounces" : 1,
+  "speed" : 15,
+  "damageKindImage" : "icon.png",
+  "power" : 0,
+  "timeToLive" : 5,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "emitters" : [ "shadowsmoke", "firesparks" ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_cultist_truck_dead_part_a2",
+      "allowFlip" : true,
+      "fuzzAngle" : 360,
+      "directional" : "true"
+    }
+  ]
+}

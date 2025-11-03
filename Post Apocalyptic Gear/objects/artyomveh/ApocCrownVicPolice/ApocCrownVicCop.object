@@ -1,0 +1,42 @@
+{
+  "objectName" : "ApocCrownVicCop",
+  "colonyTags" : ["human"],
+  "rarity" : "Rare",
+  "description" : "Post-Apocalyptic Police Car.",
+  "shortdescription" : "Apocalypse Crown Vic Police Car",
+  "race" : "human",
+  "category" : "decorative",
+  "price" : 200,
+  "health" : 8,
+
+  "apexDescription" : "It's generic American Police Car.",
+  "avianDescription" : "It's generic American Police Car.",
+  "floranDescription" : "It'sss generic American Police Car",
+  "glitchDescription" : "It's generic American Police Car.",
+  "humanDescription" : "It's generic American Police Carxi.",
+  "hylotlDescription" : "It's generic American Police Car",
+  "novakidDescription":  "It's generic American Police Car.",
+
+  "inventoryIcon" : "CrownVicIcon.png",
+  "orientations" : [
+    {
+      "image" : "CrownVic.png",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    },
+    {
+      "image" : "CrownVic.png",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+      
+    }
+  ]
+}

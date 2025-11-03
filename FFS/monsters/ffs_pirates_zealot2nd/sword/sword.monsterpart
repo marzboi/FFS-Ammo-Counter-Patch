@@ -1,0 +1,9 @@
+{
+  "name" : "sword",
+  "category" : "ffs_pirates_zealot2nd",
+  "type" : "sword",
+
+  "frames" : {
+    "sword" : "sword.png"
+  }
+}

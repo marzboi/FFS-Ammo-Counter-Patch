@@ -1,0 +1,30 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_breadnut_researchlog1", 
+	"count" : 1
+	},
+    { 
+	"item" : "ffs_breadnut_researchlog2", 
+	"count" : 1
+	},
+    { 
+	"item" : "ffs_breadnut_OperationDiary", 
+	"count" : 1
+	},
+    { 
+	"item" : "ffs_breadnut_diary_6", 
+	"count" : 1
+	},
+    { 
+	"item" : "ffs_breadnut_blueprint1", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 500
+	},
+	"groups" : [ "ffs_money",  "ffs_breadnut" ]
+}

@@ -1,0 +1,51 @@
+{
+  "objectName" : "ffs_atm",
+  "rarity" : "rare",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingmerchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "ATM",
+        "subtitle" : "Dosh to Dollar, Dollar To Dosh",
+        "icon" : {
+          "file" : "/objects/ffs_atmicon.png"
+        }
+      }
+    },
+    "filter" : [ "ffs_atm" ]
+  },
+  "printable" : false,
+  "description" : "Dollar & Dosh Only",
+  "shortdescription" : "ATM For FFS & PA ",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 10000,
+
+
+  "apexDescription" : "weapons",
+  "avianDescription" : "weapons",
+  "floranDescription" : "weapons",
+  "glitchDescription" : "weapons",
+  "humanDescription" : "weapons",
+  "hylotlDescription" : "weapons",
+  "novakidDescription" : "weapons",
+
+  "inventoryIcon" : "ffs_atmicon.png",
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "ffs_atm.png" } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "right",
+      "flipImages" : true,
+
+      "frames" : 1,
+      "animationCycle" : 0.1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name" : "body",
+  "category" : "ffs_pirates_zealot3rd",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  },
+
+  "parameters" : {
+    "meleeProjectile" : "meleeslash",
+    "projectileSourcePosition" : [1, -1]
+  }
+}

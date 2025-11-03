@@ -1,0 +1,14 @@
+{
+  "name" : "ffs_heavyarmor_DaE",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "ffs_heavyarmor_DaE.lua"
+  ],
+
+  "animationConfig" : "ffs_heavyarmor_DaE.animation",
+
+  "label" : "Heavy Armor",
+  "icon" : "/interface/statuses/heavyarmor.png"
+}

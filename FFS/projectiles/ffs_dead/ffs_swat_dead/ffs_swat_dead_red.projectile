@@ -1,0 +1,20 @@
+{
+  "projectileName" : "ffs_swat_dead_red",
+  "image" : "ffs_swat_dead_red.png",
+  "physics" : "ffs_deadbody",
+  "animationLoops" : false,
+  "animationCycle" : 1.0,
+  "frameNumber" : 10,
+  "power" : 0,
+  "timeToLive" : 300,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "directional" : "true",
+  "onlyHitTerrain" : false,
+  "speed" : 0,
+  "piercing" : true,
+  "renderLayer" : "Player-1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

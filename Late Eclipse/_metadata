@@ -1,0 +1,11 @@
+{
+  "version" : "1.1",
+  "tags" : "Weapons",
+  "author" : "MkioTNT",
+  "description" : "[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1827029602]Feast for Fire and Smoke[/url] Add-on\n\nAdds 6 weapons:\n\n- 1 Assault Rifle [ G5-12 Assault Rifle ]\n- 1 Sniper Rifle [ K4 Sniper Rifle ]\n- 1 AMR [ MOD-K4 Anti-Material Rifle ]\n- 1 Shotgun [ N16 Shotgun ]\n- 1 SMG [ S6-4 Sub-Machine Gun ]\n- 1 Pistol [ H8 Pistol ]\n\nAnd 3 attachments [ doesn't really change much how the weapon work ]:\n\n- Flashlight [ for all guns ]\n- Suppressor/Silencer [ Assault, Sniper, SMG and Pistol ]\n- Compensator [ Assault and Sniper ]\n\nCraft weapons and attachments at my workshop station and use the attachment workshop to \"modify\" the weapon.\n\n================================================| [url=https://steamcommunity.com/profiles/76561197985909736/myworkshopfiles/] Rylasasin [/url] Section |================================================\n\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2124858525] DaE [ Dungeons and Encounters ] [/url] Patch by Rylasasin\n\n- Patches the Kitsune guard and villageguards to use the FFS Mkio weapons instead of the RNG weapons. [ Kitsune Mod is required ]\n- Adds FFS Mkio weapons to FFS: Dungeons and Encounter's Merchant pools.\n- Adds FFS Mkio weapons to FFS: Dungeons and Encounters Treasure Pools.\n- I've also given the FFS Mkio weapons a coordinator.stagehand patch, so they can use them at their proper ranges.\n\n===================================================================================================================================\n\nQuestions, suggestions, bug reports, you can send them here: [url=https://discord.gg/vcjj8pm] Discord [/url]",
+  "name" : "ffslateeclipsearsenal",
+  "friendlyName" : "FFS Add-on - Late Eclipse Arsenal ",
+  "steamContentId" : "2236552110",
+  "link" : "steam://url/CommunityFilePage/2236552110",
+  "includes" : ["FFS"]
+}

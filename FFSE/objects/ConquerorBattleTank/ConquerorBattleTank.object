@@ -1,0 +1,35 @@
+{
+  "objectName" : "ConquerorBattleTank",
+  "colonyTags" : ["human","humanbunker" ], 
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 900,
+  "printable" : false,
+  "description" : "Proud of the human armored force-MBT-4031 Conqueror MainBattleTank.",
+  "shortdescription" : "ConquerorBattleTank",
+  "race" : "human",
+
+  "apexDescription" : "Proud of the human armored force-Conqueror MainBattleTank.",
+  "avianDescription" : "Proud of the human armored force-Conqueror MainBattleTank.",
+  "floranDescription" : "Proud of the human armored force-Conqueror MainBattleTank.",
+  "glitchDescription" : "Proud of the human armored force-Conqueror MainBattleTank.",
+  "humanDescription" : "Proud of the human armored force-Conqueror MainBattleTank.",
+  "hylotlDescription" : "Proud of the human armored force-Conqueror MainBattleTank.",
+
+  "inventoryIcon" : "ConquerorBattleTankicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "ConquerorBattleTank.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+    "collision" : "null"
+
+    }
+  ]
+}
+
+
