@@ -1,0 +1,12 @@
+{
+  "version" : "3.03",
+  "tags" : "Weapons|Furniture and Objects|Armor and Clothes",
+  "author" : "Lao_SJ",
+  "description" : "FFSExpanded---Expanded weapons for FFS - Upkept by Rylasasin\n\nThis is my (Rylasasin)'s continuation of Lao_SJ's FFSExpanded mod here on Steam. This could be considered a Triage of that mod. \nThe old mod was not updated for FFS Episode 2, and more importantly, created problems with Pandora's Box (and by extension, FU) due to redundant files. This version corrects this.\n\n[b]This was done with permission from Lao_SJ, as he is no longer involved with modding Starbound. Should he change his mind and request this removed, I will do so.[/b]\n\nI DID NOT CREATE THIS MOD, I ONLY MODIFIED/UPDATED/BALLANCED IT. Credit goes to Lao_SJ and his original mod [url=https://steamcommunity.com/workshop/filedetails/?id=1864093558]Found Here[/url]\n\nPS: Please do not request any more guns or items. I am not versed in creating new weapons for FFS, so I will not be adding anything new. Only ballancing/fixing what is already here.\n\n[h2]Note: This is [u][b]NOT[/b][/u] a patch! This is a [b]REPLACER[/b]. You MUST unsubscribe from the other version if you still are![/h2]\n______________________________\nV2.331:\n\n- Seigehammer secondary (and Raptor primary) now runs on angleAdjust instead of angle, meaning frags will go in the general direction of the shot instead of always going left. This means when you face to the right, you won't get showed with frags.\n\n- Several updates. Most notably, if you have FFS:E and DAE, the new USCM soldiers will now use USCM armor and weapons instead of the vanilla armors and NATO guns.",
+  "name" : "FFSE---Expanded weapons for FFS",
+  "priority" : -10,
+  "friendlyName" : "FFSE---Expanded weapons for FFS--Rylasasin Edition",
+  "steamContentId" : "2312074020",
+  "link" : "steam://url/CommunityFilePage/2312074020",
+  "includes" : ["FFS", "FFS_dungeons", "FFS_dungeons_hard"]
+}

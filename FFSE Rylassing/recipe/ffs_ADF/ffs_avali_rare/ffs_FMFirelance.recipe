@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_us_dollar", 
+	"count" : 30000
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_FMFirelance",
+	"count" : 1
+	},
+	"groups" : [ "ffs_avali_rare",  "ffs_ADF"]
+}

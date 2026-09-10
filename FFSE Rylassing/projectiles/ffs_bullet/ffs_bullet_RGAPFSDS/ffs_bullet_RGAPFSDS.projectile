@@ -1,0 +1,21 @@
+{
+  "projectileName" : "ffs_bullet_RGAPFSDS",
+  "image" : "ffs_bullet_RGAPFSDS.png",
+  "animationCycle" : 0.5,
+  "loops" : false,
+  "piercing" : false,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 0.5,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 1500,
+  "physics" : "ffs_RG",
+  "damageKind" : "default"
+}

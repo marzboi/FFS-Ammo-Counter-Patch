@@ -1,0 +1,78 @@
+{
+  "projectileName" : "ffs_bullet_PL10_Spen",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 3,
+  "damageKindImage" : "icon.png",
+  "image" : "ffs_bullet_PL10.png",
+  "animationCycle" : 1,
+  "frameNumber" : 20,
+  "speed" : 150,
+  "lightColor" : [70, 130, 180],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_explosion/ffs_PL10_exp/ffs_PL10_exp_Spen.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 45,
+      "delaySteps" : 2,
+      "angle" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 45,
+      "delaySteps" : 5,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 45,
+      "delaySteps" : 9,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 1,
+      "angle" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 3,
+      "angle" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 5,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_PL10_flame_mid",
+      "inheritDamageFactor" : 0.0,
+      "fuzzAngle" : 20,
+      "delaySteps" : 7,
+      "angle" : 0
+    }
+  ],
+  "power" : 75,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

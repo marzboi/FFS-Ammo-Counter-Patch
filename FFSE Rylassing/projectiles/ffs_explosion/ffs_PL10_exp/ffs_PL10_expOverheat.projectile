@@ -1,0 +1,17 @@
+{
+  "projectileName" : "ffs_PL10_expOverheat",
+  "image" : "ffs_PL10_exp.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "damagePoly" : [ [-54, 0], [-36, -36], [0, -54], [36, -36], [54, 0], [54, 36], [0, 54], [-36, 36] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "statusEffects" : [
+    "ffs_pinneddown"
+  ],
+  "flippable" : true,
+  "damageTeam" : { "type" : "indiscriminate" },
+  "damageKind" : "default",
+  "fullbright" : true
+}

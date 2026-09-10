@@ -1,0 +1,54 @@
+{
+  "projectileName" : "ffs_AM112_M551",
+  "image" : "ffs_AM112_M551.png",
+  "animationCycle" : 0.25,
+  "timeToLive" : 3.0,
+  "physics" : "ffs_grenade",
+  "frameNumber" : 4,
+  "pointLight" : false,
+  "speed" : 65,
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "grenadeexplosion",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 15,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_AM112_M551_2",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 15,
+      "angle" : 360
+    },
+	{
+      "action" : "projectile",
+      "type" : "ffs_AM112_M551_3",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 15,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_AM112_M551_3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 15,
+      "angle" : 0
+    }
+  ],
+  "actionOnHit" : [
+    {
+      "action" : "sound",
+      "options" : [ 
+	  "/sfx/throw/ffs_he_explosion.ogg"
+	  ]
+    }
+  ],
+  "power" : 5.0,
+  "damageKind" : "default",
+  "fullbright" : true
+}
+
+

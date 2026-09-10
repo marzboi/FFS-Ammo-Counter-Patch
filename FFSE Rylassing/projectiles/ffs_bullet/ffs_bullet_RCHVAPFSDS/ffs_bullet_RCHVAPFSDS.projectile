@@ -1,0 +1,26 @@
+{
+  "projectileName" : "ffs_bullet_RCHVAPFSDS",
+  "image" : "ffs_bullet_RCHVAPFSDS.png",
+  "animationCycle" : 0.5,
+  "loops" : false,
+  "physics" : "ffs_RG",
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 10.0,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 1350,
+  "statusEffects" : [
+  "ffs_penetration"
+  ],
+  "lightColor" : [100, 200, 255],
+  "damageKind" : "default",
+  "fullbright" : true
+}

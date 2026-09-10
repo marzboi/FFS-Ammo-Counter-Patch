@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_us_dollar", 
+	"count" : 7200
+	}
+	],
+	"output" : 
+	{
+	"item" : "Infantrycombathelmet_hs",
+	"count" : 1
+	},
+	"groups" : [ "ffs_Human_armor",  "ffs_FOH" ]
+}

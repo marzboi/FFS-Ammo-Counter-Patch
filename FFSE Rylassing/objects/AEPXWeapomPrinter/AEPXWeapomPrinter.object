@@ -1,0 +1,54 @@
+{
+  "objectName" : "AEPXWeapomPrinter",
+  "colonyTags" : ["outpost","commerce"],
+  "rarity" : "uncommon",
+  "category" : "other",
+  "description" : "Weapon Printer for Miniknog Enforcer unit.",
+  "shortdescription" : "Miniknog Weapon Printer",
+  "race" : "generic",
+
+  "apexDescription" : "Weapon Printer for Miniknog Enforcer unit.",
+  "avianDescription" : "Weapon Printer for Miniknog Enforcer unit.",
+  "floranDescription" : "Weapon Printer for Miniknog Enforcer unit.",
+  "glitchDescription" : "Weapon Printer for Miniknog Enforcer unit.",
+  "humanDescription" : "Weapon Printer for Miniknog Enforcer unit.",
+  "hylotlDescription" : "Weapon Printer for Miniknog Enforcer unit.",
+  "novakidDescription" : "Weapon Printer for Miniknog Enforcer unit.",
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/merchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Miniknog Weapon Printer",
+        "subtitle" : " ^#b9b5b2;BIG APE IS WATCHINNG YOU!"
+      }
+    },
+    "buyFactor" : 5.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  {"item":"ffs_SPP-38" },
+	  {"item": "ffs_SPR" }
+    ]
+  },
+  "printable" : false,
+  "lightColor" : [175, 175, 175],
+  // Masking Fullbright Transparency Values: 0% brightness on lights, 75% brightness on posters in window, 70% on window
+
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "AEPXWeapomPrinter.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+    "collision" : "null"
+
+    }
+  ]
+
+}

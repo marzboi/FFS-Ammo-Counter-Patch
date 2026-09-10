@@ -1,0 +1,200 @@
+[
+  {
+    "op": "add",
+    "path": "/items/avali",
+    "value": [
+      [
+        0,
+        [
+          {
+            "head": [
+              {
+                "name": "avaliarmor5head",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "chest": [
+              {
+                "name": "avaliguardtier2chest",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "legs": [
+              {
+                "name": "avaliarmor2pants",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "primary": [
+              "ffs_arblizzard"
+            ],
+            "sheathedprimary": [
+              "avalitier2broadsword"
+            ]
+          }
+        ]
+      ],
+      [
+        2,
+        [
+          {
+            "head": [
+              {
+                "name": "avaliarmor5head",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "chest": [
+              {
+                "name": "avaliguardtier3chest",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "legs": [
+              {
+                "name": "avaliarmor3pants",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "primary": [
+              "ffs_arblizzard",
+              "ffs_QRCType"
+            ],
+            "sheathedprimary": [
+              "avalitier3broadsword"
+            ]
+          }
+        ]
+      ],
+      [
+        3,
+        [
+          {
+            "head": [
+              {
+                "name": "avaliarmor5head",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "chest": [
+              {
+                "name": "avaliguardtier4chest",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "legs": [
+              {
+                "name": "avaliarmor3pants",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "primary": [
+              "ffs_RFStormSruge",
+              "ffs_QRCType"
+            ],
+            "sheathedprimary": [
+              "avalitier4broadsword"
+            ]
+          }
+        ]
+      ],
+      [
+        4,
+        [
+          {
+            "head": [
+              {
+                "name": "avaliarmor6head",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "chest": [
+              {
+                "name": "avaliguardtier5achest",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "legs": [
+              {
+                "name": "avaliarmor3pants",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "primary": [
+              "ffs_QRCType",
+              "ffs_RFStormSruge",
+              "ffs_FMFirelance"
+            ],
+            "sheathedprimary": [
+              "avalitier5broadsword"
+            ]
+          }
+        ]
+      ],
+      [
+        5,
+        [
+          {
+            "head": [
+              {
+                "name": "avaliarmor6head",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "chest": [
+              {
+                "name": "avaliguardtier6achest",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "legs": [
+              {
+                "name": "avaliarmor3pants",
+                "parameters": {
+                  "colorIndex": 3
+                }
+              }
+            ],
+            "primary": [
+              "ffs_QRCType",
+              "ffs_RAR",
+              "ffs_RSR",
+              "ffs_MGHailstorm_npc"
+            ],
+            "sheathedprimary": [
+              "avalitier6broadsword"
+            ]
+          }
+        ]
+      ]
+    ]
+  }
+]

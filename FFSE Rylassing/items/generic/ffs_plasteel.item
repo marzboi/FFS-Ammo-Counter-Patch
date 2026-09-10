@@ -1,0 +1,8 @@
+{
+  "itemName" : "ffs_plasteel",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "ffs_plasteel.png",
+  "description" : "This is a piece of plasteel.
+'Spaceage polymer.'",
+  "shortdescription" : "^green;Plastell"
+}

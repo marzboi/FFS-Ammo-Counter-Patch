@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/actionOnReap/0/type",
+    "value": "ffs_flamethrower"
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/0/speed",
+    "value": 125
+  }
+]

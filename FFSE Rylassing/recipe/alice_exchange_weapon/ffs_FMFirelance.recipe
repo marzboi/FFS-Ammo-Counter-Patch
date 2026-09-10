@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_FMFirelance", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 4000
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

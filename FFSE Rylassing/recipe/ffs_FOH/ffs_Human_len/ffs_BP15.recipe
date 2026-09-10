@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_us_dollar", 
+	"count" : 6000
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_BP15",
+	"count" : 1
+	},
+	"groups" : [ "ffs_Human_len",  "ffs_FOH" ]
+}

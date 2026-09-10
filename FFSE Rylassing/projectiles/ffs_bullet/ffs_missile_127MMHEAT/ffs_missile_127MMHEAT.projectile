@@ -1,0 +1,116 @@
+{
+  "projectileName" : "ffs_missile_127MMHEAT",
+  "image" : "ffs_missile_127MMHEAT.png",
+  "frameNumber" : 4,
+  "animationCycle" : 0.4,
+  "damageKindImage" : "icon.png",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_cannonblast_explosion",
+      "inheritDamageFactor" : 1.0,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_spark_80mm",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 10,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 20,
+      "offset" : [0, 2],
+	  "fuzzAngle" : 15,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 25,
+      "offset" : [2, 2],
+	  "fuzzAngle" : 15,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 30,
+      "offset" : [2, 0],
+	  "fuzzAngle" : 15,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 35,
+      "offset" : [1, -2],
+	  "fuzzAngle" : 15,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 20,
+      "offset" : [0, -2],
+	  "fuzzAngle" : 15,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 25,
+      "offset" : [-2, -2],
+	  "fuzzAngle" : 15,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 30,
+      "offset" : [-2, 0],
+	  "fuzzAngle" : 15,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 35,
+      "offset" : [-2, 2],
+	  "fuzzAngle" : 15,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 20,
+      "offset" : [0, 0],
+	  "fuzzAngle" : 15,
+	  "angle" : 0
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "tinyrocketsmoke" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 5.0,
+  "renderLayer" : "Player-1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "scripts" : [ "ffs_rocket.lua" ],
+  "physics" : "rocket",
+  "maxSpeed" : 75,
+  "controlForce" : 100,
+  "fullbright" : true
+}

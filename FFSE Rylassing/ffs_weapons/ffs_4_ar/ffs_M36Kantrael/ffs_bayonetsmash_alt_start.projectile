@@ -1,0 +1,22 @@
+{
+  "projectileName" : "ffs_bayonetsmash_alt_start",
+  "image" : "icon.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0.01,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_bayonetsmash_alt",
+      "inheritDamageFactor" : 1,
+	  "offset" : [1.0, 0.0],
+      "directional" : "true"
+    }
+  ],
+  "power" : 0,
+  "speed" : 200,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

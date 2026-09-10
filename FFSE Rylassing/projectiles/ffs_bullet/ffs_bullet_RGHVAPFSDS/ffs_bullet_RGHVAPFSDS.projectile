@@ -1,0 +1,28 @@
+{
+  "projectileName" : "ffs_bullet_RGHVAPFSDS",
+  "image" : "ffs_bullet_RGHVAPFSDS_start.png",
+  "animationCycle" : 0.25,
+  "loops" : false,
+  "physics" : "ffs_RGPC",
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 4,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 0.6,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_RGHVAPFSDS_after",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 1750,
+  "statusEffects" : [
+  "ffs_penetration"
+  ],
+  "lightColor" : [255, 200, 100],
+  "damageKind" : "default",
+  "fullbright" : true
+}

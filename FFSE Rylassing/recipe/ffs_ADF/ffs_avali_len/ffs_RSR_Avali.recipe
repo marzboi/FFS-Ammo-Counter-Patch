@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "money", 
+	"count" : 30000
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_RSR",
+	"count" : 1
+	},
+	"groups" : [ "ffs_avali_len",  "ffs_ADF_Avalionly" ]
+}

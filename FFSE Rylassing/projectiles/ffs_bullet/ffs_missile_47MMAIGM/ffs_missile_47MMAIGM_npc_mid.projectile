@@ -1,0 +1,33 @@
+{
+  "projectileName" : "ffs_missile_47MMAIGM_npc_mid",
+  "image" : "ffs_missile_47MMAIGM_npc.png",
+  "frameNumber" : 4,
+  "animationCycle" : 0.4,
+  "timeToLive" : 0.1,
+  "actionOnHit" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_missile_47MMAIGM_npc_failed",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+      "repeat" : false,
+      "action" : "projectile",
+      "type" : "ffs_missile_47MMAIGM_npc",
+	  "fuzzAngle" : 2,
+      "inheritDamageFactor" : 1
+    }
+  ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 30.0,
+  "renderLayer" : "Player-1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "fullbright" : true
+}
+

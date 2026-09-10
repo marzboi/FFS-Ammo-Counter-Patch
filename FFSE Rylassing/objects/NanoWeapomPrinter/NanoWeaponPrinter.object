@@ -1,0 +1,50 @@
+{
+  "objectName" : "NanoWeaponPrinter",
+  "colonyTags" : ["crafting"],
+  "rarity" : "uncommon",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/objects/NanoWeaponPrinter.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "  Nano Weapon Printer",
+        "subtitle" : "ADF Support cadre",
+        "icon" : {
+          "file" : "/interface/crafting/NanoWeaponPrinter.png"
+        }
+      }
+    },
+    "filter" : [ "ffs_ADF" ]
+  },
+  "scripts" : ["nohumans.lua"],
+  "printable" : false,
+  "description" : "Military WeaponPrinter, Used by avali battleforce. For export sales.",
+  "shortdescription" : "^orange;Nano Weapon Printer;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 30,
+   
+  "avalidescription" : "Military Weapon Printer, Used by the ADF. This is for export though, so the prices are jacked up. I should use the Avali exclusive one.",
+  "apexDescription" : "Military Weapon Printer, Used by avali defense forces. For export sales.",
+  "avianDescription" : "Military Weapon Printer, Used by avali defense forces. For export sales.",
+  "floranDescription" : "Military Weapon Printer, Used by avali defense forces. For export sales.",
+  "glitchDescription" : "Military Weapon Printer, Used by avali defense forces. For export sales.",
+  "humanDescription" : "Military Weapon Printer, It doesn't work for me, for some reason.",
+  "hylotlDescription" : "Military Weapon Printer, Used by avali defense forces. For export sales.",
+  "novakidDescription" : "Military Weapon Printer, Used by avali defense forces. For export sales.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "NanoWeaponPrinter.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

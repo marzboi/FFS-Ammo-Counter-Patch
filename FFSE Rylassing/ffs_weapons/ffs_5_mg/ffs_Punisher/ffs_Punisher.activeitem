@@ -1,0 +1,1290 @@
+{
+  "itemName" : "ffs_Punisher",
+  "price" : 40000,
+  "inventoryIcon" : "icon.png",
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "level" : 1,
+  "shortdescription" : "^#ffc800;AC247 Punisher",
+  "category" : "^#ffe400;AssaultCannon",
+  "tooltipKind" : "ffs_base_USCM",
+  "description" : 
+  "^#00FFFF;Federal ARMY
+^#7c7c7c;1Tier : Military Service
+^#7c7c7c;Aiming speed : ^white;1.0s
+^#7c7c7c;Equiping speed : ^white;2.5s
+^#7c7c7c;LMB=Fire : ^white;	25x108mm AP APDS
+^#7c7c7c;RMB=Fire : ^white; 25x108mm AP HE
+^#7c7c7c;Auto Reloading speed : ^white;2.5s
+^#7c7c7c;Ballistic performance : ^white;25 /shot
+^#7c7c7c;Effective firing range & Accuracy : = 400m = ^white;240block/80%
+^#7c7c7c;Ballistic effect : ^white;AP APDS/HE = ^#00ddff;10% Penetration(LMB) ^#7c7c7c;/ ^#fff700;25% Explosion(RMB)
+^#7c7c7c;Trigger Mechanism : AutoCannon = ^white;600rpm
+^#7c7c7c;Feed system : Backpack = ^white;50rds
+^#7c7c7c;Attachment : ^green;Ammunition backpack+Shoulder lamp
+^#ffc800;'This gun is heavy'.
+^#ffc800;AssaultCannon for power armor mobile commando and fire support vehicle,not for common infantryman(such as you).",
+
+  "itemTags" : ["weapon","ranged"],
+  "twoHanded" : true,
+
+  "animation" : "mechanism.animation",
+  "animationParts" : {
+    "attach" : "attach.png",
+    "body" : "body.png",
+    "ani_parts" : "ani_parts.png",
+    "ani_parts2" : "ani_parts2.png",
+    "ani_mag" : "ani_parts3.png",
+    "flash" : "flash.png"
+  },
+  "animationCustom" : {
+	"sounds" : {
+        "fireStart" : [ "/sfx/auto/AC.ogg" ],
+        "fireLoop" : [ "/sfx/auto/AC4.ogg" ],
+        "fireLoop2" : [ "/sfx/auto/AC4.ogg" ],
+        "fireEnd" : [ "/sfx/auto/AC_ed.ogg" ],
+        "draw_1" : [ "/sfx/draw/ffs_mg/ffs_draw_mg_2.ogg"   ],
+        "draw_2" : [ "/sfx/draw/ai/ffs_plasma_aiming.ogg"  ],
+		"reload_1" : [ "/sfx/reload/ffs_mg/ag556_1.ogg" ],
+		"reload_2" : [ "/sfx/reload/ffs_ak/ffs_reload_ak_2.ogg" ],
+		"reload_3" : [ "/sfx/reload/ffs_ak/ffs_reload_ak_3.ogg" ],
+		"reload_4" : [ "/sfx/reload/ffs_ak/ffs_reload_ak_4.ogg" ],
+		"reload_5" : [ "null" ]
+	},
+    "lights" : {
+      "flashlight" : {
+        "active" : true,
+        "position" : [ -0.2, 1.7],
+        "transformationGroups" : ["weapon"],
+        "color" : [255, 255, 255],
+        "pointLight" : true,
+        "pointAngle" : 0.00,
+        "pointBeam" : 10
+      }
+    }
+  },
+
+  "baseOffset" : [0.0, 0.0],
+  "muzzleOffset" : [-1.6, -0.7],
+
+  "scripts" : ["/ffs_weapons/ffs_option/ffs_heavy.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/ffs_weapons/ffs_lua_v2_left/ffs_fire_auto_fullmag_plasma_H.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.1,
+    "baseDps" : 25,
+    "energyUsage" : 2,
+    "inaccuracy" : 0.03,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : [
+	"ffs_bullet_trigger_AC",
+	"ffs_bullet_trigger_AC",
+	"ffs_bullet_trigger_AC",
+	"ffs_bullet_trigger_AC",
+	"ffs_bullet_trigger_AC",
+	"ffs_bullet_trigger_AC",
+	"ffs_bullet_trigger_AC",
+	"ffs_bullet_trigger_AC",
+	"ffs_bullet_trigger_AC",
+	"ffs_bullet_trigger_AC_2"
+	],
+    "projectileType2" : "ffs_case_none",
+    "projectileParameters" : {
+      "speed" : 5
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "draw" : {
+        "duration" : 0.01,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ -0.0, -0.0],
+        "weaponOffset" : [ -0.9, -1.5],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "idle"
+        },
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "idleMelee",
+        "backArmFrame" : "jump.1"
+      },
+      "draw2" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : -5,
+        "weaponRotationCenter" : [ -0.0, -0.0],
+        "weaponOffset" : [ -0.9, -1.35],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "idle.1",
+        "backArmFrame" : "jump.1"
+      },
+      "draw3" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : -10,
+        "weaponRotationCenter" : [ -0.0, -0.0],
+        "weaponOffset" : [ -0.9, -1.0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "idle.4",
+        "backArmFrame" : "jump.1"
+      },
+      "draw4" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : -10,
+        "weaponRotationCenter" : [ -0.0, -0.0],
+        "weaponOffset" : [ -0.9, -1.0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "idle.4",
+        "backArmFrame" : "jump.1"
+      },
+      "draw5" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : -10,
+        "weaponRotationCenter" : [ -0.0, -0.0],
+        "weaponOffset" : [ -0.9, -1.0],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "draw"
+        },
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "idle.4",
+        "backArmFrame" : "jump.1"
+      },
+      "draw6" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : -15,
+        "weaponRotationCenter" : [ -0.0, -0.0],
+        "weaponOffset" : [ -0.9, -0.75],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "jump.1"
+      },
+      "draw7" : {
+        "duration" : 0.0,
+        "armRotation" : 0,
+        "weaponRotation" : -15,
+        "weaponRotationCenter" : [ -0.0, -0.0],
+        "weaponOffset" : [ -0.9, -0.75],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.4",
+        "backArmFrame" : "jump.1"
+      },
+      "draw8" : {
+        "duration" : 0.1,
+        "armRotation" : -15,
+        "weaponRotation" : 12,
+        "weaponRotationCenter" : [ -0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "jump.1",
+        "backArmFrame" : "rotation"
+      },
+      "draw9" : {
+        "duration" : 0.1,
+        "armRotation" : -30,
+        "weaponRotation" : 25,
+        "weaponRotationCenter" : [ -0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "jump.1",
+        "backArmFrame" : "fall.1"
+      },
+      "draw10" : {
+        "duration" : 0.2,
+        "armRotation" : -30,
+        "weaponRotation" : 25,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "jump.1",
+        "backArmFrame" : "fall.1"
+      },
+      "draw11" : {
+        "duration" : 0.0,
+        "armRotation" : -30,
+        "weaponRotation" : 25,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "jump.1",
+        "backArmFrame" : "fall.1"
+      },
+      "draw12" : {
+        "duration" : 0.0,
+        "armRotation" : -30,
+        "weaponRotation" : 25,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "jump.1",
+        "backArmFrame" : "fall.1"
+      },
+      "draw13" : {
+        "duration" : 0.1,
+        "armRotation" : -30,
+        "weaponRotation" : 25,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "jump.1",
+        "backArmFrame" : "fall.1"
+      },
+      "draw14" : {
+        "duration" : 0.1,
+        "armRotation" : -30,
+        "weaponRotation" : 25,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "jump.1",
+        "backArmFrame" : "fall.1"
+      },
+      "draw15" : {
+        "duration" : 0.2,
+        "armRotation" : -30,
+        "weaponRotation" : 25,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "jump.1",
+        "backArmFrame" : "fall.1"
+      },
+      "draw16" : {
+        "duration" : 0.1,
+        "armRotation" : -30,
+        "weaponRotation" : 25,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "jump.1",
+        "backArmFrame" : "fall.1"
+      },
+      "draw17" : {
+        "duration" : 0.2,
+        "armRotation" : -30,
+        "weaponRotation" : 15,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "draw18" : {
+        "duration" : 0.1,
+        "armRotation" : -30,
+        "weaponRotation" : 15,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "draw19" : {
+        "duration" : 0.1,
+        "armRotation" : -30,
+        "weaponRotation" : 15,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "draw20" : {
+        "duration" : 0.1,
+        "armRotation" : -30,
+        "weaponRotation" : 15,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "motion1" : {
+        "duration" : 0.7,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "firing_in"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "motion2" : {
+        "duration" : 0.02,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "firing"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "motion3" : {
+        "duration" : 0.02,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1",
+		"recoil" : false
+      },
+      "motion4" : {
+        "duration" : 0.02,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "motion5" : {
+        "duration" : 0.3,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "firing_out"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "motion6" : {
+        "duration" : 0.3,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "cooldown" : {
+        "duration" : 0.2,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion1" : {
+        "duration" : 0.01,
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "idle"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion2" : {
+        "duration" : 0.2,
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion3" : {
+        "duration" : 0.3,
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion4" : {
+        "duration" : 0.2,
+        "armRotation" : 30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion5" : {
+        "duration" : 0.3,
+        "armRotation" : 30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "firing_in"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion6" : {
+        "duration" : 1.2,
+        "armRotation" : 30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "idle2"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion7" : {
+        "duration" : 0.3,
+        "armRotation" : 30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "firing_out"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion8" : {
+        "duration" : 0.3,
+        "armRotation" : 30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion9" : {
+        "duration" : 0.2,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion10" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion11" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion12" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion13" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion14" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion15" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion16" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion17" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion18" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion19" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion20" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      }
+    }
+  },
+
+  "altAbility" : {
+    "scripts" : ["/ffs_weapons/ffs_lua_v2_right/ffs_alt_plasma_H.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.1,
+    "baseDps" : 25,
+    "energyUsage" : 2,
+    "inaccuracy" : 0.03,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : [
+	"ffs_bullet_trigger_AC",
+	"ffs_bullet_trigger_AC",
+	"ffs_bullet_trigger_AC_3",
+	"ffs_bullet_trigger_AC"
+	],
+    "projectileType2" : "ffs_case_none",
+    "projectileParameters" : {
+      "speed" : 5
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "motion1" : {
+        "duration" : 0.7,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "firing_in"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "motion2" : {
+        "duration" : 0.005,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "firing2"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "motion3" : {
+        "duration" : 0.005,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1",
+		"recoil" : false
+      },
+      "motion4" : {
+        "duration" : 0.005,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1",
+		"recoil" : false
+      },
+      "motion5" : {
+        "duration" : 0.3,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "firing_out"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "motion6" : {
+        "duration" : 0.3,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "cooldown" : {
+        "duration" : 0.2,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion1" : {
+        "duration" : 0.01,
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "idle"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion2" : {
+        "duration" : 0.2,
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion3" : {
+        "duration" : 0.3,
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion4" : {
+        "duration" : 0.2,
+        "armRotation" : 30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion5" : {
+        "duration" : 0.3,
+        "armRotation" : 30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "firing_in"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion6" : {
+        "duration" : 1.2,
+        "armRotation" : 30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "idle2"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion7" : {
+        "duration" : 0.3,
+        "armRotation" : 30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+		
+        "animationStates" : {
+          "ffs_mechanism" : "firing_out"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion8" : {
+        "duration" : 0.3,
+        "armRotation" : 30,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion9" : {
+        "duration" : 0.2,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion10" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion11" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion12" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion13" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion14" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion15" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion16" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion17" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion18" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion19" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      },
+      "reloadmotion20" : {
+        "duration" : 0.0,
+        "armRotation" : -20,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [ 0.0, 0.0],
+        "weaponOffset" : [ -0.9, -0.6],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "fall.1"
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

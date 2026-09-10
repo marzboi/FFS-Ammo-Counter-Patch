@@ -1,0 +1,53 @@
+[
+  {
+    "op": "remove",
+    "path": "/items/avali/0/1/0/sheathedprimary"
+  },
+  {
+    "op": "remove",
+    "path": "/items/avali/0/1/0/alt"
+  },
+  {
+    "op": "remove",
+    "path": "/items/avali/0/1/0/primary/0/data"
+  },
+  {
+    "op": "replace",
+    "path": "/items/avali/0/1/0/primary/0/name",
+    "value": "ffs_RFStormSruge"
+  },
+  {
+    "op": "remove",
+    "path": "/items/avali/0/1/0/primary/1/data"
+  },
+  {
+    "op": "replace",
+    "path": "/items/avali/0/1/0/primary/1/name",
+    "value": "ffs_arblizzard"
+  },
+  {
+    "op": "remove",
+    "path": "/items/avali/0/1/0/primary/2/data"
+  },
+  {
+    "op": "replace",
+    "path": "/items/avali/0/1/0/primary/2/name",
+    "value": "ffs_MGHailstorm"
+  },
+  {
+    "op": "remove",
+    "path": "/items/avali/0/1/0/primary/3/data"
+  },
+  {
+    "op": "replace",
+    "path": "/items/avali/0/1/0/primary/3/name",
+    "value": "ffs_QRCType"
+  },
+  {
+    "op": "add",
+    "path": "/items/avali/0/1/0/primary/-",
+    "value": {
+      "name": "ffs_PDFrostbite"
+    }
+  }
+]

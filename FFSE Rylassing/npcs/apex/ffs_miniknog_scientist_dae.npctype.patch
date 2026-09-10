@@ -1,0 +1,32 @@
+[
+  {
+    "op": "add",
+    "path": "/items/default/0/1/0/sheathedprimary/0",
+    "value": "ffs_miniknog_pistol"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/0/sheathedprimary/-",
+    "value": "ffs_SPP-38_npc"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/1/sheathedprimary/0",
+    "value": "ffs_miniknog_pistol"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/1/sheathedprimary/-",
+    "value": "ffs_SPP-38_npc"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/2/sheathedprimary/0",
+    "value": "ffs_miniknog_pistol"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/2/sheathedprimary/-",
+    "value": "ffs_SPP-38_npc"
+  }
+]

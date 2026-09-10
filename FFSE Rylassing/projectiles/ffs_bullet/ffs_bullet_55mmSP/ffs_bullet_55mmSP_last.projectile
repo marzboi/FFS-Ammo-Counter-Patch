@@ -1,0 +1,23 @@
+{
+  "projectileName" : "ffs_bullet_55mmSP_last",
+  "image" : "ffs_bullet_55mmSP.png",
+  "animationCycle" : 0.56,
+  "loops" : false,
+  "piercing" : false,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 0.56,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 70,
+  "knockback" : 30,
+  "knockbackDirectional" : true,
+  "damageKind" : "default",
+  "fullbright" : true
+}

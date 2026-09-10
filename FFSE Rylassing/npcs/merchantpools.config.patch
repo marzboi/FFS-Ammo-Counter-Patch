@@ -1,0 +1,388 @@
+[
+  [
+    {
+      "op": "test",
+      "path": "/ffs_dae_merchant"
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_BP15"
+        },
+        "rarity": 0.15
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_BP15_1H"
+        },
+        "rarity": 0.15
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_LP9"
+        },
+        "rarity": 0.15
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_LP9_1H"
+        },
+        "rarity": 0.15
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_PDFrostbite"
+        },
+        "rarity": 0.15
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_PDFrostbite_1H"
+        },
+        "rarity": 0.15
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_SPP-38"
+        },
+        "rarity": 0.15
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_SPP-38_1H"
+        },
+        "rarity": 0.15
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_Cyclone"
+        },
+        "rarity": 0.05
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_Firestorm"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_QRCType"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_FT8"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_LR-15C"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_Striker"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_StrikerBK"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_arblizzard"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_LR-15"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_LR-15BK"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_M36Kantrael"
+        },
+        "rarity": 0.02
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_RFStormSruge"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_SPR"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_Suppressor"
+        },
+        "rarity": 0.075
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_SuppressorBK"
+        },
+        "rarity": 0.075
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_LR14"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_RAR"
+        },
+        "rarity": 0.075
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_AC242"
+        },
+        "rarity": 0.025
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_AG556"
+        },
+        "rarity": 0.05
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_MGHailstorm"
+        },
+        "rarity": 0.05
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_Punisher"
+        },
+        "rarity": 0.01
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_AFP"
+        },
+        "rarity": 0.075
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_aigm129"
+        },
+        "rarity": 0.05
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_aigm129_AT"
+        },
+        "rarity": 0.05
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_GL79"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_MGL25"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_PL10"
+        },
+        "rarity": 0.025
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_Siegehammer"
+        },
+        "rarity": 0.005
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_FMFirelance"
+        },
+        "rarity": 0.1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/ffs_dae_merchant/0/1/-",
+      "value": {
+        "item": {
+          "name": "ffs_RSR"
+        },
+        "rarity": 0.05
+      }
+    }
+  ]
+]

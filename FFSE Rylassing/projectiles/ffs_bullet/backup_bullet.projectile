@@ -1,0 +1,31 @@
+{
+  "projectileName" : "backup_bullet",
+  "image" : "backup_bullet.png",
+  "animationCycle" : 4.0,
+  "loops" : false,
+  "piercing" : false,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 4.0,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head.config"
+    },
+    {
+      "action" : "sound",
+      "options" : [ 
+	  "/sfx/ffs_bulletwhiz1.ogg","/sfx/ffs_bulletwhiz2.ogg"
+	  ]
+    }
+  ],
+  "statusEffects" : [
+    "ffs_bleeding"
+  ],
+  "power" : 5.0,
+  "speed" : 75,
+  "damageKind" : "default",
+  "damageType" : "ignoresdef",
+  "fullbright" : true
+}

@@ -1,0 +1,10 @@
+{
+  "offset" : [44, 50],
+  "animation" : {
+    "frames" : "/cursors/ffs_reticle_fire.png:reticle.<index>?scale=1",
+    "frameNumber" : 10,
+    "animationCycle" : 0.5,
+    "centered" : false,
+    "mode" : "loopforever"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "projectileName" : "ffs_missile_127MMHEAT_start",
+  "image" : "ffs_missile_127MMHEAT_start.png",
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "ffs_spark_40mm",
+      "inheritDamageFactor" : 0,
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_missile_127MMHEAT",
+      "inheritDamageFactor" : 1.0,
+      "directional" : "true",
+      "delaySteps" : 10
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 10,
+      "offset" : [-1, 1],
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 10,
+      "offset" : [1, 1],
+	  "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_smoke_explosion",
+      "inheritDamageFactor" : 0,
+      "delaySteps" : 10,
+      "offset" : [0, -1],
+	  "angle" : 0
+    }
+  ],
+  "flippable" : true,
+  "renderLayer" : "Player-1",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "piercing" : true,
+  "timeToLive" : 0.1,
+  "fullbright" : true
+}

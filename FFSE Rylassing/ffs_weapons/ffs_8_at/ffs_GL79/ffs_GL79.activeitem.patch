@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/price",
+    "value": 45000
+  },
+  {
+    "op": "add",
+    "path": "/itemTags/-",
+    "value": "grenadelauncher"
+  }
+]

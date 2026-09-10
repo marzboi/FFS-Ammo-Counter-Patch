@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_us_dollar", 
+	"count" : 2400
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_LP9",
+	"count" : 1
+	},
+	"groups" : [ "ffs_Human_rare",  "ffs_FOH" ]
+}

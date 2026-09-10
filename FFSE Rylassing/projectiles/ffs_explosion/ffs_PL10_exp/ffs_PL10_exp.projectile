@@ -1,0 +1,18 @@
+{
+  "projectileName" : "ffs_PL10_exp",
+  "image" : "ffs_PL10_exp.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "statusEffects" : [
+    "ffs_penetration"
+  ],
+  "damagePoly" : [ [-54, 0], [-36, -36], [0, -54], [36, -36], [54, 0], [54, 36], [0, 54], [-36, 36] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageTeam" : { "type" : "indiscriminate" },
+  "damageKind" : "default",
+  "damageType" : "ignoresdef",
+  "fullbright" : true
+}

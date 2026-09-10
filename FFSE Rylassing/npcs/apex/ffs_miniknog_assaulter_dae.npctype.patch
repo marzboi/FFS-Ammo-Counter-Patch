@@ -1,0 +1,12 @@
+[
+  {
+    "op": "add",
+    "path": "/items/default/0/1/0/primary/0",
+    "value": "ffs_miniknog_ar"
+  },
+  {
+    "op": "add",
+    "path": "/items/default/0/1/0/primary/-",
+    "value": "ffs_SPR_npc"
+  }
+]

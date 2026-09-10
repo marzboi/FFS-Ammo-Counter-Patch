@@ -1,0 +1,8 @@
+{
+  "itemName" : "ffs_osranium",
+  "rarity" : "rare",
+  "inventoryIcon" : "ffs_osranium.png",
+  "description" : "This is an alloy of osmium and uranium.
+'Heavy armor plate.'",
+  "shortdescription" : "^blue;Osranium"
+}

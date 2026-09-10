@@ -1,0 +1,76 @@
+{
+  "itemName" : "Infantrycombatvest",
+  "price" : 2400,
+  "inventoryIcon" : "icons.png",
+  "maxStack" : 1,
+  "rarity" : "uncommon",
+  "category" : "chestarmour",
+  "description" : "standard bulletproof vests for Human soldiers.",
+  "shortdescription" : "BAS system",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chest.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chest.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "level" : 3,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.25
+    },
+    {
+      "levelFunction" : "standardArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.5
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 5
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 5
+    }
+  ],
+
+  "itemTags" : [ "tier3armour" ],
+
+  "colorOptions" : [
+    // OLIVE
+    { "C3B190" : "b3b78f", "C3AC83" : "91956c", "66543F" : "6b6f52", "4D3F2F" : "4f5143" },
+    // BLACK
+    { "C3B190" : "838383", "C3AC83" : "555555", "66543F" : "383838", "4D3F2F" : "151515" },
+    // GREY
+    { "C3B190" : "b5b5b5", "C3AC83" : "808080", "66543F" : "555555", "4D3F2F" : "303030" },
+    // WHITE
+    { "C3B190" : "e6e6e6", "C3AC83" : "b6b6b6", "66543F" : "7b7b7b", "4D3F2F" : "373737" },
+    // RED
+    { "C3B190" : "f4988c", "C3AC83" : "d93a3a", "66543F" : "932625", "4D3F2F" : "601119" },
+    // ORANGE
+    { "C3B190" : "ffd495", "C3AC83" : "ea9931", "66543F" : "af4e00", "4D3F2F" : "6e2900" },
+    // YELLOW
+    { "C3B190" : "C3B190", "C3AC83" : "C3AC83", "66543F" : "66543F", "4D3F2F" : "4D3F2F" },
+    // GREEN
+    { "C3B190" : "849163", "C3AC83" : "6F7D4A", "66543F" : "5C693B", "4D3F2F" : "4F5143" },
+    // BLUE
+    { "C3B190" : "96cbe7", "C3AC83" : "5588d4", "66543F" : "344495", "4D3F2F" : "1a1c51" },
+    // PURPLE
+    { "C3B190" : "d29ce7", "C3AC83" : "a451c4", "66543F" : "6a2284", "4D3F2F" : "320c40" },
+    // PINK
+    { "C3B190" : "eab3db", "C3AC83" : "d35eae", "66543F" : "97276d", "4D3F2F" : "59163f" },
+    // BROWN
+    { "C3B190" : "ccae7c", "C3AC83" : "a47844", "66543F" : "754c23", "4D3F2F" : "472b13" }
+  ]
+}

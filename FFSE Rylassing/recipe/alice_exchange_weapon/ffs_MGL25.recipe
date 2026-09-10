@@ -1,0 +1,14 @@
+{
+	"input" : [
+    { 
+	"item" : "ffs_MGL25", 
+	"count" : 1
+	}
+	],
+	"output" : 
+	{
+	"item" : "ffs_us_dollar",
+	"count" : 6000
+	},
+	"groups" : [ "ffs_exchanger" ]
+}

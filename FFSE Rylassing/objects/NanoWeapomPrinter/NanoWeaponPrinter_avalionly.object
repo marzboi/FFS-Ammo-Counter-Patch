@@ -1,0 +1,44 @@
+{
+  "objectName" : "NanoWeaponPrinter_avalionly",
+  "colonyTags" : ["crafting"],
+  "rarity" : "uncommon",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/objects/NanoWeaponPrinter.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "  Nano Weapon Printer - Avali Special Edition",
+        "subtitle" : "ADF Support cadre - Avali Exclusive",
+        "icon" : {
+          "file" : "/interface/crafting/NanoWeaponPrinter.png"
+        }
+      }
+    },
+    "filter" : [ "ffs_ADF_Avalionly" ]
+  },
+  
+  "scripts" : ["avalionly.lua"],
+  "printable" : false,
+  "description" : "Military WeaponPrinter, Used by avali battleforce. This one is exclusive for avalis.",
+  "shortdescription" : "^orange;Nano Weapon Printer, Avali edition",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 30,
+
+  "avaliDescription" : "Avali exclusive weapon printer. We pay in pixels, and get discounts.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "NanoWeaponPrinter_Avali.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

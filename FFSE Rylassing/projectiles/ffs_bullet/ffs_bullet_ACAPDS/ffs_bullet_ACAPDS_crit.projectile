@@ -1,0 +1,55 @@
+{
+  "projectileName" : "ffs_bullet_ACAPDS_crit",
+  "image" : "ffs_bullet_ACAPDS.png",
+  "animationCycle" : 0.5,
+  "loops" : false,
+  "piercing" : false,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  //"timeToLive" : 1.0,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/ffs_bullet/ffs_bullet_head.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.2,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.2,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.2,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "ffs_bullet_frag",
+      "inheritDamageFactor" : 0.2,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    }
+  ],
+  "statusEffects" : [
+    "ffs_penetration"
+  ],
+  "power" : 5.0,
+  "speed" : 220,
+  "physics" : "ffs_bullet_trajectory",  
+  "knockback" : 50,
+  "damageType" : "ignoresdef",
+  "damageKind" : "default",
+  "fullbright" : true
+}
